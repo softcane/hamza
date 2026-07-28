@@ -2,6 +2,9 @@
 
 ![Hamza masking sensitive data before it reaches an AI service](assets/hamza-undercover-proxy.png)
 
+*The name Hamza is inspired by the undercover operative in
+[*Dhurandhar*](https://www.netflix.com/tudum/articles/dhurandhar-release-date-news).*
+
 Hamza is a proxy for Claude Code and Codex. It masks detected secrets and
 approved types of personal data before sending prompts to Anthropic or OpenAI.
 

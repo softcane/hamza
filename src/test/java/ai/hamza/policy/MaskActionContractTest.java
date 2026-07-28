@@ -48,7 +48,7 @@ class MaskActionContractTest {
         String masked = new String(result.maskedBody().orElseThrow(), StandardCharsets.UTF_8);
 
         assertThat(masked).doesNotContain(FAKE_KEY);
-        assertThat(masked).contains("«redacted:aws-access-token»");
+        assertThat(masked).containsPattern("<SECRET_\\d+>");
         assertThat(masked).contains("\"model\":\"gpt-5-codex\"");
         assertThat(result.findings()).allMatch(finding -> finding.detector().equals("secret"));
     }

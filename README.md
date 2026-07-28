@@ -1,5 +1,12 @@
 # Hamza
 
+![An undercover proxy masking sensitive data before provider egress](assets/hamza-undercover-proxy.png)
+
+*Original artwork for Hamza. The name nods to the undercover operative in
+[*Dhurandhar*](https://www.netflix.com/tudum/articles/dhurandhar-release-date-news)
+— an apt namesake for a proxy that quietly masks sensitive values before they
+reach the Provider.*
+
 **An egress gate for CLI coding agents. It masks secrets and customer data in
 the request body before it reaches the model provider, and the agent keeps
 working.**
@@ -93,7 +100,7 @@ flowchart LR
    passes through without the Gate seeing it.
 2. An adapter finds every text segment the provider can read. OpenAI Responses
    and Anthropic Messages are the two supported wire formats.
-3. Three detectors run against that text: a 216-rule secret pack, Exact Data
+3. Three detectors run against that text: a 327-rule secret pack, Exact Data
    Match against values you've registered, and Presidio for the PII types on
    its approved profile ([below](#what-it-detects)).
 4. Each finding gets one placeholder at its exact span — `<SECRET_1>`,
@@ -107,26 +114,36 @@ between the original and rebuilt request. They never keep the request content,
 the matched values, or provider auth. Each record commits to the one before it,
 so an edited history breaks the chain.
 
+Placeholders stand for a **value**, not for the rule that matched it. Two
+occurrences of one email render the same placeholder, and two different emails
+never render the same one — so the model can still tell what is the same thing
+and what isn't. That identity holds within a request on the setup below.
+
 There's also a signed, managed route (see [`CONTEXT.md`](./CONTEXT.md)) that
-adds two guarantees on top of this: the same value keeps the same placeholder
-across an entire multi-turn task, and every masked request is paired with an
-audit record of the original. It's a separate, opt-in setup this README doesn't
-cover. Neither guarantee is required to get masking itself — the setup in
-[Run it](#run-it) below sends unsigned requests and masks them the same way.
+extends the same placeholder across an entire multi-turn task and pairs every
+masked request with an audit record of the original. It needs signed request
+metadata, so it's a separate opt-in setup this README doesn't cover. Everything
+below runs on the standard route and needs none of it.
 
 ### What it detects
 
 | Detector | Scope | Default |
 |---|---|---|
-| Secret | 216 rules covering cloud, source-control, package, and SaaS credentials | On |
-| Exact Data Match | Your registered customer values, stored as one-way fingerprints | On once you load a registry |
-| Presidio | Card, crypto address, email, IBAN, IP, MAC, phone, medical license, URL | Off |
+| Secret | 327 rules covering cloud, source-control, package, and SaaS credentials | On |
+| Exact Data Match | Your registered customer values, stored as one-way fingerprints | On once you load a registry — flags and blocks here, masks on the managed route |
+| Presidio | Card, crypto address, email, IBAN, IP, MAC, phone, medical license, URL | On |
 
-Presidio is off by default because it's a separate, 2-CPU analyzer container —
-starting it on every dev-stack boot would slow down the common case for a
-detector most Turns don't need. Bring it up with
-`docker compose --profile presidio up -d`. It only ever sits on the internal
-network: no published port, no route off the host.
+The first two only find what they were told to look for. The secret pack
+matches credential *shapes*, and Exact Data Match only matches values you
+registered in advance. Presidio is the one detector that finds PII nobody
+anticipated — which is the whole problem, since the agent decides what context
+a task takes. It runs as a separate 2-CPU analyzer container that starts with
+the stack, and it only ever sits on the internal network: no published port, no
+route off the host.
+
+It costs about a minute of extra start-up while the analyzer warms up, and the
+Gate waits for it before accepting traffic. To run without it, set
+`HAMZA_PRESIDIO_ENABLED=false` and bring the stack up with `--scale presidio=0`.
 
 Hamza does not enforce person names, locations, dates, nationality, religion,
 political affiliation, or free-form medical facts. Each one failed the detector
@@ -145,9 +162,12 @@ HAMZA_POSTURE=MASK docker compose up -d --build
 ```
 
 That brings up Envoy on `10000`, the Gate on `8080`, Prometheus on `9091`, and
-Grafana on `3000`. `HAMZA_POSTURE=MASK` tells the Gate to rewrite bodies
-instead of only recording them; drop it to start in `FLAG` (record-only)
-instead.
+Grafana on `3000`, plus the Presidio analyzer on the internal network with no
+published port. `HAMZA_POSTURE=MASK` tells the Gate to rewrite bodies instead of
+only recording them; drop it to start in `FLAG` (record-only) instead.
+
+The Gate waits for Presidio's health check before it accepts traffic, so the
+first boot takes about a minute longer than the containers alone.
 
 Envoy has nowhere to send a request yet — the next step points it at your
 provider.
@@ -264,12 +284,19 @@ Hamza controls provider egress after an agent assembles a request. It does not
 control local file, shell, browser, or database access. An agent can still read
 your CSV. It cannot ship it.
 
-The Mask-and-Continue claim — stable placeholders across a multi-turn task,
-plus a DERIVED Turn audit record — covers complete, supported, unencoded JSON
-on the signed managed route described above. The standard route this README's
-setup uses still masks on every Turn; it just doesn't carry either of those
-two guarantees. Streamed oversize, encoded, malformed, and unknown-format
-requests get inspected and can Flag or Block, but don't get masked.
+The setup above masks secrets and Presidio's approved PII types, with
+placeholder identity holding **within each request**. Carrying the same
+placeholder across a whole multi-turn task, and pairing each masked request
+with a DERIVED Turn audit record, are the two things the signed managed route
+adds — they cover complete, supported, unencoded JSON on that route only.
+
+Exact Data Match flags and blocks on the standard route but does not mask
+there: it reports how many registered values it saw, not where they sat, and a
+value without a reliable span cannot be replaced. Registered-value masking is a
+managed-route behavior today.
+
+Streamed oversize, encoded, malformed, and unknown-format requests get
+inspected and can Flag or Block, but don't get masked.
 
 OpenAI Responses and Anthropic Messages are the supported wire formats. A new
 format needs an adapter that can find and rebuild every provider-visible text

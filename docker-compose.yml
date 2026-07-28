@@ -68,9 +68,13 @@ services:
       # How old a signed managed-metadata header set may be before a 403 EXPIRED.
       HAMZA_CONTINUATION_METADATA_MAX_AGE: ${HAMZA_CONTINUATION_METADATA_MAX_AGE:-5m}
       HAMZA_CONTINUATION_METADATA_MAX_FUTURE_SKEW: ${HAMZA_CONTINUATION_METADATA_MAX_FUTURE_SKEW:-30s}
-      # In-boundary Presidio. Off by default; only the M3-approved entities can ever
-      # enforce, and the Gate refuses to start on a profile that enables a failed one.
-      HAMZA_PRESIDIO_ENABLED: ${HAMZA_PRESIDIO_ENABLED:-false}
+      # In-boundary Presidio. On by default: the secret rulepack only matches
+      # credential shapes and EDM only matches values registered in advance, so
+      # Presidio is the only detector that finds PII nobody anticipated. Only the
+      # approved entities can ever enforce, and the Gate refuses to start on a
+      # profile that enables one that failed the detector quality floor.
+      # Set false to run with secret + EDM alone.
+      HAMZA_PRESIDIO_ENABLED: ${HAMZA_PRESIDIO_ENABLED:-true}
       HAMZA_PRESIDIO_ENDPOINT: ${HAMZA_PRESIDIO_ENDPOINT:-http://presidio:3000}
       HAMZA_PRESIDIO_APPROVED_PROFILE: ${HAMZA_PRESIDIO_APPROVED_PROFILE:-/presidio/approved-profile.json}
     ports:
@@ -89,6 +93,11 @@ services:
       timeout: 3s
       retries: 20
       start_period: 30s
+    # Presidio must be answering before the Gate accepts traffic. A Turn that
+    # reaches an unready detector gaps, and a gap fails closed.
+    depends_on:
+      presidio:
+        condition: service_healthy
     networks:
       - control
       - observability
@@ -100,9 +109,10 @@ services:
     image: ghcr.io/data-privacy-stack/presidio-analyzer@sha256:286e3fa7f3a7426e775e8564fe1870f1ba8f999d3ab8bbb8cc46a44355d9d6e9
     pull_policy: missing
     container_name: presidio
-    # Opt-in: the existing deterministic gates keep their current topology and
-    # start-up cost. `--profile presidio` brings the detector up.
-    profiles: ["presidio"]
+    # Starts with the stack. hamza-core waits on this container's health check,
+    # because a Gate that has Presidio enabled but cannot reach it fails closed on
+    # every managed Turn. To run without it, set HAMZA_PRESIDIO_ENABLED=false and
+    # bring the stack up with `--scale presidio=0`.
     user: "1001:1001"
     read_only: true
     security_opt:

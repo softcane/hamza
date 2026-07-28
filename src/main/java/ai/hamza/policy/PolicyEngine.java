@@ -4,7 +4,15 @@ import ai.hamza.config.HamzaProperties;
 import ai.hamza.edm.EdmMatcher;
 import ai.hamza.edm.EdmCountScanResult;
 import ai.hamza.edm.EdmScanExhaustionReason;
+import ai.hamza.adapter.ContentSegment;
+import ai.hamza.masking.MaskScopeStore;
+import ai.hamza.masking.PlaceholderFamily;
+import ai.hamza.presidio.PresidioDetector;
+import ai.hamza.presidio.PresidioFinding;
+import ai.hamza.presidio.PresidioProfile;
+import ai.hamza.presidio.PresidioScan;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
@@ -14,11 +22,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.UUID;
 
 /**
- * Runs the {@link SecretDetector} over the outbound <strong>body only</strong> and maps
- * matches to an {@link Action} per rule from config. Default Posture is
- * {@link Action#FLAG} (observe before enforce).
+ * Runs the {@link SecretDetector} and, when configured, {@link PresidioDetector} over the
+ * outbound <strong>body only</strong>, and maps matches to an {@link Action} per rule from
+ * config. Default Posture is {@link Action#FLAG} (observe before enforce).
+ *
+ * <p>Masking replaces each span with a stable Placeholder drawn from a {@link MaskScopeStore}
+ * scope minted for this one body. Identity is keyed on the matched <em>value</em>, so two
+ * occurrences of one value share a Placeholder and two different values never collide —
+ * the property a model needs to keep reasoning about the request.
+ *
+ * <p>A Presidio gap on this route degrades rather than blocks: the Turn proceeds on the
+ * detectors that did complete and the incomplete run is recorded. This route makes no
+ * Mask-and-Continue claim, so a slow analyzer must not abort a live Agent session.
  *
  * <p>Invariant: detection is scoped to the body. Provider-auth headers
  * (Authorization, …) are never passed here, never scanned, never a Finding.
@@ -32,25 +50,41 @@ public class PolicyEngine {
     private final Map<String, Action> ruleActions;
     private final EdmMatcher edmMatcher;
     private final int edmBlockThreshold;
+    private final PresidioDetector presidio;
+    private final MaskScopeStore scopes;
 
     @Autowired
     public PolicyEngine(SecretDetector detector, Masker masker, HamzaProperties properties,
-                        EdmMatcher edmMatcher) {
+                        EdmMatcher edmMatcher, ObjectProvider<PresidioDetector> presidio) {
         this(detector, masker, properties.policy().posture(), properties.policy().ruleActions(),
-                edmMatcher, properties.edm().blockThreshold());
+                edmMatcher, properties.edm().blockThreshold(), presidio.getIfAvailable());
     }
 
-    /** Direct constructor for tests with explicit policy config (EDM disabled). */
+    /** Config-driven constructor without Presidio, for callers that do not register it. */
+    public PolicyEngine(SecretDetector detector, Masker masker, HamzaProperties properties,
+                        EdmMatcher edmMatcher) {
+        this(detector, masker, properties.policy().posture(), properties.policy().ruleActions(),
+                edmMatcher, properties.edm().blockThreshold(), null);
+    }
+
+    /** Direct constructor for tests with explicit policy config (EDM and Presidio off). */
     public PolicyEngine(SecretDetector detector, Masker masker, Action posture,
                         Map<String, Action> ruleActions) {
         this(detector, masker, posture, ruleActions, null,
-                HamzaProperties.DEFAULT_EDM_BLOCK_THRESHOLD);
+                HamzaProperties.DEFAULT_EDM_BLOCK_THRESHOLD, null);
     }
 
-    /** Direct constructor for tests with explicit EDM config. */
+    /** Direct constructor for tests with explicit EDM config and no Presidio. */
     public PolicyEngine(SecretDetector detector, Masker masker, Action posture,
                         Map<String, Action> ruleActions, EdmMatcher edmMatcher,
                         int edmBlockThreshold) {
+        this(detector, masker, posture, ruleActions, edmMatcher, edmBlockThreshold, null);
+    }
+
+    /** Direct constructor for tests that need Presidio on the standard route. */
+    public PolicyEngine(SecretDetector detector, Masker masker, Action posture,
+                        Map<String, Action> ruleActions, EdmMatcher edmMatcher,
+                        int edmBlockThreshold, PresidioDetector presidio) {
         this.detector = detector;
         this.masker = masker;
         this.posture = posture == null ? Action.FLAG : posture;
@@ -58,6 +92,8 @@ public class PolicyEngine {
         this.edmMatcher = edmMatcher;
         this.edmBlockThreshold = edmBlockThreshold > 0 ? edmBlockThreshold
                 : HamzaProperties.DEFAULT_EDM_BLOCK_THRESHOLD;
+        this.presidio = presidio;
+        this.scopes = new MaskScopeStore();
     }
 
     /** Evaluate the outbound body. Never receives or inspects headers. */
@@ -70,14 +106,22 @@ public class PolicyEngine {
         List<SecretDetector.Match> matches = detector.detect(text);
         DetectionRun secretRun = detector.run(text, matches, elapsedMicros(secretStarted));
         EdmContribution edm = edmContribution(text);
-        if (matches.isEmpty() && edm.findings().isEmpty()) {
-            return PolicyResult.clean(List.of(secretRun, edm.run()));
+        PresidioContribution pii = presidioContribution(text);
+        List<DetectionRun> runs = pii.run() == null
+                ? List.of(secretRun, edm.run())
+                : List.of(secretRun, edm.run(), pii.run());
+        if (matches.isEmpty() && edm.findings().isEmpty() && pii.findings().isEmpty()) {
+            return PolicyResult.clean(runs);
         }
 
         List<Finding> findings = new ArrayList<>(matches.size());
-        List<SecretDetector.Match> maskMatches = new ArrayList<>();
+        // Every span that will be replaced, paired with the Placeholder replacing it.
+        List<Masker.Replacement> replacements = new ArrayList<>();
         Set<String> blockingRules = new LinkedHashSet<>();
         Action effective = Action.FLAG;
+        // One Mask Scope per body. Identity is per value, so a repeated value renders the
+        // same Placeholder and two different values never share one.
+        String scopeId = UUID.randomUUID().toString();
 
         for (SecretDetector.Match m : matches) {
             Action action = actionFor(m.rule());
@@ -92,28 +136,92 @@ public class PolicyEngine {
             if (action == Action.BLOCK) {
                 blockingRules.add(m.rule());
             } else if (action == Action.MASK) {
-                maskMatches.add(m);
+                replacements.add(replacement(scopeId, PlaceholderFamily.SECRET,
+                        SecretDetector.DETECTOR_ID, m.rule(), text, m.start(), m.end()));
             }
         }
         findings.addAll(edm.findings());
         blockingRules.addAll(edm.blockingRules());
         effective = mostSevere(effective, edm.effective());
 
+        for (PresidioSpan span : pii.spans()) {
+            findings.add(new Finding(PresidioDetector.DETECTOR_ID, span.rule(), span.action()));
+            effective = mostSevere(effective, span.action());
+            if (span.action() == Action.BLOCK) {
+                blockingRules.add(span.rule());
+            } else if (span.action() == Action.MASK) {
+                replacements.add(replacement(scopeId, span.family(),
+                        PresidioDetector.DETECTOR_ID, span.rule(), text,
+                        span.start(), span.end()));
+            }
+        }
+
         if (effective == Action.BLOCK) {
             // Block wins: do not mask, stop the request.
             return new PolicyResult(findings, Action.BLOCK, Optional.empty(),
                     new ArrayList<>(blockingRules), edm.counts(), edm.complete(), edm.reason(),
-                    List.of(secretRun, edm.run()));
+                    runs);
         }
         if (effective == Action.MASK) {
-            String masked = masker.mask(text, maskMatches);
+            String masked = masker.mask(text, replacements);
             return new PolicyResult(findings, Action.MASK,
                     Optional.of(masked.getBytes(StandardCharsets.UTF_8)), List.of(), edm.counts(),
-                    edm.complete(), edm.reason(), List.of(secretRun, edm.run()));
+                    edm.complete(), edm.reason(), runs);
         }
         // FLAG only: record findings, let Egress proceed unchanged.
         return new PolicyResult(findings, Action.FLAG, Optional.empty(), List.of(), edm.counts(),
-                edm.complete(), edm.reason(), List.of(secretRun, edm.run()));
+                edm.complete(), edm.reason(), runs);
+    }
+
+    /** Mint the Placeholder for one span. The source value never leaves this call. */
+    private Masker.Replacement replacement(String scopeId, PlaceholderFamily family,
+                                           String detectorId, String rule, String text,
+                                           int start, int end) {
+        String placeholder = scopes.placeholder(scopeId, family, detectorId, rule,
+                text.substring(start, end));
+        return new Masker.Replacement(start, end, placeholder);
+    }
+
+    /** One Presidio span already resolved to char offsets and an Action. */
+    private record PresidioSpan(String rule, Action action, PlaceholderFamily family,
+                                int start, int end) {
+    }
+
+    private record PresidioContribution(List<PresidioSpan> spans, List<Finding> findings,
+                                        DetectionRun run) {
+    }
+
+    /**
+     * Run Presidio over the body as one segment. A gap degrades: the incomplete run is
+     * recorded and the Turn proceeds on whatever did complete, because this route makes no
+     * Mask-and-Continue claim and a slow analyzer must not abort a live Agent session.
+     */
+    private PresidioContribution presidioContribution(String text) {
+        if (presidio == null) {
+            return new PresidioContribution(List.of(), List.of(), null);
+        }
+        ContentSegment segment = new ContentSegment("body", text);
+        PresidioScan scan = presidio.scan(List.of(segment));
+        List<PresidioSpan> spans = new ArrayList<>(scan.findings().size());
+        List<DetectionFinding> runFindings = new ArrayList<>(scan.findings().size());
+        List<Finding> findings = new ArrayList<>(scan.findings().size());
+        for (PresidioFinding finding : scan.findings()) {
+            String rule = PresidioProfile.rule(finding.entity());
+            Action action = actionFor(rule);
+            runFindings.add(new DetectionFinding(rule, action, finding.segmentId(),
+                    finding.start(), finding.end(), finding.score(), true));
+            findings.add(new Finding(PresidioDetector.DETECTOR_ID, rule, action));
+            // Presidio reports code points; the body is masked by char offset.
+            int start = text.offsetByCodePoints(0, finding.start());
+            int end = text.offsetByCodePoints(0, finding.end());
+            spans.add(new PresidioSpan(rule, action, presidio.profile().family(finding.entity()),
+                    start, end));
+        }
+        DetectionRun run = new DetectionRun(PresidioDetector.DETECTOR_ID,
+                presidio.profile().detectorVersion(), scan.status(), scan.reason(),
+                scan.receivedSegments(), scan.inspectedSegments(), scan.receivedBytes(),
+                scan.inspectedBytes(), scan.durationMicros(), runFindings);
+        return new PresidioContribution(spans, findings, run);
     }
 
     /**

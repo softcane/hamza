@@ -12,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class PolicyEngineTest {
 
     private static final String AWS_KEY = "AKIAABCDEFGHIJKLMNOP";
+    private static final String SECOND_AWS_KEY = "AKIAZYXWVUTSRQPONMLK";
     private static final String GITHUB_PAT = "ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23";
     private final SecretDetector detector = new SecretDetector();
     private final Masker masker = new Masker();
@@ -23,6 +24,36 @@ class PolicyEngineTest {
     private byte[] bodyWithKey() {
         return ("{\"model\":\"gpt-5-codex\",\"input\":\"deploy with " + AWS_KEY + "\"}")
                 .getBytes(StandardCharsets.UTF_8);
+    }
+
+    /**
+     * The property the standard route exists to preserve: a Placeholder stands for a
+     * <em>value</em>, not for the rule that matched it. Two occurrences of one secret must
+     * collapse to one Placeholder so the model can still tell they are the same thing, and
+     * two different secrets must never render the same Placeholder — that would tell the
+     * model two distinct credentials were one.
+     */
+    @Test
+    void placeholdersCarryValueIdentityNotRuleIdentity() {
+        String body = "{\"model\":\"gpt-5-codex\",\"input\":\"first " + AWS_KEY
+                + " again " + AWS_KEY + " other " + SECOND_AWS_KEY + "\"}";
+        PolicyResult r = engine(Action.MASK, Map.of())
+                .evaluate(body.getBytes(StandardCharsets.UTF_8));
+
+        String masked = new String(r.maskedBody().orElseThrow(), StandardCharsets.UTF_8);
+        assertThat(masked).doesNotContain(AWS_KEY).doesNotContain(SECOND_AWS_KEY);
+
+        java.util.regex.Matcher matcher =
+                java.util.regex.Pattern.compile("<SECRET_\\d+>").matcher(masked);
+        java.util.List<String> rendered = new java.util.ArrayList<>();
+        while (matcher.find()) {
+            rendered.add(matcher.group());
+        }
+        assertThat(rendered).hasSize(3);
+        // The repeated key renders identically both times.
+        assertThat(rendered.get(0)).isEqualTo(rendered.get(1));
+        // The different key does not collide with it.
+        assertThat(rendered.get(2)).isNotEqualTo(rendered.get(0));
     }
 
     @Test
@@ -51,9 +82,10 @@ class PolicyEngineTest {
         byte[] masked = r.maskedBody().orElseThrow();
         String maskedText = new String(masked, StandardCharsets.UTF_8);
 
-        // The secret value is gone; a content-free placeholder is in its place.
+        // The secret value is gone; a content-free Placeholder is in its place. The
+        // identifier is per Mask Scope, so match the family and shape, not a fixed number.
         assertThat(maskedText).doesNotContain(AWS_KEY);
-        assertThat(maskedText).contains("«redacted:aws-access-token»");
+        assertThat(maskedText).containsPattern("<SECRET_\\d+>");
         // Surrounding structure is preserved.
         assertThat(maskedText).contains("\"model\":\"gpt-5-codex\"");
         // Length changed -> caller must fix Content-Length (asserted at the gate level).

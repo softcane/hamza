@@ -203,7 +203,7 @@ class ExternalProcessorPolicyTest {
             byte[] newBody = common.getBodyMutation().getBody().toByteArray();
             String newText = new String(newBody, StandardCharsets.UTF_8);
             assertThat(newText).doesNotContain(AWS_KEY);
-            assertThat(newText).contains("«redacted:aws-access-token»");
+            assertThat(newText).containsPattern("<SECRET_\\d+>");
 
             // Content-Length is overwritten to match the new body (framing invariant).
             String contentLength = common.getHeaderMutation().getSetHeadersList().stream()

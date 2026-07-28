@@ -30,4 +30,5 @@ AGENTS.md
 
 # Demo media is published as a GitHub Release asset, not committed — the file
 # is 10 MB and every clone would carry it forever.
-assets/
+assets/*
+!assets/hamza-undercover-proxy.png

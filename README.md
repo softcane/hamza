@@ -2,10 +2,8 @@
 
 ![An undercover proxy masking sensitive data before provider egress](assets/hamza-undercover-proxy.png)
 
-*Original artwork for Hamza. The name nods to the undercover operative in
-[*Dhurandhar*](https://www.netflix.com/tudum/articles/dhurandhar-release-date-news)
-— an apt namesake for a proxy that quietly masks sensitive values before they
-reach the Provider.*
+*The name Hamza is inspired by the undercover operative in
+[*Dhurandhar*](https://www.netflix.com/tudum/articles/dhurandhar-release-date-news).*
 
 **An egress gate for CLI coding agents. It masks secrets and customer data in
 the request body before it reaches the model provider, and the agent keeps
@@ -119,12 +117,6 @@ occurrences of one email render the same placeholder, and two different emails
 never render the same one — so the model can still tell what is the same thing
 and what isn't. That identity holds within a request on the setup below.
 
-There's also a signed, managed route (see [`CONTEXT.md`](./CONTEXT.md)) that
-extends the same placeholder across an entire multi-turn task and pairs every
-masked request with an audit record of the original. It needs signed request
-metadata, so it's a separate opt-in setup this README doesn't cover. Everything
-below runs on the standard route and needs none of it.
-
 ### What it detects
 
 | Detector | Scope | Default |
@@ -145,83 +137,42 @@ It costs about a minute of extra start-up while the analyzer warms up, and the
 Gate waits for it before accepting traffic. To run without it, set
 `HAMZA_PRESIDIO_ENABLED=false` and bring the stack up with `--scale presidio=0`.
 
-Hamza does not enforce person names, locations, dates, nationality, religion,
-political affiliation, or free-form medical facts. Each one failed the detector
-quality floor, so Presidio never looks for them. Read
+Read
 [`detector/presidio/approved-profile.json`](./detector/presidio/approved-profile.json)
-for the entity set and thresholds. Hamza does not do generic PHI detection.
+for the approved entity set and thresholds.
 
 ---
 
 ## Run it
 
-### 1. Install
+### 1. Start Hamza
 
 ```bash
 HAMZA_POSTURE=MASK docker compose up -d --build
 ```
 
-That brings up Envoy on `10000`, the Gate on `8080`, Prometheus on `9091`, and
-Grafana on `3000`, plus the Presidio analyzer on the internal network with no
-published port. `HAMZA_POSTURE=MASK` tells the Gate to rewrite bodies instead of
-only recording them; drop it to start in `FLAG` (record-only) instead.
+Docker Compose starts the proxy on `10000`, the Gate on `8080`, Prometheus on
+`9091`, Grafana on `3000`, and Presidio on the internal network.
+`HAMZA_POSTURE=MASK` enables request-body masking. The first start takes about
+a minute while Presidio becomes ready.
 
-The Gate waits for Presidio's health check before it accepts traffic, so the
-first boot takes about a minute longer than the containers alone.
+The checked-in [Envoy configuration](./envoy/envoy.yaml) uses a test upstream.
+Before sending a Turn, update `listener_0` and `provider_upstream`: replace the
+`fake-provider` host and endpoint, use port `443`, and add an
+`UpstreamTlsContext` with the upstream host as its `sni`.
 
-Envoy has nowhere to send a request yet — the next step points it at your
-provider.
+| CLI | `x-hamza-route-provider` | Upstream host |
+|---|---|---|
+| Claude Code | `anthropic` | `api.anthropic.com` |
+| Codex | `openai` | `chatgpt.com` |
 
-### 2. Point the Gate at your provider
-
-Edit `envoy/envoy.yaml` before routing any real traffic. On `listener_0` (port
-`10000`, the port your CLI points at), set the route tag and the upstream
-host —
-
-```yaml
-# listener_0 -> header_mutation
-- append:
-    header: { key: x-hamza-route-provider, value: anthropic }   # was: openai
-
-# listener_0 -> route
-route:
-  cluster: provider_upstream
-  host_rewrite_literal: api.anthropic.com
-```
-
-— and give `provider_upstream` TLS and a real endpoint:
-
-```yaml
-- name: provider_upstream
-  type: STRICT_DNS
-  connect_timeout: 5s
-  common_http_protocol_options: { max_requests_per_connection: 1 }
-  transport_socket:
-    name: envoy.transport_sockets.tls
-    typed_config:
-      "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
-      sni: api.anthropic.com
-  load_assignment:
-    cluster_name: provider_upstream
-    endpoints:
-      - lb_endpoints:
-          - endpoint:
-              address:
-                socket_address: { address: api.anthropic.com, port_value: 443 }
-```
-
-Then restart Envoy so it picks up the file:
+Restart Envoy after changing the file:
 
 ```bash
 docker compose restart envoy
 ```
 
-Envoy sits on a bridge network with outbound internet access, so it can reach
-the real host once this points there. For Codex/OpenAI, use `openai` as the
-route tag and point both `sni` and `host_rewrite_literal` at `chatgpt.com`
-instead of `api.anthropic.com`.
-
-### 3. Configure Claude Code
+### 2. Configure Claude Code
 
 Point Claude Code's base URL at the Gate. Put this in your shell profile so
 it's there every session, or in the `env` block of your Claude Code
@@ -240,7 +191,7 @@ claude
 Every Turn now passes through the Gate. Your existing Claude Code
 authentication still applies — the Gate never reads it.
 
-### 4. Configure Codex
+### 3. Configure Codex
 
 Codex reads its provider list from a config file, not an environment variable,
 so this is a one-time edit instead of an export. Add a provider to
@@ -271,45 +222,11 @@ codex -c chatgpt_base_url="http://127.0.0.1:10000/backend-api"
 ```
 
 From here, every Turn your agent sends runs through the Gate on the way to
-your real provider. There's nothing separate to demo — the next time a Turn
-carries a secret or a registered customer value, watch it get masked in
+your Provider. When a Turn carries a detected value, watch it get masked in
 `hamza_policy_violations_total` at `http://localhost:8080/actuator/prometheus`,
 or on the Grafana dashboard at `http://localhost:3000`.
 
 ---
-
-## What Hamza does not do
-
-Hamza controls provider egress after an agent assembles a request. It does not
-control local file, shell, browser, or database access. An agent can still read
-your CSV. It cannot ship it.
-
-The setup above masks secrets and Presidio's approved PII types, with
-placeholder identity holding **within each request**. Carrying the same
-placeholder across a whole multi-turn task, and pairing each masked request
-with a DERIVED Turn audit record, are the two things the signed managed route
-adds — they cover complete, supported, unencoded JSON on that route only.
-
-Exact Data Match flags and blocks on the standard route but does not mask
-there: it reports how many registered values it saw, not where they sat, and a
-value without a reliable span cannot be replaced. Registered-value masking is a
-managed-route behavior today.
-
-Streamed oversize, encoded, malformed, and unknown-format requests get
-inspected and can Flag or Block, but don't get masked.
-
-OpenAI Responses and Anthropic Messages are the supported wire formats. A new
-format needs an adapter that can find and rebuild every provider-visible text
-segment.
-
-Three known gaps:
-
-- **Phone numbers do not mask.** Presidio scores `claude-haiku-4-5-20251001` and
-  a real phone number at the same 0.4, so no threshold separates them.
-- **Bare IPs do not mask.** At 0.6, `127.0.0.1` and `0.0.0.0` in config text
-  produced 770 false findings per 10,000 benign turns.
-- **One live case never fires EDM** when the customer value arrives by file read.
-  Cause under investigation.
 
 ## Build and test
 

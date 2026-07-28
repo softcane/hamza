@@ -2,10 +2,12 @@
 #
 # Dev topology: plain HTTP listener on :10000. Agents point their base URL at
 # http://127.0.0.1:10000. ext_proc streams each Turn to hamza-core; the request is
-# then forwarded to the upstream Provider. This file ships with a placeholder
-# upstream (`fake-provider`, only resolvable when docker-compose.ci.yml is layered
-# in for automated tests) — point it at your real Anthropic or OpenAI endpoint
-# before routing real Agent traffic (see README.md).
+# then forwarded to the upstream Provider over TLS.
+#
+# This file targets the real Anthropic and OpenAI endpoints and works as shipped —
+# no edit is needed before routing real Agent traffic. Requests are routed to a
+# Provider by path, so Claude Code and Codex can share one Gate. Automated tests
+# use envoy/envoy.ci.yaml instead, via docker-compose.ci.yml.
 
 admin:
   # Container-internal bind. Compose/Helm expose this only on loopback or cluster-internal
@@ -112,20 +114,53 @@ static_resources:
                         # Everything else is forwarded to the Provider upstream.
                         # For a real Provider: set host_rewrite_literal to the real host
                         # (e.g. api.openai.com) and give the cluster a TLS transport_socket.
-                        - match: { prefix: "/" }
+                        # Claude Code -> Anthropic Messages API.
+                        - match: { prefix: "/v1/messages" }
                           per_request_buffer_limit_bytes: 65536
-                          # Hamza needs parseable Provider response bodies for usage
-                          # accounting. Keep auth headers untouched, but ask upstreams
-                          # not to compress the response body that ext_proc observes.
                           request_headers_to_add:
                             - header:
                                 key: accept-encoding
                                 value: identity
                               append_action: OVERWRITE_IF_EXISTS_OR_ADD
                           route:
-                            cluster: provider_upstream
-                            host_rewrite_literal: fake-provider
-                            # Long timeout so streamed responses are not truncated.
+                            cluster: anthropic_upstream
+                            host_rewrite_literal: api.anthropic.com
+                            timeout: 300s
+                        # Codex over ChatGPT auth -> chatgpt.com backend.
+                        - match: { prefix: "/backend-api" }
+                          per_request_buffer_limit_bytes: 65536
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: chatgpt_upstream
+                            host_rewrite_literal: chatgpt.com
+                            timeout: 300s
+                        # Codex over an OpenAI API key -> Responses API.
+                        - match: { prefix: "/v1/responses" }
+                          per_request_buffer_limit_bytes: 65536
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: openai_upstream
+                            host_rewrite_literal: api.openai.com
+                            timeout: 300s
+                        # Catch-all: CLI connectivity probes (HEAD /api/hello) and token counting.
+                        - match: { prefix: "/" }
+                          per_request_buffer_limit_bytes: 65536
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: anthropic_upstream
+                            host_rewrite_literal: api.anthropic.com
                             timeout: 300s
 
     # Explicit managed enforcement listener. Unlike :10000, this route is fail-closed
@@ -207,6 +242,43 @@ static_resources:
                         # metadata tuple and removed the internal headers before
                         # route matching. Requiring the signature here would reject
                         # every successfully verified Turn.
+                        # Claude Code -> Anthropic Messages API.
+                        - match: { prefix: "/v1/messages" }
+                          per_request_buffer_limit_bytes: 16777216
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: anthropic_upstream
+                            host_rewrite_literal: api.anthropic.com
+                            timeout: 300s
+                        # Codex over ChatGPT auth -> chatgpt.com backend.
+                        - match: { prefix: "/backend-api" }
+                          per_request_buffer_limit_bytes: 16777216
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: chatgpt_upstream
+                            host_rewrite_literal: chatgpt.com
+                            timeout: 300s
+                        # Codex over an OpenAI API key -> Responses API.
+                        - match: { prefix: "/v1/responses" }
+                          per_request_buffer_limit_bytes: 16777216
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: openai_upstream
+                            host_rewrite_literal: api.openai.com
+                            timeout: 300s
+                        # Catch-all: CLI connectivity probes (HEAD /api/hello) and token counting.
                         - match: { prefix: "/" }
                           per_request_buffer_limit_bytes: 16777216
                           request_headers_to_add:
@@ -215,8 +287,8 @@ static_resources:
                                 value: identity
                               append_action: OVERWRITE_IF_EXISTS_OR_ADD
                           route:
-                            cluster: provider_upstream
-                            host_rewrite_literal: fake-provider
+                            cluster: anthropic_upstream
+                            host_rewrite_literal: api.anthropic.com
                             timeout: 300s
                         - match: { prefix: "/" }
                           direct_response:
@@ -241,15 +313,85 @@ static_resources:
                   address:
                     socket_address: { address: hamza-core, port_value: 9090 }
 
-    # Provider upstream. Placeholder target over plain HTTP; repoint at your real
-    # provider (TLS) before routing real Agent traffic — see README.md.
-    - name: provider_upstream
+    # Real Provider upstreams over TLS, verified against the system CA bundle.
+    # Routes above select one by request path, so Claude Code and Codex can both
+    # use the Gate at the same time. AccessLogReconciler.PROVIDER_CLUSTERS must
+    # list every cluster named here, or attestation stops counting its Egress.
+    - name: anthropic_upstream
       type: STRICT_DNS
-      connect_timeout: 1s
+      # The compose bridge network has no IPv6 egress; api.anthropic.com
+      # and chatgpt.com both resolve AAAA-first, which fails to connect.
+      dns_lookup_family: V4_ONLY
+      connect_timeout: 5s
+      common_http_protocol_options: { max_requests_per_connection: 1 }
+      transport_socket:
+        name: envoy.transport_sockets.tls
+        typed_config:
+          "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
+          sni: api.anthropic.com
+          common_tls_context:
+            validation_context:
+              trusted_ca:
+                filename: /etc/ssl/certs/ca-certificates.crt
+              match_typed_subject_alt_names:
+                - san_type: DNS
+                  matcher: { exact: api.anthropic.com }
       load_assignment:
-        cluster_name: provider_upstream
+        cluster_name: anthropic_upstream
         endpoints:
           - lb_endpoints:
               - endpoint:
                   address:
-                    socket_address: { address: fake-provider, port_value: 8080 }
+                    socket_address: { address: api.anthropic.com, port_value: 443 }
+    - name: chatgpt_upstream
+      type: STRICT_DNS
+      # The compose bridge network has no IPv6 egress; api.anthropic.com
+      # and chatgpt.com both resolve AAAA-first, which fails to connect.
+      dns_lookup_family: V4_ONLY
+      connect_timeout: 5s
+      common_http_protocol_options: { max_requests_per_connection: 1 }
+      transport_socket:
+        name: envoy.transport_sockets.tls
+        typed_config:
+          "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
+          sni: chatgpt.com
+          common_tls_context:
+            validation_context:
+              trusted_ca:
+                filename: /etc/ssl/certs/ca-certificates.crt
+              match_typed_subject_alt_names:
+                - san_type: DNS
+                  matcher: { exact: chatgpt.com }
+      load_assignment:
+        cluster_name: chatgpt_upstream
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address: { address: chatgpt.com, port_value: 443 }
+    - name: openai_upstream
+      type: STRICT_DNS
+      # The compose bridge network has no IPv6 egress; api.anthropic.com
+      # and chatgpt.com both resolve AAAA-first, which fails to connect.
+      dns_lookup_family: V4_ONLY
+      connect_timeout: 5s
+      common_http_protocol_options: { max_requests_per_connection: 1 }
+      transport_socket:
+        name: envoy.transport_sockets.tls
+        typed_config:
+          "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
+          sni: api.openai.com
+          common_tls_context:
+            validation_context:
+              trusted_ca:
+                filename: /etc/ssl/certs/ca-certificates.crt
+              match_typed_subject_alt_names:
+                - san_type: DNS
+                  matcher: { exact: api.openai.com }
+      load_assignment:
+        cluster_name: openai_upstream
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address: { address: api.openai.com, port_value: 443 }

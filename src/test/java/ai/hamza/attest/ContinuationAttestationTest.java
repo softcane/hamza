@@ -217,7 +217,7 @@ class ContinuationAttestationTest {
                 List.of(simulation), List.of(simulation), List.of(), null);
         var access = List.of(new AccessLogReconciler.AccessEntry(
                 "2026-07-11T10:00:01Z", "POST", "/v1/responses", 200,
-                AccessLogReconciler.PROVIDER_CLUSTER, "request-1", 64, 20,
+                "provider_upstream", "request-1", 64, 20,
                 "via_upstream"));
         var flows = List.of(new FlowFeedReconciler.FlowEntry(
                 "2026-07-11T10:00:01Z", "api.openai.com", "", "FORWARDED", 64));
@@ -277,7 +277,7 @@ class ContinuationAttestationTest {
                 rows, rows, List.of(outcome), outcomeChain);
         var entries = List.of(new AccessLogReconciler.AccessEntry(
                 "2026-07-11T10:00:01Z", "POST", "/v1/responses", 200,
-                AccessLogReconciler.PROVIDER_CLUSTER, "request-derived", 96, 20,
+                "provider_upstream", "request-derived", 96, 20,
                 "via_upstream"));
         var flows = List.of(new FlowFeedReconciler.FlowEntry(
                 "2026-07-11T10:00:01Z", "api.openai.com", "", "FORWARDED", 96));

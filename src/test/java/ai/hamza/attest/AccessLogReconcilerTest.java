@@ -135,6 +135,37 @@ class AccessLogReconcilerTest {
     }
 
     @Test
+    void countsEveryPerProviderClusterNamedInEnvoyYaml() {
+        // envoy.yaml routes by path to one cluster per Provider endpoint so Claude Code
+        // and Codex can share a Gate. A cluster missing from PROVIDER_CLUSTERS would be
+        // counted as non-provider traffic, hiding its Egress from the coverage report.
+        List<AccessLogReconciler.AccessEntry> entries = AccessLogReconciler.parse(String.join("\n",
+                line("2026-07-06T10:00:01.000Z", "anthropic_upstream", "/v1/messages"),
+                line("2026-07-06T10:00:02.000Z", "chatgpt_upstream", "/backend-api/codex/responses"),
+                line("2026-07-06T10:00:03.000Z", "openai_upstream", "/v1/responses"),
+                line("2026-07-06T10:00:04.000Z", "provider_upstream", "/v1/responses"),
+                line("2026-07-06T10:00:05.000Z", "hamza_core", "/ready")));  // not provider-bound
+
+        var r = AccessLogReconciler.reconcile(entries, 4,
+                "2026-07-06T10:00:00Z", "2026-07-06T11:00:00Z");
+        assertThat(r.providerRequests()).isEqualTo(4);
+        assertThat(r.coverageGaps()).isZero();
+        assertThat(r.providerRequestsByPath())
+                .containsEntry("/v1/messages", 1L)
+                .containsEntry("/backend-api/codex/responses", 1L)
+                .containsEntry("/v1/responses", 2L);
+    }
+
+    @Test
+    void everyProviderClusterInEnvoyYamlIsDeclaredInProviderClusters() {
+        // Guards the config/code seam directly: the cluster names the shipped Envoy
+        // config routes to must all be recognised as Provider Egress.
+        assertThat(AccessLogReconciler.PROVIDER_CLUSTERS)
+                .contains("anthropic_upstream", "chatgpt_upstream", "openai_upstream")
+                .contains("provider_upstream");  // envoy.ci.yaml's fake Provider
+    }
+
+    @Test
     void aProviderRequestWithoutARecordIsACoverageGap() {
         List<AccessLogReconciler.AccessEntry> entries = AccessLogReconciler.parse(String.join("\n",
                 line("2026-07-06T10:00:01.000Z", "provider_upstream", "/v1/responses"),

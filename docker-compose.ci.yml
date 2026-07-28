@@ -45,5 +45,8 @@ services:
     depends_on:
       fake-provider:
         condition: service_healthy
-    # envoy.yaml's provider_upstream cluster already targets fake-provider; the
+    # envoy/envoy.yaml targets real Providers over TLS. Swap in the test config,
+    # whose provider_upstream cluster points at fake-provider over plain HTTP; the
     # base compose file keeps envoy on the (otherwise-idle) `provider` network.
+    volumes:
+      - ./envoy/envoy.ci.yaml:/etc/envoy/envoy.yaml:ro

@@ -29,8 +29,18 @@ import java.util.stream.Collectors;
  */
 public final class AccessLogReconciler {
 
-    /** The name of the Envoy cluster that forwards to a Provider (see envoy.yaml). */
-    public static final String PROVIDER_CLUSTER = "provider_upstream";
+    /**
+     * Names of the Envoy clusters that forward to a Provider (see envoy.yaml).
+     *
+     * <p>envoy.yaml routes by request path to one cluster per Provider endpoint so that
+     * Claude Code and Codex can share a Gate; envoy.ci.yaml keeps the single
+     * {@code provider_upstream} cluster aimed at the in-repo fake Provider. Every such
+     * cluster must be listed here: an Egress through a cluster this set omits is not
+     * counted as a Provider request, which would understate coverage gaps rather than
+     * overstate them — silently reporting full coverage over an unmeasured path.
+     */
+    public static final Set<String> PROVIDER_CLUSTERS = Set.of(
+            "provider_upstream", "anthropic_upstream", "chatgpt_upstream", "openai_upstream");
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
@@ -244,7 +254,7 @@ public final class AccessLogReconciler {
     }
 
     private static boolean isProviderEgress(AccessEntry e) {
-        if (!PROVIDER_CLUSTER.equals(e.upstreamCluster())) {
+        if (!PROVIDER_CLUSTERS.contains(e.upstreamCluster())) {
             return false;
         }
         String details = e.responseCodeDetails();

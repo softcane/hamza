@@ -156,21 +156,31 @@ Docker Compose starts the proxy on `10000`, the Gate on `8080`, Prometheus on
 `HAMZA_POSTURE=MASK` enables request-body masking. The first start takes about
 a minute while Presidio becomes ready.
 
-The checked-in [Envoy configuration](./envoy/envoy.yaml) uses a test upstream.
-Before sending a Turn, update `listener_0` and `provider_upstream`: replace the
-`fake-provider` host and endpoint, use port `443`, and add an
-`UpstreamTlsContext` with the upstream host as its `sni`.
+The checked-in [Envoy configuration](./envoy/envoy.yaml) targets the real
+Anthropic and OpenAI endpoints over TLS, verified against the system CA bundle.
+It works as shipped — no edit is needed before sending a Turn. Turns are routed
+to a Provider by request path, so Claude Code and Codex can share one Gate:
 
-| CLI | `x-hamza-route-provider` | Upstream host |
+| Request path | Upstream host | Used by |
 |---|---|---|
-| Claude Code | `anthropic` | `api.anthropic.com` |
-| Codex | `openai` | `chatgpt.com` |
+| `/v1/messages` | `api.anthropic.com` | Claude Code |
+| `/backend-api` | `chatgpt.com` | Codex (ChatGPT auth) |
+| `/v1/responses` | `api.openai.com` | Codex (OpenAI API key) |
 
-Restart Envoy after changing the file:
+To point the Gate somewhere else — a regional endpoint, a gateway of your own —
+edit the matching cluster in `envoy/envoy.yaml`, changing its `socket_address`,
+its `sni`, and the route's `host_rewrite_literal`. If you add a cluster, add its
+name to `PROVIDER_CLUSTERS` in
+[`AccessLogReconciler.java`](./src/main/java/ai/hamza/attest/AccessLogReconciler.java)
+too, or attestation will not count its Egress. Restart Envoy after any change:
 
 ```bash
 docker compose restart envoy
 ```
+
+Automated tests use [`envoy/envoy.ci.yaml`](./envoy/envoy.ci.yaml) instead, which
+swaps the Provider for an in-repo fake so the stack can be exercised end-to-end
+without an account or quota spend.
 
 ### 2. Configure Claude Code
 
@@ -214,12 +224,17 @@ From here, use `codex` exactly like you always do, just naming the profile:
 codex --profile hamza
 ```
 
-If you authenticate Codex through ChatGPT rather than an API key, point
-`chatgpt_base_url` at the Gate instead:
+This works whether Codex authenticates with an API key or through ChatGPT — the
+Gate never reads the credential either way. Codex prints `provider: hamza` in
+its startup banner when the profile is active, which is how you confirm the Turn
+is going through the Gate:
 
 ```bash
-codex -c chatgpt_base_url="http://127.0.0.1:10000/backend-api"
+curl -s localhost:8080/actuator/prometheus | grep 'hamza_tokens_total.*codex'
 ```
+
+The input and output token counts add up to the "tokens used" figure Codex
+prints.
 
 From here, every Turn your agent sends runs through the Gate on the way to
 your Provider. When a Turn carries a detected value, watch it get masked in

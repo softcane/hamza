@@ -1,0 +1,255 @@
+# Envoy front proxy for Hamza — TEST configuration. Not part of the product.
+#
+# Identical to envoy/envoy.yaml except that provider_upstream targets the
+# in-repo fake Provider over plain HTTP instead of a real Provider over TLS, so
+# the stack can be exercised end-to-end without an account or quota spend.
+# docker-compose.ci.yml mounts this file over the real one; nothing else uses it.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d --build
+
+admin:
+  # Container-internal bind. Compose/Helm expose this only on loopback or cluster-internal
+  # Services; do not publish Envoy admin directly on an untrusted interface.
+  address:
+    socket_address: { address: 0.0.0.0, port_value: 9901 }
+
+static_resources:
+  listeners:
+    - name: listener_0
+      address:
+        socket_address: { address: 0.0.0.0, port_value: 10000 }
+      filter_chains:
+        # Production listener TLS/mTLS is surfaced in deploy/helm/hamza values. The dev
+        # compose topology intentionally stays plain HTTP on 127.0.0.1 so local Agents can
+        # use a base-URL override without local certificate bootstrapping.
+        - filters:
+            - name: envoy.filters.network.http_connection_manager
+              typed_config:
+                "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+                stat_prefix: hamza_http
+                # Model turns stream for a long time; do not cut them mid-response.
+                stream_idle_timeout: 300s
+                # Independent ledger #2 for attestation coverage (PRD R4.2, ADR 0015).
+                # Content-free by construction: method/path/status, routed cluster,
+                # response detail, request id, and byte counts only — never headers or
+                # bodies. One JSON object per line to stdout; the attestation reporter
+                # reconciles provider-bound upstream responses against Gate Records. The
+                # `log: access` marker lets the harness separate these lines from Envoy's
+                # operational logs.
+                access_log:
+                  - name: envoy.access_loggers.stdout
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.access_loggers.stream.v3.StdoutAccessLog
+                      log_format:
+                        json_format:
+                          log: "access"
+                          start_time: "%START_TIME(%Y-%m-%dT%H:%M:%E3SZ)%"
+                          method: "%REQ(:METHOD)%"
+                          # Truncated: bounds what a URL can carry into the log
+                          # (query strings are additionally stripped at parse time).
+                          path: "%REQ(:PATH):128%"
+                          response_code: "%RESPONSE_CODE%"
+                          response_code_details: "%RESPONSE_CODE_DETAILS%"
+                          upstream_cluster: "%UPSTREAM_CLUSTER%"
+                          request_id: "%REQ(X-REQUEST-ID)%"
+                          bytes_received: "%BYTES_RECEIVED%"
+                          bytes_sent: "%BYTES_SENT%"
+                http_filters:
+                  # ext_proc runs BEFORE the router so it can mutate/block before egress.
+                  # Envoy overwrites this fixed internal hint so even pathless Provider
+                  # probes select an Adapter; a later filter removes it before Egress.
+                  - name: envoy.filters.http.header_mutation
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.header_mutation.v3.HeaderMutation
+                      mutations:
+                        request_mutations:
+                          - remove: x-hamza-route-provider
+                          - append:
+                              header: { key: x-hamza-route-provider, value: openai }
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                  - name: envoy.filters.http.ext_proc
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.ext_proc.v3.ExternalProcessor
+                      grpc_service:
+                        envoy_grpc:
+                          cluster_name: hamza_core
+                      # Per-message timeout (not per-stream).
+                      message_timeout: 10s
+                      # Fail-open: if hamza-core is slow/down, traffic still flows
+                      # (uptime over inspection). Hard-block rules are enforced by
+                      # hamza-core via immediate_response, not by this flag.
+                      failure_mode_allow: true
+                      allow_mode_override: true
+                      processing_mode:
+                        request_header_mode: SEND
+                        # BUFFERED would return a local 413 when the route buffer cap is
+                        # exceeded. BUFFERED_PARTIAL sends only the prefix to hamza-core;
+                        # hamza-core scans that prefix and marks the uninspected tail
+                        # with an `oversize` Finding.
+                        request_body_mode: BUFFERED_PARTIAL
+                        response_header_mode: SEND
+                        response_body_mode: STREAMED
+                  - name: envoy.filters.http.header_mutation
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.header_mutation.v3.HeaderMutation
+                      mutations:
+                        request_mutations:
+                          - remove: x-hamza-route-provider
+                  - name: envoy.filters.http.router
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
+                route_config:
+                  name: local_route
+                  virtual_hosts:
+                    - name: hamza_vhost
+                      domains: ["*"]
+                      routes:
+                        # Direct health check for the listener itself.
+                        - match: { path: "/ready" }
+                          direct_response:
+                            status: 200
+                            body: { inline_string: "ready\n" }
+                        # Everything else is forwarded to the Provider upstream.
+                        # For a real Provider: set host_rewrite_literal to the real host
+                        # (e.g. api.openai.com) and give the cluster a TLS transport_socket.
+                        - match: { prefix: "/" }
+                          per_request_buffer_limit_bytes: 65536
+                          # Hamza needs parseable Provider response bodies for usage
+                          # accounting. Keep auth headers untouched, but ask upstreams
+                          # not to compress the response body that ext_proc observes.
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: provider_upstream
+                            host_rewrite_literal: fake-provider
+                            # Long timeout so streamed responses are not truncated.
+                            timeout: 300s
+
+    # Explicit managed enforcement listener. Unlike :10000, this route is fail-closed
+    # if hamza-core is unavailable and buffers the complete body before ext_proc. The
+    # 16 MiB Envoy bound is deliberately above Hamza's default 8 MiB admission bound so
+    # an unknown-length body crossing Hamza's limit reaches the Gate and receives an
+    # audited Block rather than leaking or becoming a local 413.
+    - name: managed_listener
+      address:
+        socket_address: { address: 0.0.0.0, port_value: 10001 }
+      filter_chains:
+        - filters:
+            - name: envoy.filters.network.http_connection_manager
+              typed_config:
+                "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+                stat_prefix: hamza_managed_http
+                stream_idle_timeout: 300s
+                access_log:
+                  - name: envoy.access_loggers.stdout
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.access_loggers.stream.v3.StdoutAccessLog
+                      log_format:
+                        json_format:
+                          log: "access"
+                          route: "managed"
+                          start_time: "%START_TIME(%Y-%m-%dT%H:%M:%E3SZ)%"
+                          method: "%REQ(:METHOD)%"
+                          path: "%REQ(:PATH):128%"
+                          response_code: "%RESPONSE_CODE%"
+                          response_code_details: "%RESPONSE_CODE_DETAILS%"
+                          upstream_cluster: "%UPSTREAM_CLUSTER%"
+                          request_id: "%REQ(X-REQUEST-ID)%"
+                          bytes_received: "%BYTES_RECEIVED%"
+                          bytes_sent: "%BYTES_SENT%"
+                http_filters:
+                  - name: envoy.filters.http.header_mutation
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.header_mutation.v3.HeaderMutation
+                      mutations:
+                        request_mutations:
+                          - remove: x-hamza-route-provider
+                          - append:
+                              header: { key: x-hamza-route-provider, value: openai }
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                  - name: envoy.filters.http.ext_proc
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.ext_proc.v3.ExternalProcessor
+                      grpc_service:
+                        envoy_grpc:
+                          cluster_name: hamza_core
+                      message_timeout: 10s
+                      failure_mode_allow: false
+                      allow_mode_override: true
+                      processing_mode:
+                        request_header_mode: SEND
+                        request_body_mode: BUFFERED
+                        response_header_mode: SEND
+                        response_body_mode: STREAMED
+                  - name: envoy.filters.http.header_mutation
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.header_mutation.v3.HeaderMutation
+                      mutations:
+                        request_mutations:
+                          - remove: x-hamza-route-provider
+                  - name: envoy.filters.http.router
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
+                route_config:
+                  name: managed_route
+                  virtual_hosts:
+                    - name: hamza_managed_vhost
+                      domains: ["*"]
+                      routes:
+                        - match: { path: "/ready" }
+                          direct_response:
+                            status: 200
+                            body: { inline_string: "ready\n" }
+                        # ext_proc has already authenticated the complete managed
+                        # metadata tuple and removed the internal headers before
+                        # route matching. Requiring the signature here would reject
+                        # every successfully verified Turn.
+                        - match: { prefix: "/" }
+                          per_request_buffer_limit_bytes: 16777216
+                          request_headers_to_add:
+                            - header:
+                                key: accept-encoding
+                                value: identity
+                              append_action: OVERWRITE_IF_EXISTS_OR_ADD
+                          route:
+                            cluster: provider_upstream
+                            host_rewrite_literal: fake-provider
+                            timeout: 300s
+                        - match: { prefix: "/" }
+                          direct_response:
+                            status: 403
+                            body: { inline_string: "managed metadata required\n" }
+
+  clusters:
+    # hamza-core ext_proc gRPC server (HTTP/2 cleartext).
+    - name: hamza_core
+      type: STRICT_DNS
+      connect_timeout: 1s
+      typed_extension_protocol_options:
+        envoy.extensions.upstreams.http.v3.HttpProtocolOptions:
+          "@type": type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions
+          explicit_http_config:
+            http2_protocol_options: {}
+      load_assignment:
+        cluster_name: hamza_core
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address: { address: hamza-core, port_value: 9090 }
+
+    # Provider upstream. Placeholder target over plain HTTP; repoint at your real
+    # provider (TLS) before routing real Agent traffic — see README.md.
+    - name: provider_upstream
+      type: STRICT_DNS
+      connect_timeout: 1s
+      load_assignment:
+        cluster_name: provider_upstream
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address: { address: fake-provider, port_value: 8080 }

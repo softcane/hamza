@@ -1,0 +1,35 @@
+{
+  "ruleId": "hashicorp-tf-api-token",
+  "truePositives": [
+    "  \"hashicorpTokenToken\" =\u003e \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "#token = \"hE1hlYILrSqpqh.atlasv1.ARjZuyzl33F71WR55s6ln5GQ1HWIwTDDH3MiRjz7OnpCfaCb1RCF5zGaSncCWmJdcYA\"",
+    "$hashicorpTokenToken .= \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "\u003chashicorpTokenToken\u003e\n    b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\n\u003c/hashicorpTokenToken\u003e",
+    "String hashicorpTokenToken = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\";",
+    "System.setProperty(\"HASHICORPTOKEN_TOKEN\", \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\")",
+    "hashicorpTokenToken := \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpTokenToken := `b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d`",
+    "hashicorpTokenToken = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpTokenToken = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpTokenToken = 'b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d'",
+    "hashicorpTokenToken = b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d",
+    "hashicorpTokenToken=\"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpTokenToken=b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d",
+    "hashicorpToken_TOKEN :::= \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_TOKEN ::= \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_TOKEN := \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_TOKEN = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_TOKEN ?= \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_token: \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "hashicorpToken_token: 'b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d'",
+    "hashicorpToken_token: b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d",
+    "string hashicorpTokenToken = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\";",
+    "var hashicorpTokenToken = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "var hashicorpTokenToken string = \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"",
+    "{\n    \"hashicorpToken_token\": \"b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\"\n}",
+    "{\"config.ini\": \"HASHICORPTOKEN_TOKEN=b1db8d3e18fc77.atlasv1.exl71mija9b6=yy7576vo4nc6=2rvvuhlf70q4vx3dly61euo0otltsgb06d\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "token        = \"xxxxxxxxxxxxxx.atlasv1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\""
+  ]
+}

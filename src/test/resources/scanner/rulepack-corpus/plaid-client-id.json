@@ -1,0 +1,32 @@
+{
+  "ruleId": "plaid-client-id",
+  "truePositives": [
+    "  \"plaidToken\" =\u003e \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "$plaidToken .= \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "\u003cplaidToken\u003e\n    8AENCdhC6MpvplVPY4mojAl3\n\u003c/plaidToken\u003e",
+    "String plaidToken = \"8AENCdhC6MpvplVPY4mojAl3\";",
+    "System.setProperty(\"PLAID_TOKEN\", \"8AENCdhC6MpvplVPY4mojAl3\")",
+    "plaidToken := \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaidToken := `8AENCdhC6MpvplVPY4mojAl3`",
+    "plaidToken = \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaidToken = \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaidToken = '8AENCdhC6MpvplVPY4mojAl3'",
+    "plaidToken = 8AENCdhC6MpvplVPY4mojAl3",
+    "plaidToken=\"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaidToken=8AENCdhC6MpvplVPY4mojAl3",
+    "plaid_TOKEN :::= \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_TOKEN ::= \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_TOKEN := \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_TOKEN = \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_TOKEN ?= \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_token: \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "plaid_token: '8AENCdhC6MpvplVPY4mojAl3'",
+    "plaid_token: 8AENCdhC6MpvplVPY4mojAl3",
+    "string plaidToken = \"8AENCdhC6MpvplVPY4mojAl3\";",
+    "var plaidToken = \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "var plaidToken string = \"8AENCdhC6MpvplVPY4mojAl3\"",
+    "{\n    \"plaid_token\": \"8AENCdhC6MpvplVPY4mojAl3\"\n}",
+    "{\"config.ini\": \"PLAID_TOKEN=8AENCdhC6MpvplVPY4mojAl3\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

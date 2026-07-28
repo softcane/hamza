@@ -1,0 +1,38 @@
+{
+  "ruleId": "openshift-user-token",
+  "truePositives": [
+    "  \"ocToken\" =\u003e \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "$ocToken .= \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "\u003cocToken\u003e\n    sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\n\u003c/ocToken\u003e",
+    "Authorization: Bearer sha256~kV46hPnEYhCWFnB85r5NrprAxggzgb6GOeLbgcKNsH0",
+    "String ocToken = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\";",
+    "System.setProperty(\"OC_TOKEN\", \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\")",
+    "oc login --token=sha256~ZBMKw9VAayhdnyANaHvjJeXDiGwA7Fsr5gtLKj3-eh- ",
+    "ocToken := \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "ocToken := `sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck`",
+    "ocToken = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "ocToken = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "ocToken = 'sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck'",
+    "ocToken = sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck",
+    "ocToken=\"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "ocToken=sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck",
+    "oc_TOKEN :::= \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_TOKEN ::= \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_TOKEN := \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_TOKEN = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_TOKEN ?= \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_token: \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "oc_token: 'sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck'",
+    "oc_token: sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck",
+    "sha256~9PwjlE0v0B0Ih5IBn6xn-uuSein9l3xLjUakuomEf5O",
+    "string ocToken = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\";",
+    "var ocToken = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "var ocToken string = \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"",
+    "{\n    \"oc_token\": \"sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\"\n}",
+    "{\"config.ini\": \"OC_TOKEN=sha256~OBqReImuJTIrW-FRdEua830P4JrBn0obsbVrj1gEQck\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "--set kraken.kubeconfig.token.token=\"sha256~XXXXXXXXXX_PUT_YOUR_TOKEN_HERE_XXXXXXXXXXXX\" \\",
+    "oc login --token=sha256~_xxxxxx_xxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxx-X \\\n    --server=https://api.${zone}.appuio.cloud:6443"
+  ]
+}

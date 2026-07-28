@@ -1,0 +1,35 @@
+{
+  "ruleId": "deepgram-api-key",
+  "truePositives": [
+    "  \"deepgramToken\" =\u003e \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "$deepgramToken .= \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "\u003cdeepgramToken\u003e\n    f547360f085fb554e0505b75729dbb1710402073\n\u003c/deepgramToken\u003e",
+    "String deepgramToken = \"f547360f085fb554e0505b75729dbb1710402073\";",
+    "System.setProperty(\"DEEPGRAM_TOKEN\", \"f547360f085fb554e0505b75729dbb1710402073\")",
+    "deepgramToken := \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgramToken := `f547360f085fb554e0505b75729dbb1710402073`",
+    "deepgramToken = \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgramToken = \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgramToken = 'f547360f085fb554e0505b75729dbb1710402073'",
+    "deepgramToken = f547360f085fb554e0505b75729dbb1710402073",
+    "deepgramToken=\"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgramToken=f547360f085fb554e0505b75729dbb1710402073",
+    "deepgram_TOKEN :::= \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_TOKEN ::= \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_TOKEN := \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_TOKEN = \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_TOKEN ?= \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_token: \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "deepgram_token: 'f547360f085fb554e0505b75729dbb1710402073'",
+    "deepgram_token: f547360f085fb554e0505b75729dbb1710402073",
+    "string deepgramToken = \"f547360f085fb554e0505b75729dbb1710402073\";",
+    "var deepgramToken = \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "var deepgramToken string = \"f547360f085fb554e0505b75729dbb1710402073\"",
+    "{\n    \"deepgram_token\": \"f547360f085fb554e0505b75729dbb1710402073\"\n}",
+    "{\"config.ini\": \"DEEPGRAM_TOKEN=f547360f085fb554e0505b75729dbb1710402073\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "deepgram_key = 0000000000000000000000000000000000000000",
+    "deepgram_key = 948c19ecde2818a1a357fffb14d2fc2a"
+  ]
+}

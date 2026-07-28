@@ -1,0 +1,32 @@
+{
+  "ruleId": "mapbox-api-token",
+  "truePositives": [
+    "  \"mapboxToken\" =\u003e \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "$mapboxToken .= \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "\u003cmapboxToken\u003e\n    pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\n\u003c/mapboxToken\u003e",
+    "String mapboxToken = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\";",
+    "System.setProperty(\"MAPBOX_TOKEN\", \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\")",
+    "mapboxToken := \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapboxToken := `pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug`",
+    "mapboxToken = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapboxToken = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapboxToken = 'pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug'",
+    "mapboxToken = pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug",
+    "mapboxToken=\"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapboxToken=pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug",
+    "mapbox_TOKEN :::= \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_TOKEN ::= \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_TOKEN := \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_TOKEN = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_TOKEN ?= \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_token: \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "mapbox_token: 'pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug'",
+    "mapbox_token: pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug",
+    "string mapboxToken = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\";",
+    "var mapboxToken = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "var mapboxToken string = \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"",
+    "{\n    \"mapbox_token\": \"pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\"\n}",
+    "{\"config.ini\": \"MAPBOX_TOKEN=pk.roccq4ek6yaohicgn22c6n87a3sbdfjc2lf46vi0159k5nm1epcmsraxgh55.0kfouzwc2k6lxhvs1007ug\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

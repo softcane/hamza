@@ -1,0 +1,32 @@
+{
+  "ruleId": "duffel-api-token",
+  "truePositives": [
+    "  \"duffelToken\" =\u003e \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "$duffelToken .= \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "\u003cduffelToken\u003e\n    duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\n\u003c/duffelToken\u003e",
+    "String duffelToken = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\";",
+    "System.setProperty(\"DUFFEL_TOKEN\", \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\")",
+    "duffelToken := \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffelToken := `duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-`",
+    "duffelToken = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffelToken = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffelToken = 'duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-'",
+    "duffelToken = duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-",
+    "duffelToken=\"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffelToken=duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-",
+    "duffel_TOKEN :::= \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_TOKEN ::= \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_TOKEN := \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_TOKEN = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_TOKEN ?= \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_token: \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "duffel_token: 'duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-'",
+    "duffel_token: duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-",
+    "string duffelToken = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\";",
+    "var duffelToken = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "var duffelToken string = \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"",
+    "{\n    \"duffel_token\": \"duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\"\n}",
+    "{\"config.ini\": \"DUFFEL_TOKEN=duffel_test_x9of9_stmbzf6v34vb_cic_jlmilpt63-94r8p13xh-\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

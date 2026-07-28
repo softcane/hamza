@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitlab-incoming-mail-token",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "$gitlabToken .= \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "\u003cgitlabToken\u003e\n    glimt-gusrtpcwcmlyg3nrwlzm1cn8k\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\")",
+    "gitlabToken := \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlabToken := `glimt-gusrtpcwcmlyg3nrwlzm1cn8k`",
+    "gitlabToken = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlabToken = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlabToken = 'glimt-gusrtpcwcmlyg3nrwlzm1cn8k'",
+    "gitlabToken = glimt-gusrtpcwcmlyg3nrwlzm1cn8k",
+    "gitlabToken=\"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlabToken=glimt-gusrtpcwcmlyg3nrwlzm1cn8k",
+    "gitlab_TOKEN :::= \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_TOKEN ::= \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_TOKEN := \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_TOKEN = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_TOKEN ?= \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_token: \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "gitlab_token: 'glimt-gusrtpcwcmlyg3nrwlzm1cn8k'",
+    "gitlab_token: glimt-gusrtpcwcmlyg3nrwlzm1cn8k",
+    "string gitlabToken = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\";",
+    "var gitlabToken = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "var gitlabToken string = \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"",
+    "{\n    \"gitlab_token\": \"glimt-gusrtpcwcmlyg3nrwlzm1cn8k\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glimt-gusrtpcwcmlyg3nrwlzm1cn8k\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,49 @@
+# Test overlay. Adds a deterministic fake provider so masking can be exercised
+# end-to-end without a real provider account or quota spend. Not part of the
+# product: a real deployment points envoy/envoy.yaml at a real Provider instead.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d --build
+
+services:
+  fake-provider:
+    image: python:3.12-slim
+    container_name: fake-provider
+    user: "65532:65532"
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    mem_limit: 256m
+    cpus: "0.5"
+    command: ["python", "/app/server.py", "8080"]
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+      HAMZA_FLOW_FEED_PATH: ${HAMZA_FLOW_FEED_PATH:-}
+      HAMZA_FLOW_FEED_OPENAI_FQDN: api.openai.com
+      HAMZA_FLOW_FEED_ANTHROPIC_FQDN: api.anthropic.com
+      HAMZA_PROVIDER_EVENT_PATH: ${HAMZA_PROVIDER_EVENT_PATH:-}
+      HAMZA_PROVIDER_EXPECTED_AUTH: ${HAMZA_PROVIDER_EXPECTED_AUTH:-}
+      HAMZA_PROVIDER_EXPECTED_X_API_KEY: ${HAMZA_PROVIDER_EXPECTED_X_API_KEY:-}
+      HAMZA_PROVIDER_PROTECTED_VALUES: ${HAMZA_PROVIDER_PROTECTED_VALUES:-}
+    volumes:
+      - ./fake-provider:/app:ro
+      - ${HAMZA_FLOW_FEED_HOST_DIR:-/tmp/hamza-flow-feed}:/flow-feed
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8080/health').status==200 else 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+    networks:
+      - provider
+
+  envoy:
+    depends_on:
+      fake-provider:
+        condition: service_healthy
+    # envoy.yaml's provider_upstream cluster already targets fake-provider; the
+    # base compose file keeps envoy on the (otherwise-idle) `provider` network.

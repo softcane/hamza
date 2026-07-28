@@ -1,0 +1,32 @@
+{
+  "ruleId": "nytimes-access-token",
+  "truePositives": [
+    "  \"nytimesToken\" =\u003e \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "$nytimesToken .= \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "\u003cnytimesToken\u003e\n    p5evbg5nzpviyrfeog92e3q9ll60068v\n\u003c/nytimesToken\u003e",
+    "String nytimesToken = \"p5evbg5nzpviyrfeog92e3q9ll60068v\";",
+    "System.setProperty(\"NYTIMES_TOKEN\", \"p5evbg5nzpviyrfeog92e3q9ll60068v\")",
+    "nytimesToken := \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimesToken := `p5evbg5nzpviyrfeog92e3q9ll60068v`",
+    "nytimesToken = \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimesToken = \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimesToken = 'p5evbg5nzpviyrfeog92e3q9ll60068v'",
+    "nytimesToken = p5evbg5nzpviyrfeog92e3q9ll60068v",
+    "nytimesToken=\"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimesToken=p5evbg5nzpviyrfeog92e3q9ll60068v",
+    "nytimes_TOKEN :::= \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_TOKEN ::= \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_TOKEN := \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_TOKEN = \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_TOKEN ?= \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_token: \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "nytimes_token: 'p5evbg5nzpviyrfeog92e3q9ll60068v'",
+    "nytimes_token: p5evbg5nzpviyrfeog92e3q9ll60068v",
+    "string nytimesToken = \"p5evbg5nzpviyrfeog92e3q9ll60068v\";",
+    "var nytimesToken = \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "var nytimesToken string = \"p5evbg5nzpviyrfeog92e3q9ll60068v\"",
+    "{\n    \"nytimes_token\": \"p5evbg5nzpviyrfeog92e3q9ll60068v\"\n}",
+    "{\"config.ini\": \"NYTIMES_TOKEN=p5evbg5nzpviyrfeog92e3q9ll60068v\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

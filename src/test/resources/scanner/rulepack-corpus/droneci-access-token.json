@@ -1,0 +1,32 @@
+{
+  "ruleId": "droneci-access-token",
+  "truePositives": [
+    "  \"droneciToken\" =\u003e \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "$droneciToken .= \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "\u003cdroneciToken\u003e\n    vbvmu0si5oeriihsn5q8e2pbzixked2c\n\u003c/droneciToken\u003e",
+    "String droneciToken = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\";",
+    "System.setProperty(\"DRONECI_TOKEN\", \"vbvmu0si5oeriihsn5q8e2pbzixked2c\")",
+    "droneciToken := \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneciToken := `vbvmu0si5oeriihsn5q8e2pbzixked2c`",
+    "droneciToken = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneciToken = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneciToken = 'vbvmu0si5oeriihsn5q8e2pbzixked2c'",
+    "droneciToken = vbvmu0si5oeriihsn5q8e2pbzixked2c",
+    "droneciToken=\"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneciToken=vbvmu0si5oeriihsn5q8e2pbzixked2c",
+    "droneci_TOKEN :::= \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_TOKEN ::= \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_TOKEN := \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_TOKEN = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_TOKEN ?= \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_token: \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "droneci_token: 'vbvmu0si5oeriihsn5q8e2pbzixked2c'",
+    "droneci_token: vbvmu0si5oeriihsn5q8e2pbzixked2c",
+    "string droneciToken = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\";",
+    "var droneciToken = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "var droneciToken string = \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"",
+    "{\n    \"droneci_token\": \"vbvmu0si5oeriihsn5q8e2pbzixked2c\"\n}",
+    "{\"config.ini\": \"DRONECI_TOKEN=vbvmu0si5oeriihsn5q8e2pbzixked2c\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

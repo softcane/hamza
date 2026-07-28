@@ -1,0 +1,32 @@
+{
+  "ruleId": "linear-api-key",
+  "truePositives": [
+    "  \"linearToken\" =\u003e \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "$linearToken .= \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "\u003clinearToken\u003e\n    lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\n\u003c/linearToken\u003e",
+    "String linearToken = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\";",
+    "System.setProperty(\"LINEAR_TOKEN\", \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\")",
+    "linearToken := \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linearToken := `lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za`",
+    "linearToken = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linearToken = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linearToken = 'lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za'",
+    "linearToken = lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za",
+    "linearToken=\"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linearToken=lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za",
+    "linear_TOKEN :::= \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_TOKEN ::= \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_TOKEN := \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_TOKEN = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_TOKEN ?= \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_token: \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "linear_token: 'lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za'",
+    "linear_token: lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za",
+    "string linearToken = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\";",
+    "var linearToken = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "var linearToken string = \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"",
+    "{\n    \"linear_token\": \"lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\"\n}",
+    "{\"config.ini\": \"LINEAR_TOKEN=lin_api_c2b3ep31t1qyvu48rivcyra0egbdt04x8q7827za\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

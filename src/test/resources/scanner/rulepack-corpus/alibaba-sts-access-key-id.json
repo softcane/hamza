@@ -1,0 +1,10 @@
+{
+  "ruleId": "alibaba-sts-access-key-id",
+  "truePositives": [
+    "alibaba cloud sts access key id: STS.FJ6EMcS1JLZgAcBJSTDG1Z4CE",
+    "alibaba_sts_access_key_id = STS.NTKaenSkmLhG4HpM576UV"
+  ],
+  "falsePositives": [
+    "STS.short"
+  ]
+}

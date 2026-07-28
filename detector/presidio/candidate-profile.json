@@ -1,0 +1,44 @@
+{
+  "schema": "hamza-presidio-profile/v1",
+  "profile_id": "broad-pii-en",
+  "version": 1,
+  "language": "en",
+  "image": "ghcr.io/data-privacy-stack/presidio-analyzer@sha256:286e3fa7f3a7426e775e8564fe1870f1ba8f999d3ab8bbb8cc46a44355d9d6e9",
+  "thresholds": [0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85,
+                 0.90, 0.95],
+  "entities": [
+    "CREDIT_CARD",
+    "CRYPTO",
+    "DATE_TIME",
+    "EMAIL_ADDRESS",
+    "IBAN_CODE",
+    "IP_ADDRESS",
+    "MAC_ADDRESS",
+    "NRP",
+    "LOCATION",
+    "PERSON",
+    "PHONE_NUMBER",
+    "MEDICAL_LICENSE",
+    "URL"
+  ],
+  "quality_floors": {
+    "precision": 0.95,
+    "recall": 0.80,
+    "f2": 0.82,
+    "exact_span_reliability": 0.99,
+    "benign_false_findings_per_10000_turns": 5.0,
+    "p95_ms": 1000.0
+  },
+  "runtime": {
+    "max_segments": 64,
+    "max_utf8_bytes": 65536,
+    "window_code_points": 4096,
+    "window_overlap_code_points": 256,
+    "max_calls_in_flight": 4,
+    "connection_timeout_ms": 200,
+    "service_timeout_ms": 900,
+    "shared_deadline_ms": 1000,
+    "runtime_downloads": false
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "ruleId": "codecov-access-token",
+  "truePositives": [
+    "  \"codecovToken\" =\u003e \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "$codecovToken .= \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "\u003ccodecovToken\u003e\n    jou3nlafway0vfzdedqk4jxytl6tl8fh\n\u003c/codecovToken\u003e",
+    "String codecovToken = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\";",
+    "System.setProperty(\"CODECOV_TOKEN\", \"jou3nlafway0vfzdedqk4jxytl6tl8fh\")",
+    "codecovToken := \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecovToken := `jou3nlafway0vfzdedqk4jxytl6tl8fh`",
+    "codecovToken = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecovToken = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecovToken = 'jou3nlafway0vfzdedqk4jxytl6tl8fh'",
+    "codecovToken = jou3nlafway0vfzdedqk4jxytl6tl8fh",
+    "codecovToken=\"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecovToken=jou3nlafway0vfzdedqk4jxytl6tl8fh",
+    "codecov_TOKEN :::= \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_TOKEN ::= \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_TOKEN := \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_TOKEN = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_TOKEN ?= \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_token: \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "codecov_token: 'jou3nlafway0vfzdedqk4jxytl6tl8fh'",
+    "codecov_token: jou3nlafway0vfzdedqk4jxytl6tl8fh",
+    "string codecovToken = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\";",
+    "var codecovToken = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "var codecovToken string = \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"",
+    "{\n    \"codecov_token\": \"jou3nlafway0vfzdedqk4jxytl6tl8fh\"\n}",
+    "{\"config.ini\": \"CODECOV_TOKEN=jou3nlafway0vfzdedqk4jxytl6tl8fh\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

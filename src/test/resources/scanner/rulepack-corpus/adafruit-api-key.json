@@ -1,0 +1,32 @@
+{
+  "ruleId": "adafruit-api-key",
+  "truePositives": [
+    "  \"adafruitToken\" =\u003e \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "$adafruitToken .= \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "\u003cadafruitToken\u003e\n    s18d3594m_ayzpzt10jvs710xur5hm-v\n\u003c/adafruitToken\u003e",
+    "String adafruitToken = \"s18d3594m_ayzpzt10jvs710xur5hm-v\";",
+    "System.setProperty(\"ADAFRUIT_TOKEN\", \"s18d3594m_ayzpzt10jvs710xur5hm-v\")",
+    "adafruitToken := \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruitToken := `s18d3594m_ayzpzt10jvs710xur5hm-v`",
+    "adafruitToken = \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruitToken = \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruitToken = 's18d3594m_ayzpzt10jvs710xur5hm-v'",
+    "adafruitToken = s18d3594m_ayzpzt10jvs710xur5hm-v",
+    "adafruitToken=\"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruitToken=s18d3594m_ayzpzt10jvs710xur5hm-v",
+    "adafruit_TOKEN :::= \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_TOKEN ::= \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_TOKEN := \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_TOKEN = \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_TOKEN ?= \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_token: \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "adafruit_token: 's18d3594m_ayzpzt10jvs710xur5hm-v'",
+    "adafruit_token: s18d3594m_ayzpzt10jvs710xur5hm-v",
+    "string adafruitToken = \"s18d3594m_ayzpzt10jvs710xur5hm-v\";",
+    "var adafruitToken = \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "var adafruitToken string = \"s18d3594m_ayzpzt10jvs710xur5hm-v\"",
+    "{\n    \"adafruit_token\": \"s18d3594m_ayzpzt10jvs710xur5hm-v\"\n}",
+    "{\"config.ini\": \"ADAFRUIT_TOKEN=s18d3594m_ayzpzt10jvs710xur5hm-v\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

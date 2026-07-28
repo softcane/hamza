@@ -1,0 +1,38 @@
+{
+  "ruleId": "cisco-meraki-api-key",
+  "truePositives": [
+    "  \"merakiToken\" =\u003e \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "$merakiToken .= \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "\u003cmerakiToken\u003e\n    8f91cb0930f000c877456ee365d8200f16da3b27\n\u003c/merakiToken\u003e",
+    "String merakiToken = \"8f91cb0930f000c877456ee365d8200f16da3b27\";",
+    "System.setProperty(\"MERAKI_TOKEN\", \"8f91cb0930f000c877456ee365d8200f16da3b27\")",
+    "merakiToken := \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "merakiToken := `8f91cb0930f000c877456ee365d8200f16da3b27`",
+    "merakiToken = \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "merakiToken = \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "merakiToken = '8f91cb0930f000c877456ee365d8200f16da3b27'",
+    "merakiToken = 8f91cb0930f000c877456ee365d8200f16da3b27",
+    "merakiToken=\"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "merakiToken=8f91cb0930f000c877456ee365d8200f16da3b27",
+    "meraki_TOKEN :::= \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_TOKEN ::= \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_TOKEN := \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_TOKEN = \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_TOKEN ?= \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_token: \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "meraki_token: '8f91cb0930f000c877456ee365d8200f16da3b27'",
+    "meraki_token: 8f91cb0930f000c877456ee365d8200f16da3b27",
+    "string merakiToken = \"8f91cb0930f000c877456ee365d8200f16da3b27\";",
+    "var merakiToken = \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "var merakiToken string = \"8f91cb0930f000c877456ee365d8200f16da3b27\"",
+    "{\n    \"meraki_token\": \"8f91cb0930f000c877456ee365d8200f16da3b27\"\n}",
+    "{\"config.ini\": \"MERAKI_TOKEN=8f91cb0930f000c877456ee365d8200f16da3b27\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "ReactNativeCameraKit: f15a5a04b0f6dc6073e6db0296e6ef2d8b8d2522",
+    "meraki-api-key: acdeFf05b1a6d4c890237bf08c5e6e8d2b4d0f2e",
+    "meraki: aaaaaaaaaa1111111111bbbbbbbbbb2222222222",
+    "meraki: abdefghjk0123456789mnopqrstuvwx12345678",
+    "meraki_token = 5cb4a5f04cd412fe946667b17f0129ba17aeb2e0c7b5b7264efcebf7d022bfe2R21"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "grafana-api-key",
+  "truePositives": [
+    "  \"grafana-api-keyToken\" =\u003e \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "$grafana-api-keyToken .= \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "\u003cgrafana-api-keyToken\u003e\n    eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\n\u003c/grafana-api-keyToken\u003e",
+    "String grafana-api-keyToken = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\";",
+    "System.setProperty(\"GRAFANA-API-KEY_TOKEN\", \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\")",
+    "grafana-api-keyToken := \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-keyToken := `eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz`",
+    "grafana-api-keyToken = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-keyToken = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-keyToken = 'eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz'",
+    "grafana-api-keyToken = eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz",
+    "grafana-api-keyToken=\"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-keyToken=eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz",
+    "grafana-api-key_TOKEN :::= \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_TOKEN ::= \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_TOKEN := \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_TOKEN = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_TOKEN ?= \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_token: \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "grafana-api-key_token: 'eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz'",
+    "grafana-api-key_token: eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz",
+    "string grafana-api-keyToken = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\";",
+    "var grafana-api-keyToken = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "var grafana-api-keyToken string = \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"",
+    "{\n    \"grafana-api-key_token\": \"eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\"\n}",
+    "{\"config.ini\": \"GRAFANA-API-KEY_TOKEN=eyJrIjoi8llch5u77s26h90aps0c0s5xkq242iycd0sz8v9drmdhyw04g03z1ezmgs2omqpjayc0hz\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

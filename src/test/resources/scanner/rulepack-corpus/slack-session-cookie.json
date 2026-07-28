@@ -1,0 +1,37 @@
+{
+  "ruleId": "slack-session-cookie",
+  "truePositives": [
+    "  \"slackToken\" =\u003e \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "\"XOXD_TOKEN = \"xoxd-RWAqM1zwIRrr+2XACnx2j85Nmnq7jXRq08nLu92OuSVSD/Oq/JrB6huw+1E7SYpflbEhm7gKHZsqNX3mypdDoskW+s9x+DXCS74jne9GFhai5C8C5pxXVy60iJT/U685IypCMgGzGnIiGmv03u+QU/CuEBtrLAVOjxqeLlunHjtjotJQAgBX2fJuQVq59uDyGb7SNSH5YWJEFrqdJFA6i0nxDrY2\"",
+    "$slackToken .= \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "\u003cslackToken\u003e\n    xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\n\u003c/slackToken\u003e",
+    "String slackToken = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\";",
+    "System.setProperty(\"SLACK_TOKEN\", \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\")",
+    "slackToken := \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slackToken := `xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA`",
+    "slackToken = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slackToken = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slackToken = 'xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA'",
+    "slackToken = xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA",
+    "slackToken=\"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slackToken=xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA",
+    "slack_TOKEN :::= \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_TOKEN ::= \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_TOKEN := \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_TOKEN = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_TOKEN ?= \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_token: \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "slack_token: 'xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA'",
+    "slack_token: xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA",
+    "string slackToken = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\";",
+    "var slackToken = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "var slackToken string = \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"",
+    "{\n    \"slack_token\": \"xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\"\n}",
+    "{\"config.ini\": \"SLACK_TOKEN=xoxd--YxhcXiXs1jy6wOHOd4w+9rbW_OIHdT39wpWw\\tJHGI1p81yCnUn1uKVECZBz2owpWZmjS5rS2sXAcflDenAA6WVQwAFsaYiwBOA\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    " :cookie \"xoxd-sssssssssss-88888888888-hhhhhhhhhhh-jjjjjjjjjj; d-s=888888888888; lc=888888888888\"",
+    "\"cookie\": \"xoxd-abcdef1234567890...\"",
+    "string m_cookie_xoxd; // xoxd-AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8= (but longer)"
+  ]
+}

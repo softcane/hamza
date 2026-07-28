@@ -1,0 +1,11 @@
+{
+  "ruleId": "couchbase-capella-api-key",
+  "truePositives": [
+    "COUCHBASE_API_KEY_SECRET=\"QktxVUtFU1dKV1FlJBYXdnTVlRemFZdmFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6MDJBQ0RF\"",
+    "capella_api_secret = 'aB1cD2eF3gH4iJ5kL6mN7oP8qR9sT0uV1wX2yZ3aA4bB5cC6dD7eE8fF9gG0hH1iJ2kL3m=='"
+  ],
+  "falsePositives": [
+    "COUCHBASE_API_KEY_SECRET=\"short\"",
+    "api_secret = 'aB1cD2eF3gH4iJ5kL6mN7oP8qR9sT0uV1wX2yZ3aA4bB5cC6dD7eE8fF9gG0hH1iJ2kL3m=='"
+  ]
+}

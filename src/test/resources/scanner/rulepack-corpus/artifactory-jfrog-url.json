@@ -1,0 +1,12 @@
+{
+  "ruleId": "artifactory-jfrog-url",
+  "truePositives": [
+    "ARTIFACTORY_URL=https://mycompany.jfrog.io",
+    "JFROG_URL=my-company-name.jfrog.io",
+    "host: a.jfrog.io"
+  ],
+  "falsePositives": [
+    "JFROG_URL=-bad.jfrog.io",
+    "JFROG_URL=bad-.jfrog.io"
+  ]
+}

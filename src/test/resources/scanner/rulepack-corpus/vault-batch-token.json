@@ -1,0 +1,33 @@
+{
+  "ruleId": "vault-batch-token",
+  "truePositives": [
+    "  \"vaultToken\" =\u003e \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "$vaultToken .= \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "\u003cvaultToken\u003e\n    hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\n\u003c/vaultToken\u003e",
+    "String vaultToken = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\";",
+    "System.setProperty(\"VAULT_TOKEN\", \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\")",
+    "hvb.AAAAAQJgxDgqsGNorpoOR7hPZ5SU-ynBvCl764jyRP_fnX7WvkdkDzGjbLNGdPdtlY33Als2P36yDZueqzfdGw9RsaTeaYXSH7E4RYSWuRoQ9YRKIw8o7mDDY2ZcT3KOB7RwtW1w1FN2eDqcy_sbCjXPaM1iBVH-mqMSYRmRd2nb5D1SJPeBzIYRqSglLc31wUGN7xEzyrKUczqOKsIcybQA",
+    "string vaultToken = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\";",
+    "var vaultToken = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "var vaultToken string = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vaultToken := \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vaultToken := `hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x`",
+    "vaultToken = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vaultToken = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vaultToken = 'hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x'",
+    "vaultToken = hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x",
+    "vaultToken=\"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vaultToken=hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x",
+    "vault_TOKEN :::= \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_TOKEN ::= \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_TOKEN := \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_TOKEN = \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_TOKEN ?= \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_token: \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"",
+    "vault_token: 'hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x'",
+    "vault_token: hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x",
+    "{\n    \"vault_token\": \"hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\"\n}",
+    "{\"config.ini\": \"VAULT_TOKEN=hvb.ipldo3dm0nwb8hh5dhw1sy09nx0wqjuewp5wa11s22y7s5g1p64oo3ffbn5xwea0uqjy8m-hys13n9a5qo76tlz18l0va3vfms3eccfp-zx51iro1vws149qafo3hu46a7_tywm85x\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

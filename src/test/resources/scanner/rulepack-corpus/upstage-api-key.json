@@ -1,0 +1,34 @@
+{
+  "ruleId": "upstage-api-key",
+  "truePositives": [
+    "  \"upstageToken\" =\u003e \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "$upstageToken .= \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "\u003cupstageToken\u003e\n    E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\n\u003c/upstageToken\u003e",
+    "String upstageToken = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\";",
+    "System.setProperty(\"UPSTAGE_TOKEN\", \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\")",
+    "string upstageToken = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\";",
+    "upstageToken := \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstageToken := `E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly`",
+    "upstageToken = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstageToken = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstageToken = 'E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly'",
+    "upstageToken = E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly",
+    "upstageToken=\"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstageToken=E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly",
+    "upstage_TOKEN :::= \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_TOKEN ::= \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_TOKEN := \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_TOKEN = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_TOKEN ?= \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_token: \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "upstage_token: 'E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly'",
+    "upstage_token: E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly",
+    "var upstageToken = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "var upstageToken string = \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"",
+    "{\n    \"upstage_token\": \"E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\"\n}",
+    "{\"config.ini\": \"UPSTAGE_TOKEN=E5mOz0eOdRRyRgG3gSBVWW23FDZ1B3n0WUFLoTly\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "upstage_token = \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+  ]
+}

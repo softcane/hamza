@@ -1,0 +1,35 @@
+{
+  "ruleId": "settlemint-application-access-token",
+  "truePositives": [
+    "  \"settlemintTokenToken\" =\u003e \"sm_aat_ppzew1unqemvwytv\"",
+    "$settlemintTokenToken .= \"sm_aat_ppzew1unqemvwytv\"",
+    "\u003csettlemintTokenToken\u003e\n    sm_aat_ppzew1unqemvwytv\n\u003c/settlemintTokenToken\u003e",
+    "String settlemintTokenToken = \"sm_aat_ppzew1unqemvwytv\";",
+    "System.setProperty(\"SETTLEMINTTOKEN_TOKEN\", \"sm_aat_ppzew1unqemvwytv\")",
+    "settlemintTokenToken := \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintTokenToken := `sm_aat_ppzew1unqemvwytv`",
+    "settlemintTokenToken = \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintTokenToken = \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintTokenToken = 'sm_aat_ppzew1unqemvwytv'",
+    "settlemintTokenToken = sm_aat_ppzew1unqemvwytv",
+    "settlemintTokenToken=\"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintTokenToken=sm_aat_ppzew1unqemvwytv",
+    "settlemintToken_TOKEN :::= \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_TOKEN ::= \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_TOKEN := \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_TOKEN = \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_TOKEN ?= \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_token: \"sm_aat_ppzew1unqemvwytv\"",
+    "settlemintToken_token: 'sm_aat_ppzew1unqemvwytv'",
+    "settlemintToken_token: sm_aat_ppzew1unqemvwytv",
+    "string settlemintTokenToken = \"sm_aat_ppzew1unqemvwytv\";",
+    "var settlemintTokenToken = \"sm_aat_ppzew1unqemvwytv\"",
+    "var settlemintTokenToken string = \"sm_aat_ppzew1unqemvwytv\"",
+    "{\n    \"settlemintToken_token\": \"sm_aat_ppzew1unqemvwytv\"\n}",
+    "{\"config.ini\": \"SETTLEMINTTOKEN_TOKEN=sm_aat_ppzew1unqemvwytv\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "nonMatchingToken := \"j1ggmr85z1tgakdi\"",
+    "nonMatchingToken := \"sm_aat_6trp4mvzeh\""
+  ]
+}

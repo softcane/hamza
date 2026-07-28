@@ -1,0 +1,32 @@
+{
+  "ruleId": "sendgrid-api-token",
+  "truePositives": [
+    "  \"sengridAPITokenToken\" =\u003e \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "$sengridAPITokenToken .= \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "\u003csengridAPITokenToken\u003e\n    SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\n\u003c/sengridAPITokenToken\u003e",
+    "String sengridAPITokenToken = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\";",
+    "System.setProperty(\"SENGRIDAPITOKEN_TOKEN\", \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\")",
+    "sengridAPITokenToken := \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPITokenToken := `SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu`",
+    "sengridAPITokenToken = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPITokenToken = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPITokenToken = 'SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu'",
+    "sengridAPITokenToken = SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu",
+    "sengridAPITokenToken=\"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPITokenToken=SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu",
+    "sengridAPIToken_TOKEN :::= \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_TOKEN ::= \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_TOKEN := \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_TOKEN = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_TOKEN ?= \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_token: \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "sengridAPIToken_token: 'SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu'",
+    "sengridAPIToken_token: SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu",
+    "string sengridAPITokenToken = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\";",
+    "var sengridAPITokenToken = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "var sengridAPITokenToken string = \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"",
+    "{\n    \"sengridAPIToken_token\": \"SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\"\n}",
+    "{\"config.ini\": \"SENGRIDAPITOKEN_TOKEN=SG.tlcbjmbtkpnrzmqjz=huhafk7zam1rs=p8y6lfu6vf653smydci-2575_mbpuyayiu\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

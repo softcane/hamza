@@ -1,0 +1,34 @@
+{
+  "ruleId": "curl-auth-header",
+  "truePositives": [
+    "# curl -X GET \"http://localhost:3000/api/cron/status\" -H \"Authorization: Bearer cfcabd11c7ed9a41b1a3e063c32d5114\"",
+    "#curl -X POST \\\n#  https://api.mailgun.net/v3/sandbox7dbcabccd4314c123e8b23599d35f5b6.mailgun.org/messages \\\n#  -H 'Authorization: Basic YXBpOmtleS1hN2MzNDJ3MzNhNWQxLTU2M2U3MjlwLTZhYjI3YzYzNzM0Ng==' \\\n#  -F from='Excited User \u003cmailgun@sandbox7dbc123bccd4314c0aae8b23599d35f5b6.mailgun.org\u003e' \\\n#  -F to='joe@example.com' \\\n#  -F subject='Hello' \\\n#  -F text='Testing some Mailgun awesomness!'",
+    "curl --header  'Authorization:  5eb4223e-5008-46e5-be67-c7b8f2732305'",
+    "curl -H \"Authorization: Api-Token 22cb987851bc5659l29114c62e60c79abd0d2c08\" --request PUT https://appsecclass.report/api/use/635",
+    "curl -H \"Authorization: Bearer sha256~bRLFnzd59Z3XpZH5_seJPHALOuvbWiKwbFKSsoALkgp\"",
+    "curl -H \"Authorization: Token 22cb987851bc5659229114c62e60c79abd0d2c08\" --request PUT https://appsecclass.report/api/use/635",
+    "curl -H 'Authorization: Basic YnJvd3Nlcjo=' \\",
+    "curl -L -H \"Authorization: sha256~bRLFnzd5@=-.a+/hgdS\"",
+    "curl -L -H \"Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb25maWRlbmNlIjowLjh9.kvRPfjAhLhtRTczoRgctVGp7KY1QVH3UBZM-gM0x8ec\" service1.local -\u003e correct jwt ",
+    "curl -X GET \"https://api.cloudflare.com/client/v4/user/tokens/verify\" \\\n     -H \"Authorization: Bearer _FXNljbSRYMWx3TWrd7lgKhLtVZX6iskC8Wcbb4b\" \\\n     -H \"Content-Type:application/json\"",
+    "curl -X GET \\\n     -H \"apikey: c4ed6c21-9dd5-4a05-8e3f-c56d1151cce8\" \\\n     -H \"Accept: application/json\" \\",
+    "curl -X GET https://octopus.corp.net/\n     -H \"X-Octopus-ApiKey: 3a16750d-d363-41a4-8ebd-035408f7730f\" \\",
+    "curl -X POST --header \"Api-Token: Sk94HG7f6KB\"",
+    "curl -X POST -H \"Content-Type: application/json\" \\\n -H \"Authorization: Basic MzUzYjMwMmM0NDU3NGY1NjUwNDU2ODdlNTM0ZTdkNmE6Mjg2OTI0Njk3ZTYxNWE2NzJhNjQ2YTQ5MzU0NTY0NmM=\" \\\n  -d '{\"user\":{\"emailAddress\":\"test@example.com\"}, \"password\":\"password\"}' \\\n  'http://localhost:8080/oauth2-provider/v1.0/users'",
+    "curl -X PUT -H 'Authorization: Bearer jC+6TUUjCNHcVtAXpcqBCgxnA8r+qD6MatnYaf/+289y7HWpK0BWPyLHv/K4DMN32fufwmeVVjlo8zjgBh8kx3GfS6IqO70w1DVMSCTwX7fhEpiXaxzv0mhSMHDX9Kw63Q6DkavUWUV+MDNhCF5wGQrcdQNncVRF3YkuDHDT/xw2YWyZ/DX8k+gAYiC8gcD8Ueg0ljBVS1IDwPjuGoFPESJVxYr0MDPF2D8Pn2S5rq692U4D9ZLuluS46VA4DK6ig5P7QM5XVXi4V7vXM8qpN/zqneyz+w4PUh6NIX7QG6JczMhYd9maWRWVat5jDdyII63P6sNAy9QZjw+ClW211Q==' -d 'user={\"account\":\"user@domain.com\", \"roles\":[\"user\"]}' http://127.0.0.1:8443/desks/1/occupy",
+    "curl -XPOST http://localhost:8080/api/tasks -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"Token: 3fea6af1349166ea\" -d \"content=hello-curl\"",
+    "curl -k -X POST --header \"Authorization: Basic djJlNEpYa0NJUHZ5a2FWT0VRXzRqZmZUdDkwYTp2emNBZGFzZWpmlWZiUDc2VUJjNDNNVDExclVh\" \"https://api-qa.example.com:8243/token\" -d \"grant_type=client_credentials\"",
+    "curl https://api.openai.com/v1/chat/completions \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer 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\" \\"
+  ],
+  "falsePositives": [
+    "$ curl -X POST \"http://localhost:8000/v1/chat/completions\" \\\n    -H \"Content-Type: application/json\" \\\n    -H \"Authorization: Bearer $API_KEY\" \\\n    -d '{\n        \"model\": \"chatglm3-6b-32k\",\n        \"messages\": [{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"}, {\"role\": \"user\", \"content\": \"Hello!\"}]\n    }'",
+    "curl -X GET -H \"Content-Type: application/json\" -H \"Authorization: Bearer $(gcloud auth print-access-token)\" https://workflowexecutions.googleapis.com/v1/projects/244283331594/locations/us-central1/workflows/sample-workflow/executions/43c925aa-514a-44c1-a0a4-a9f8f26fd2cb/callbacks/1705791f-d446-4e92-a6d0-a13622422e80_31864a51-8c13-4b03-ad4d-945cdc8d0631",
+    "curl -X GET \\\n     -H \"apikey: $API_KEY\" \\\n     -H \"Accept: $FORMAT\" \\\n\"$API_URL/rest/v1/stats_derniere_labellisation\"",
+    "curl -X POST -H \"Content-Type: application/json\" -H \"Authorization: Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb25maWRlbmNlIjowLjh9.kvRPfjAhLhtRTczoRgctVGp7KY1QVH3UBZM-gM0x8ec\" \\",
+    "curl -X POST https://accounts.spotify.com/api/token -d grant_type=client_credentials --header \"Authorization: Basic ...\"",
+    "curl -XPOST http://localhost:8080/api/token -H \"Authorization: basic {base64(email:password[\\n])}\" =\u003e token",
+    "curl -v -v -v -X POST https://domain/api/v1/authentication/sso/login-url/ \\\n  -H 'Content-Type: application/json' \\\n  -H \"Authorization: Token **********\" \\\n  -d '{\"username\": \"test\", \"next\": \"/luna/\"}'",
+    "curl \\\n  -H \"Authorization: Bearer \u003cOpenverse API token\u003e\" \\\n  \"https://api.openverse.org/v1/audio/?q=test\"",
+    "curl https://example.com/micropub -d h=entry -d \"content=Hello World\" -H \"Authorization: Bearer XXXXXXXXXXXX\""
+  ]
+}

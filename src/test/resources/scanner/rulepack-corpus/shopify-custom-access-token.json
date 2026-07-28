@@ -1,0 +1,32 @@
+{
+  "ruleId": "shopify-custom-access-token",
+  "truePositives": [
+    "  \"shopifyToken\" =\u003e \"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\"",
+    "$shopifyToken .= \"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\"",
+    "\u003cshopifyToken\u003e\n    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\n\u003c/shopifyToken\u003e",
+    "String shopifyToken = \"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\";",
+    "System.setProperty(\"SHOPIFY_TOKEN\", \"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\")",
+    "shopifyToken := \"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\"",
+    "shopifyToken := `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`",
+    "shopifyToken = \"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\"",
+    "shopifyToken = \"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\"",
+    "shopifyToken = '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'",
+    "shopifyToken = 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",
+    "shopifyToken=\"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\"",
+    "shopifyToken=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",
+    "shopify_TOKEN :::= \"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\"",
+    "shopify_TOKEN ::= \"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\"",
+    "shopify_TOKEN := \"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\"",
+    "shopify_TOKEN = \"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\"",
+    "shopify_TOKEN ?= \"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\"",
+    "shopify_token: \"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\"",
+    "shopify_token: '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'",
+    "shopify_token: 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",
+    "string shopifyToken = \"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\";",
+    "var shopifyToken = \"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\"",
+    "var shopifyToken string = \"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\"",
+    "{\n    \"shopify_token\": \"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\"\n}",
+    "{\"config.ini\": \"SHOPIFY_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

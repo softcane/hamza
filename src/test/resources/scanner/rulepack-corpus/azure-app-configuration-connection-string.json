@@ -1,0 +1,7 @@
+{
+  "ruleId": "azure-app-configuration-connection-string",
+  "truePositives": [
+    "Endpoint=https://foo-nonprod-appconfig.azconfig.io;Id=ABCD-E6-s0:tl6ABcdefGHi7kLMno/p;Secret=Z7K1cfOFn8MPvYFQv+nvkrkeMxzZho2EhLUlD00Oj5OX="
+  ],
+  "falsePositives": []
+}

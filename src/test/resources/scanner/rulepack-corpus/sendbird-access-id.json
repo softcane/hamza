@@ -1,0 +1,32 @@
+{
+  "ruleId": "sendbird-access-id",
+  "truePositives": [
+    "  \"sendbirdToken\" =\u003e \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "$sendbirdToken .= \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "\u003csendbirdToken\u003e\n    416959ae-bb16-4b11-8167-25bb4c11d4fc\n\u003c/sendbirdToken\u003e",
+    "String sendbirdToken = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\";",
+    "System.setProperty(\"SENDBIRD_TOKEN\", \"416959ae-bb16-4b11-8167-25bb4c11d4fc\")",
+    "sendbirdToken := \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbirdToken := `416959ae-bb16-4b11-8167-25bb4c11d4fc`",
+    "sendbirdToken = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbirdToken = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbirdToken = '416959ae-bb16-4b11-8167-25bb4c11d4fc'",
+    "sendbirdToken = 416959ae-bb16-4b11-8167-25bb4c11d4fc",
+    "sendbirdToken=\"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbirdToken=416959ae-bb16-4b11-8167-25bb4c11d4fc",
+    "sendbird_TOKEN :::= \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_TOKEN ::= \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_TOKEN := \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_TOKEN = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_TOKEN ?= \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_token: \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "sendbird_token: '416959ae-bb16-4b11-8167-25bb4c11d4fc'",
+    "sendbird_token: 416959ae-bb16-4b11-8167-25bb4c11d4fc",
+    "string sendbirdToken = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\";",
+    "var sendbirdToken = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "var sendbirdToken string = \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"",
+    "{\n    \"sendbird_token\": \"416959ae-bb16-4b11-8167-25bb4c11d4fc\"\n}",
+    "{\"config.ini\": \"SENDBIRD_TOKEN=416959ae-bb16-4b11-8167-25bb4c11d4fc\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

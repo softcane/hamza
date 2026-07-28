@@ -1,0 +1,35 @@
+{
+  "ruleId": "gitlab-rrt",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "$gitlabToken .= \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "\u003cgitlabToken\u003e\n    GR1348941i6dnh1ulvjflzty9sibi\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"GR1348941i6dnh1ulvjflzty9sibi\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"GR1348941i6dnh1ulvjflzty9sibi\")",
+    "gitlabToken := \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlabToken := `GR1348941i6dnh1ulvjflzty9sibi`",
+    "gitlabToken = \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlabToken = \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlabToken = 'GR1348941i6dnh1ulvjflzty9sibi'",
+    "gitlabToken = GR1348941i6dnh1ulvjflzty9sibi",
+    "gitlabToken=\"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlabToken=GR1348941i6dnh1ulvjflzty9sibi",
+    "gitlab_TOKEN :::= \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_TOKEN ::= \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_TOKEN := \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_TOKEN = \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_TOKEN ?= \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_token: \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "gitlab_token: 'GR1348941i6dnh1ulvjflzty9sibi'",
+    "gitlab_token: GR1348941i6dnh1ulvjflzty9sibi",
+    "string gitlabToken = \"GR1348941i6dnh1ulvjflzty9sibi\";",
+    "var gitlabToken = \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "var gitlabToken string = \"GR1348941i6dnh1ulvjflzty9sibi\"",
+    "{\n    \"gitlab_token\": \"GR1348941i6dnh1ulvjflzty9sibi\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=GR1348941i6dnh1ulvjflzty9sibi\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "GR134894112312312312312312312",
+    "GR1348941XXXXXXXXXXXXXXXXXXXX"
+  ]
+}

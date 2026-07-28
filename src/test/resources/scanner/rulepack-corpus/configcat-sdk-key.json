@@ -1,0 +1,11 @@
+{
+  "ruleId": "configcat-sdk-key",
+  "truePositives": [
+    "CONFIGCAT_SDK_KEY=Aa1Bb2Cc3Dd4Ee5Ff6Gg7H/aA1bB2cC3dD4eE5fF6gG7h",
+    "configcat_key: \"Aa1Bb2Cc3Dd4Ee5Ff6Gg7H/aA1bB2cC3dD4eE5fF6gG7h\""
+  ],
+  "falsePositives": [
+    "CONFIGCAT_SDK_KEY=short",
+    "SDK_KEY=Aa1Bb2Cc3Dd4Ee5Ff6Gg7H/aA1bB2cC3dD4eE5fF6gG7h"
+  ]
+}

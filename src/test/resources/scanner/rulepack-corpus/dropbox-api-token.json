@@ -1,0 +1,32 @@
+{
+  "ruleId": "dropbox-api-token",
+  "truePositives": [
+    "  \"dropboxToken\" =\u003e \"w9ccbnv00rkdvll\"",
+    "$dropboxToken .= \"w9ccbnv00rkdvll\"",
+    "\u003cdropboxToken\u003e\n    w9ccbnv00rkdvll\n\u003c/dropboxToken\u003e",
+    "String dropboxToken = \"w9ccbnv00rkdvll\";",
+    "System.setProperty(\"DROPBOX_TOKEN\", \"w9ccbnv00rkdvll\")",
+    "dropboxToken := \"w9ccbnv00rkdvll\"",
+    "dropboxToken := `w9ccbnv00rkdvll`",
+    "dropboxToken = \"w9ccbnv00rkdvll\"",
+    "dropboxToken = \"w9ccbnv00rkdvll\"",
+    "dropboxToken = 'w9ccbnv00rkdvll'",
+    "dropboxToken = w9ccbnv00rkdvll",
+    "dropboxToken=\"w9ccbnv00rkdvll\"",
+    "dropboxToken=w9ccbnv00rkdvll",
+    "dropbox_TOKEN :::= \"w9ccbnv00rkdvll\"",
+    "dropbox_TOKEN ::= \"w9ccbnv00rkdvll\"",
+    "dropbox_TOKEN := \"w9ccbnv00rkdvll\"",
+    "dropbox_TOKEN = \"w9ccbnv00rkdvll\"",
+    "dropbox_TOKEN ?= \"w9ccbnv00rkdvll\"",
+    "dropbox_token: \"w9ccbnv00rkdvll\"",
+    "dropbox_token: 'w9ccbnv00rkdvll'",
+    "dropbox_token: w9ccbnv00rkdvll",
+    "string dropboxToken = \"w9ccbnv00rkdvll\";",
+    "var dropboxToken = \"w9ccbnv00rkdvll\"",
+    "var dropboxToken string = \"w9ccbnv00rkdvll\"",
+    "{\n    \"dropbox_token\": \"w9ccbnv00rkdvll\"\n}",
+    "{\"config.ini\": \"DROPBOX_TOKEN=w9ccbnv00rkdvll\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

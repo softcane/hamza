@@ -1,0 +1,32 @@
+{
+  "ruleId": "mailgun-private-api-token",
+  "truePositives": [
+    "  \"mailgunToken\" =\u003e \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "$mailgunToken .= \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "\u003cmailgunToken\u003e\n    key-fea20f739de23f7dc2ab2f5f1480f43d\n\u003c/mailgunToken\u003e",
+    "String mailgunToken = \"key-fea20f739de23f7dc2ab2f5f1480f43d\";",
+    "System.setProperty(\"MAILGUN_TOKEN\", \"key-fea20f739de23f7dc2ab2f5f1480f43d\")",
+    "mailgunToken := \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgunToken := `key-fea20f739de23f7dc2ab2f5f1480f43d`",
+    "mailgunToken = \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgunToken = \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgunToken = 'key-fea20f739de23f7dc2ab2f5f1480f43d'",
+    "mailgunToken = key-fea20f739de23f7dc2ab2f5f1480f43d",
+    "mailgunToken=\"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgunToken=key-fea20f739de23f7dc2ab2f5f1480f43d",
+    "mailgun_TOKEN :::= \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_TOKEN ::= \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_TOKEN := \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_TOKEN = \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_TOKEN ?= \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_token: \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "mailgun_token: 'key-fea20f739de23f7dc2ab2f5f1480f43d'",
+    "mailgun_token: key-fea20f739de23f7dc2ab2f5f1480f43d",
+    "string mailgunToken = \"key-fea20f739de23f7dc2ab2f5f1480f43d\";",
+    "var mailgunToken = \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "var mailgunToken string = \"key-fea20f739de23f7dc2ab2f5f1480f43d\"",
+    "{\n    \"mailgun_token\": \"key-fea20f739de23f7dc2ab2f5f1480f43d\"\n}",
+    "{\"config.ini\": \"MAILGUN_TOKEN=key-fea20f739de23f7dc2ab2f5f1480f43d\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "yandex-api-key",
+  "truePositives": [
+    "  \"yandexToken\" =\u003e \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "$yandexToken .= \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "\u003cyandexToken\u003e\n    AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\n\u003c/yandexToken\u003e",
+    "String yandexToken = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\";",
+    "System.setProperty(\"YANDEX_TOKEN\", \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\")",
+    "string yandexToken = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\";",
+    "var yandexToken = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "var yandexToken string = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandexToken := \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandexToken := `AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk`",
+    "yandexToken = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandexToken = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandexToken = 'AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk'",
+    "yandexToken = AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk",
+    "yandexToken=\"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandexToken=AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk",
+    "yandex_TOKEN :::= \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_TOKEN ::= \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_TOKEN := \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_TOKEN = \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_TOKEN ?= \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_token: \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"",
+    "yandex_token: 'AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk'",
+    "yandex_token: AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk",
+    "{\n    \"yandex_token\": \"AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\"\n}",
+    "{\"config.ini\": \"YANDEX_TOKEN=AQVNyFDcchsAohHBgkXrumWVIxvSevpqzQayCuk\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

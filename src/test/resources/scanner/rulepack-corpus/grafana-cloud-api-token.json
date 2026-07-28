@@ -1,0 +1,39 @@
+{
+  "ruleId": "grafana-cloud-api-token",
+  "truePositives": [
+    "  \"grafana-cloud-api-tokenToken\" =\u003e \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "$grafana-cloud-api-tokenToken .= \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "\u003cgrafana-cloud-api-tokenToken\u003e\n    glc_sg44293c70rn2nuodej5ba4wf6rradbs\n\u003c/grafana-cloud-api-tokenToken\u003e",
+    "String grafana-cloud-api-tokenToken = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\";",
+    "System.setProperty(\"GRAFANA-CLOUD-API-TOKEN_TOKEN\", \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\")",
+    "grafana-cloud-api-tokenToken := \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-tokenToken := `glc_sg44293c70rn2nuodej5ba4wf6rradbs`",
+    "grafana-cloud-api-tokenToken = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-tokenToken = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-tokenToken = 'glc_sg44293c70rn2nuodej5ba4wf6rradbs'",
+    "grafana-cloud-api-tokenToken = glc_sg44293c70rn2nuodej5ba4wf6rradbs",
+    "grafana-cloud-api-tokenToken=\"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-tokenToken=glc_sg44293c70rn2nuodej5ba4wf6rradbs",
+    "grafana-cloud-api-token_TOKEN :::= \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_TOKEN ::= \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_TOKEN := \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_TOKEN = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_TOKEN ?= \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_api_token = \"glc_lyeoqkhimwnwf0avc5w033urg0wrv2er\"",
+    "grafana-cloud-api-token_token: \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "grafana-cloud-api-token_token: 'glc_sg44293c70rn2nuodej5ba4wf6rradbs'",
+    "grafana-cloud-api-token_token: glc_sg44293c70rn2nuodej5ba4wf6rradbs",
+    "loki_key: glc_eyJvIjoiNzQ0NTg3IiwibiI7InN0YWlrLTQ3NTgzMC1obC13cml0ZS1oYW5kc29uJG9raSIsImsiOiI4M2w3cmdYUlBoMTUyMW1lMU023nl5UDUiLCJtIjp7IOIiOiJ1cyJ9fQ==",
+    "string grafana-cloud-api-tokenToken = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\";",
+    "var grafana-cloud-api-tokenToken = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "var grafana-cloud-api-tokenToken string = \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"",
+    "{\n    \"grafana-cloud-api-token_token\": \"glc_sg44293c70rn2nuodej5ba4wf6rradbs\"\n}",
+    "{\"config.ini\": \"GRAFANA-CLOUD-API-TOKEN_TOKEN=glc_sg44293c70rn2nuodej5ba4wf6rradbs\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "   API_KEY=\"glc_111111111111111111111111111111111111111111=\"",
+    "// Alias models\nvoid GLC_StateBeginUnderwaterAliasModelCaustics(texture_ref base_texture, texture_ref caustics_texture)\n{",
+    "glc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "static void GLC_CreateLightmapTextureArray(void);\nstatic void GLC_CreateLightmapTexturesIndividual(void);\n\nvoid GLC_UploadLightmap(int textureUnit, int lightmapnum);"
+  ]
+}

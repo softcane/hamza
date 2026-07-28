@@ -1,0 +1,34 @@
+{
+  "ruleId": "gitlab-runner-authentication-token-routable",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "$gitlabToken .= \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "\u003cgitlabToken\u003e\n    glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\")",
+    "gitlabToken := \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlabToken := `glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn`",
+    "gitlabToken = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlabToken = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlabToken = 'glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn'",
+    "gitlabToken = glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn",
+    "gitlabToken=\"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlabToken=glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn",
+    "gitlab_TOKEN :::= \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_TOKEN ::= \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_TOKEN := \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_TOKEN = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_TOKEN ?= \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_token: \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "gitlab_token: 'glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn'",
+    "gitlab_token: glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn",
+    "string gitlabToken = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\";",
+    "var gitlabToken = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "var gitlabToken string = \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"",
+    "{\n    \"gitlab_token\": \"glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glrt-t0_0ehubysz6954pk8u0k9fivp7icp.v1hh168rn\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "glrt-tx_xxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxx"
+  ]
+}

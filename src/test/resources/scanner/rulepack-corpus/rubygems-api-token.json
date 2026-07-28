@@ -1,0 +1,32 @@
+{
+  "ruleId": "rubygems-api-token",
+  "truePositives": [
+    "  \"rubygemsAPITokenToken\" =\u003e \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "$rubygemsAPITokenToken .= \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "\u003crubygemsAPITokenToken\u003e\n    rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\n\u003c/rubygemsAPITokenToken\u003e",
+    "String rubygemsAPITokenToken = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\";",
+    "System.setProperty(\"RUBYGEMSAPITOKEN_TOKEN\", \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\")",
+    "rubygemsAPITokenToken := \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPITokenToken := `rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e`",
+    "rubygemsAPITokenToken = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPITokenToken = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPITokenToken = 'rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e'",
+    "rubygemsAPITokenToken = rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e",
+    "rubygemsAPITokenToken=\"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPITokenToken=rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e",
+    "rubygemsAPIToken_TOKEN :::= \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_TOKEN ::= \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_TOKEN := \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_TOKEN = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_TOKEN ?= \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_token: \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "rubygemsAPIToken_token: 'rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e'",
+    "rubygemsAPIToken_token: rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e",
+    "string rubygemsAPITokenToken = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\";",
+    "var rubygemsAPITokenToken = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "var rubygemsAPITokenToken string = \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"",
+    "{\n    \"rubygemsAPIToken_token\": \"rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\"\n}",
+    "{\"config.ini\": \"RUBYGEMSAPITOKEN_TOKEN=rubygems_53cc1eb1970a5b7f0031122838a3e851eb59d18c9deb777e\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

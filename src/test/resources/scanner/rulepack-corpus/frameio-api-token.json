@@ -1,0 +1,32 @@
+{
+  "ruleId": "frameio-api-token",
+  "truePositives": [
+    "  \"frameioToken\" =\u003e \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "$frameioToken .= \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "\u003cframeioToken\u003e\n    fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\n\u003c/frameioToken\u003e",
+    "String frameioToken = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\";",
+    "System.setProperty(\"FRAMEIO_TOKEN\", \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\")",
+    "frameioToken := \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameioToken := `fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__`",
+    "frameioToken = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameioToken = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameioToken = 'fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__'",
+    "frameioToken = fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__",
+    "frameioToken=\"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameioToken=fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__",
+    "frameio_TOKEN :::= \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_TOKEN ::= \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_TOKEN := \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_TOKEN = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_TOKEN ?= \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_token: \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "frameio_token: 'fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__'",
+    "frameio_token: fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__",
+    "string frameioToken = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\";",
+    "var frameioToken = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "var frameioToken string = \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"",
+    "{\n    \"frameio_token\": \"fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\"\n}",
+    "{\"config.ini\": \"FRAMEIO_TOKEN=fio-u-9p4ff_38d3i-1yaw9wp_324ibrs3synht4tp_tszb9u4kfq08zi77rbs4e4oej__\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,16 @@
+# Prometheus scrapes both hamza-core (the Record/policy metrics) and Envoy's own
+# stats. Hamza's metrics are the by-product, not the product (ADR 0005).
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: hamza-core
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ["hamza-core:8080"]
+
+  - job_name: envoy
+    metrics_path: /stats/prometheus
+    static_configs:
+      - targets: ["envoy:9901"]

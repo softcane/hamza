@@ -1,0 +1,15 @@
+target/
+.git/
+.idea/
+*.iml
+.vscode/
+data/
+*.db
+*.sqlite
+docs/
+scripts/
+envoy/
+grafana/
+prometheus/
+fake-provider/
+docker-compose.yml

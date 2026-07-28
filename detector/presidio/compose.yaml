@@ -1,0 +1,34 @@
+services:
+  analyzer:
+    image: ghcr.io/data-privacy-stack/presidio-analyzer@sha256:286e3fa7f3a7426e775e8564fe1870f1ba8f999d3ab8bbb8cc46a44355d9d6e9
+    pull_policy: missing
+    user: "1001:1001"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      LOG_LEVEL: ERROR
+      PYTHONDONTWRITEBYTECODE: "1"
+      CUDA_VISIBLE_DEVICES: ""
+      WORKERS: "1"
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    volumes:
+      - ./:/evaluation:ro
+    networks:
+      - detector
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:3000/health >/dev/null"]
+      interval: 2s
+      timeout: 1s
+      retries: 60
+      start_period: 5s
+    cpus: 2.0
+    mem_limit: 2g
+
+networks:
+  detector:
+    internal: true
+

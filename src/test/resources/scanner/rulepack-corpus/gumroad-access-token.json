@@ -1,0 +1,8 @@
+{
+  "ruleId": "gumroad-access-token",
+  "truePositives": [
+    "gumroadPRIVATE=abf11e4ab2850ffd50ef690257f7a1c998a443059513d1a4826f2b3159620505",
+    "gumroad_access_token=abf11e4ab2850ffd50ef690257f7a1c998a443059513d1a4826f2b3159620505"
+  ],
+  "falsePositives": []
+}

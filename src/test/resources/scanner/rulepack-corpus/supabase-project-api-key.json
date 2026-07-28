@@ -1,0 +1,11 @@
+{
+  "ruleId": "supabase-project-api-key",
+  "truePositives": [
+    "SUPABASE_SERVICE_ROLE_KEY=\"sb_secret_9uM4GhB0STF5R4K3HxQtlg_bzWW6DRj\"",
+    "supabase_api_key: sb_secret_szE_jsbktD3pWgnfUjgahw_hcHEIOBH"
+  ],
+  "falsePositives": [
+    "SUPABASE_SERVICE_ROLE_KEY=\"sb_secret_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+    "supabase_api_key: sb_secret_9uM4GhB0STF5R4K3HxQtlg_bzWW6DR"
+  ]
+}

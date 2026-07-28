@@ -1,0 +1,74 @@
+{
+  "model": "claude-haiku-4-5",
+  "max_tokens": 4096,
+  "system": [
+    {
+      "type": "text",
+      "text": "Follow policy for priya.fixture@example-corp.test.",
+      "cache_control": {
+        "type": "ephemeral"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Check priya.fixture@example-corp.test."
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I will inspect \"café\" for priya.fixture@example-corp.test."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_example_1",
+          "name": "lookup_example",
+          "input": {
+            "email": "synthetic-request@example.invalid"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_example_1",
+          "content": [
+            {
+              "type": "text",
+              "text": "result for priya.fixture@example-corp.test"
+            }
+          ],
+          "is_error": false
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "lookup_example",
+      "description": "Lookup fake records",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    }
+  ],
+  "temperature": 0,
+  "stream": true,
+  "metadata": {
+    "user_id": "example-fixture"
+  }
+}

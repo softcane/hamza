@@ -1,0 +1,12 @@
+{
+  "ruleId": "ovh-consumer-key",
+  "truePositives": [
+    "OVH_CONSUMER_KEY=\"q6-77sNplCuWjynvl1khlQAHx42D13iY\"",
+    "ovh_consumerKey: \"v5ROYG5yWz3NmNjBMFqkY-IhkUujY7sa\"",
+    "ovh_consumer_key = \"djEHF6sXFS46o82bNbPH662ICfhZIkcd\""
+  ],
+  "falsePositives": [
+    "OVH_CONSUMER_KEY=\"too-short\"",
+    "consumer_key = \"placeholder-consumer-key\""
+  ]
+}

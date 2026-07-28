@@ -1,0 +1,32 @@
+{
+  "ruleId": "flutterwave-public-key",
+  "truePositives": [
+    "  \"flutterwavePubKeyToken\" =\u003e \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "$flutterwavePubKeyToken .= \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "\u003cflutterwavePubKeyToken\u003e\n    FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\n\u003c/flutterwavePubKeyToken\u003e",
+    "String flutterwavePubKeyToken = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\";",
+    "System.setProperty(\"FLUTTERWAVEPUBKEY_TOKEN\", \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\")",
+    "flutterwavePubKeyToken := \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKeyToken := `FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X`",
+    "flutterwavePubKeyToken = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKeyToken = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKeyToken = 'FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X'",
+    "flutterwavePubKeyToken = FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X",
+    "flutterwavePubKeyToken=\"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKeyToken=FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X",
+    "flutterwavePubKey_TOKEN :::= \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_TOKEN ::= \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_TOKEN := \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_TOKEN = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_TOKEN ?= \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_token: \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "flutterwavePubKey_token: 'FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X'",
+    "flutterwavePubKey_token: FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X",
+    "string flutterwavePubKeyToken = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\";",
+    "var flutterwavePubKeyToken = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "var flutterwavePubKeyToken string = \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"",
+    "{\n    \"flutterwavePubKey_token\": \"FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\"\n}",
+    "{\"config.ini\": \"FLUTTERWAVEPUBKEY_TOKEN=FLWPUBK_TEST-29a6e1913d81895876069b12358cfe22-X\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

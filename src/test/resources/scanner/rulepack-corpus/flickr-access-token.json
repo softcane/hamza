@@ -1,0 +1,32 @@
+{
+  "ruleId": "flickr-access-token",
+  "truePositives": [
+    "  \"flickrToken\" =\u003e \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "$flickrToken .= \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "\u003cflickrToken\u003e\n    a7t4xdxw416m68cfkka75px9b1q3msv0\n\u003c/flickrToken\u003e",
+    "String flickrToken = \"a7t4xdxw416m68cfkka75px9b1q3msv0\";",
+    "System.setProperty(\"FLICKR_TOKEN\", \"a7t4xdxw416m68cfkka75px9b1q3msv0\")",
+    "flickrToken := \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickrToken := `a7t4xdxw416m68cfkka75px9b1q3msv0`",
+    "flickrToken = \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickrToken = \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickrToken = 'a7t4xdxw416m68cfkka75px9b1q3msv0'",
+    "flickrToken = a7t4xdxw416m68cfkka75px9b1q3msv0",
+    "flickrToken=\"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickrToken=a7t4xdxw416m68cfkka75px9b1q3msv0",
+    "flickr_TOKEN :::= \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_TOKEN ::= \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_TOKEN := \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_TOKEN = \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_TOKEN ?= \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_token: \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "flickr_token: 'a7t4xdxw416m68cfkka75px9b1q3msv0'",
+    "flickr_token: a7t4xdxw416m68cfkka75px9b1q3msv0",
+    "string flickrToken = \"a7t4xdxw416m68cfkka75px9b1q3msv0\";",
+    "var flickrToken = \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "var flickrToken string = \"a7t4xdxw416m68cfkka75px9b1q3msv0\"",
+    "{\n    \"flickr_token\": \"a7t4xdxw416m68cfkka75px9b1q3msv0\"\n}",
+    "{\"config.ini\": \"FLICKR_TOKEN=a7t4xdxw416m68cfkka75px9b1q3msv0\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

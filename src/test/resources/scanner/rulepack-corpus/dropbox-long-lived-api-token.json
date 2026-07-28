@@ -1,0 +1,6 @@
+{
+  "ruleId": "dropbox-long-lived-api-token",
+  "truePositives": [],
+  "falsePositives": [],
+  "sampleGap": "upstream rule function does not call utils.Validate or utils.ValidateWithPaths; no upstream tps/fps samples exist at this ref"
+}

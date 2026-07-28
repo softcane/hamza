@@ -1,0 +1,34 @@
+{
+  "ruleId": "gitlab-ptt",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "$gitlabToken .= \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "\u003cgitlabToken\u003e\n    glptt-e9841832419a6dc826feb455a6ba8578fc504079\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\")",
+    "gitlabToken := \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlabToken := `glptt-e9841832419a6dc826feb455a6ba8578fc504079`",
+    "gitlabToken = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlabToken = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlabToken = 'glptt-e9841832419a6dc826feb455a6ba8578fc504079'",
+    "gitlabToken = glptt-e9841832419a6dc826feb455a6ba8578fc504079",
+    "gitlabToken=\"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlabToken=glptt-e9841832419a6dc826feb455a6ba8578fc504079",
+    "gitlab_TOKEN :::= \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_TOKEN ::= \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_TOKEN := \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_TOKEN = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_TOKEN ?= \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_token: \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "gitlab_token: 'glptt-e9841832419a6dc826feb455a6ba8578fc504079'",
+    "gitlab_token: glptt-e9841832419a6dc826feb455a6ba8578fc504079",
+    "string gitlabToken = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\";",
+    "var gitlabToken = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "var gitlabToken string = \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"",
+    "{\n    \"gitlab_token\": \"glptt-e9841832419a6dc826feb455a6ba8578fc504079\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glptt-e9841832419a6dc826feb455a6ba8578fc504079\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "glptt-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

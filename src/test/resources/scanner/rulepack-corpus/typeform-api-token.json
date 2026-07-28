@@ -1,0 +1,32 @@
+{
+  "ruleId": "typeform-api-token",
+  "truePositives": [
+    "  \"typeformAPITokenToken\" =\u003e \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "$typeformAPITokenToken .= \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "\u003ctypeformAPITokenToken\u003e\n    tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\n\u003c/typeformAPITokenToken\u003e",
+    "String typeformAPITokenToken = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\";",
+    "System.setProperty(\"TYPEFORMAPITOKEN_TOKEN\", \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\")",
+    "string typeformAPITokenToken = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\";",
+    "typeformAPITokenToken := \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPITokenToken := `tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5`",
+    "typeformAPITokenToken = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPITokenToken = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPITokenToken = 'tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5'",
+    "typeformAPITokenToken = tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5",
+    "typeformAPITokenToken=\"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPITokenToken=tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5",
+    "typeformAPIToken_TOKEN :::= \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_TOKEN ::= \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_TOKEN := \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_TOKEN = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_TOKEN ?= \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_token: \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "typeformAPIToken_token: 'tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5'",
+    "typeformAPIToken_token: tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5",
+    "var typeformAPITokenToken = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "var typeformAPITokenToken string = \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"",
+    "{\n    \"typeformAPIToken_token\": \"tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\"\n}",
+    "{\"config.ini\": \"TYPEFORMAPITOKEN_TOKEN=tfp_-3zl23hqik1s1ym2fdchqzxq5rg=-z7_equ=yn2v-jp_20hn9v23jl28lt5\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

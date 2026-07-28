@@ -1,0 +1,32 @@
+{
+  "ruleId": "algolia-api-key",
+  "truePositives": [
+    "  \"algoliaToken\" =\u003e \"682307120f3b0015fdb5d941804dd616\"",
+    "$algoliaToken .= \"682307120f3b0015fdb5d941804dd616\"",
+    "\u003calgoliaToken\u003e\n    682307120f3b0015fdb5d941804dd616\n\u003c/algoliaToken\u003e",
+    "String algoliaToken = \"682307120f3b0015fdb5d941804dd616\";",
+    "System.setProperty(\"ALGOLIA_TOKEN\", \"682307120f3b0015fdb5d941804dd616\")",
+    "algoliaToken := \"682307120f3b0015fdb5d941804dd616\"",
+    "algoliaToken := `682307120f3b0015fdb5d941804dd616`",
+    "algoliaToken = \"682307120f3b0015fdb5d941804dd616\"",
+    "algoliaToken = \"682307120f3b0015fdb5d941804dd616\"",
+    "algoliaToken = '682307120f3b0015fdb5d941804dd616'",
+    "algoliaToken = 682307120f3b0015fdb5d941804dd616",
+    "algoliaToken=\"682307120f3b0015fdb5d941804dd616\"",
+    "algoliaToken=682307120f3b0015fdb5d941804dd616",
+    "algolia_TOKEN :::= \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_TOKEN ::= \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_TOKEN := \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_TOKEN = \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_TOKEN ?= \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_token: \"682307120f3b0015fdb5d941804dd616\"",
+    "algolia_token: '682307120f3b0015fdb5d941804dd616'",
+    "algolia_token: 682307120f3b0015fdb5d941804dd616",
+    "string algoliaToken = \"682307120f3b0015fdb5d941804dd616\";",
+    "var algoliaToken = \"682307120f3b0015fdb5d941804dd616\"",
+    "var algoliaToken string = \"682307120f3b0015fdb5d941804dd616\"",
+    "{\n    \"algolia_token\": \"682307120f3b0015fdb5d941804dd616\"\n}",
+    "{\"config.ini\": \"ALGOLIA_TOKEN=682307120f3b0015fdb5d941804dd616\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

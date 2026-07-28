@@ -1,0 +1,32 @@
+{
+  "ruleId": "sentry-access-token",
+  "truePositives": [
+    "  \"sentryToken\" =\u003e \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "$sentryToken .= \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "\u003csentryToken\u003e\n    0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\n\u003c/sentryToken\u003e",
+    "String sentryToken = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\";",
+    "System.setProperty(\"SENTRY_TOKEN\", \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\")",
+    "sentryToken := \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentryToken := `0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593`",
+    "sentryToken = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentryToken = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentryToken = '0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593'",
+    "sentryToken = 0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593",
+    "sentryToken=\"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentryToken=0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593",
+    "sentry_TOKEN :::= \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_TOKEN ::= \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_TOKEN := \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_TOKEN = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_TOKEN ?= \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_token: \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "sentry_token: '0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593'",
+    "sentry_token: 0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593",
+    "string sentryToken = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\";",
+    "var sentryToken = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "var sentryToken string = \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"",
+    "{\n    \"sentry_token\": \"0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\"\n}",
+    "{\"config.ini\": \"SENTRY_TOKEN=0975eedfce270ccecf3ab66a68623bc4ac15491b5db074b49893b7cbe6d41593\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

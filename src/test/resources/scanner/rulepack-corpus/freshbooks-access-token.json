@@ -1,0 +1,32 @@
+{
+  "ruleId": "freshbooks-access-token",
+  "truePositives": [
+    "  \"freshbooksToken\" =\u003e \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "$freshbooksToken .= \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "\u003cfreshbooksToken\u003e\n    y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\n\u003c/freshbooksToken\u003e",
+    "String freshbooksToken = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\";",
+    "System.setProperty(\"FRESHBOOKS_TOKEN\", \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\")",
+    "freshbooksToken := \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooksToken := `y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r`",
+    "freshbooksToken = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooksToken = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooksToken = 'y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r'",
+    "freshbooksToken = y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r",
+    "freshbooksToken=\"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooksToken=y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r",
+    "freshbooks_TOKEN :::= \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_TOKEN ::= \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_TOKEN := \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_TOKEN = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_TOKEN ?= \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_token: \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "freshbooks_token: 'y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r'",
+    "freshbooks_token: y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r",
+    "string freshbooksToken = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\";",
+    "var freshbooksToken = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "var freshbooksToken string = \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"",
+    "{\n    \"freshbooks_token\": \"y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\"\n}",
+    "{\"config.ini\": \"FRESHBOOKS_TOKEN=y2q1u5bhhauhjhe7g2z2odzhhjjxd8c097h3a34x2o1vfewx3lg2u7egpw90u61r\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

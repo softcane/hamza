@@ -1,0 +1,41 @@
+{
+  "ruleId": "curl-auth-user",
+  "truePositives": [
+    "$ curl https://api.dropbox.com/oauth2/token \\\n  --user c28wlsosanujy2z:qgsnai0xokrw4j1 --data grant_type=authorization_code",
+    "curl --cacert ca.crt -u elastic:P@ssw0rd$1 https://localhost:9200",
+    "curl --user kevin:'pRf7vG2h1L8nQkW9' -iX PATCH -H \"Content-Type: application/json\" -d",
+    "curl --user roger23@gmail.com:pQ9wTxu4Fg https://www.dropbox.com/cli_link?host_id=abcdefg -v",
+    "curl -X POST --user \"{acd3c08b-74e8-4f44-a2d0-80694le24f46}\":\"{ZqL5kVrX1n8tA2}\" --header \"Accept: application/json\" --data \"{\\\"text\\\":\\\"Hello, world\\\",\\\"source\\\":\\\"en\\\",\\\"target\\\":\\\"es\\\"}\" https://gateway.watsonplatform.net/language-translator/api",
+    "curl -s --user 'api:d2LkV78zLx!t' \\\n    https://api.mailgun.net/v2/sandbox91d3515882ecfaa1c65be642.mailgun.org/messages",
+    "curl -s -v --user \"j.smith:dB2yF6@qL9vZm1P#4J\" \"https://api.contoso.org/user/me\"",
+    "curl -sw '%{http_code}' -X POST --user  'johns:h0pk1ns~21s' $GItHUB_API_URL/$GIT_COMMIT --data",
+    "curl -u \":d2LkV78zLx!t\" https://localhost:9200",
+    "curl -u \"d2LkV78zLx!t:\" https://localhost:9200",
+    "sh-5.0$ curl -k -X POST https://infinispan:11222/rest/v2/caches/default/hello \\\n  -H 'Content-type: text/plain' \\\n  -d 'world' \\\n  -u developer:yqDVtkqPECriaLRi"
+  ],
+  "falsePositives": [
+    "           curl -sL --user \"$GITHUB_USERNAME:$GITHUB_PASSWORD\" \"$GITHUB_URL\" \u003e \"$TESTS_PATH\"",
+    "   curl -X GET --insecure --user \"username:password\" \\",
+    "   curl -sL --user \"$1:$2\" \"$3\" \u003e \"$4\"",
+    "#HTTP command line test\ncurl -X POST -H \"Content-Type: application/json\" -d '{\"id\":12345,\"geo\":{\"latitude\":28.50,\"longitude\":-81.14}}' http://\u003cip\u003e:8080/serve\n\n#UDP command line test\necho -n '{\"type\":\"serve\",\"channel\":\"/\",\"data\":{\"site_id\":8,\"post_id\":12345,\"geo\":{\"lat\":28.50,\"long\":-81.14}}}' \u003e/dev/udp/127.0.0.1/41234\n\n#UDP Listener (for confirmation)\nnc -u -l 41234",
+    "curl --insecure --ssl-reqd \"smtps://smtp.gmail.com\" --mail-from \"src@gmail.com\" --mail-rcpt \"dst@gmail.com\" --user \"src@gmail.com\" --upload-file out.txt",
+    "curl --silent --fail {{- if and $.Values.username $.Values.password }} --user \"{{ $.Values.username }}:{{ $.Values.password }}\"",
+    "curl --silent --insecure --user ${f5user}:${f5pass} \\",
+    "curl --user \"xxx:yyy\"",
+    "curl --user neo4j:[PASSWORD] http://[IP]:7474/db/data/",
+    "curl -X POST --user \"$(cat ./login.txt):$(cat ./password.txt)\"",
+    "curl -XGET -i -u \"${{ env.ELK_ID }}:${{ build.env.ELK_PASS }}\"",
+    "curl -XGET -i -u \"${{ steps.vault.outputs.account_id }}:${{ steps.vault.outputs.account_password }}\"",
+    "curl -XGET -i -u \"${{needs.vault.outputs.account_id}}:${{needs.vault.outputs.account_password}}\"",
+    "curl -i -u 'test:test'",
+    "curl -k -X POST -I -u \"SRVC_JENKINS:${APPID}\"",
+    "curl -sw '%{http_code}' -X POST --user '$USERNAME:$PASSWORD' $GItHUB_API_URL/$GIT_COMMIT --data",
+    "curl -u \"${_username}:${_password}\"",
+    "curl -u \"${username}\":\"${password}\"",
+    "curl -u \":\" https://localhost:9200",
+    "curl -u \"myusername\" http://localhost:15130/api/check_user/",
+    "curl -u \u003cuser:password\u003e https://test.com/endpoint",
+    "curl -u username:token",
+    "curl http://127.0.0.1:5000/file --user user:pass --digest        # digest auth"
+  ]
+}

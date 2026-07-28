@@ -1,0 +1,32 @@
+{
+  "ruleId": "squarespace-access-token",
+  "truePositives": [
+    "  \"squarespaceToken\" =\u003e \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "$squarespaceToken .= \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "\u003csquarespaceToken\u003e\n    65b3a736-7e72-8271-7ed7-87926f547a39\n\u003c/squarespaceToken\u003e",
+    "String squarespaceToken = \"65b3a736-7e72-8271-7ed7-87926f547a39\";",
+    "System.setProperty(\"SQUARESPACE_TOKEN\", \"65b3a736-7e72-8271-7ed7-87926f547a39\")",
+    "squarespaceToken := \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespaceToken := `65b3a736-7e72-8271-7ed7-87926f547a39`",
+    "squarespaceToken = \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespaceToken = \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespaceToken = '65b3a736-7e72-8271-7ed7-87926f547a39'",
+    "squarespaceToken = 65b3a736-7e72-8271-7ed7-87926f547a39",
+    "squarespaceToken=\"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespaceToken=65b3a736-7e72-8271-7ed7-87926f547a39",
+    "squarespace_TOKEN :::= \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_TOKEN ::= \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_TOKEN := \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_TOKEN = \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_TOKEN ?= \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_token: \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "squarespace_token: '65b3a736-7e72-8271-7ed7-87926f547a39'",
+    "squarespace_token: 65b3a736-7e72-8271-7ed7-87926f547a39",
+    "string squarespaceToken = \"65b3a736-7e72-8271-7ed7-87926f547a39\";",
+    "var squarespaceToken = \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "var squarespaceToken string = \"65b3a736-7e72-8271-7ed7-87926f547a39\"",
+    "{\n    \"squarespace_token\": \"65b3a736-7e72-8271-7ed7-87926f547a39\"\n}",
+    "{\"config.ini\": \"SQUARESPACE_TOKEN=65b3a736-7e72-8271-7ed7-87926f547a39\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

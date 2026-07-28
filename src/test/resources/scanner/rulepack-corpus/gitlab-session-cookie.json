@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitlab-session-cookie",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "$gitlabToken .= \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "\u003cgitlabToken\u003e\n    _gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\")",
+    "gitlabToken := \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlabToken := `_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y`",
+    "gitlabToken = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlabToken = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlabToken = '_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y'",
+    "gitlabToken = _gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y",
+    "gitlabToken=\"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlabToken=_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y",
+    "gitlab_TOKEN :::= \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_TOKEN ::= \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_TOKEN := \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_TOKEN = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_TOKEN ?= \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_token: \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "gitlab_token: '_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y'",
+    "gitlab_token: _gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y",
+    "string gitlabToken = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\";",
+    "var gitlabToken = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "var gitlabToken string = \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"",
+    "{\n    \"gitlab_token\": \"_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=_gitlab_session=f4jexloqy9dcv9r8zb2fctr08j3frd3y\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

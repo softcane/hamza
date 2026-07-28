@@ -1,0 +1,8 @@
+{
+  "ruleId": "deno-account-token",
+  "truePositives": [
+    "DENO_DEPLOY_TOKEN=ddp_A7h3Lm9Qw2Rt6Yu8Ks4Vz1Np5Cx0Bd7EfGhJ",
+    "deno_token = \"ddp_M4nT7pQs8Vx1Zc3Df5Gh7Jk9Lm2Np4Qr6StU\""
+  ],
+  "falsePositives": []
+}

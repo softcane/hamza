@@ -1,0 +1,11 @@
+{
+  "ruleId": "influxdb-api-token",
+  "truePositives": [
+    "influx\ntoken=nxft2SEGZrEH2-jwDIea6tDSiX6TqHn50u0kOcDqSRnUdnK35VYauC1buWdwh-UFq7dgeb7qf3pMyKg6sbf6zg==",
+    "influxdb\ntoken='z62qZYqGCOCI1zx3cFZYFcosWJoGw9XKIeEcF_GWwhfefRBSMjQfl3M5-ZDZN1FOFvWJPJHVi2-bZ6hPaQWvpw=='"
+  ],
+  "falsePositives": [
+    "influx token=short",
+    "token=nxft2SEGZrEH2-jwDIea6tDSiX6TqHn50u0kOcDqSRnUdnK35VYauC1buWdwh-UFq7dgeb7qf3pMyKg6sbf6zg=="
+  ]
+}

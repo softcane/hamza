@@ -1,0 +1,36 @@
+{
+  "ruleId": "minimax-api-key",
+  "truePositives": [
+    "  \"minimaxToken\" =\u003e \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "$minimaxToken .= \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "\u003cminimaxToken\u003e\n    sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\n\u003c/minimaxToken\u003e",
+    "String minimaxToken = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\";",
+    "System.setProperty(\"MINIMAX_TOKEN\", \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\")",
+    "minimaxToken := \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimaxToken := `sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3`",
+    "minimaxToken = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimaxToken = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimaxToken = 'sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3'",
+    "minimaxToken = sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3",
+    "minimaxToken=\"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimaxToken=sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3",
+    "minimax_TOKEN :::= \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_TOKEN ::= \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_TOKEN := \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_TOKEN = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_TOKEN ?= \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_token: \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "minimax_token: 'sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3'",
+    "minimax_token: sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3",
+    "string minimaxToken = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\";",
+    "var minimaxToken = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "var minimaxToken string = \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"",
+    "{\n    \"minimax_token\": \"sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\"\n}",
+    "{\"config.ini\": \"MINIMAX_TOKEN=sk-api-mGQShI3G8Xa_OaDMH9ZaI8AWr15KNt06R0OCEJCGDa0HBjme7teTOVs1yDIajjh8d1saUi6FhyD82Rpc3xkqOIlTEqLKuM7fSS4_EEgXfqA_kdJwfgIkdi3\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "minimax_api_key = \"sk-api-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+    "minimax_api_key = \"sk-api-uBf3S6jw9Akw0X6u9KDy\"",
+    "minimax_api_key = \"sk-uBf3S6jw9Akw0X6u9KDygGb5rDn1LdZ7G3mVtvHhQb7x0sMn\""
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "ruleId": "alibaba-sts-security-token",
+  "truePositives": [
+    "ALIBABA__TOKEN=CAIS/gF1q6Ft5B2yfSjIr5eDA9xjJCcl57eKC7A3ThnJA",
+    "alibaba_token = \"CAISuwJ1q6Ft5B2yu9Kiaa5E0VnVJ8q2o3P4r5S6t7U8v9W0xYz\""
+  ],
+  "falsePositives": [
+    "token = \"CAISuwJ1q6Ft5B2yu9Kiaa5E0VnVJ8q2o3P4r5S6t7U8v9W0xYz\""
+  ]
+}

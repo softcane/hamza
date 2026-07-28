@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitlab-kubernetes-agent-token",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "$gitlabToken .= \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "\u003cgitlabToken\u003e\n    glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\")",
+    "gitlabToken := \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlabToken := `glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1`",
+    "gitlabToken = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlabToken = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlabToken = 'glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1'",
+    "gitlabToken = glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1",
+    "gitlabToken=\"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlabToken=glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1",
+    "gitlab_TOKEN :::= \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_TOKEN ::= \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_TOKEN := \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_TOKEN = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_TOKEN ?= \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_token: \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "gitlab_token: 'glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1'",
+    "gitlab_token: glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1",
+    "string gitlabToken = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\";",
+    "var gitlabToken = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "var gitlabToken string = \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"",
+    "{\n    \"gitlab_token\": \"glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glagent-f5740pkcsr30h62689zcbv11esm2ubdx5ulha73f75kbxxsfy1\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "RuleID": "gitlab-pat",
+    "StartLine": 1,
+    "EndLine": 1,
+    "StartColumn": 58,
+    "EndColumn": 83
+  }
+]

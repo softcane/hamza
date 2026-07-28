@@ -1,0 +1,13 @@
+{
+  "ruleId": "greptile-api-key",
+  "truePositives": [
+    "greptile = ILHCeVWib0t3iWKSyzD29cSpGUCZMsinJrwQu6bz/WEtz+O8",
+    "greptile_api_key = \"54tKjWAmKVvnREzrpe4d8/hfgBYf3mpcm/AeKsEHvUnWGx4g\"",
+    "greptile_api_key = \"Bc4UcqgG6mG5ARxNAOH7TV2C/tDWaB7Kpne/pockv3iQcbSN\"",
+    "greptile_api_key = \"cRxqPehpNKq5Rtp+QvXBPb6p6n7d+2n4a6dLZqhGQVz2w4ln\""
+  ],
+  "falsePositives": [
+    "greptile_api_key = \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"",
+    "greptile_api_key = \"Bc4UcqgG6mG5ARxNAOH7TV2C\""
+  ]
+}

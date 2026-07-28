@@ -1,0 +1,32 @@
+{
+  "ruleId": "polymarket-address",
+  "truePositives": [
+    "  \"poly_addressToken\" =\u003e \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "$poly_addressToken .= \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "\u003cpoly_addressToken\u003e\n    0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\n\u003c/poly_addressToken\u003e",
+    "String poly_addressToken = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\";",
+    "System.setProperty(\"POLY_ADDRESS_TOKEN\", \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\")",
+    "poly_addressToken := \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_addressToken := `0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32`",
+    "poly_addressToken = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_addressToken = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_addressToken = '0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32'",
+    "poly_addressToken = 0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32",
+    "poly_addressToken=\"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_addressToken=0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32",
+    "poly_address_TOKEN :::= \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_TOKEN ::= \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_TOKEN := \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_TOKEN = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_TOKEN ?= \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_token: \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "poly_address_token: '0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32'",
+    "poly_address_token: 0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32",
+    "string poly_addressToken = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\";",
+    "var poly_addressToken = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "var poly_addressToken string = \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"",
+    "{\n    \"poly_address_token\": \"0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\"\n}",
+    "{\"config.ini\": \"POLY_ADDRESS_TOKEN=0xcbf0f282d3e762eE530CFd759FC627e2cA5EEF32\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

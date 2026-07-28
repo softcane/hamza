@@ -1,0 +1,34 @@
+{
+  "schema": "hamza-presidio-corpus/v1",
+  "corpus_version": 3,
+  "generator": "presidio_feasibility.py",
+  "language": "en",
+  "partitions": {
+    "tuning": {
+      "seed": "hamza-presidio-tuning-v1",
+      "positive_occurrences_per_entity": 100,
+      "benign_turns": 3000
+    },
+    "holdout": {
+      "seed": "hamza-presidio-holdout-v1",
+      "positive_occurrences_per_entity": 100,
+      "benign_turns": 10000
+    }
+  },
+  "fake_data_controls": {
+    "identities": "generated fictional names",
+    "email_and_url_domains": "example.com reserved domain",
+    "ip_addresses": "RFC 5737 documentation ranges",
+    "phone_numbers": "NANP 555-0100 through 555-0199 reserved range",
+    "mac_addresses": "locally administered unicast range",
+    "financial_values": "deterministically generated checksum-valid test values"
+  },
+  "corpus_version_2_changes": {
+    "positive_prefix": "carries neither the entity name nor a context word, so a positive scores as it does in a Turn that names no helpful word",
+    "benign_content": "widened to the shapes real Agent traffic carries: semantic versions, ISO timestamps, UUIDs, git SHAs, loopback and unspecified addresses in config, host:port pairs, stack traces, JSON with url and host keys, colon-separated code identifiers, and package registry domains"
+  },
+  "corpus_version_3_changes": {
+    "benign_content": "added three Claude model-ID templates (bare sentence, JSON model field, system-prompt sentence) covering claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929 and claude-opus-4-1-20250805; Presidio scores the version-and-date tail of each at 0.4, identical to a real phone number, so PHONE_NUMBER now records enough benign false findings at 0.4 to fail benign_false_findings_above_floor and fall back to the 0.75 default"
+  }
+}
+

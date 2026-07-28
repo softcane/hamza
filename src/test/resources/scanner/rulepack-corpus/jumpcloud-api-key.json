@@ -1,0 +1,8 @@
+{
+  "ruleId": "jumpcloud-api-key",
+  "truePositives": [
+    "JUMPCLOUD_SECRET=k9l8m7n6o5p4q3r2s1t0k9l8m7n6o5p4q3r2s1t0",
+    "jumpcloud_api_key=1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f7g8h9i0j"
+  ],
+  "falsePositives": []
+}

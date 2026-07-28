@@ -1,0 +1,32 @@
+{
+  "ruleId": "mattermost-access-token",
+  "truePositives": [
+    "  \"mattermostToken\" =\u003e \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "$mattermostToken .= \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "\u003cmattermostToken\u003e\n    xbbzj8cjrfizrlcu0fskz2hlzf\n\u003c/mattermostToken\u003e",
+    "String mattermostToken = \"xbbzj8cjrfizrlcu0fskz2hlzf\";",
+    "System.setProperty(\"MATTERMOST_TOKEN\", \"xbbzj8cjrfizrlcu0fskz2hlzf\")",
+    "mattermostToken := \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermostToken := `xbbzj8cjrfizrlcu0fskz2hlzf`",
+    "mattermostToken = \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermostToken = \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermostToken = 'xbbzj8cjrfizrlcu0fskz2hlzf'",
+    "mattermostToken = xbbzj8cjrfizrlcu0fskz2hlzf",
+    "mattermostToken=\"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermostToken=xbbzj8cjrfizrlcu0fskz2hlzf",
+    "mattermost_TOKEN :::= \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_TOKEN ::= \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_TOKEN := \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_TOKEN = \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_TOKEN ?= \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_token: \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "mattermost_token: 'xbbzj8cjrfizrlcu0fskz2hlzf'",
+    "mattermost_token: xbbzj8cjrfizrlcu0fskz2hlzf",
+    "string mattermostToken = \"xbbzj8cjrfizrlcu0fskz2hlzf\";",
+    "var mattermostToken = \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "var mattermostToken string = \"xbbzj8cjrfizrlcu0fskz2hlzf\"",
+    "{\n    \"mattermost_token\": \"xbbzj8cjrfizrlcu0fskz2hlzf\"\n}",
+    "{\"config.ini\": \"MATTERMOST_TOKEN=xbbzj8cjrfizrlcu0fskz2hlzf\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

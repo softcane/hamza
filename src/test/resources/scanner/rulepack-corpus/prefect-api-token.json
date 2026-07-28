@@ -1,0 +1,34 @@
+{
+  "ruleId": "prefect-api-token",
+  "truePositives": [
+    "  \"api-tokenToken\" =\u003e \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "$api-tokenToken .= \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "\u003capi-tokenToken\u003e\n    pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\n\u003c/api-tokenToken\u003e",
+    "String api-tokenToken = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\";",
+    "System.setProperty(\"API-TOKEN_TOKEN\", \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\")",
+    "api-tokenToken := \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-tokenToken := `pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26`",
+    "api-tokenToken = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-tokenToken = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-tokenToken = 'pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26'",
+    "api-tokenToken = pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26",
+    "api-tokenToken=\"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-tokenToken=pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26",
+    "api-token_TOKEN :::= \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_TOKEN ::= \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_TOKEN := \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_TOKEN = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_TOKEN ?= \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_token: \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "api-token_token: 'pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26'",
+    "api-token_token: pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26",
+    "string api-tokenToken = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\";",
+    "var api-tokenToken = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "var api-tokenToken string = \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"",
+    "{\n    \"api-token_token\": \"pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\"\n}",
+    "{\"config.ini\": \"API-TOKEN_TOKEN=pnu_jf3b0z4onjqeu88e2ike8sv0p5yjbyvfaw26\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "PREFECT_API_KEY = \"pnu_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\""
+  ]
+}

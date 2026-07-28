@@ -1,0 +1,34 @@
+{
+  "ruleId": "discord-client-id",
+  "truePositives": [
+    "  \"discordToken\" =\u003e \"543203233346351822\"",
+    "$discordToken .= \"543203233346351822\"",
+    "\u003cdiscordToken\u003e\n    543203233346351822\n\u003c/discordToken\u003e",
+    "String discordToken = \"543203233346351822\";",
+    "System.setProperty(\"DISCORD_TOKEN\", \"543203233346351822\")",
+    "discordToken := \"543203233346351822\"",
+    "discordToken := `543203233346351822`",
+    "discordToken = \"543203233346351822\"",
+    "discordToken = \"543203233346351822\"",
+    "discordToken = '543203233346351822'",
+    "discordToken = 543203233346351822",
+    "discordToken=\"543203233346351822\"",
+    "discordToken=543203233346351822",
+    "discord_TOKEN :::= \"543203233346351822\"",
+    "discord_TOKEN ::= \"543203233346351822\"",
+    "discord_TOKEN := \"543203233346351822\"",
+    "discord_TOKEN = \"543203233346351822\"",
+    "discord_TOKEN ?= \"543203233346351822\"",
+    "discord_token: \"543203233346351822\"",
+    "discord_token: '543203233346351822'",
+    "discord_token: 543203233346351822",
+    "string discordToken = \"543203233346351822\";",
+    "var discordToken = \"543203233346351822\"",
+    "var discordToken string = \"543203233346351822\"",
+    "{\n    \"discord_token\": \"543203233346351822\"\n}",
+    "{\"config.ini\": \"DISCORD_TOKEN=543203233346351822\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "discord=000000000000000000"
+  ]
+}

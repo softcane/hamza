@@ -1,0 +1,7 @@
+{
+  "ruleId": "azure-servicebus-connection-string",
+  "truePositives": [
+    "Endpoint=sb://orders-prod.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6vvcxW8R7SDBPIrfgqF+b+xAkTIrndCS/vj9Dsb+UbtMRDl72YfpMoBG;EntityPath=orders"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,36 @@
+{
+  "ruleId": "vercel-integration-token",
+  "truePositives": [
+    "  \"vercelToken\" =\u003e \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "$vercelToken .= \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "\u003cvercelToken\u003e\n    vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\n\u003c/vercelToken\u003e",
+    "String vercelToken = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\";",
+    "System.setProperty(\"VERCEL_TOKEN\", \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\")",
+    "Vercel Integration Token: vci_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHeklEXDQ94Jafpu",
+    "string vercelToken = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\";",
+    "var vercelToken = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "var vercelToken string = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercelToken := \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercelToken := `vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i`",
+    "vercelToken = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercelToken = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercelToken = 'vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i'",
+    "vercelToken = vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i",
+    "vercelToken=\"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercelToken=vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i",
+    "vercel_TOKEN :::= \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_TOKEN ::= \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_TOKEN := \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_TOKEN = \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_TOKEN ?= \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_token: \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"",
+    "vercel_token: 'vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i'",
+    "vercel_token: vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i",
+    "{\n    \"vercel_token\": \"vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\"\n}",
+    "{\"config.ini\": \"VERCEL_TOKEN=vci_aYCKkYe-gzXsxO-uLandxntKn9qCtxWkV3VX0qDOxURGtnKOpVlRog4i\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "vci_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHe",
+    "vcp_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHeklEXDQ94Jafpu"
+  ]
+}

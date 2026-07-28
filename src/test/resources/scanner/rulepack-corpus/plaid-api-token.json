@@ -1,0 +1,32 @@
+{
+  "ruleId": "plaid-api-token",
+  "truePositives": [
+    "  \"plaidToken\" =\u003e \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "$plaidToken .= \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "\u003cplaidToken\u003e\n    access-development-46061241-672f-cd1b-05ba-706ee91c861f\n\u003c/plaidToken\u003e",
+    "String plaidToken = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\";",
+    "System.setProperty(\"PLAID_TOKEN\", \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\")",
+    "plaidToken := \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaidToken := `access-development-46061241-672f-cd1b-05ba-706ee91c861f`",
+    "plaidToken = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaidToken = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaidToken = 'access-development-46061241-672f-cd1b-05ba-706ee91c861f'",
+    "plaidToken = access-development-46061241-672f-cd1b-05ba-706ee91c861f",
+    "plaidToken=\"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaidToken=access-development-46061241-672f-cd1b-05ba-706ee91c861f",
+    "plaid_TOKEN :::= \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_TOKEN ::= \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_TOKEN := \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_TOKEN = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_TOKEN ?= \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_token: \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "plaid_token: 'access-development-46061241-672f-cd1b-05ba-706ee91c861f'",
+    "plaid_token: access-development-46061241-672f-cd1b-05ba-706ee91c861f",
+    "string plaidToken = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\";",
+    "var plaidToken = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "var plaidToken string = \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"",
+    "{\n    \"plaid_token\": \"access-development-46061241-672f-cd1b-05ba-706ee91c861f\"\n}",
+    "{\"config.ini\": \"PLAID_TOKEN=access-development-46061241-672f-cd1b-05ba-706ee91c861f\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

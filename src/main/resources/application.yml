@@ -1,0 +1,132 @@
+spring:
+  application:
+    name: hamza-core
+  threads:
+    virtual:
+      enabled: true
+  grpc:
+    server:
+      # ext_proc gRPC server that Envoy connects to (HTTP/2 cleartext).
+      port: 9090
+  datasource:
+    url: jdbc:sqlite:${HAMZA_DB_PATH:/data/hamza.db}
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      # SQLite allows a single writer; serialize through one connection to avoid
+      # "database is locked" on concurrent Turn writes (v1 simplicity, §6.6).
+      maximum-pool-size: 1
+  sql:
+    init:
+      # TurnRepository initializes schema.sql only when the database has no Hamza tables.
+      # Running Spring's initializer first would mutate a legacy database before M1 can
+      # refuse it unchanged.
+      mode: never
+
+server:
+  # Actuator / management HTTP port.
+  port: 8080
+
+logging:
+  pattern:
+    # Correlate every log line with its Turn id (set via MDC during ext_proc handling).
+    correlation: "[%X{turnId:-}] "
+  # JSON structured logging is opt-in (keeps local dev readable). Enable with:
+  #   LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs   (or =logstash)
+  # Secret values and raw bodies are never logged at default levels (§6.8).
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,continuationReadiness
+  metrics:
+    distribution:
+      # Publish a Prometheus histogram for the Turn duration so Grafana can do p95.
+      percentiles-histogram:
+        hamza.request.duration: true
+        hamza.continuation.duration: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+# Hamza tunables (@ConfigurationProperties). All optional with sensible defaults.
+hamza:
+  metrics:
+    # Optional model -> context window size (tokens) used for hamza_context_fill_percent.
+    # Left empty by default; fill in for the models you run to enable that gauge.
+    model-context-tokens: {}
+  policy:
+    # Default Posture: observe before enforce. Detection runs on the body only; the
+    # provider Authorization header is never scanned, flagged, or masked (§6.8).
+    posture: ${HAMZA_POSTURE:FLAG}
+    # Envoy uses the same default cap with BUFFERED_PARTIAL. Larger request bodies
+    # have their buffered prefix inspected, keep an oversize Finding for the
+    # uninspected tail, and are never 413'd by the Gate.
+    max-body-bytes: ${HAMZA_POLICY_MAX_BODY_BYTES:65536}
+    control-plane-paths:
+      - /backend-api/codex/responses/compact
+    # Per-rule Action overrides, e.g. aws-access-token: BLOCK. Empty = use posture.
+    rule-actions: {}
+    # Stream over-cap bodies chunk by chunk and scan them end-to-end (overlap-aware)
+    # instead of prefix-only. Default ON since M7 (ADR 0014, live-verified); set false
+    # to fall back to the ADR 0010 prefix-only behavior.
+    stream-oversize: ${HAMZA_STREAM_OVERSIZE:true}
+  edm:
+    # Exact Data Match: directory of fingerprint-registry JSON files. The normal path
+    # is the authenticated admin ingestion endpoint (ADR 0017); scripts/edm-index.py is
+    # only the break-glass file generator. Empty disables EDM.
+    registry-dir: ${HAMZA_EDM_REGISTRY_DIR:}
+    # Distinct matches from ONE registry in one scan window before that registry's
+    # configured Action may escalate beyond FLAG (one shared value is noise; thirty
+    # distinct values is the customer table).
+    block-threshold: ${HAMZA_EDM_BLOCK_THRESHOLD:10}
+    # Keep yesterday's full Registry version matchable alongside the current one.
+    keep-previous: ${HAMZA_EDM_KEEP_PREVIOUS:true}
+    # Internal admin API token for Registry ingestion. Empty disables /admin/registries.
+    admin-token: ${HAMZA_ADMIN_TOKEN:}
+    # Hard admission bound for full-width Fingerprints in one continuation Registry.
+    max-continuation-entries: ${HAMZA_EDM_MAX_CONTINUATION_ENTRIES:1000000}
+  continuation:
+    # Managed Mask-and-Continue is an explicit managed-route opt-in. Enabling it
+    # without signing key material and at least one approved profile fails startup.
+    enabled: ${HAMZA_SAFE_CONTINUATION_ENABLED:false}
+    # Managed Turns are held completely in volatile memory; no disk spill is allowed.
+    quarantine:
+      max-body-bytes: ${HAMZA_CONTINUATION_MAX_BODY_BYTES:8388608}
+      max-total-memory-bytes: ${HAMZA_CONTINUATION_TOTAL_MEMORY_BYTES:67108864}
+      max-concurrent-turns: ${HAMZA_CONTINUATION_MAX_CONCURRENT_TURNS:8}
+    # A spent candidate budget is scan-incomplete, never a clean enforcement result.
+    candidate-budget: ${HAMZA_CONTINUATION_CANDIDATE_BUDGET:50000}
+    # Managed masking bounds. A Turn above either bound cannot be masked safely and
+    # Blocks with Coach, so the defaults must admit a real Agent Turn.
+    mask:
+      max-body-bytes: ${HAMZA_CONTINUATION_MASK_MAX_BODY_BYTES:1048576}
+      max-segments: ${HAMZA_CONTINUATION_MASK_MAX_SEGMENTS:1024}
+    managed:
+      # Base64-encoded 32-64 byte HMAC key. Never rendered by configuration toString.
+      signing-key-base64: ${HAMZA_CONTINUATION_SIGNING_KEY_BASE64:}
+      max-age: ${HAMZA_CONTINUATION_METADATA_MAX_AGE:5m}
+      max-future-skew: ${HAMZA_CONTINUATION_METADATA_MAX_FUTURE_SKEW:30s}
+      # Deployments add version-certified profiles here; the safe default is none.
+      approved-profiles: []
+  coach:
+    # How a Block presents itself (ADR 0013, PRD R3.2). Coach never changes WHAT is
+    # blocked — only the 403 body. Off by default: a Block emits the bare text 403
+    # (the R3.1 control arm and the bare-403 fallback). On: a Provider-shaped,
+    # model-legible error body that names the rule class only, forbids retry/re-encode,
+    # and proposes a compliant path (synthetic data, ask the developer, sanctioned channel).
+    enabled: ${HAMZA_COACH_ENABLED:false}
+    # HTTP status of the coach response (default 403). Configurable so a deployment can
+    # experiment with a 200-message body without a rebuild; the Block decision is unchanged.
+    status: ${HAMZA_COACH_STATUS:403}
+    # Optional per-Provider message-template overrides (keys: openai, anthropic, default).
+    # {rules} is replaced with the content-free rule-class list. Empty = built-in message.
+    templates: {}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "clojars-api-token",
+  "truePositives": [
+    "  \"clojarsToken\" =\u003e \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "$clojarsToken .= \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "\u003cclojarsToken\u003e\n    CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\n\u003c/clojarsToken\u003e",
+    "String clojarsToken = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\";",
+    "System.setProperty(\"CLOJARS_TOKEN\", \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\")",
+    "clojarsToken := \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojarsToken := `CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m`",
+    "clojarsToken = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojarsToken = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojarsToken = 'CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m'",
+    "clojarsToken = CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m",
+    "clojarsToken=\"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojarsToken=CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m",
+    "clojars_TOKEN :::= \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_TOKEN ::= \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_TOKEN := \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_TOKEN = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_TOKEN ?= \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_token: \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "clojars_token: 'CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m'",
+    "clojars_token: CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m",
+    "string clojarsToken = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\";",
+    "var clojarsToken = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "var clojarsToken string = \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"",
+    "{\n    \"clojars_token\": \"CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\"\n}",
+    "{\"config.ini\": \"CLOJARS_TOKEN=CLOJARS_h73w2jna18scxk6g1al2r6g3408wez86h0l5se3p668h8by2d42txc26an6m\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

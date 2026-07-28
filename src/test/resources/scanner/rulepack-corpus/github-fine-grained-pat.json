@@ -1,0 +1,34 @@
+{
+  "ruleId": "github-fine-grained-pat",
+  "truePositives": [
+    "  \"githubToken\" =\u003e \"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\"",
+    "$githubToken .= \"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\"",
+    "\u003cgithubToken\u003e\n    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\n\u003c/githubToken\u003e",
+    "String githubToken = \"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\";",
+    "System.setProperty(\"GITHUB_TOKEN\", \"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\")",
+    "githubToken := \"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\"",
+    "githubToken := `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`",
+    "githubToken = \"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\"",
+    "githubToken = \"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\"",
+    "githubToken = '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'",
+    "githubToken = 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",
+    "githubToken=\"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\"",
+    "githubToken=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",
+    "github_TOKEN :::= \"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\"",
+    "github_TOKEN ::= \"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\"",
+    "github_TOKEN := \"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\"",
+    "github_TOKEN = \"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\"",
+    "github_TOKEN ?= \"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\"",
+    "github_token: \"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\"",
+    "github_token: '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'",
+    "github_token: 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",
+    "string githubToken = \"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\";",
+    "var githubToken = \"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\"",
+    "var githubToken string = \"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\"",
+    "{\n    \"github_token\": \"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\"\n}",
+    "{\"config.ini\": \"GITHUB_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "github_pat_xxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

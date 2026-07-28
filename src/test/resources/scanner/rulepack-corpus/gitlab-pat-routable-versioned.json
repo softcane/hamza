@@ -1,0 +1,34 @@
+{
+  "ruleId": "gitlab-pat-routable-versioned",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "$gitlabToken .= \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "\u003cgitlabToken\u003e\n    glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\")",
+    "gitlabToken := \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlabToken := `glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5`",
+    "gitlabToken = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlabToken = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlabToken = 'glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5'",
+    "gitlabToken = glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5",
+    "gitlabToken=\"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlabToken=glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5",
+    "gitlab_TOKEN :::= \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_TOKEN ::= \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_TOKEN := \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_TOKEN = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_TOKEN ?= \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_token: \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "gitlab_token: 'glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5'",
+    "gitlab_token: glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5",
+    "string gitlabToken = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\";",
+    "var gitlabToken = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "var gitlabToken string = \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"",
+    "{\n    \"gitlab_token\": \"glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glpat-cg3ei11l91npu8ek2t8zaejtj0g.0r.vdhyyh3k5\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "glpat-xxxxxxxx-xxxxxxxxxxxxxxxxxx.xx.xxxxxxx"
+  ]
+}

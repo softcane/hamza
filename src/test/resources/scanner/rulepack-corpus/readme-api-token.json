@@ -1,0 +1,34 @@
+{
+  "ruleId": "readme-api-token",
+  "truePositives": [
+    "  \"api-tokenToken\" =\u003e \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "$api-tokenToken .= \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "\u003capi-tokenToken\u003e\n    rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\n\u003c/api-tokenToken\u003e",
+    "String api-tokenToken = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\";",
+    "System.setProperty(\"API-TOKEN_TOKEN\", \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\")",
+    "api-tokenToken := \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-tokenToken := `rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1`",
+    "api-tokenToken = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-tokenToken = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-tokenToken = 'rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1'",
+    "api-tokenToken = rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1",
+    "api-tokenToken=\"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-tokenToken=rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1",
+    "api-token_TOKEN :::= \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_TOKEN ::= \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_TOKEN := \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_TOKEN = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_TOKEN ?= \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_token: \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "api-token_token: 'rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1'",
+    "api-token_token: rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1",
+    "string api-tokenToken = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\";",
+    "var api-tokenToken = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "var api-tokenToken string = \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"",
+    "{\n    \"api-token_token\": \"rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\"\n}",
+    "{\"config.ini\": \"API-TOKEN_TOKEN=rdme_es2myx6al9zxrt0neax91s8s3l861mq2xmvbwlacqgxnwpwxn5oqt0fmqkvgnxl0vjacl1\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "const API_KEY = 'rdme_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema" : "hamza-attestation/v2",
+  "generated_at" : "2026-07-27T12:00:00Z",
+  "window" : {
+    "from" : "2026-07-27T00:00:00Z",
+    "to" : "2026-07-28T00:00:00Z"
+  },
+  "turns_seen" : 5,
+  "findings_by_rule" : {
+    "aws-access-key-id" : 2,
+    "edm-customers" : 1
+  },
+  "findings_by_action" : {
+    "MASK" : 2,
+    "BLOCK" : 1
+  },
+  "blocks" : 1,
+  "postures" : {
+    "MASK" : 3,
+    "FLAG" : 2
+  },
+  "config_fingerprints" : {
+    "cfg-fp-abc" : 5
+  },
+  "covered_population" : "fixed test covered population",
+  "chain" : {
+    "status" : "OK",
+    "entries" : 5,
+    "first_broken_seq" : null,
+    "head_hash" : "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "detail" : "ok; pre-migration rows are unchained by design",
+    "legacy_unchained_rows" : 1
+  },
+  "coverage" : {
+    "status" : "VERIFIED",
+    "ledger_status" : "VERIFIED",
+    "flow_provider_events" : 10,
+    "flow_bytes" : 1000,
+    "envoy_provider_requests" : 8,
+    "records" : 8,
+    "gate_provider_egress_records" : 8,
+    "records_matched" : 7,
+    "coverage_gaps" : 1,
+    "records_without_envoy_evidence" : 0,
+    "flow_without_envoy_evidence" : 0,
+    "envoy_without_flow_evidence" : 1,
+    "fail_open_uninspected_minutes" : 2,
+    "coverage_percent" : 87.5,
+    "provider_requests_by_path" : {
+      "/v1/responses" : 8
+    },
+    "fail_open_requests_by_minute" : {
+      "2026-07-27T10:00" : 1
+    },
+    "provider_flows_by_destination" : {
+      "api.openai.com" : 8
+    },
+    "unclassified_flow_events" : 0,
+    "unexplained_provider_requests" : 1,
+    "zero_unexplained_provider_requests" : false,
+    "note" : "fixed fake coverage note for the golden fixture."
+  },
+  "safe_continuation" : {
+    "recovery_scopes" : 4,
+    "eligible" : 4,
+    "attempted" : 3,
+    "delivered" : 2,
+    "rejected" : 1,
+    "failed_closed" : 1,
+    "completed" : 2,
+    "failed" : 0,
+    "fallback" : 0,
+    "source_block_turns" : 1,
+    "source_mask_turns" : 2,
+    "derived_flag_turns" : 2,
+    "linked_pairs" : 2,
+    "original_bytes_withheld" : 500,
+    "transformed_bytes_inspected" : 400,
+    "transformed_bytes_egressed" : 380,
+    "turns_by_agent" : {
+      "claude-code" : 1,
+      "codex" : 3
+    },
+    "turns_by_provider" : {
+      "anthropic" : 1,
+      "openai" : 3
+    },
+    "outcomes_by_agent_version" : {
+      "codex-0.144" : 2
+    },
+    "outcomes_by_status" : {
+      "COMPLETED" : 2
+    },
+    "recipe_versions" : {
+      "1" : 3
+    },
+    "workflow_profile_versions" : {
+      "1" : 3
+    },
+    "coverage_gaps" : {
+      "fixed-fake-gap-kind" : 1
+    },
+    "outcome_integrity" : {
+      "status" : "OK",
+      "entries" : 2,
+      "first_broken_seq" : null,
+      "detail" : null,
+      "head_hash" : "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "integrity_gaps" : 0
+    }
+  },
+  "inspected_bytes" : {
+    "status" : "VERIFIED",
+    "inspected_bytes" : 900,
+    "egressed_bytes" : 1000,
+    "flow_bytes" : 1000,
+    "uninspected_bytes" : 100,
+    "inspected_percent" : 90.0,
+    "records_missing_byte_counts" : 0,
+    "note" : "fixed fake byte-inspection note for the golden fixture."
+  },
+  "edm_events" : {
+    "customers" : {
+      "registry" : "customers",
+      "events" : 3,
+      "distinct_matches" : 5,
+      "block_events" : 1,
+      "flag_events" : 2,
+      "note" : "fixed fake edm note."
+    }
+  },
+  "registry_staleness" : {
+    "status" : "UNVERIFIED",
+    "note" : "fixed fake registry-staleness note.",
+    "registries" : [ {
+      "registry" : "customers",
+      "distinctFingerprints" : 5,
+      "sourceTimestamp" : "2026-07-01T00:00:00Z",
+      "ageSeconds" : null,
+      "source" : "customers.json"
+    } ]
+  }
+}

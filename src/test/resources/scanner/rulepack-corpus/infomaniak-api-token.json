@@ -1,0 +1,34 @@
+{
+  "ruleId": "infomaniak-api-token",
+  "truePositives": [
+    "  \"infomaniakToken\" =\u003e \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "$infomaniakToken .= \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "\u003cinfomaniakToken\u003e\n    e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\n\u003c/infomaniakToken\u003e",
+    "String infomaniakToken = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\";",
+    "System.setProperty(\"INFOMANIAK_TOKEN\", \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\")",
+    "infomaniakToken := \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniakToken := `e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep`",
+    "infomaniakToken = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniakToken = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniakToken = 'e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep'",
+    "infomaniakToken = e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep",
+    "infomaniakToken=\"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniakToken=e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep",
+    "infomaniak_TOKEN :::= \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_TOKEN ::= \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_TOKEN := \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_TOKEN = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_TOKEN ?= \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_token: \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "infomaniak_token: 'e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep'",
+    "infomaniak_token: e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep",
+    "string infomaniakToken = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\";",
+    "var infomaniakToken = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "var infomaniakToken string = \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"",
+    "{\n    \"infomaniak_token\": \"e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\"\n}",
+    "{\"config.ini\": \"INFOMANIAK_TOKEN=e3-iJNdFfz0E2QvZJGeLWNH7TG-LC8Cj1hWtrgD9afUWZgyEhonHqU6v1qjttyhrkr_F_hep\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "infomaniak_token = \"AYF5lSh3c7Xy\""
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "ruleId": "ibm-cloud-user-api-key",
+  "truePositives": [
+    "ibm_platform_key=\"f-_RrJDVnuVh07HNTcmnQx_b6CbcQsxmEarVm9P_RWtF\"",
+    "ibmcloud_apikey = abcdef0123_56789abcdef0123456789abcdef01234"
+  ],
+  "falsePositives": []
+}

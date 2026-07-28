@@ -1,0 +1,14 @@
+Hamza
+Copyright 2026 Pradeep Singh
+
+This product includes software developed as part of the Hamza project,
+licensed under the Apache License, Version 2.0. See LICENSE.
+
+This product also includes material derived from third-party open-source
+projects licensed under the MIT License. The secret-detection rulepack at
+src/main/resources/rulepack/ and the parity corpus at
+src/test/resources/scanner/rulepack-corpus/ are derived from the Gitleaks and
+Betterleaks rule corpora, both Copyright (c) Zachary Rice.
+
+The full MIT license text and copyright notices for that material are
+reproduced in THIRD-PARTY-LICENSES.md.

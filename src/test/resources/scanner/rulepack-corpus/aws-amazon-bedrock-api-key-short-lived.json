@@ -1,0 +1,35 @@
+{
+  "ruleId": "aws-amazon-bedrock-api-key-short-lived",
+  "truePositives": [
+    "  \"AmazonBedrockAPIKeyShortLivedToken\" =\u003e \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "$AmazonBedrockAPIKeyShortLivedToken .= \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "\u003cAmazonBedrockAPIKeyShortLivedToken\u003e\n    bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\n\u003c/AmazonBedrockAPIKeyShortLivedToken\u003e",
+    "AmazonBedrockAPIKeyShortLivedToken := \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLivedToken := `bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t`",
+    "AmazonBedrockAPIKeyShortLivedToken = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLivedToken = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLivedToken = 'bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t'",
+    "AmazonBedrockAPIKeyShortLivedToken = bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t",
+    "AmazonBedrockAPIKeyShortLivedToken=\"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLivedToken=bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t",
+    "AmazonBedrockAPIKeyShortLived_TOKEN :::= \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_TOKEN ::= \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_TOKEN := \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_TOKEN = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_TOKEN ?= \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_token: \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "AmazonBedrockAPIKeyShortLived_token: 'bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t'",
+    "AmazonBedrockAPIKeyShortLived_token: bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t",
+    "String AmazonBedrockAPIKeyShortLivedToken = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\";",
+    "System.setProperty(\"AMAZONBEDROCKAPIKEYSHORTLIVED_TOKEN\", \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\")",
+    "string AmazonBedrockAPIKeyShortLivedToken = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\";",
+    "var AmazonBedrockAPIKeyShortLivedToken = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "var AmazonBedrockAPIKeyShortLivedToken string = \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"",
+    "{\n    \"AmazonBedrockAPIKeyShortLived_token\": \"bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\"\n}",
+    "{\"config.ini\": \"AMAZONBEDROCKAPIKEYSHORTLIVED_TOKEN=bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "bedrock-api-key-",
+    "bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29x"
+  ]
+}

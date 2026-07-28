@@ -1,0 +1,8 @@
+{
+  "ruleId": "klaviyo-api-key",
+  "truePositives": [
+    "KLAVIYO_API_KEY=pk_ABCd1234fghij5678klmn9012opqr3456s",
+    "klaviyo_key = pk_abcd1234fghij5678klmn9012opqr3456s"
+  ],
+  "falsePositives": []
+}

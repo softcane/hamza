@@ -1,0 +1,32 @@
+{
+  "ruleId": "discord-api-token",
+  "truePositives": [
+    "  \"discordToken\" =\u003e \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "$discordToken .= \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "\u003cdiscordToken\u003e\n    535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\n\u003c/discordToken\u003e",
+    "String discordToken = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\";",
+    "System.setProperty(\"DISCORD_TOKEN\", \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\")",
+    "discordToken := \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discordToken := `535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded`",
+    "discordToken = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discordToken = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discordToken = '535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded'",
+    "discordToken = 535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded",
+    "discordToken=\"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discordToken=535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded",
+    "discord_TOKEN :::= \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_TOKEN ::= \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_TOKEN := \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_TOKEN = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_TOKEN ?= \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_token: \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "discord_token: '535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded'",
+    "discord_token: 535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded",
+    "string discordToken = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\";",
+    "var discordToken = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "var discordToken string = \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"",
+    "{\n    \"discord_token\": \"535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\"\n}",
+    "{\"config.ini\": \"DISCORD_TOKEN=535c2ac865feddd1f3531da53a50bd599a95b2c848baca882eb7e6b85e80bded\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,12 @@
+{
+  "ruleId": "artifactory-api-key",
+  "truePositives": [
+    "artifactoryApiKey := \"AKCp1l3qfcmivk67c33psohllqpwzfxlp10rmvn7caorext8sie63fxzqoz52bkw56dfxodm4\""
+  ],
+  "falsePositives": [
+    "lowEntropy := AKCpXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "partOfAlongUnrelatedBlob gYnkgAkCpm4uzn5gnooj5dm0nvwpb0bn5pypy8to5oetiefsyc508gqmstxoh3bzgb3uyddzgz4qapVyZSB2",
+    "wrongLength := \"AkCpduwyneszwz6oddoce26qlatxn6f2ozxdfq98ym5r9c4pj6i4twqn3ns7mvd\"",
+    "wrongStart := \"AkCpr0hr2vfuva785rg61s3z4g0831wjj48jkwxtjwydr9xwmixau6wi07l0opxs4gvuleazv\""
+  ]
+}

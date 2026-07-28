@@ -1,0 +1,37 @@
+{
+  "ruleId": "gitea-access-token",
+  "truePositives": [
+    "  \"giteaToken\" =\u003e \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "$giteaToken .= \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "\u003cgiteaToken\u003e\n    17915cfd3d3ef8aae861121a9385aed01eb3e555\n\u003c/giteaToken\u003e",
+    "String giteaToken = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\";",
+    "System.setProperty(\"GITEA_TOKEN\", \"17915cfd3d3ef8aae861121a9385aed01eb3e555\")",
+    "giteaToken := \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "giteaToken := `17915cfd3d3ef8aae861121a9385aed01eb3e555`",
+    "giteaToken = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "giteaToken = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "giteaToken = '17915cfd3d3ef8aae861121a9385aed01eb3e555'",
+    "giteaToken = 17915cfd3d3ef8aae861121a9385aed01eb3e555",
+    "giteaToken=\"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "giteaToken=17915cfd3d3ef8aae861121a9385aed01eb3e555",
+    "gitea_TOKEN :::= \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_TOKEN ::= \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_TOKEN := \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_TOKEN = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_TOKEN ?= \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_token: \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "gitea_token: '17915cfd3d3ef8aae861121a9385aed01eb3e555'",
+    "gitea_token: 17915cfd3d3ef8aae861121a9385aed01eb3e555",
+    "string giteaToken = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\";",
+    "var giteaToken = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "var giteaToken string = \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"",
+    "{\n    \"gitea_token\": \"17915cfd3d3ef8aae861121a9385aed01eb3e555\"\n}",
+    "{\"config.ini\": \"GITEA_TOKEN=17915cfd3d3ef8aae861121a9385aed01eb3e555\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "GITEA_TOKEN=0000000000000000000000000000000000000000",
+    "GITEA_TOKEN=5aab40e433037523cc70af7d3894a0fa",
+    "Gitea commit: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+    "gitea/gitea@a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0"
+  ]
+}

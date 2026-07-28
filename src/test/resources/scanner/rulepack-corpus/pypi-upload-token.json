@@ -1,0 +1,32 @@
+{
+  "ruleId": "pypi-upload-token",
+  "truePositives": [
+    "  \"pypiToken\" =\u003e \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "$pypiToken .= \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "\u003cpypiToken\u003e\n    pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\n\u003c/pypiToken\u003e",
+    "String pypiToken = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\";",
+    "System.setProperty(\"PYPI_TOKEN\", \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\")",
+    "pypiToken := \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypiToken := `pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766`",
+    "pypiToken = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypiToken = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypiToken = 'pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766'",
+    "pypiToken = pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766",
+    "pypiToken=\"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypiToken=pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766",
+    "pypi_TOKEN :::= \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_TOKEN ::= \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_TOKEN := \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_TOKEN = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_TOKEN ?= \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_token: \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "pypi_token: 'pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766'",
+    "pypi_token: pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766",
+    "string pypiToken = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\";",
+    "var pypiToken = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "var pypiToken string = \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"",
+    "{\n    \"pypi_token\": \"pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\"\n}",
+    "{\"config.ini\": \"PYPI_TOKEN=pypi-AgEIcHlwaS5vcmcd1a7c62fa2a22fa29c4a8bf164f23978f1eabc8f34fdce21756f68ff1e295766\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

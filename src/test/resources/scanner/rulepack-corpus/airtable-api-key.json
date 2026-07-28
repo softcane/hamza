@@ -1,0 +1,32 @@
+{
+  "ruleId": "airtable-api-key",
+  "truePositives": [
+    "  \"airtableToken\" =\u003e \"2x0ycd73roez26ml5\"",
+    "$airtableToken .= \"2x0ycd73roez26ml5\"",
+    "\u003cairtableToken\u003e\n    2x0ycd73roez26ml5\n\u003c/airtableToken\u003e",
+    "String airtableToken = \"2x0ycd73roez26ml5\";",
+    "System.setProperty(\"AIRTABLE_TOKEN\", \"2x0ycd73roez26ml5\")",
+    "airtableToken := \"2x0ycd73roez26ml5\"",
+    "airtableToken := `2x0ycd73roez26ml5`",
+    "airtableToken = \"2x0ycd73roez26ml5\"",
+    "airtableToken = \"2x0ycd73roez26ml5\"",
+    "airtableToken = '2x0ycd73roez26ml5'",
+    "airtableToken = 2x0ycd73roez26ml5",
+    "airtableToken=\"2x0ycd73roez26ml5\"",
+    "airtableToken=2x0ycd73roez26ml5",
+    "airtable_TOKEN :::= \"2x0ycd73roez26ml5\"",
+    "airtable_TOKEN ::= \"2x0ycd73roez26ml5\"",
+    "airtable_TOKEN := \"2x0ycd73roez26ml5\"",
+    "airtable_TOKEN = \"2x0ycd73roez26ml5\"",
+    "airtable_TOKEN ?= \"2x0ycd73roez26ml5\"",
+    "airtable_token: \"2x0ycd73roez26ml5\"",
+    "airtable_token: '2x0ycd73roez26ml5'",
+    "airtable_token: 2x0ycd73roez26ml5",
+    "string airtableToken = \"2x0ycd73roez26ml5\";",
+    "var airtableToken = \"2x0ycd73roez26ml5\"",
+    "var airtableToken string = \"2x0ycd73roez26ml5\"",
+    "{\n    \"airtable_token\": \"2x0ycd73roez26ml5\"\n}",
+    "{\"config.ini\": \"AIRTABLE_TOKEN=2x0ycd73roez26ml5\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

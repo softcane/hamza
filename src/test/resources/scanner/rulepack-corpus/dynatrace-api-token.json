@@ -1,0 +1,32 @@
+{
+  "ruleId": "dynatrace-api-token",
+  "truePositives": [
+    "  \"dynatraceToken\" =\u003e \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "$dynatraceToken .= \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "\u003cdynatraceToken\u003e\n    dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\n\u003c/dynatraceToken\u003e",
+    "String dynatraceToken = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\";",
+    "System.setProperty(\"DYNATRACE_TOKEN\", \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\")",
+    "dynatraceToken := \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatraceToken := `dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws`",
+    "dynatraceToken = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatraceToken = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatraceToken = 'dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws'",
+    "dynatraceToken = dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws",
+    "dynatraceToken=\"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatraceToken=dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws",
+    "dynatrace_TOKEN :::= \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_TOKEN ::= \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_TOKEN := \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_TOKEN = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_TOKEN ?= \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_token: \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "dynatrace_token: 'dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws'",
+    "dynatrace_token: dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws",
+    "string dynatraceToken = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\";",
+    "var dynatraceToken = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "var dynatraceToken string = \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"",
+    "{\n    \"dynatrace_token\": \"dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\"\n}",
+    "{\"config.ini\": \"DYNATRACE_TOKEN=dt0c01.53i8vyejelis9z3re1fwz3jt.1cbf498estdferlgy6bssqga7g9ba6d8dl8zgzca12ofbhdeocxxvzcnflwfwjws\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "lob-api-key",
+  "truePositives": [
+    "  \"lobToken\" =\u003e \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "$lobToken .= \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "\u003clobToken\u003e\n    test_98b27f035ac82ee614a37646e8d9f999042\n\u003c/lobToken\u003e",
+    "String lobToken = \"test_98b27f035ac82ee614a37646e8d9f999042\";",
+    "System.setProperty(\"LOB_TOKEN\", \"test_98b27f035ac82ee614a37646e8d9f999042\")",
+    "lobToken := \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lobToken := `test_98b27f035ac82ee614a37646e8d9f999042`",
+    "lobToken = \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lobToken = \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lobToken = 'test_98b27f035ac82ee614a37646e8d9f999042'",
+    "lobToken = test_98b27f035ac82ee614a37646e8d9f999042",
+    "lobToken=\"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lobToken=test_98b27f035ac82ee614a37646e8d9f999042",
+    "lob_TOKEN :::= \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_TOKEN ::= \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_TOKEN := \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_TOKEN = \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_TOKEN ?= \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_token: \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "lob_token: 'test_98b27f035ac82ee614a37646e8d9f999042'",
+    "lob_token: test_98b27f035ac82ee614a37646e8d9f999042",
+    "string lobToken = \"test_98b27f035ac82ee614a37646e8d9f999042\";",
+    "var lobToken = \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "var lobToken string = \"test_98b27f035ac82ee614a37646e8d9f999042\"",
+    "{\n    \"lob_token\": \"test_98b27f035ac82ee614a37646e8d9f999042\"\n}",
+    "{\"config.ini\": \"LOB_TOKEN=test_98b27f035ac82ee614a37646e8d9f999042\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

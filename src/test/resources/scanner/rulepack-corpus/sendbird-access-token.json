@@ -1,0 +1,32 @@
+{
+  "ruleId": "sendbird-access-token",
+  "truePositives": [
+    "  \"sendbirdToken\" =\u003e \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "$sendbirdToken .= \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "\u003csendbirdToken\u003e\n    602cdd74173d6e9115869bb43f3b2fcdffcb4699\n\u003c/sendbirdToken\u003e",
+    "String sendbirdToken = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\";",
+    "System.setProperty(\"SENDBIRD_TOKEN\", \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\")",
+    "sendbirdToken := \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbirdToken := `602cdd74173d6e9115869bb43f3b2fcdffcb4699`",
+    "sendbirdToken = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbirdToken = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbirdToken = '602cdd74173d6e9115869bb43f3b2fcdffcb4699'",
+    "sendbirdToken = 602cdd74173d6e9115869bb43f3b2fcdffcb4699",
+    "sendbirdToken=\"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbirdToken=602cdd74173d6e9115869bb43f3b2fcdffcb4699",
+    "sendbird_TOKEN :::= \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_TOKEN ::= \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_TOKEN := \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_TOKEN = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_TOKEN ?= \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_token: \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "sendbird_token: '602cdd74173d6e9115869bb43f3b2fcdffcb4699'",
+    "sendbird_token: 602cdd74173d6e9115869bb43f3b2fcdffcb4699",
+    "string sendbirdToken = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\";",
+    "var sendbirdToken = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "var sendbirdToken string = \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"",
+    "{\n    \"sendbird_token\": \"602cdd74173d6e9115869bb43f3b2fcdffcb4699\"\n}",
+    "{\"config.ini\": \"SENDBIRD_TOKEN=602cdd74173d6e9115869bb43f3b2fcdffcb4699\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

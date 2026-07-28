@@ -1,0 +1,36 @@
+{
+  "ruleId": "easypost-api-token",
+  "truePositives": [
+    "  \"EZAKToken\" =\u003e \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "$EZAKToken .= \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "\u003cEZAKToken\u003e\n    EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\n\u003c/EZAKToken\u003e",
+    "EZAKToken := \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAKToken := `EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359`",
+    "EZAKToken = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAKToken = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAKToken = 'EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359'",
+    "EZAKToken = EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359",
+    "EZAKToken=\"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAKToken=EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359",
+    "EZAK_TOKEN :::= \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_TOKEN ::= \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_TOKEN := \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_TOKEN = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_TOKEN ?= \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_token: \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "EZAK_token: 'EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359'",
+    "EZAK_token: EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359",
+    "EZAKqObafPM0unqmcXd53N7KpqDoFRnghi3dEhxaKaNfcYTuXwqOHaB7yd",
+    "String EZAKToken = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\";",
+    "System.setProperty(\"EZAK_TOKEN\", \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\")",
+    "example.com?t=EZAKo4SigPVsvHIWrRAxpzUuxGaTWxceUANL2Az3DY6YufVHPC79yFUvog\u0026q=1",
+    "string EZAKToken = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\";",
+    "var EZAKToken = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "var EZAKToken string = \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"",
+    "{\n    \"EZAK_token\": \"EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\"\n}",
+    "{\"config.ini\": \"EZAK_TOKEN=EZAKpixMAkMm7BZVCGBit7JNzM7fYECs5JMjDsfN35NrTJjrAXGcogQ359\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "...6wqX6fNUXA/rYqRvfQ+EZAKGqQRiRyqAFRQshGPWOIAwNWGORfKHSBnVNFtVmWYoW6PH23lkqbbDWep95C/3VmWq/edti6..."
+  ]
+}

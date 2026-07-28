@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitlab-runner-authentication-token",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "$gitlabToken .= \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "\u003cgitlabToken\u003e\n    glrt-8p1kznahe2d2rcv52o1p\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glrt-8p1kznahe2d2rcv52o1p\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glrt-8p1kznahe2d2rcv52o1p\")",
+    "gitlabToken := \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlabToken := `glrt-8p1kznahe2d2rcv52o1p`",
+    "gitlabToken = \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlabToken = \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlabToken = 'glrt-8p1kznahe2d2rcv52o1p'",
+    "gitlabToken = glrt-8p1kznahe2d2rcv52o1p",
+    "gitlabToken=\"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlabToken=glrt-8p1kznahe2d2rcv52o1p",
+    "gitlab_TOKEN :::= \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_TOKEN ::= \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_TOKEN := \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_TOKEN = \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_TOKEN ?= \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_token: \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "gitlab_token: 'glrt-8p1kznahe2d2rcv52o1p'",
+    "gitlab_token: glrt-8p1kznahe2d2rcv52o1p",
+    "string gitlabToken = \"glrt-8p1kznahe2d2rcv52o1p\";",
+    "var gitlabToken = \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "var gitlabToken string = \"glrt-8p1kznahe2d2rcv52o1p\"",
+    "{\n    \"gitlab_token\": \"glrt-8p1kznahe2d2rcv52o1p\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glrt-8p1kznahe2d2rcv52o1p\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

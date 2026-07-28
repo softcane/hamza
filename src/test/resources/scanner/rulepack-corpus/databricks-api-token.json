@@ -1,0 +1,35 @@
+{
+  "ruleId": "databricks-api-token",
+  "truePositives": [
+    "  \"databricksToken\" =\u003e \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "$databricksToken .= \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "\u003cdatabricksToken\u003e\n    dapif2a7ebefc4c28ed90610484deea73db4\n\u003c/databricksToken\u003e",
+    "String databricksToken = \"dapif2a7ebefc4c28ed90610484deea73db4\";",
+    "System.setProperty(\"DATABRICKS_TOKEN\", \"dapif2a7ebefc4c28ed90610484deea73db4\")",
+    "databricksToken := \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricksToken := `dapif2a7ebefc4c28ed90610484deea73db4`",
+    "databricksToken = \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricksToken = \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricksToken = 'dapif2a7ebefc4c28ed90610484deea73db4'",
+    "databricksToken = dapif2a7ebefc4c28ed90610484deea73db4",
+    "databricksToken=\"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricksToken=dapif2a7ebefc4c28ed90610484deea73db4",
+    "databricks_TOKEN :::= \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_TOKEN ::= \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_TOKEN := \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_TOKEN = \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_TOKEN ?= \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_token: \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "databricks_token: 'dapif2a7ebefc4c28ed90610484deea73db4'",
+    "databricks_token: dapif2a7ebefc4c28ed90610484deea73db4",
+    "string databricksToken = \"dapif2a7ebefc4c28ed90610484deea73db4\";",
+    "token = dapif13ac4b49d1cb31f69f678e39602e381-2",
+    "var databricksToken = \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "var databricksToken string = \"dapif2a7ebefc4c28ed90610484deea73db4\"",
+    "{\n    \"databricks_token\": \"dapif2a7ebefc4c28ed90610484deea73db4\"\n}",
+    "{\"config.ini\": \"DATABRICKS_TOKEN=dapif2a7ebefc4c28ed90610484deea73db4\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "DATABRICKS_TOKEN=dapi123456789012345678a9bc01234defg5"
+  ]
+}

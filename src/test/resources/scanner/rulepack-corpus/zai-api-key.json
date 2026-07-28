@@ -1,0 +1,32 @@
+{
+  "ruleId": "zai-api-key",
+  "truePositives": [
+    "  \"zaiToken\" =\u003e \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "$zaiToken .= \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "\u003czaiToken\u003e\n    cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\n\u003c/zaiToken\u003e",
+    "String zaiToken = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\";",
+    "System.setProperty(\"ZAI_TOKEN\", \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\")",
+    "string zaiToken = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\";",
+    "var zaiToken = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "var zaiToken string = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zaiToken := \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zaiToken := `cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5`",
+    "zaiToken = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zaiToken = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zaiToken = 'cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5'",
+    "zaiToken = cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5",
+    "zaiToken=\"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zaiToken=cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5",
+    "zai_TOKEN :::= \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_TOKEN ::= \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_TOKEN := \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_TOKEN = \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_TOKEN ?= \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_token: \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"",
+    "zai_token: 'cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5'",
+    "zai_token: cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5",
+    "{\n    \"zai_token\": \"cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\"\n}",
+    "{\"config.ini\": \"ZAI_TOKEN=cbe5985d07804065b46efaf1daa82834.ZLV4IOHGbEEHPDt5\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

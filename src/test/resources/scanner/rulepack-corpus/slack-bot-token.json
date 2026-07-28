@@ -1,0 +1,41 @@
+{
+  "ruleId": "slack-bot-token",
+  "truePositives": [
+    "  \"botToken\" =\u003e \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "\"bot_token1\": \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "\"bot_token2\": \"xoxb-263594206564-2343594206574-FGqddMF8t08v8N7Oq4i57vs1MBS\"",
+    "\"bot_token3\": \"xoxb-4614724432022-5152386766518-O5WzjWGLG0wcCm2WPrjEmnys\"",
+    "\"bot_token4\": \"xoxb-2713944305816-395506968102-6llrh0mnqpyoi2etzbuxlk3e\"",
+    "$botToken .= \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "\u003cbotToken\u003e\n    xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\n\u003c/botToken\u003e",
+    "String botToken = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\";",
+    "System.setProperty(\"BOT_TOKEN\", \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\")",
+    "botToken := \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "botToken := `xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD`",
+    "botToken = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "botToken = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "botToken = 'xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD'",
+    "botToken = xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD",
+    "botToken=\"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "botToken=xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD",
+    "bot_TOKEN :::= \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_TOKEN ::= \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_TOKEN := \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_TOKEN = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_TOKEN ?= \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_token: \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "bot_token: 'xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD'",
+    "bot_token: xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD",
+    "string botToken = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\";",
+    "var botToken = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "var botToken string = \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"",
+    "{\n    \"bot_token\": \"xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\"\n}",
+    "{\"config.ini\": \"BOT_TOKEN=xoxb-781236542736-2364535789652-GkwFDQoHqzXDVsC6GzqYUypD\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "xoxb-12345-abcd234",
+    "xoxb-xoxb-my-bot-token",
+    "xoxb-xxx",
+    "xoxb-xxxxxxxxx-xxxxxxxxxx-xxxxxxxxxxxx"
+  ]
+}

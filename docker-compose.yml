@@ -1,0 +1,229 @@
+# Hamza dev stack. Hardened for local operation: non-root containers, loopback-bound
+# host ports, read-only roots, no-new-privileges, dropped Linux caps, and explicit
+# resource ceilings. Production listener TLS/mTLS belongs in the Helm chart or an
+# upstream load balancer; this compose file is the plain-HTTP localhost topology.
+#
+#   docker compose up -d --build
+#
+# envoy/envoy.yaml ships pointed at no real upstream — edit its provider_upstream
+# cluster to your Anthropic or OpenAI endpoint before routing real Agent traffic
+# (see README.md). docker-compose.ci.yml layers on a fake in-repo provider so the
+# stack can be exercised without a real account; it is not part of the product.
+
+services:
+  hamza-core:
+    build: .
+    container_name: hamza-core
+    user: "10001:10001"
+    read_only: true
+    tmpfs:
+      # SQLite JDBC extracts a native library to /tmp and maps it executable.
+      - /tmp:size=64m,mode=1777,exec
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 512
+    mem_limit: 768m
+    cpus: "1.0"
+    environment:
+      # Policy Posture: FLAG (default), MASK, or BLOCK. Override per run, e.g.
+      #   HAMZA_POSTURE=BLOCK docker compose up -d --force-recreate hamza-core
+      HAMZA_POSTURE: ${HAMZA_POSTURE:-FLAG}
+      # Stream over-cap bodies to the Gate and scan them end-to-end (default ON,
+      # ADR 0014). Set false to fall back to prefix-only inspection.
+      HAMZA_STREAM_OVERSIZE: ${HAMZA_STREAM_OVERSIZE:-true}
+      # Request-body inspection cap; larger bodies get prefix-only or streamed scan.
+      HAMZA_POLICY_MAX_BODY_BYTES: ${HAMZA_POLICY_MAX_BODY_BYTES:-65536}
+      # Generic escape hatch for ad-hoc config (e.g. per-rule Action overrides in
+      # live tests). Valid JSON; {} is a no-op.
+      SPRING_APPLICATION_JSON: ${SPRING_APPLICATION_JSON:-{}}
+      # Exact Data Match: directory of fingerprint registries (empty = disabled).
+      # The e2e suite points this at the mounted test fixture.
+      HAMZA_EDM_REGISTRY_DIR: ${HAMZA_EDM_REGISTRY_DIR:-}
+      # Distinct matches from ONE registry before its Action may escalate past FLAG.
+      HAMZA_EDM_BLOCK_THRESHOLD: ${HAMZA_EDM_BLOCK_THRESHOLD:-10}
+      # Keep the previous full Registry version matchable alongside the current one.
+      HAMZA_EDM_KEEP_PREVIOUS: ${HAMZA_EDM_KEEP_PREVIOUS:-true}
+      # Hard admission bound for full-width Fingerprints in one continuation Registry.
+      HAMZA_EDM_MAX_CONTINUATION_ENTRIES: ${HAMZA_EDM_MAX_CONTINUATION_ENTRIES:-1000000}
+      # Internal Registry ingestion admin API. Empty = disabled.
+      HAMZA_ADMIN_TOKEN: ${HAMZA_ADMIN_TOKEN:-}
+      # Coach: present a Block as a Provider-shaped 403 (ADR 0018). Off by default
+      # (bare text 403 fallback); the e2e suite flips this on for the coach checks.
+      HAMZA_COACH_ENABLED: ${HAMZA_COACH_ENABLED:-false}
+      HAMZA_COACH_STATUS: ${HAMZA_COACH_STATUS:-403}
+      # Safe Continuation is opt-in and requires signed managed metadata plus
+      # approved profiles supplied through SPRING_APPLICATION_JSON or indexed env.
+      HAMZA_SAFE_CONTINUATION_ENABLED: ${HAMZA_SAFE_CONTINUATION_ENABLED:-false}
+      HAMZA_CONTINUATION_SIGNING_KEY_BASE64: ${HAMZA_CONTINUATION_SIGNING_KEY_BASE64:-}
+      HAMZA_CONTINUATION_MAX_BODY_BYTES: ${HAMZA_CONTINUATION_MAX_BODY_BYTES:-8388608}
+      HAMZA_CONTINUATION_TOTAL_MEMORY_BYTES: ${HAMZA_CONTINUATION_TOTAL_MEMORY_BYTES:-67108864}
+      HAMZA_CONTINUATION_MAX_CONCURRENT_TURNS: ${HAMZA_CONTINUATION_MAX_CONCURRENT_TURNS:-8}
+      # A spent candidate budget is scan-incomplete, never a clean enforcement result.
+      HAMZA_CONTINUATION_CANDIDATE_BUDGET: ${HAMZA_CONTINUATION_CANDIDATE_BUDGET:-50000}
+      # Managed masking bounds. A Turn above either bound Blocks with Coach.
+      HAMZA_CONTINUATION_MASK_MAX_BODY_BYTES: ${HAMZA_CONTINUATION_MASK_MAX_BODY_BYTES:-1048576}
+      HAMZA_CONTINUATION_MASK_MAX_SEGMENTS: ${HAMZA_CONTINUATION_MASK_MAX_SEGMENTS:-1024}
+      # How old a signed managed-metadata header set may be before a 403 EXPIRED.
+      HAMZA_CONTINUATION_METADATA_MAX_AGE: ${HAMZA_CONTINUATION_METADATA_MAX_AGE:-5m}
+      HAMZA_CONTINUATION_METADATA_MAX_FUTURE_SKEW: ${HAMZA_CONTINUATION_METADATA_MAX_FUTURE_SKEW:-30s}
+      # In-boundary Presidio. Off by default; only the M3-approved entities can ever
+      # enforce, and the Gate refuses to start on a profile that enables a failed one.
+      HAMZA_PRESIDIO_ENABLED: ${HAMZA_PRESIDIO_ENABLED:-false}
+      HAMZA_PRESIDIO_ENDPOINT: ${HAMZA_PRESIDIO_ENDPOINT:-http://presidio:3000}
+      HAMZA_PRESIDIO_APPROVED_PROFILE: ${HAMZA_PRESIDIO_APPROVED_PROFILE:-/presidio/approved-profile.json}
+    ports:
+      - "127.0.0.1:${HAMZA_CORE_HTTP_PORT:-8080}:8080"   # actuator / metrics / admin API
+      - "127.0.0.1:${HAMZA_CORE_GRPC_PORT:-9090}:9090"   # ext_proc gRPC (debug only)
+    volumes:
+      - hamza-data:/data   # the SQLite Record store
+      # Fake-data EDM fixture used by the test suite; inert unless
+      # HAMZA_EDM_REGISTRY_DIR points at it.
+      - ./src/test/resources/edm:/edm-fixtures:ro
+      # The M3 approved profile. Read-only: the Gate loads it, never writes it.
+      - ./detector/presidio:/presidio:ro
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/actuator/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 30s
+    networks:
+      - control
+      - observability
+
+  # In-boundary PII detector. Pinned by digest to the image M3 evaluated. It sits on
+  # the internal `control` network only: no published port, no route off the host, and
+  # no runtime downloads. Presidio detects; Hamza owns masking and Action resolution.
+  presidio:
+    image: ghcr.io/data-privacy-stack/presidio-analyzer@sha256:286e3fa7f3a7426e775e8564fe1870f1ba8f999d3ab8bbb8cc46a44355d9d6e9
+    pull_policy: missing
+    container_name: presidio
+    # Opt-in: the existing deterministic gates keep their current topology and
+    # start-up cost. `--profile presidio` brings the detector up.
+    profiles: ["presidio"]
+    user: "1001:1001"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 512
+    mem_limit: 2g
+    cpus: "2.0"
+    environment:
+      LOG_LEVEL: ERROR
+      PYTHONDONTWRITEBYTECODE: "1"
+      CUDA_VISIBLE_DEVICES: ""
+      WORKERS: "1"
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:3000/health >/dev/null"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    networks:
+      - control
+
+  envoy:
+    image: envoyproxy/envoy:v1.34.14
+    container_name: envoy
+    user: "101:101"
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 512
+    mem_limit: 256m
+    cpus: "0.75"
+    command: ["-c", "/etc/envoy/envoy.yaml", "--service-cluster", "hamza", "-l", "info"]
+    volumes:
+      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml:ro
+    ports:
+      - "127.0.0.1:${HAMZA_GATE_PORT:-10000}:10000"        # local Agent base URL
+      - "127.0.0.1:${HAMZA_MANAGED_GATE_PORT:-10001}:10001" # fail-closed managed Agent route
+      - "127.0.0.1:${HAMZA_ENVOY_ADMIN_PORT:-9901}:9901"   # Envoy admin + /stats/prometheus
+    depends_on:
+      hamza-core:
+        condition: service_healthy
+    networks:
+      - agent
+      - control
+      - provider
+      - observability
+
+  prometheus:
+    image: prom/prometheus:v3.4.1
+    container_name: prometheus
+    user: "65534:65534"
+    read_only: true
+    tmpfs:
+      - /prometheus:uid=65534,gid=65534,mode=0755
+      - /tmp:size=32m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    mem_limit: 256m
+    cpus: "0.5"
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "127.0.0.1:${HAMZA_PROMETHEUS_PORT:-9091}:9090"   # host 9091 by default
+    networks:
+      - observability
+
+  grafana:
+    image: grafana/grafana:11.6.1
+    container_name: grafana
+    user: "472:472"
+    read_only: true
+    tmpfs:
+      - /var/lib/grafana:uid=472,gid=472,mode=0755
+      - /tmp:uid=472,gid=472,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    mem_limit: 384m
+    cpus: "0.5"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${HAMZA_GRAFANA_ADMIN_PASSWORD:-hamza-dev-admin}
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "127.0.0.1:${HAMZA_GRAFANA_PORT:-3000}:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - observability
+
+volumes:
+  hamza-data:
+
+networks:
+  # A managed Agent joins only this network: Provider DNS/routes are absent.
+  agent:
+  control:
+    internal: true
+  provider:
+    internal: true
+  observability:
+    # Host-published Actuator/Prometheus/Grafana ports must remain reachable by
+    # the deterministic gates. Provider isolation comes from the separate
+    # internal provider network, not from making observability host-inaccessible.

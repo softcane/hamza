@@ -1,0 +1,32 @@
+{
+  "ruleId": "mailgun-pub-key",
+  "truePositives": [
+    "  \"mailgunToken\" =\u003e \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "$mailgunToken .= \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "\u003cmailgunToken\u003e\n    pubkey-b05f8c8c00ca36464e19e9d99d301c47\n\u003c/mailgunToken\u003e",
+    "String mailgunToken = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\";",
+    "System.setProperty(\"MAILGUN_TOKEN\", \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\")",
+    "mailgunToken := \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgunToken := `pubkey-b05f8c8c00ca36464e19e9d99d301c47`",
+    "mailgunToken = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgunToken = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgunToken = 'pubkey-b05f8c8c00ca36464e19e9d99d301c47'",
+    "mailgunToken = pubkey-b05f8c8c00ca36464e19e9d99d301c47",
+    "mailgunToken=\"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgunToken=pubkey-b05f8c8c00ca36464e19e9d99d301c47",
+    "mailgun_TOKEN :::= \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_TOKEN ::= \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_TOKEN := \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_TOKEN = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_TOKEN ?= \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_token: \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "mailgun_token: 'pubkey-b05f8c8c00ca36464e19e9d99d301c47'",
+    "mailgun_token: pubkey-b05f8c8c00ca36464e19e9d99d301c47",
+    "string mailgunToken = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\";",
+    "var mailgunToken = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "var mailgunToken string = \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"",
+    "{\n    \"mailgun_token\": \"pubkey-b05f8c8c00ca36464e19e9d99d301c47\"\n}",
+    "{\"config.ini\": \"MAILGUN_TOKEN=pubkey-b05f8c8c00ca36464e19e9d99d301c47\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "intercom-api-key",
+  "truePositives": [
+    "  \"intercomToken\" =\u003e \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "$intercomToken .= \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "\u003cintercomToken\u003e\n    87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\n\u003c/intercomToken\u003e",
+    "String intercomToken = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\";",
+    "System.setProperty(\"INTERCOM_TOKEN\", \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\")",
+    "intercomToken := \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercomToken := `87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx`",
+    "intercomToken = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercomToken = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercomToken = '87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx'",
+    "intercomToken = 87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx",
+    "intercomToken=\"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercomToken=87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx",
+    "intercom_TOKEN :::= \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_TOKEN ::= \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_TOKEN := \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_TOKEN = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_TOKEN ?= \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_token: \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "intercom_token: '87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx'",
+    "intercom_token: 87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx",
+    "string intercomToken = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\";",
+    "var intercomToken = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "var intercomToken string = \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"",
+    "{\n    \"intercom_token\": \"87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\"\n}",
+    "{\"config.ini\": \"INTERCOM_TOKEN=87koxbqi=id94i6v=5rnr6vsddkdp5sel5d=81qti-lqmv2mlt9yl7dh1cmx\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,35 @@
+{
+  "ruleId": "elastic-cloud-api-key",
+  "truePositives": [
+    "  \"elasticToken\" =\u003e \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "$elasticToken .= \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "\u003celasticToken\u003e\n    essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\n\u003c/elasticToken\u003e",
+    "String elasticToken = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\";",
+    "System.setProperty(\"ELASTIC_TOKEN\", \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\")",
+    "elasticToken := \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elasticToken := `essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ`",
+    "elasticToken = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elasticToken = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elasticToken = 'essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ'",
+    "elasticToken = essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ",
+    "elasticToken=\"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elasticToken=essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ",
+    "elastic_TOKEN :::= \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_TOKEN ::= \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_TOKEN := \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_TOKEN = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_TOKEN ?= \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_token: \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "elastic_token: 'essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ'",
+    "elastic_token: essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ",
+    "string elasticToken = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\";",
+    "var elasticToken = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "var elasticToken string = \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"",
+    "{\n    \"elastic_token\": \"essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\"\n}",
+    "{\"config.ini\": \"ELASTIC_TOKEN=essu_PNO05WeRMOPscGnrNJ0f-0AwXM3VR6JUdwpxRY-pN6hUibJ25_xGwDKh90sWlGc8k-w3TLovQZ3GQCpJ\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "elastic_token = ess_abc123def456ghi789jkl012mno345pqr678stu901vwx234yz1234567890",
+    "elastic_token = essu_abc123"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "yandex-aws-access-token",
+  "truePositives": [
+    "  \"yandexToken\" =\u003e \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "$yandexToken .= \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "\u003cyandexToken\u003e\n    YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\n\u003c/yandexToken\u003e",
+    "String yandexToken = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\";",
+    "System.setProperty(\"YANDEX_TOKEN\", \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\")",
+    "string yandexToken = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\";",
+    "var yandexToken = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "var yandexToken string = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandexToken := \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandexToken := `YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA`",
+    "yandexToken = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandexToken = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandexToken = 'YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA'",
+    "yandexToken = YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA",
+    "yandexToken=\"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandexToken=YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA",
+    "yandex_TOKEN :::= \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_TOKEN ::= \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_TOKEN := \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_TOKEN = \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_TOKEN ?= \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_token: \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"",
+    "yandex_token: 'YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA'",
+    "yandex_token: YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA",
+    "{\n    \"yandex_token\": \"YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\"\n}",
+    "{\"config.ini\": \"YANDEX_TOKEN=YCsim2lR_EntBtLAkTCRI7KD6J8Fs9KKkE1SgDbA\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

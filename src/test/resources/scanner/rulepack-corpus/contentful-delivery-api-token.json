@@ -1,0 +1,32 @@
+{
+  "ruleId": "contentful-delivery-api-token",
+  "truePositives": [
+    "  \"contentfulToken\" =\u003e \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "$contentfulToken .= \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "\u003ccontentfulToken\u003e\n    juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\n\u003c/contentfulToken\u003e",
+    "String contentfulToken = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\";",
+    "System.setProperty(\"CONTENTFUL_TOKEN\", \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\")",
+    "contentfulToken := \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentfulToken := `juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq`",
+    "contentfulToken = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentfulToken = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentfulToken = 'juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq'",
+    "contentfulToken = juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq",
+    "contentfulToken=\"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentfulToken=juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq",
+    "contentful_TOKEN :::= \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_TOKEN ::= \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_TOKEN := \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_TOKEN = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_TOKEN ?= \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_token: \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "contentful_token: 'juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq'",
+    "contentful_token: juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq",
+    "string contentfulToken = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\";",
+    "var contentfulToken = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "var contentfulToken string = \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"",
+    "{\n    \"contentful_token\": \"juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\"\n}",
+    "{\"config.ini\": \"CONTENTFUL_TOKEN=juykyric08pzw9eeat1jkhwpv6zq053rxijcxusqyvq\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

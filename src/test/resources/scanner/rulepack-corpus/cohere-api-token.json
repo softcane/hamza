@@ -1,0 +1,10 @@
+{
+  "ruleId": "cohere-api-token",
+  "truePositives": [
+    "cohere_api_token = \"8vetIrn2yaq2Xa8dGkwXeSk5rvjzo1WEsd95N6Me\"",
+    "export CO_API_KEY=MRHYgCRUzvADA3RDVRI310k6konIcnv4VdVdo5eZ"
+  ],
+  "falsePositives": [
+    "CO_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

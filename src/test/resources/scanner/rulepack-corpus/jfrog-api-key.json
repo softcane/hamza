@@ -1,0 +1,7 @@
+{
+  "ruleId": "jfrog-api-key",
+  "truePositives": [
+    "--set imagePullSecretJfrog.password=1prig2w9xahx1n8xapnyv0739xio1uyp5x8fdbnlvr5ty8g8nx6wc33ay0flt3hebvnete1qv"
+  ],
+  "falsePositives": []
+}

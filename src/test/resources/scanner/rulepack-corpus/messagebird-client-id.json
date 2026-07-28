@@ -1,0 +1,33 @@
+{
+  "ruleId": "messagebird-client-id",
+  "truePositives": [
+    "  \"MessageBirdToken\" =\u003e \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "$MessageBirdToken .= \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "\u003cMessageBirdToken\u003e\n    12345678-ABCD-ABCD-ABCD-1234567890AB\n\u003c/MessageBirdToken\u003e",
+    "MessageBirdToken := \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBirdToken := `12345678-ABCD-ABCD-ABCD-1234567890AB`",
+    "MessageBirdToken = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBirdToken = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBirdToken = '12345678-ABCD-ABCD-ABCD-1234567890AB'",
+    "MessageBirdToken = 12345678-ABCD-ABCD-ABCD-1234567890AB",
+    "MessageBirdToken=\"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBirdToken=12345678-ABCD-ABCD-ABCD-1234567890AB",
+    "MessageBird_TOKEN :::= \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_TOKEN ::= \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_TOKEN := \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_TOKEN = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_TOKEN ?= \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_token: \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "MessageBird_token: '12345678-ABCD-ABCD-ABCD-1234567890AB'",
+    "MessageBird_token: 12345678-ABCD-ABCD-ABCD-1234567890AB",
+    "String MessageBirdToken = \"12345678-ABCD-ABCD-ABCD-1234567890AB\";",
+    "System.setProperty(\"MESSAGEBIRD_TOKEN\", \"12345678-ABCD-ABCD-ABCD-1234567890AB\")",
+    "const MessageBirdClientID = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "string MessageBirdToken = \"12345678-ABCD-ABCD-ABCD-1234567890AB\";",
+    "var MessageBirdToken = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "var MessageBirdToken string = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "{\n    \"MessageBird_token\": \"12345678-ABCD-ABCD-ABCD-1234567890AB\"\n}",
+    "{\"config.ini\": \"MESSAGEBIRD_TOKEN=12345678-ABCD-ABCD-ABCD-1234567890AB\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

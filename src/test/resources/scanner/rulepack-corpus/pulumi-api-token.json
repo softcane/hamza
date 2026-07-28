@@ -1,0 +1,34 @@
+{
+  "ruleId": "pulumi-api-token",
+  "truePositives": [
+    "  \"pulumi-api-tokenToken\" =\u003e \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "$pulumi-api-tokenToken .= \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "\u003cpulumi-api-tokenToken\u003e\n    pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\n\u003c/pulumi-api-tokenToken\u003e",
+    "String pulumi-api-tokenToken = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\";",
+    "System.setProperty(\"PULUMI-API-TOKEN_TOKEN\", \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\")",
+    "pulumi-api-tokenToken := \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-tokenToken := `pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d`",
+    "pulumi-api-tokenToken = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-tokenToken = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-tokenToken = 'pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d'",
+    "pulumi-api-tokenToken = pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d",
+    "pulumi-api-tokenToken=\"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-tokenToken=pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d",
+    "pulumi-api-token_TOKEN :::= \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_TOKEN ::= \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_TOKEN := \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_TOKEN = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_TOKEN ?= \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_token: \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "pulumi-api-token_token: 'pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d'",
+    "pulumi-api-token_token: pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d",
+    "string pulumi-api-tokenToken = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\";",
+    "var pulumi-api-tokenToken = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "var pulumi-api-tokenToken string = \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"",
+    "{\n    \"pulumi-api-token_token\": \"pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\"\n}",
+    "{\"config.ini\": \"PULUMI-API-TOKEN_TOKEN=pul-363a49786cab9a28ae1a19fc0e0dd78b66a4d17d\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "                        \u003cimg src=\"./assets/vipul-f0eb1acf0da84c06a50c5b2c59932001997786b176dec02bd16128ee9ea83628.png\" alt=\"\" class=\"w-16 h-16 rounded-full\"\u003e"
+  ]
+}

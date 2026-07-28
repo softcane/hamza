@@ -1,0 +1,32 @@
+{
+  "ruleId": "postman-api-token",
+  "truePositives": [
+    "  \"postmanAPItokenToken\" =\u003e \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "$postmanAPItokenToken .= \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "\u003cpostmanAPItokenToken\u003e\n    PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\n\u003c/postmanAPItokenToken\u003e",
+    "String postmanAPItokenToken = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\";",
+    "System.setProperty(\"POSTMANAPITOKEN_TOKEN\", \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\")",
+    "postmanAPItokenToken := \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItokenToken := `PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0`",
+    "postmanAPItokenToken = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItokenToken = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItokenToken = 'PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0'",
+    "postmanAPItokenToken = PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0",
+    "postmanAPItokenToken=\"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItokenToken=PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0",
+    "postmanAPItoken_TOKEN :::= \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_TOKEN ::= \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_TOKEN := \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_TOKEN = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_TOKEN ?= \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_token: \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "postmanAPItoken_token: 'PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0'",
+    "postmanAPItoken_token: PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0",
+    "string postmanAPItokenToken = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\";",
+    "var postmanAPItokenToken = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "var postmanAPItokenToken string = \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"",
+    "{\n    \"postmanAPItoken_token\": \"PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\"\n}",
+    "{\"config.ini\": \"POSTMANAPITOKEN_TOKEN=PMAK-4363b16f682d4a30734887d2-e8ba4b7d7424bf7411e58095c20bfd77c0\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

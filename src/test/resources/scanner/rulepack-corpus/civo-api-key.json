@@ -1,0 +1,34 @@
+{
+  "ruleId": "civo-api-key",
+  "truePositives": [
+    "  \"civoToken\" =\u003e \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "$civoToken .= \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "\u003ccivoToken\u003e\n    1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\n\u003c/civoToken\u003e",
+    "String civoToken = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\";",
+    "System.setProperty(\"CIVO_TOKEN\", \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\")",
+    "civoToken := \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civoToken := `1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx`",
+    "civoToken = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civoToken = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civoToken = '1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx'",
+    "civoToken = 1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx",
+    "civoToken=\"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civoToken=1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx",
+    "civo_TOKEN :::= \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_TOKEN ::= \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_TOKEN := \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_TOKEN = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_TOKEN ?= \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_token: \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "civo_token: '1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx'",
+    "civo_token: 1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx",
+    "string civoToken = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\";",
+    "var civoToken = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "var civoToken string = \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"",
+    "{\n    \"civo_token\": \"1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\"\n}",
+    "{\"config.ini\": \"CIVO_TOKEN=1scyycd5stjwokkc6dv31c40dckrvdlrr7esrnhzphmrxadujx\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "civo_token = \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+  ]
+}

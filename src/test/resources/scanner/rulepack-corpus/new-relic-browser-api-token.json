@@ -1,0 +1,32 @@
+{
+  "ruleId": "new-relic-browser-api-token",
+  "truePositives": [
+    "  \"new-relicToken\" =\u003e \"NRJS-4d07bd69df285704fc0\"",
+    "$new-relicToken .= \"NRJS-4d07bd69df285704fc0\"",
+    "\u003cnew-relicToken\u003e\n    NRJS-4d07bd69df285704fc0\n\u003c/new-relicToken\u003e",
+    "String new-relicToken = \"NRJS-4d07bd69df285704fc0\";",
+    "System.setProperty(\"NEW-RELIC_TOKEN\", \"NRJS-4d07bd69df285704fc0\")",
+    "new-relicToken := \"NRJS-4d07bd69df285704fc0\"",
+    "new-relicToken := `NRJS-4d07bd69df285704fc0`",
+    "new-relicToken = \"NRJS-4d07bd69df285704fc0\"",
+    "new-relicToken = \"NRJS-4d07bd69df285704fc0\"",
+    "new-relicToken = 'NRJS-4d07bd69df285704fc0'",
+    "new-relicToken = NRJS-4d07bd69df285704fc0",
+    "new-relicToken=\"NRJS-4d07bd69df285704fc0\"",
+    "new-relicToken=NRJS-4d07bd69df285704fc0",
+    "new-relic_TOKEN :::= \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_TOKEN ::= \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_TOKEN := \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_TOKEN = \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_TOKEN ?= \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_token: \"NRJS-4d07bd69df285704fc0\"",
+    "new-relic_token: 'NRJS-4d07bd69df285704fc0'",
+    "new-relic_token: NRJS-4d07bd69df285704fc0",
+    "string new-relicToken = \"NRJS-4d07bd69df285704fc0\";",
+    "var new-relicToken = \"NRJS-4d07bd69df285704fc0\"",
+    "var new-relicToken string = \"NRJS-4d07bd69df285704fc0\"",
+    "{\n    \"new-relic_token\": \"NRJS-4d07bd69df285704fc0\"\n}",
+    "{\"config.ini\": \"NEW-RELIC_TOKEN=NRJS-4d07bd69df285704fc0\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

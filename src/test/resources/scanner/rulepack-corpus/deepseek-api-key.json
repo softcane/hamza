@@ -1,0 +1,35 @@
+{
+  "ruleId": "deepseek-api-key",
+  "truePositives": [
+    "  \"deepseekToken\" =\u003e \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "$deepseekToken .= \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "\u003cdeepseekToken\u003e\n    sk-5ef7cd499dc612396851eaab48944d80\n\u003c/deepseekToken\u003e",
+    "String deepseekToken = \"sk-5ef7cd499dc612396851eaab48944d80\";",
+    "System.setProperty(\"DEEPSEEK_TOKEN\", \"sk-5ef7cd499dc612396851eaab48944d80\")",
+    "deepseekToken := \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseekToken := `sk-5ef7cd499dc612396851eaab48944d80`",
+    "deepseekToken = \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseekToken = \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseekToken = 'sk-5ef7cd499dc612396851eaab48944d80'",
+    "deepseekToken = sk-5ef7cd499dc612396851eaab48944d80",
+    "deepseekToken=\"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseekToken=sk-5ef7cd499dc612396851eaab48944d80",
+    "deepseek_TOKEN :::= \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_TOKEN ::= \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_TOKEN := \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_TOKEN = \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_TOKEN ?= \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_token: \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "deepseek_token: 'sk-5ef7cd499dc612396851eaab48944d80'",
+    "deepseek_token: sk-5ef7cd499dc612396851eaab48944d80",
+    "string deepseekToken = \"sk-5ef7cd499dc612396851eaab48944d80\";",
+    "var deepseekToken = \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "var deepseekToken string = \"sk-5ef7cd499dc612396851eaab48944d80\"",
+    "{\n    \"deepseek_token\": \"sk-5ef7cd499dc612396851eaab48944d80\"\n}",
+    "{\"config.ini\": \"DEEPSEEK_TOKEN=sk-5ef7cd499dc612396851eaab48944d80\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "deepseek_key = sk-00000000000000000000000000000000",
+    "deepseek_key = sk-ba588036180d4d1d9cebbf"
+  ]
+}

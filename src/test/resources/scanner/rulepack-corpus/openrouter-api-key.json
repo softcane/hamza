@@ -1,0 +1,35 @@
+{
+  "ruleId": "openrouter-api-key",
+  "truePositives": [
+    "  \"openrouterToken\" =\u003e \"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\"",
+    "$openrouterToken .= \"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\"",
+    "\u003copenrouterToken\u003e\n    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\n\u003c/openrouterToken\u003e",
+    "String openrouterToken = \"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\";",
+    "System.setProperty(\"OPENROUTER_TOKEN\", \"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\")",
+    "openrouterToken := \"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\"",
+    "openrouterToken := `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`",
+    "openrouterToken = \"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\"",
+    "openrouterToken = \"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\"",
+    "openrouterToken = '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'",
+    "openrouterToken = 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",
+    "openrouterToken=\"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\"",
+    "openrouterToken=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",
+    "openrouter_TOKEN :::= \"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\"",
+    "openrouter_TOKEN ::= \"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\"",
+    "openrouter_TOKEN := \"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\"",
+    "openrouter_TOKEN = \"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\"",
+    "openrouter_TOKEN ?= \"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\"",
+    "openrouter_token: \"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\"",
+    "openrouter_token: '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'",
+    "openrouter_token: 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",
+    "string openrouterToken = \"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\";",
+    "var openrouterToken = \"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\"",
+    "var openrouterToken string = \"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\"",
+    "{\n    \"openrouter_token\": \"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\"\n}",
+    "{\"config.ini\": \"OPENROUTER_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "sk-or-v1-0e6f44a47a05f1dad2ad7e88c4c1d6b7",
+    "sk-v1-0e6f44a47a05f1dad2ad7e88c4c1d6b77688157716fb1a5271146f7464951c96"
+  ]
+}

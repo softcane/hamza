@@ -1,0 +1,7 @@
+{
+  "ruleId": "kagi-api-key",
+  "truePositives": [
+    "KAGI_API_KEY='AQAAUPJ-iQc.yLFDzC5RRHzPNDThhulREdoG0Bn3PiZMwJ6yqC6uJLE'"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,9 @@
+{
+  "ruleId": "aikido-ci-token",
+  "truePositives": [
+    "AIKIDO_TOKEN=AIK_CI_a1B2c3D4e5F6g7H8i9J0k1L2"
+  ],
+  "falsePositives": [
+    "AIKIDO_TOKEN=AIK_CI_short"
+  ]
+}

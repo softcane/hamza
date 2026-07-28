@@ -1,0 +1,32 @@
+{
+  "ruleId": "fastly-api-token",
+  "truePositives": [
+    "  \"fastlyToken\" =\u003e \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "$fastlyToken .= \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "\u003cfastlyToken\u003e\n    _z89v_9f_0_y_he0rmjqpt9ksyby=h8a\n\u003c/fastlyToken\u003e",
+    "String fastlyToken = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\";",
+    "System.setProperty(\"FASTLY_TOKEN\", \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\")",
+    "fastlyToken := \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastlyToken := `_z89v_9f_0_y_he0rmjqpt9ksyby=h8a`",
+    "fastlyToken = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastlyToken = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastlyToken = '_z89v_9f_0_y_he0rmjqpt9ksyby=h8a'",
+    "fastlyToken = _z89v_9f_0_y_he0rmjqpt9ksyby=h8a",
+    "fastlyToken=\"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastlyToken=_z89v_9f_0_y_he0rmjqpt9ksyby=h8a",
+    "fastly_TOKEN :::= \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_TOKEN ::= \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_TOKEN := \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_TOKEN = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_TOKEN ?= \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_token: \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "fastly_token: '_z89v_9f_0_y_he0rmjqpt9ksyby=h8a'",
+    "fastly_token: _z89v_9f_0_y_he0rmjqpt9ksyby=h8a",
+    "string fastlyToken = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\";",
+    "var fastlyToken = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "var fastlyToken string = \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"",
+    "{\n    \"fastly_token\": \"_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\"\n}",
+    "{\"config.ini\": \"FASTLY_TOKEN=_z89v_9f_0_y_he0rmjqpt9ksyby=h8a\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitter-access-token",
+  "truePositives": [
+    "  \"gitterToken\" =\u003e \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "$gitterToken .= \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "\u003cgitterToken\u003e\n    6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\n\u003c/gitterToken\u003e",
+    "String gitterToken = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\";",
+    "System.setProperty(\"GITTER_TOKEN\", \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\")",
+    "gitterToken := \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitterToken := `6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc`",
+    "gitterToken = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitterToken = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitterToken = '6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc'",
+    "gitterToken = 6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc",
+    "gitterToken=\"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitterToken=6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc",
+    "gitter_TOKEN :::= \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_TOKEN ::= \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_TOKEN := \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_TOKEN = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_TOKEN ?= \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_token: \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "gitter_token: '6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc'",
+    "gitter_token: 6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc",
+    "string gitterToken = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\";",
+    "var gitterToken = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "var gitterToken string = \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"",
+    "{\n    \"gitter_token\": \"6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\"\n}",
+    "{\"config.ini\": \"GITTER_TOKEN=6ufurx6xfkfv2pammv1j8rtv748r-tmfjr9dookc\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

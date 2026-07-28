@@ -1,0 +1,32 @@
+{
+  "ruleId": "sendinblue-api-token",
+  "truePositives": [
+    "  \"sendinblueToken\" =\u003e \"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\"",
+    "$sendinblueToken .= \"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\"",
+    "\u003csendinblueToken\u003e\n    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\n\u003c/sendinblueToken\u003e",
+    "String sendinblueToken = \"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\";",
+    "System.setProperty(\"SENDINBLUE_TOKEN\", \"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\")",
+    "sendinblueToken := \"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\"",
+    "sendinblueToken := `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`",
+    "sendinblueToken = \"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\"",
+    "sendinblueToken = \"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\"",
+    "sendinblueToken = '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'",
+    "sendinblueToken = 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",
+    "sendinblueToken=\"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\"",
+    "sendinblueToken=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",
+    "sendinblue_TOKEN :::= \"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\"",
+    "sendinblue_TOKEN ::= \"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\"",
+    "sendinblue_TOKEN := \"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\"",
+    "sendinblue_TOKEN = \"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\"",
+    "sendinblue_TOKEN ?= \"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\"",
+    "sendinblue_token: \"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\"",
+    "sendinblue_token: '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'",
+    "sendinblue_token: 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",
+    "string sendinblueToken = \"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\";",
+    "var sendinblueToken = \"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\"",
+    "var sendinblueToken string = \"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\"",
+    "{\n    \"sendinblue_token\": \"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\"\n}",
+    "{\"config.ini\": \"SENDINBLUE_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

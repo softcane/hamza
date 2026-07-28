@@ -1,0 +1,37 @@
+{
+  "ruleId": "okta-access-token",
+  "truePositives": [
+    "\t\t\tvar OktaApiToken = \"00fWkOjwwL9xiFd-Vfgm_ePATIRxVj852Iblbb1DS_\";",
+    "  \"oktaToken\" =\u003e \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "\"oktaApiToken\": \"00ebObu4zSNkyc6dimLvUwq4KpTEop-PCEnnfSTpD3\",",
+    "$oktaToken .= \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "\u003coktaToken\u003e\n    00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\n\u003c/oktaToken\u003e",
+    "String oktaToken = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\";",
+    "System.setProperty(\"OKTA_TOKEN\", \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\")",
+    "oktaToken := \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "oktaToken := `00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz`",
+    "oktaToken = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "oktaToken = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "oktaToken = '00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz'",
+    "oktaToken = 00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz",
+    "oktaToken=\"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "oktaToken=00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz",
+    "okta_TOKEN :::= \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_TOKEN ::= \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_TOKEN := \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_TOKEN = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_TOKEN ?= \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_token: \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "okta_token: '00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz'",
+    "okta_token: 00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz",
+    "string oktaToken = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\";",
+    "var oktaToken = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "var oktaToken string = \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"",
+    "{\n    \"okta_token\": \"00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\"\n}",
+    "{\"config.ini\": \"OKTA_TOKEN=00D2xqrq7Osc1SB652LbaKlPrmiSGhBtH8nx5kpbIz\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "oktaKey = 00000000000000000000000000000000000TUVWXYZ",
+    "rookTable = 0023452Lllk2KqjLBvaxANWEgTd7bqjsxjo8aZj0wd"
+  ]
+}

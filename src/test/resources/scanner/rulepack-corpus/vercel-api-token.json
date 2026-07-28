@@ -1,0 +1,39 @@
+{
+  "ruleId": "vercel-api-token",
+  "truePositives": [
+    "  \"vercelToken\" =\u003e \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "$vercelToken .= \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "\u003cvercelToken\u003e\n    1HQWYU9JNMPPS4ZCKINR9914\n\u003c/vercelToken\u003e",
+    "String vercelToken = \"1HQWYU9JNMPPS4ZCKINR9914\";",
+    "System.setProperty(\"VERCEL_TOKEN\", \"1HQWYU9JNMPPS4ZCKINR9914\")",
+    "string vercelToken = \"1HQWYU9JNMPPS4ZCKINR9914\";",
+    "var vercelToken = \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "var vercelToken string = \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel-key = DdZV6ZDZW6Vpl7n7JqtrCE5i",
+    "vercelToken := \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercelToken := `1HQWYU9JNMPPS4ZCKINR9914`",
+    "vercelToken = \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercelToken = \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercelToken = '1HQWYU9JNMPPS4ZCKINR9914'",
+    "vercelToken = 1HQWYU9JNMPPS4ZCKINR9914",
+    "vercelToken=\"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercelToken=1HQWYU9JNMPPS4ZCKINR9914",
+    "vercel_TOKEN :::= \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_TOKEN ::= \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_TOKEN := \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_TOKEN = \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_TOKEN ?= \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_api_key = MTg0AW799OY1HmyDdn84or3C",
+    "vercel_secret = A7n9Xfp3tBz7D0XpOTMWpiOM",
+    "vercel_token = zyMBA1qVEMAf4UNNZtCAbg6u",
+    "vercel_token: \"1HQWYU9JNMPPS4ZCKINR9914\"",
+    "vercel_token: '1HQWYU9JNMPPS4ZCKINR9914'",
+    "vercel_token: 1HQWYU9JNMPPS4ZCKINR9914",
+    "{\n    \"vercel_token\": \"1HQWYU9JNMPPS4ZCKINR9914\"\n}",
+    "{\"config.ini\": \"VERCEL_TOKEN=1HQWYU9JNMPPS4ZCKINR9914\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "vercel_key = AAAAAAAAAAAAAAAAAAAAAAAA",
+    "vercel_key = DdZV6ZDZW6Vpl7n7Jq"
+  ]
+}

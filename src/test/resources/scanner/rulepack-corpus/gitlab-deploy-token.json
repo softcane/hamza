@@ -1,0 +1,7 @@
+{
+  "ruleId": "gitlab-deploy-token",
+  "truePositives": [
+    "gitlab_api_token = \"gldt-x55aflgrhtq1tnono3z0\""
+  ],
+  "falsePositives": []
+}

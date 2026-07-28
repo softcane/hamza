@@ -1,0 +1,11 @@
+{
+  "ruleId": "canva-client-id",
+  "truePositives": [
+    "CANVA_CLIENT_ID=OC-FAB12-AbCdEf",
+    "canva client id: OC-AZ2dqZiY_lec"
+  ],
+  "falsePositives": [
+    "CANVA_CLIENT_ID=OC-short",
+    "client id: OC-AZ2dqZiY_lec"
+  ]
+}

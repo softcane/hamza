@@ -1,0 +1,11 @@
+event: response.created
+data: {"type": "response.created", "response": {"id": "resp_fake_1", "model": "gpt-5-codex", "status": "in_progress"}}
+
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"type": "message", "role": "assistant"}}
+
+event: response.completed
+data: {"type": "response.completed", "response": {"id": "resp_fake_1", "model": "gpt-5-codex", "status": "completed", "usage": {"input_tokens": 120, "input_tokens_details": {"cached_tokens": 20}, "output_tokens": 80, "output_tokens_details": {"reasoning_tokens": 30}, "total_tokens": 200}}}
+
+data: [DONE]
+

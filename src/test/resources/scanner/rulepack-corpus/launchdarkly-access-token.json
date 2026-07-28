@@ -1,0 +1,32 @@
+{
+  "ruleId": "launchdarkly-access-token",
+  "truePositives": [
+    "  \"launchdarklyToken\" =\u003e \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "$launchdarklyToken .= \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "\u003claunchdarklyToken\u003e\n    zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\n\u003c/launchdarklyToken\u003e",
+    "String launchdarklyToken = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\";",
+    "System.setProperty(\"LAUNCHDARKLY_TOKEN\", \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\")",
+    "launchdarklyToken := \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarklyToken := `zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a`",
+    "launchdarklyToken = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarklyToken = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarklyToken = 'zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a'",
+    "launchdarklyToken = zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a",
+    "launchdarklyToken=\"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarklyToken=zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a",
+    "launchdarkly_TOKEN :::= \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_TOKEN ::= \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_TOKEN := \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_TOKEN = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_TOKEN ?= \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_token: \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "launchdarkly_token: 'zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a'",
+    "launchdarkly_token: zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a",
+    "string launchdarklyToken = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\";",
+    "var launchdarklyToken = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "var launchdarklyToken string = \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"",
+    "{\n    \"launchdarkly_token\": \"zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\"\n}",
+    "{\"config.ini\": \"LAUNCHDARKLY_TOKEN=zvgbis1f-1i4khmvzkgk5srnj4_8951ptnbgg18a\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

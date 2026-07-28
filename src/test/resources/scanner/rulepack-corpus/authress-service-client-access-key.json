@@ -1,0 +1,32 @@
+{
+  "ruleId": "authress-service-client-access-key",
+  "truePositives": [
+    "  \"authressToken\" =\u003e \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "$authressToken .= \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "\u003cauthressToken\u003e\n    sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\n\u003c/authressToken\u003e",
+    "String authressToken = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\";",
+    "System.setProperty(\"AUTHRESS_TOKEN\", \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\")",
+    "authressToken := \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authressToken := `sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we`",
+    "authressToken = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authressToken = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authressToken = 'sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we'",
+    "authressToken = sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we",
+    "authressToken=\"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authressToken=sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we",
+    "authress_TOKEN :::= \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_TOKEN ::= \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_TOKEN := \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_TOKEN = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_TOKEN ?= \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_token: \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "authress_token: 'sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we'",
+    "authress_token: sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we",
+    "string authressToken = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\";",
+    "var authressToken = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "var authressToken string = \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"",
+    "{\n    \"authress_token\": \"sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\"\n}",
+    "{\"config.ini\": \"AUTHRESS_TOKEN=sc_hwgo7ushlh.r2fh.acc_0n2hd3lq3m.i399wx5kpnq8zuhb2zbuc25p76ep_ni0eyd5s3we\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

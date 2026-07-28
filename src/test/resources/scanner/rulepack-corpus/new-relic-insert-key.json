@@ -1,0 +1,32 @@
+{
+  "ruleId": "new-relic-insert-key",
+  "truePositives": [
+    "  \"new-relicToken\" =\u003e \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "$new-relicToken .= \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "\u003cnew-relicToken\u003e\n    NRII-df2fb3746982a73d49350dd0f5cbe52e\n\u003c/new-relicToken\u003e",
+    "String new-relicToken = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\";",
+    "System.setProperty(\"NEW-RELIC_TOKEN\", \"NRII-df2fb3746982a73d49350dd0f5cbe52e\")",
+    "new-relicToken := \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relicToken := `NRII-df2fb3746982a73d49350dd0f5cbe52e`",
+    "new-relicToken = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relicToken = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relicToken = 'NRII-df2fb3746982a73d49350dd0f5cbe52e'",
+    "new-relicToken = NRII-df2fb3746982a73d49350dd0f5cbe52e",
+    "new-relicToken=\"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relicToken=NRII-df2fb3746982a73d49350dd0f5cbe52e",
+    "new-relic_TOKEN :::= \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_TOKEN ::= \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_TOKEN := \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_TOKEN = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_TOKEN ?= \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_token: \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "new-relic_token: 'NRII-df2fb3746982a73d49350dd0f5cbe52e'",
+    "new-relic_token: NRII-df2fb3746982a73d49350dd0f5cbe52e",
+    "string new-relicToken = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\";",
+    "var new-relicToken = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "var new-relicToken string = \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"",
+    "{\n    \"new-relic_token\": \"NRII-df2fb3746982a73d49350dd0f5cbe52e\"\n}",
+    "{\"config.ini\": \"NEW-RELIC_TOKEN=NRII-df2fb3746982a73d49350dd0f5cbe52e\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

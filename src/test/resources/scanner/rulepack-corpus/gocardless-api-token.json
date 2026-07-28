@@ -1,0 +1,32 @@
+{
+  "ruleId": "gocardless-api-token",
+  "truePositives": [
+    "  \"gocardlessToken\" =\u003e \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "$gocardlessToken .= \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "\u003cgocardlessToken\u003e\n    live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\n\u003c/gocardlessToken\u003e",
+    "String gocardlessToken = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\";",
+    "System.setProperty(\"GOCARDLESS_TOKEN\", \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\")",
+    "gocardlessToken := \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardlessToken := `live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h`",
+    "gocardlessToken = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardlessToken = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardlessToken = 'live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h'",
+    "gocardlessToken = live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h",
+    "gocardlessToken=\"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardlessToken=live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h",
+    "gocardless_TOKEN :::= \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_TOKEN ::= \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_TOKEN := \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_TOKEN = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_TOKEN ?= \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_token: \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "gocardless_token: 'live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h'",
+    "gocardless_token: live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h",
+    "string gocardlessToken = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\";",
+    "var gocardlessToken = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "var gocardlessToken string = \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"",
+    "{\n    \"gocardless_token\": \"live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\"\n}",
+    "{\"config.ini\": \"GOCARDLESS_TOKEN=live_b1za7tuhhdtjv=fofmbccy=kenqop=mujz_g3e1h\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,11 @@
+{
+  "ruleId": "brave-search-api-key",
+  "truePositives": [
+    "BRAVE_SEARCH_API_KEY=\"BSAp7_Mi4q7zWv9NeL2asR0kF6hTbQx\"",
+    "headers = {\"X-Subscription-Token\": \"BSAk4_Vm8nDp3Qw7Ls0raF2jHx6ZuCt\"}"
+  ],
+  "falsePositives": [
+    "BRAVE_SEARCH_API_KEY=\"BSAp7_Mi4q7zWv9NeL2asR0k\"",
+    "BRAVE_SEARCH_API_KEY=\"BSAshort\""
+  ]
+}

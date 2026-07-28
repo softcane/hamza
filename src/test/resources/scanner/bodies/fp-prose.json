@@ -1,0 +1,1 @@
+{"model":"gpt-5-codex","input":"Please refactor the authentication module to use constructor injection, add a unit test for the null-token path, and explain why the secret rotation job was failing after the password reset."}

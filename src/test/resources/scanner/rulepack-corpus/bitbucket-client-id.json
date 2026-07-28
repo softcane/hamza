@@ -1,0 +1,32 @@
+{
+  "ruleId": "bitbucket-client-id",
+  "truePositives": [
+    "  \"bitbucketToken\" =\u003e \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "$bitbucketToken .= \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "\u003cbitbucketToken\u003e\n    oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\n\u003c/bitbucketToken\u003e",
+    "String bitbucketToken = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\";",
+    "System.setProperty(\"BITBUCKET_TOKEN\", \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\")",
+    "bitbucketToken := \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucketToken := `oco2bfsuqpdmlkf3vfqwvg1ryg998l8j`",
+    "bitbucketToken = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucketToken = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucketToken = 'oco2bfsuqpdmlkf3vfqwvg1ryg998l8j'",
+    "bitbucketToken = oco2bfsuqpdmlkf3vfqwvg1ryg998l8j",
+    "bitbucketToken=\"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucketToken=oco2bfsuqpdmlkf3vfqwvg1ryg998l8j",
+    "bitbucket_TOKEN :::= \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_TOKEN ::= \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_TOKEN := \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_TOKEN = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_TOKEN ?= \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_token: \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "bitbucket_token: 'oco2bfsuqpdmlkf3vfqwvg1ryg998l8j'",
+    "bitbucket_token: oco2bfsuqpdmlkf3vfqwvg1ryg998l8j",
+    "string bitbucketToken = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\";",
+    "var bitbucketToken = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "var bitbucketToken string = \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"",
+    "{\n    \"bitbucket_token\": \"oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\"\n}",
+    "{\"config.ini\": \"BITBUCKET_TOKEN=oco2bfsuqpdmlkf3vfqwvg1ryg998l8j\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

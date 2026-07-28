@@ -1,0 +1,11 @@
+{
+  "ruleId": "cloudinary-cloud-name",
+  "truePositives": [
+    "CLOUDINARY_CLOUD_NAME=demo",
+    "cloudinary cloud: product-images"
+  ],
+  "falsePositives": [
+    "CLOUDINARY_CLOUD_NAME=ab",
+    "CLOUD_NAME=demo"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "ruleId": "azure-storage-account-key",
+  "truePositives": [
+    "AccountName=mystorageaccount;AccountKey=G0VhvRC4eez5XIbni69h1oSgSLowZMW0KzIOad4sVPIfahHltpGkQXWSO7UOiA/bPkLWI0IIvqwwnKZrwzLVlY=="
+  ],
+  "falsePositives": []
+}

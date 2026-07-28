@@ -1,0 +1,36 @@
+{
+  "ruleId": "square-access-token",
+  "truePositives": [
+    "  \"squareToken\" =\u003e \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "$squareToken .= \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "\u003csquareToken\u003e\n    sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\n\u003c/squareToken\u003e",
+    "ARG token=EAAAlsBxkkVgvmr7FasTFbM6VUGZ31EJ4jZKTJZySgElBDJ_wyafHuBFquFexY7E",
+    "ARG token=sq0atp-812erere3wewew45678901",
+    "String squareToken = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\";",
+    "System.setProperty(\"SQUARE_TOKEN\", \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\")",
+    "squareToken := \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "squareToken := `sq0atp-y-BY1ScFf2XCkJAK-Dcf7f`",
+    "squareToken = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "squareToken = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "squareToken = 'sq0atp-y-BY1ScFf2XCkJAK-Dcf7f'",
+    "squareToken = sq0atp-y-BY1ScFf2XCkJAK-Dcf7f",
+    "squareToken=\"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "squareToken=sq0atp-y-BY1ScFf2XCkJAK-Dcf7f",
+    "square_TOKEN :::= \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_TOKEN ::= \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_TOKEN := \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_TOKEN = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_TOKEN ?= \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_token: \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "square_token: 'sq0atp-y-BY1ScFf2XCkJAK-Dcf7f'",
+    "square_token: sq0atp-y-BY1ScFf2XCkJAK-Dcf7f",
+    "string squareToken = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\";",
+    "var squareToken = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "var squareToken string = \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"",
+    "{\n    \"square_token\": \"sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\"\n}",
+    "{\"config.ini\": \"SQUARE_TOKEN=sq0atp-y-BY1ScFf2XCkJAK-Dcf7f\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "aws-cli@sha256:eaaa7b11777babe28e6133a8b19ff71cea687e0d7f05158dee95a71f76ce3d00"
+  ]
+}

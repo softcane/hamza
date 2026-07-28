@@ -1,0 +1,9 @@
+{
+  "ruleId": "facebook-access-token",
+  "truePositives": [
+    "facebook 1308742762612587|rhoK1cbv0DOU_RTX_87O4MkX7AI",
+    "facebook 1477036645700765|wRPf2v3mt2JfMqCLK8n7oltrEmc",
+    "{\"facebook access_token\":\"911602140448729|AY-lRJZq9BoDLobvAiP25L7RcMg\",\"token_type\":\"bearer\"}"
+  ],
+  "falsePositives": []
+}

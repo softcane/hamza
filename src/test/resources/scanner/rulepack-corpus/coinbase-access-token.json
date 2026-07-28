@@ -1,0 +1,32 @@
+{
+  "ruleId": "coinbase-access-token",
+  "truePositives": [
+    "  \"coinbaseToken\" =\u003e \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "$coinbaseToken .= \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "\u003ccoinbaseToken\u003e\n    08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\n\u003c/coinbaseToken\u003e",
+    "String coinbaseToken = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\";",
+    "System.setProperty(\"COINBASE_TOKEN\", \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\")",
+    "coinbaseToken := \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbaseToken := `08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1`",
+    "coinbaseToken = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbaseToken = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbaseToken = '08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1'",
+    "coinbaseToken = 08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1",
+    "coinbaseToken=\"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbaseToken=08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1",
+    "coinbase_TOKEN :::= \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_TOKEN ::= \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_TOKEN := \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_TOKEN = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_TOKEN ?= \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_token: \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "coinbase_token: '08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1'",
+    "coinbase_token: 08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1",
+    "string coinbaseToken = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\";",
+    "var coinbaseToken = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "var coinbaseToken string = \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"",
+    "{\n    \"coinbase_token\": \"08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\"\n}",
+    "{\"config.ini\": \"COINBASE_TOKEN=08gcs-yty6mjrr_k13wi6-yesrkg41lkfgehrmdo0l61qxke8ux48kj0-z1b10z1\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

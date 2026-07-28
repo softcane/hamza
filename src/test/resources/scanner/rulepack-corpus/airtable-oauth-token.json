@@ -1,0 +1,10 @@
+{
+  "ruleId": "airtable-oauth-token",
+  "truePositives": [
+    "airtable_oauth_token = \"APP7F9K2M4P6Q8R1.v1.XYZ123_ABC-DEF456_GHI789.abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\""
+  ],
+  "falsePositives": [
+    "airtable_oauth_token = \"EXAMPLE.v2.XYZ123_ABC.abcdef123456\"",
+    "oauth_token = \"APP7F9K2M4P6Q8R1.v1.XYZ123_ABC-DEF456_GHI789.abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\""
+  ]
+}

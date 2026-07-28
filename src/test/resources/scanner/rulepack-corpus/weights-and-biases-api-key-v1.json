@@ -1,0 +1,35 @@
+{
+  "ruleId": "weights-and-biases-api-key-v1",
+  "truePositives": [
+    "  \"wandbToken\" =\u003e \"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\"",
+    "$wandbToken .= \"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\"",
+    "\u003cwandbToken\u003e\n    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\n\u003c/wandbToken\u003e",
+    "String wandbToken = \"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\";",
+    "System.setProperty(\"WANDB_TOKEN\", \"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\")",
+    "string wandbToken = \"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\";",
+    "var wandbToken = \"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\"",
+    "var wandbToken string = \"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\"",
+    "wandbToken := \"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\"",
+    "wandbToken := `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`",
+    "wandbToken = \"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\"",
+    "wandbToken = \"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\"",
+    "wandbToken = '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'",
+    "wandbToken = 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",
+    "wandbToken=\"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\"",
+    "wandbToken=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",
+    "wandb_TOKEN :::= \"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\"",
+    "wandb_TOKEN ::= \"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\"",
+    "wandb_TOKEN := \"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\"",
+    "wandb_TOKEN = \"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\"",
+    "wandb_TOKEN ?= \"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\"",
+    "wandb_token: \"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\"",
+    "wandb_token: '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'",
+    "wandb_token: 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",
+    "{\n    \"wandb_token\": \"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\"\n}",
+    "{\"config.ini\": \"WANDB_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "wandb_v1_PP8ss3eYn15faGat7OceNWnAZee_COKJ7riO0Bpu",
+    "wandb_v2_PP8ss3eYn15faGat7OceNWnAZee_COKJ7riO0Bpuofitw2Ko0t7X7CnFU9cOzeUCRUkSdQF4CpXc4"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "ruleId": "mailchimp-api-key",
+  "truePositives": [
+    "  \"mailchimpToken\" =\u003e \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "$mailchimpToken .= \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "\u003cmailchimpToken\u003e\n    6d9302cdd6c392a18973626fae3e02d5-us20\n\u003c/mailchimpToken\u003e",
+    "MAILCHIMPE_KEY = \"b5b9f8e50c640da28993e8b6a48e3e53-us18\"",
+    "String mailchimpToken = \"6d9302cdd6c392a18973626fae3e02d5-us20\";",
+    "System.setProperty(\"MAILCHIMP_TOKEN\", \"6d9302cdd6c392a18973626fae3e02d5-us20\")",
+    "mailchimpToken := \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimpToken := `6d9302cdd6c392a18973626fae3e02d5-us20`",
+    "mailchimpToken = \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimpToken = \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimpToken = '6d9302cdd6c392a18973626fae3e02d5-us20'",
+    "mailchimpToken = 6d9302cdd6c392a18973626fae3e02d5-us20",
+    "mailchimpToken=\"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimpToken=6d9302cdd6c392a18973626fae3e02d5-us20",
+    "mailchimp_TOKEN :::= \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_TOKEN ::= \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_TOKEN := \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_TOKEN = \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_TOKEN ?= \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_api_key: cefa780880ba5f5696192a34f6292c35-us18",
+    "mailchimp_token: \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "mailchimp_token: '6d9302cdd6c392a18973626fae3e02d5-us20'",
+    "mailchimp_token: 6d9302cdd6c392a18973626fae3e02d5-us20",
+    "string mailchimpToken = \"6d9302cdd6c392a18973626fae3e02d5-us20\";",
+    "var mailchimpToken = \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "var mailchimpToken string = \"6d9302cdd6c392a18973626fae3e02d5-us20\"",
+    "{\n    \"mailchimp_token\": \"6d9302cdd6c392a18973626fae3e02d5-us20\"\n}",
+    "{\"config.ini\": \"MAILCHIMP_TOKEN=6d9302cdd6c392a18973626fae3e02d5-us20\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "MailchimpSDK.initialize(token: 3012a5754bbd716926f99c028f7ea428-us18)"
+  ]
+}

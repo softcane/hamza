@@ -1,0 +1,34 @@
+{
+  "ruleId": "gitlab-pat-routable",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "$gitlabToken .= \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "\u003cgitlabToken\u003e\n    glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\")",
+    "gitlabToken := \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlabToken := `glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b`",
+    "gitlabToken = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlabToken = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlabToken = 'glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b'",
+    "gitlabToken = glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b",
+    "gitlabToken=\"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlabToken=glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b",
+    "gitlab_TOKEN :::= \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_TOKEN ::= \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_TOKEN := \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_TOKEN = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_TOKEN ?= \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_token: \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "gitlab_token: 'glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b'",
+    "gitlab_token: glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b",
+    "string gitlabToken = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\";",
+    "var gitlabToken = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "var gitlabToken string = \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"",
+    "{\n    \"gitlab_token\": \"glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glpat-ylixwdeo3pkundj6gt23g4j0gwh.oh4720s2b\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "glpat-xxxxxxxx-xxxxxxxxxxxxxxxxxx.xxxxxxxxx"
+  ]
+}

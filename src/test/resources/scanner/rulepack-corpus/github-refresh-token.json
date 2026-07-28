@@ -1,0 +1,34 @@
+{
+  "ruleId": "github-refresh-token",
+  "truePositives": [
+    "  \"githubToken\" =\u003e \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "$githubToken .= \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "\u003cgithubToken\u003e\n    ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\n\u003c/githubToken\u003e",
+    "String githubToken = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\";",
+    "System.setProperty(\"GITHUB_TOKEN\", \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\")",
+    "githubToken := \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "githubToken := `ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3`",
+    "githubToken = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "githubToken = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "githubToken = 'ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3'",
+    "githubToken = ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3",
+    "githubToken=\"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "githubToken=ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3",
+    "github_TOKEN :::= \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_TOKEN ::= \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_TOKEN := \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_TOKEN = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_TOKEN ?= \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_token: \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "github_token: 'ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3'",
+    "github_token: ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3",
+    "string githubToken = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\";",
+    "var githubToken = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "var githubToken string = \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"",
+    "{\n    \"github_token\": \"ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\"\n}",
+    "{\"config.ini\": \"GITHUB_TOKEN=ghr_wlvttst3mkvpmz2b6b6go0irfzqoh4vde1f3\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "ghr_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

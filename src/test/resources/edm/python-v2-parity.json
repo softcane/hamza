@@ -1,0 +1,21 @@
+{
+ "schemaVersion": 2,
+ "registry": "customers",
+ "version": "4fc2ced44182f057746b40112bf67df1e06a7f4373ba02c5166697404fc62c02",
+ "salt": "MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDE=",
+ "blockThreshold": 1,
+ "recipe": {
+  "id": "synthetic-email",
+  "version": 1
+ },
+ "fields": [
+  {
+   "id": "email",
+   "kind": "EMAIL",
+   "fingerprints": [
+    "521cdfba4373ca9eff271a27a96b161b3430dcfdbfd5ca24eb68bb3804e0c460",
+    "66de9f28127249553a33eb06896c3001db16c4ea77f2f14d1f3bd26b413eb8e6"
+   ]
+  }
+ ]
+}

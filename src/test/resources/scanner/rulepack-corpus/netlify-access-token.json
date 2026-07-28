@@ -1,0 +1,32 @@
+{
+  "ruleId": "netlify-access-token",
+  "truePositives": [
+    "  \"netlifyToken\" =\u003e \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "$netlifyToken .= \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "\u003cnetlifyToken\u003e\n    4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\n\u003c/netlifyToken\u003e",
+    "String netlifyToken = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\";",
+    "System.setProperty(\"NETLIFY_TOKEN\", \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\")",
+    "netlifyToken := \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlifyToken := `4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2`",
+    "netlifyToken = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlifyToken = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlifyToken = '4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2'",
+    "netlifyToken = 4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2",
+    "netlifyToken=\"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlifyToken=4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2",
+    "netlify_TOKEN :::= \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_TOKEN ::= \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_TOKEN := \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_TOKEN = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_TOKEN ?= \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_token: \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "netlify_token: '4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2'",
+    "netlify_token: 4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2",
+    "string netlifyToken = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\";",
+    "var netlifyToken = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "var netlifyToken string = \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"",
+    "{\n    \"netlify_token\": \"4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\"\n}",
+    "{\"config.ini\": \"NETLIFY_TOKEN=4eulydp3jfpcmuqj38nmz-twr8o3yeaby_7kl-=2\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

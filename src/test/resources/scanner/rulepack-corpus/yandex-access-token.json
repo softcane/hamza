@@ -1,0 +1,32 @@
+{
+  "ruleId": "yandex-access-token",
+  "truePositives": [
+    "  \"yandexToken\" =\u003e \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "$yandexToken .= \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "\u003cyandexToken\u003e\n    t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\n\u003c/yandexToken\u003e",
+    "String yandexToken = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\";",
+    "System.setProperty(\"YANDEX_TOKEN\", \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\")",
+    "string yandexToken = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\";",
+    "var yandexToken = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "var yandexToken string = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandexToken := \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandexToken := `t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=`",
+    "yandexToken = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandexToken = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandexToken = 't1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S='",
+    "yandexToken = t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=",
+    "yandexToken=\"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandexToken=t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=",
+    "yandex_TOKEN :::= \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_TOKEN ::= \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_TOKEN := \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_TOKEN = \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_TOKEN ?= \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_token: \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"",
+    "yandex_token: 't1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S='",
+    "yandex_token: t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=",
+    "{\n    \"yandex_token\": \"t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\"\n}",
+    "{\"config.ini\": \"YANDEX_TOKEN=t1.t=.b3Zs3kRycZZS182r1hWwKx1xhu60aad0t3obNTt6VHda5oRCDOU2a17RacolzgTu-R4oQDqkebHfjVxUT82e3S=\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

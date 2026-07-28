@@ -1,0 +1,32 @@
+{
+  "ruleId": "travisci-access-token",
+  "truePositives": [
+    "  \"travisToken\" =\u003e \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "$travisToken .= \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "\u003ctravisToken\u003e\n    ca3hs5kjsiq2znlj5g2k2u\n\u003c/travisToken\u003e",
+    "String travisToken = \"ca3hs5kjsiq2znlj5g2k2u\";",
+    "System.setProperty(\"TRAVIS_TOKEN\", \"ca3hs5kjsiq2znlj5g2k2u\")",
+    "string travisToken = \"ca3hs5kjsiq2znlj5g2k2u\";",
+    "travisToken := \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travisToken := `ca3hs5kjsiq2znlj5g2k2u`",
+    "travisToken = \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travisToken = \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travisToken = 'ca3hs5kjsiq2znlj5g2k2u'",
+    "travisToken = ca3hs5kjsiq2znlj5g2k2u",
+    "travisToken=\"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travisToken=ca3hs5kjsiq2znlj5g2k2u",
+    "travis_TOKEN :::= \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_TOKEN ::= \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_TOKEN := \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_TOKEN = \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_TOKEN ?= \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_token: \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "travis_token: 'ca3hs5kjsiq2znlj5g2k2u'",
+    "travis_token: ca3hs5kjsiq2znlj5g2k2u",
+    "var travisToken = \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "var travisToken string = \"ca3hs5kjsiq2znlj5g2k2u\"",
+    "{\n    \"travis_token\": \"ca3hs5kjsiq2znlj5g2k2u\"\n}",
+    "{\"config.ini\": \"TRAVIS_TOKEN=ca3hs5kjsiq2znlj5g2k2u\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

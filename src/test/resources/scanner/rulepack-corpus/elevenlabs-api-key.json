@@ -1,0 +1,35 @@
+{
+  "ruleId": "elevenlabs-api-key",
+  "truePositives": [
+    "  \"elevenlabsToken\" =\u003e \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "$elevenlabsToken .= \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "\u003celevenlabsToken\u003e\n    sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\n\u003c/elevenlabsToken\u003e",
+    "String elevenlabsToken = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\";",
+    "System.setProperty(\"ELEVENLABS_TOKEN\", \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\")",
+    "elevenlabsToken := \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabsToken := `sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0`",
+    "elevenlabsToken = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabsToken = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabsToken = 'sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0'",
+    "elevenlabsToken = sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0",
+    "elevenlabsToken=\"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabsToken=sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0",
+    "elevenlabs_TOKEN :::= \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_TOKEN ::= \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_TOKEN := \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_TOKEN = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_TOKEN ?= \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_token: \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "elevenlabs_token: 'sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0'",
+    "elevenlabs_token: sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0",
+    "string elevenlabsToken = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\";",
+    "var elevenlabsToken = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "var elevenlabsToken string = \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"",
+    "{\n    \"elevenlabs_token\": \"sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\"\n}",
+    "{\"config.ini\": \"ELEVENLABS_TOKEN=sk_46eadb6428541a02d5df5faa5725cb3198cba5755c9bfba0\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "elevenlabs_key = ak_2a30e5a0d39d5f2c5f6a9d2f95cd016049a6323985479bfd",
+    "elevenlabs_key = sk_2a30e5a0d39d5f2c5f6a9d2f95cd0160"
+  ]
+}

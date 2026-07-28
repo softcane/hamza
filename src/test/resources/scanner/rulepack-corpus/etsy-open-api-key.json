@@ -1,0 +1,10 @@
+{
+  "ruleId": "etsy-open-api-key",
+  "truePositives": [
+    "ETSY_API_KEY=1aa2bb33c44d55eeeeee6fff:a1b2c3d4e5",
+    "x-api-key: 1aa2bb33c44d55eeeeee6fff:a1b2c3d4e5"
+  ],
+  "falsePositives": [
+    "ETSY_API_KEY=your_api_key:your_key_here"
+  ]
+}

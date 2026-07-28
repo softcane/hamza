@@ -1,0 +1,14 @@
+{
+  "ruleId": "pkcs12-file",
+  "truePositives": [],
+  "falsePositives": [],
+  "pathTruePositives": {
+    "ToDo/ToDo.UWP/ToDo.UWP_TemporaryKey.pfx": "",
+    "cagw_key.P12": "",
+    "security/es_certificates/opensearch/es_kibana_client.p12": ""
+  },
+  "pathFalsePositives": {
+    "doc/typenum/type.P126.html": "",
+    "scripts/keeneland/syntest.p1200.sh": ""
+  }
+}

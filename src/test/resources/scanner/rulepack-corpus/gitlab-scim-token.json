@@ -1,0 +1,32 @@
+{
+  "ruleId": "gitlab-scim-token",
+  "truePositives": [
+    "  \"gitlabToken\" =\u003e \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "$gitlabToken .= \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "\u003cgitlabToken\u003e\n    glsoat-0ze6j528wxlw92c05pqg\n\u003c/gitlabToken\u003e",
+    "String gitlabToken = \"glsoat-0ze6j528wxlw92c05pqg\";",
+    "System.setProperty(\"GITLAB_TOKEN\", \"glsoat-0ze6j528wxlw92c05pqg\")",
+    "gitlabToken := \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlabToken := `glsoat-0ze6j528wxlw92c05pqg`",
+    "gitlabToken = \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlabToken = \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlabToken = 'glsoat-0ze6j528wxlw92c05pqg'",
+    "gitlabToken = glsoat-0ze6j528wxlw92c05pqg",
+    "gitlabToken=\"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlabToken=glsoat-0ze6j528wxlw92c05pqg",
+    "gitlab_TOKEN :::= \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_TOKEN ::= \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_TOKEN := \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_TOKEN = \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_TOKEN ?= \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_token: \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "gitlab_token: 'glsoat-0ze6j528wxlw92c05pqg'",
+    "gitlab_token: glsoat-0ze6j528wxlw92c05pqg",
+    "string gitlabToken = \"glsoat-0ze6j528wxlw92c05pqg\";",
+    "var gitlabToken = \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "var gitlabToken string = \"glsoat-0ze6j528wxlw92c05pqg\"",
+    "{\n    \"gitlab_token\": \"glsoat-0ze6j528wxlw92c05pqg\"\n}",
+    "{\"config.ini\": \"GITLAB_TOKEN=glsoat-0ze6j528wxlw92c05pqg\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

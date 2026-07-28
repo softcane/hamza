@@ -1,0 +1,32 @@
+{
+  "ruleId": "maxmind-license-key",
+  "truePositives": [
+    "  \"maxmindToken\" =\u003e \"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\"",
+    "$maxmindToken .= \"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\"",
+    "\u003cmaxmindToken\u003e\n    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\n\u003c/maxmindToken\u003e",
+    "String maxmindToken = \"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\";",
+    "System.setProperty(\"MAXMIND_TOKEN\", \"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\")",
+    "maxmindToken := \"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\"",
+    "maxmindToken := `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`",
+    "maxmindToken = \"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\"",
+    "maxmindToken = \"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\"",
+    "maxmindToken = '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'",
+    "maxmindToken = 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",
+    "maxmindToken=\"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\"",
+    "maxmindToken=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",
+    "maxmind_TOKEN :::= \"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\"",
+    "maxmind_TOKEN ::= \"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\"",
+    "maxmind_TOKEN := \"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\"",
+    "maxmind_TOKEN = \"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\"",
+    "maxmind_TOKEN ?= \"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\"",
+    "maxmind_token: \"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\"",
+    "maxmind_token: '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'",
+    "maxmind_token: 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",
+    "string maxmindToken = \"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\";",
+    "var maxmindToken = \"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\"",
+    "var maxmindToken string = \"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\"",
+    "{\n    \"maxmind_token\": \"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\"\n}",
+    "{\"config.ini\": \"MAXMIND_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

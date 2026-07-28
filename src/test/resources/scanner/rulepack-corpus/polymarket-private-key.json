@@ -1,0 +1,32 @@
+{
+  "ruleId": "polymarket-private-key",
+  "truePositives": [
+    "  \"poly_private_keyToken\" =\u003e \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "$poly_private_keyToken .= \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "\u003cpoly_private_keyToken\u003e\n    0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\n\u003c/poly_private_keyToken\u003e",
+    "String poly_private_keyToken = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\";",
+    "System.setProperty(\"POLY_PRIVATE_KEY_TOKEN\", \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\")",
+    "poly_private_keyToken := \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_keyToken := `0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc`",
+    "poly_private_keyToken = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_keyToken = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_keyToken = '0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc'",
+    "poly_private_keyToken = 0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc",
+    "poly_private_keyToken=\"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_keyToken=0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc",
+    "poly_private_key_TOKEN :::= \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_TOKEN ::= \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_TOKEN := \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_TOKEN = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_TOKEN ?= \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_token: \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "poly_private_key_token: '0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc'",
+    "poly_private_key_token: 0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc",
+    "string poly_private_keyToken = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\";",
+    "var poly_private_keyToken = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "var poly_private_keyToken string = \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"",
+    "{\n    \"poly_private_key_token\": \"0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\"\n}",
+    "{\"config.ini\": \"POLY_PRIVATE_KEY_TOKEN=0x7144Ac97e3cAf3c47a6B791C66a53a49D3bd5EaD0Dc648FD7dad6C3AD02eedBc\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

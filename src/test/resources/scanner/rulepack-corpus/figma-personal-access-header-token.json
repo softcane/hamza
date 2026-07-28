@@ -1,0 +1,33 @@
+{
+  "ruleId": "figma-personal-access-header-token",
+  "truePositives": [
+    "  \"x-figma-tokenToken\" =\u003e \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "$x-figma-tokenToken .= \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "--header='X-Figma-Token: 1394-0ca7a5be-8e22-40ee-8c40-778d41ab2313'",
+    "\u003cx-figma-tokenToken\u003e\n    985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\n\u003c/x-figma-tokenToken\u003e",
+    "String x-figma-tokenToken = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\";",
+    "System.setProperty(\"X-FIGMA-TOKEN_TOKEN\", \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\")",
+    "string x-figma-tokenToken = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\";",
+    "var x-figma-tokenToken = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "var x-figma-tokenToken string = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-tokenToken := \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-tokenToken := `985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573`",
+    "x-figma-tokenToken = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-tokenToken = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-tokenToken = '985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573'",
+    "x-figma-tokenToken = 985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573",
+    "x-figma-tokenToken=\"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-tokenToken=985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573",
+    "x-figma-token_TOKEN :::= \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_TOKEN ::= \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_TOKEN := \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_TOKEN = \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_TOKEN ?= \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_token: \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"",
+    "x-figma-token_token: '985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573'",
+    "x-figma-token_token: 985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573",
+    "{\n    \"x-figma-token_token\": \"985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\"\n}",
+    "{\"config.ini\": \"X-FIGMA-TOKEN_TOKEN=985F-C717D3CF-D6B1-47C1-8AE0-443620DBF573\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,33 @@
+target/
+*.class
+*.jar
+*.original
+.idea/
+*.iml
+.vscode/
+*.db
+*.sqlite
+data/
+# Every harness scratch path. The live gates mint per-run directories
+# (.hamza-live-e2e-$$, .hamza-live-mask-*) that can hold raw Agent transcripts
+# and fixture values, so ignore the whole prefix rather than naming each one —
+# a narrow list is how .hamza-live-mask-codex-5843/ got committed by accident.
+.hamza-*
+policy-artifacts/
+.verified
+.critic-approved
+
+# Local developer harness. These hold session state, agent transcripts, and
+# absolute paths from the machine that produced them. Nothing here describes
+# the product, so none of it ships.
+scripts/
+internal/
+HANDOFF.md
+AGENTS.md
+.claude/
+.claude-worktrees/
+.codex-worktrees/
+
+# Demo media is published as a GitHub Release asset, not committed — the file
+# is 10 MB and every clone would carry it forever.
+assets/

@@ -1,0 +1,35 @@
+{
+  "ruleId": "posthog-personal-api-key",
+  "truePositives": [
+    "  \"posthogToken\" =\u003e \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "$posthogToken .= \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "\u003cposthogToken\u003e\n    phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\n\u003c/posthogToken\u003e",
+    "String posthogToken = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\";",
+    "System.setProperty(\"POSTHOG_TOKEN\", \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\")",
+    "posthogToken := \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthogToken := `phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul`",
+    "posthogToken = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthogToken = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthogToken = 'phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul'",
+    "posthogToken = phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul",
+    "posthogToken=\"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthogToken=phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul",
+    "posthog_TOKEN :::= \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_TOKEN ::= \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_TOKEN := \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_TOKEN = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_TOKEN ?= \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_token: \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "posthog_token: 'phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul'",
+    "posthog_token: phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul",
+    "string posthogToken = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\";",
+    "var posthogToken = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "var posthogToken string = \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"",
+    "{\n    \"posthog_token\": \"phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\"\n}",
+    "{\"config.ini\": \"POSTHOG_TOKEN=phx_MbaAlUo8vbS7PiIpUfhcjV7IG92NqiBIBuJ_px0ItXmDRul\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "phx_FNKCx83Ko0JQMuZH1zz94xgK798TCUybkf79ZKYKwKQ",
+    "phy_FNKCx83Ko0JQMuZH1zz94xgK798TCUybkf79ZKYKwKQWbEw"
+  ]
+}

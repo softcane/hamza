@@ -1,0 +1,34 @@
+{
+  "ruleId": "beamer-api-token",
+  "truePositives": [
+    "  \"beamerToken\" =\u003e \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "$beamerToken .= \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "\u003cbeamerToken\u003e\n    b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\n\u003c/beamerToken\u003e",
+    "String beamerToken = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\";",
+    "System.setProperty(\"BEAMER_TOKEN\", \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\")",
+    "beamerToken := \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamerToken := `b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8`",
+    "beamerToken = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamerToken = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamerToken = 'b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8'",
+    "beamerToken = b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8",
+    "beamerToken=\"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamerToken=b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8",
+    "beamer_TOKEN :::= \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_TOKEN ::= \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_TOKEN := \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_TOKEN = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_TOKEN ?= \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_token: \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "beamer_token: 'b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8'",
+    "beamer_token: b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8",
+    "string beamerToken = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\";",
+    "var beamerToken = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "var beamerToken string = \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"",
+    "{\n    \"beamer_token\": \"b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\"\n}",
+    "{\"config.ini\": \"BEAMER_TOKEN=b_vv2pkyn1xl26ele98i0kur0zeu9beb-wz0qnvcamk3w8\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "│   ├── R21A-A-V010SP13RC181024R16900-CN-B_250K-Release-OTA-97B6C6C59241976086FABDC41472150C.bfu"
+  ]
+}

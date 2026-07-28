@@ -1,0 +1,17 @@
+{
+  "ruleId": "mongodb-connection-string",
+  "truePositives": [
+    "MONGODB_URI=\"mongodb+srv://app-user:q9V7nB2K4xL8@cluster0.mongodb.net/sample_mflix?retryWrites=true\u0026w=majority\"",
+    "MONGO_URL=\"mongodb+srv://deploy-user:Xk9mP3vN7qR2@cluster0.mongodb.net/\"",
+    "export MONGO_URL=mongodb://reader-user:Qv8h2Lp4Rk7m@db-shard-00.example.net:27017/app?authSource=admin",
+    "mongo_url: 'mongodb://backup-user:p%40ssw0rd123@db.example.com:27017/admin'",
+    "spring.data.mongodb.uri=mongodb://svc-reader:Az9xV2pLm6Q@mongo1.internal.example:27017,mongo2.internal.example:27017/app?replicaSet=rs0\u0026authSource=admin"
+  ],
+  "falsePositives": [
+    "MONGODB_URI=\"mongodb://user:pass@localhost:27017/app\"",
+    "mongodb+srv://${DB_USER}:${DB_PASS}@cluster.mongodb.net/",
+    "mongodb://$MONGODB_USER:$MONGODB_PASSWORD@cluster.mongodb.net/app",
+    "mongodb://{{ .Values.mongoUser }}:{{ .Values.mongoPassword }}@mongo.example.net/app",
+    "spring.data.mongodb.uri=mongodb+srv://\u003cusername\u003e:\u003cpassword\u003e@cluster.mongodb.net/app"
+  ]
+}

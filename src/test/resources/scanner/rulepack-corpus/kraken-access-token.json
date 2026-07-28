@@ -1,0 +1,32 @@
+{
+  "ruleId": "kraken-access-token",
+  "truePositives": [
+    "  \"krakenToken\" =\u003e \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "$krakenToken .= \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "\u003ckrakenToken\u003e\n    fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\n\u003c/krakenToken\u003e",
+    "String krakenToken = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\";",
+    "System.setProperty(\"KRAKEN_TOKEN\", \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\")",
+    "krakenToken := \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "krakenToken := `fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h`",
+    "krakenToken = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "krakenToken = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "krakenToken = 'fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h'",
+    "krakenToken = fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h",
+    "krakenToken=\"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "krakenToken=fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h",
+    "kraken_TOKEN :::= \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_TOKEN ::= \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_TOKEN := \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_TOKEN = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_TOKEN ?= \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_token: \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "kraken_token: 'fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h'",
+    "kraken_token: fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h",
+    "string krakenToken = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\";",
+    "var krakenToken = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "var krakenToken string = \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"",
+    "{\n    \"kraken_token\": \"fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\"\n}",
+    "{\"config.ini\": \"KRAKEN_TOKEN=fub61y-r__/c_dta62725qynf_d-kr0vwxi1+r-a0+fu1d-=o0i1n6n+7=cvf21u8ojfytxtyedw2m_h\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

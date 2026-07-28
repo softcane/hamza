@@ -1,0 +1,11 @@
+{
+  "ruleId": "endorlabs-api-key",
+  "truePositives": [
+    "ENDOR_API_CREDENTIALS_KEY=endr+WFDidB-zksLohOUw",
+    "endor_key = \"endr+yhi0UXo74QNCmmzf\"",
+    "endorlabs_api_key=endr+yr7urBen3IP9baf6"
+  ],
+  "falsePositives": [
+    "endorlabs_api_key=endr-foo1234567890abc"
+  ]
+}

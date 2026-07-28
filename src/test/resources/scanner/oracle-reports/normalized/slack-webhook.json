@@ -1,0 +1,9 @@
+[
+  {
+    "RuleID": "slack-webhook-url",
+    "StartLine": 1,
+    "EndLine": 1,
+    "StartColumn": 48,
+    "EndColumn": 124
+  }
+]

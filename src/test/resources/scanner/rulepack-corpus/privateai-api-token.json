@@ -1,0 +1,9 @@
+{
+  "ruleId": "privateai-api-token",
+  "truePositives": [
+    "privateai_api_token = \"zbunl0z770d6tt6lssi4g9h94nvjt4nx\""
+  ],
+  "falsePositives": [
+    "const privateaiToken = \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\";"
+  ]
+}

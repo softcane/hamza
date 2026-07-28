@@ -1,0 +1,32 @@
+{
+  "ruleId": "new-relic-user-api-id",
+  "truePositives": [
+    "  \"new-relicToken\" =\u003e \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "$new-relicToken .= \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "\u003cnew-relicToken\u003e\n    44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\n\u003c/new-relicToken\u003e",
+    "String new-relicToken = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\";",
+    "System.setProperty(\"NEW-RELIC_TOKEN\", \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\")",
+    "new-relicToken := \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relicToken := `44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f`",
+    "new-relicToken = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relicToken = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relicToken = '44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f'",
+    "new-relicToken = 44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f",
+    "new-relicToken=\"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relicToken=44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f",
+    "new-relic_TOKEN :::= \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_TOKEN ::= \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_TOKEN := \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_TOKEN = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_TOKEN ?= \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_token: \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "new-relic_token: '44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f'",
+    "new-relic_token: 44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f",
+    "string new-relicToken = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\";",
+    "var new-relicToken = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "var new-relicToken string = \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"",
+    "{\n    \"new-relic_token\": \"44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\"\n}",
+    "{\"config.ini\": \"NEW-RELIC_TOKEN=44ge6rnr7vkvjwlcs0r1mkeozgfyhd9pf7y0ljus6p5tbwq3tryousxxsdy1iy7f\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

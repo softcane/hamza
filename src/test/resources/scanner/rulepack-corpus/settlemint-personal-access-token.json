@@ -1,0 +1,35 @@
+{
+  "ruleId": "settlemint-personal-access-token",
+  "truePositives": [
+    "  \"settlemintTokenToken\" =\u003e \"sm_pat_99caa4mr48gslkpm\"",
+    "$settlemintTokenToken .= \"sm_pat_99caa4mr48gslkpm\"",
+    "\u003csettlemintTokenToken\u003e\n    sm_pat_99caa4mr48gslkpm\n\u003c/settlemintTokenToken\u003e",
+    "String settlemintTokenToken = \"sm_pat_99caa4mr48gslkpm\";",
+    "System.setProperty(\"SETTLEMINTTOKEN_TOKEN\", \"sm_pat_99caa4mr48gslkpm\")",
+    "settlemintTokenToken := \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintTokenToken := `sm_pat_99caa4mr48gslkpm`",
+    "settlemintTokenToken = \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintTokenToken = \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintTokenToken = 'sm_pat_99caa4mr48gslkpm'",
+    "settlemintTokenToken = sm_pat_99caa4mr48gslkpm",
+    "settlemintTokenToken=\"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintTokenToken=sm_pat_99caa4mr48gslkpm",
+    "settlemintToken_TOKEN :::= \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_TOKEN ::= \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_TOKEN := \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_TOKEN = \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_TOKEN ?= \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_token: \"sm_pat_99caa4mr48gslkpm\"",
+    "settlemintToken_token: 'sm_pat_99caa4mr48gslkpm'",
+    "settlemintToken_token: sm_pat_99caa4mr48gslkpm",
+    "string settlemintTokenToken = \"sm_pat_99caa4mr48gslkpm\";",
+    "var settlemintTokenToken = \"sm_pat_99caa4mr48gslkpm\"",
+    "var settlemintTokenToken string = \"sm_pat_99caa4mr48gslkpm\"",
+    "{\n    \"settlemintToken_token\": \"sm_pat_99caa4mr48gslkpm\"\n}",
+    "{\"config.ini\": \"SETTLEMINTTOKEN_TOKEN=sm_pat_99caa4mr48gslkpm\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "nonMatchingToken := \"njf78rhf0cz7g0yp\"",
+    "nonMatchingToken := \"sm_pat_2ghypdibo9\""
+  ]
+}

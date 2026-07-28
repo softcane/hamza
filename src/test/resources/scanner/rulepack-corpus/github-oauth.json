@@ -1,0 +1,34 @@
+{
+  "ruleId": "github-oauth",
+  "truePositives": [
+    "  \"githubToken\" =\u003e \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "$githubToken .= \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "\u003cgithubToken\u003e\n    gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\n\u003c/githubToken\u003e",
+    "String githubToken = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\";",
+    "System.setProperty(\"GITHUB_TOKEN\", \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\")",
+    "githubToken := \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "githubToken := `gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil`",
+    "githubToken = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "githubToken = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "githubToken = 'gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil'",
+    "githubToken = gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil",
+    "githubToken=\"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "githubToken=gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil",
+    "github_TOKEN :::= \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_TOKEN ::= \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_TOKEN := \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_TOKEN = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_TOKEN ?= \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_token: \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "github_token: 'gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil'",
+    "github_token: gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil",
+    "string githubToken = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\";",
+    "var githubToken = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "var githubToken string = \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"",
+    "{\n    \"github_token\": \"gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\"\n}",
+    "{\"config.ini\": \"GITHUB_TOKEN=gho_d3seh9h89wfsa1yzpto1xyxcx0olm26r1sil\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "gho_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

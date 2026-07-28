@@ -1,0 +1,33 @@
+{
+  "ruleId": "hubspot-api-key",
+  "truePositives": [
+    "  \"hubspotToken\" =\u003e \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "$hubspotToken .= \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "\u003chubspotToken\u003e\n    a68175ac-01b3-ef53-15cd-196818f322c8\n\u003c/hubspotToken\u003e",
+    "String hubspotToken = \"a68175ac-01b3-ef53-15cd-196818f322c8\";",
+    "System.setProperty(\"HUBSPOT_TOKEN\", \"a68175ac-01b3-ef53-15cd-196818f322c8\")",
+    "const hubspotKey = \"12345678-ABCD-ABCD-ABCD-1234567890AB\"",
+    "hubspotToken := \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspotToken := `a68175ac-01b3-ef53-15cd-196818f322c8`",
+    "hubspotToken = \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspotToken = \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspotToken = 'a68175ac-01b3-ef53-15cd-196818f322c8'",
+    "hubspotToken = a68175ac-01b3-ef53-15cd-196818f322c8",
+    "hubspotToken=\"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspotToken=a68175ac-01b3-ef53-15cd-196818f322c8",
+    "hubspot_TOKEN :::= \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_TOKEN ::= \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_TOKEN := \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_TOKEN = \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_TOKEN ?= \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_token: \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "hubspot_token: 'a68175ac-01b3-ef53-15cd-196818f322c8'",
+    "hubspot_token: a68175ac-01b3-ef53-15cd-196818f322c8",
+    "string hubspotToken = \"a68175ac-01b3-ef53-15cd-196818f322c8\";",
+    "var hubspotToken = \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "var hubspotToken string = \"a68175ac-01b3-ef53-15cd-196818f322c8\"",
+    "{\n    \"hubspot_token\": \"a68175ac-01b3-ef53-15cd-196818f322c8\"\n}",
+    "{\"config.ini\": \"HUBSPOT_TOKEN=a68175ac-01b3-ef53-15cd-196818f322c8\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

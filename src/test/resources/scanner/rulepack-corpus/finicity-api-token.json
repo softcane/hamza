@@ -1,0 +1,32 @@
+{
+  "ruleId": "finicity-api-token",
+  "truePositives": [
+    "  \"finicityToken\" =\u003e \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "$finicityToken .= \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "\u003cfinicityToken\u003e\n    e488f5844885ab7fadddc15f7a84cbf0\n\u003c/finicityToken\u003e",
+    "String finicityToken = \"e488f5844885ab7fadddc15f7a84cbf0\";",
+    "System.setProperty(\"FINICITY_TOKEN\", \"e488f5844885ab7fadddc15f7a84cbf0\")",
+    "finicityToken := \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicityToken := `e488f5844885ab7fadddc15f7a84cbf0`",
+    "finicityToken = \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicityToken = \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicityToken = 'e488f5844885ab7fadddc15f7a84cbf0'",
+    "finicityToken = e488f5844885ab7fadddc15f7a84cbf0",
+    "finicityToken=\"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicityToken=e488f5844885ab7fadddc15f7a84cbf0",
+    "finicity_TOKEN :::= \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_TOKEN ::= \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_TOKEN := \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_TOKEN = \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_TOKEN ?= \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_token: \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "finicity_token: 'e488f5844885ab7fadddc15f7a84cbf0'",
+    "finicity_token: e488f5844885ab7fadddc15f7a84cbf0",
+    "string finicityToken = \"e488f5844885ab7fadddc15f7a84cbf0\";",
+    "var finicityToken = \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "var finicityToken string = \"e488f5844885ab7fadddc15f7a84cbf0\"",
+    "{\n    \"finicity_token\": \"e488f5844885ab7fadddc15f7a84cbf0\"\n}",
+    "{\"config.ini\": \"FINICITY_TOKEN=e488f5844885ab7fadddc15f7a84cbf0\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

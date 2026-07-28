@@ -1,0 +1,8 @@
+{
+  "ruleId": "datagov-api-key",
+  "truePositives": [
+    "data.gov_api_key=pBZm2kXbuPdRfzYyarRT0bvcWAisnJg98YJzBJyJ",
+    "data.gov_token=plZJDnKs4OrPeV8wgBr2fYO6VnXb1YPEcVaZbnYI"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,9 @@
+{
+  "ruleId": "azure-storage-account-name",
+  "truePositives": [
+    "AZURE_STORAGE_ACCOUNT_NAME=prodblob2024",
+    "AccountName=mystorageaccount;AccountKey=7tyqEPvBOPMZ0jFB0G3HRyxAbLn7bKkl3dBh5ophfbJhlQQVCVX3ovmkpSr/PAqzK20cs3UWSFuu/QSqyXVqZ3==",
+    "https://prodlogs.blob.core.windows.net/container"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,10 @@
+{
+  "ruleId": "cloudinary-api-key",
+  "truePositives": [
+    "CLOUDINARY_API_KEY=123456789012345"
+  ],
+  "falsePositives": [
+    "API_KEY=123456789012345",
+    "CLOUDINARY_API_KEY=12345678901234"
+  ]
+}

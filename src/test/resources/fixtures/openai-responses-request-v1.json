@@ -1,0 +1,60 @@
+{
+  "model": "gpt-5.3-codex",
+  "instructions": "Work safely with priya.fixture@example-corp.test.",
+  "input": [
+    {
+      "type": "message",
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Review \"café\" for priya.fixture@example-corp.test."
+        }
+      ]
+    },
+    {
+      "type": "function_call_output",
+      "call_id": "call_example_1",
+      "output": "lookup returned priya.fixture@example-corp.test"
+    },
+    {
+      "type": "reasoning",
+      "id": "reasoning_example_1",
+      "summary": [],
+      "encrypted_content": "fake-encrypted-reasoning"
+    },
+    {
+      "type": "function_call",
+      "id": "function_example_1",
+      "name": "lookup_example",
+      "arguments": "{\"email\":\"synthetic@example.invalid\"}",
+      "call_id": "call_example_1"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "name": "lookup_example",
+      "description": "Lookup fake records",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "parallel_tool_calls": false,
+  "stream": true,
+  "store": false,
+  "metadata": {
+    "fixture": "safe-continuation-openai-v1"
+  }
+}

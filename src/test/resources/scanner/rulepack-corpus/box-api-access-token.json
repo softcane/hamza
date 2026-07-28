@@ -1,0 +1,11 @@
+{
+  "ruleId": "box-api-access-token",
+  "truePositives": [
+    "BOX_DEVELOPER_TOKEN=\"DkXZmsjUKizvL2z0WiaLvMBeQ756XCGG\"",
+    "box_access_token = 'A4bC5dE6fG7hI8jK9lM0nO1pQ2rS3tU4'"
+  ],
+  "falsePositives": [
+    "BOX_DOC_URL=\"https://developer.box.com\"",
+    "sandbox_mode = true"
+  ]
+}

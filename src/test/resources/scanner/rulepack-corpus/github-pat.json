@@ -1,0 +1,34 @@
+{
+  "ruleId": "github-pat",
+  "truePositives": [
+    "  \"githubToken\" =\u003e \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "$githubToken .= \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "\u003cgithubToken\u003e\n    ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\n\u003c/githubToken\u003e",
+    "String githubToken = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\";",
+    "System.setProperty(\"GITHUB_TOKEN\", \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\")",
+    "githubToken := \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "githubToken := `ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23`",
+    "githubToken = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "githubToken = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "githubToken = 'ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23'",
+    "githubToken = ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23",
+    "githubToken=\"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "githubToken=ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23",
+    "github_TOKEN :::= \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_TOKEN ::= \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_TOKEN := \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_TOKEN = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_TOKEN ?= \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_token: \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "github_token: 'ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23'",
+    "github_token: ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23",
+    "string githubToken = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\";",
+    "var githubToken = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "var githubToken string = \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"",
+    "{\n    \"github_token\": \"ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\"\n}",
+    "{\"config.ini\": \"GITHUB_TOKEN=ghp_9xs703a3j1eqgf9uzht09b3opv765kzeio23\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

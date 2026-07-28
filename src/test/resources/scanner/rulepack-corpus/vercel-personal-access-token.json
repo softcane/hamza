@@ -1,0 +1,37 @@
+{
+  "ruleId": "vercel-personal-access-token",
+  "truePositives": [
+    "  \"vercelToken\" =\u003e \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "$vercelToken .= \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "\u003cvercelToken\u003e\n    vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\n\u003c/vercelToken\u003e",
+    "String vercelToken = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\";",
+    "System.setProperty(\"VERCEL_TOKEN\", \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\")",
+    "string vercelToken = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\";",
+    "var vercelToken = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "var vercelToken string = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vcp_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHeklEXDQ94Jafpu",
+    "vercelToken := \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercelToken := `vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto`",
+    "vercelToken = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercelToken = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercelToken = 'vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto'",
+    "vercelToken = vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto",
+    "vercelToken=\"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercelToken=vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto",
+    "vercel_TOKEN :::= \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_TOKEN ::= \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_TOKEN := \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_TOKEN = \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_TOKEN ?= \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_access_token=vcp_4mcjwVDwqtVCVGWCcxRjdzGpkGZ3NkwXZv8ktcoQ0EG0dnjpMP1Rzi71",
+    "vercel_token: \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"",
+    "vercel_token: 'vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto'",
+    "vercel_token: vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto",
+    "{\n    \"vercel_token\": \"vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\"\n}",
+    "{\"config.ini\": \"VERCEL_TOKEN=vcp_QrzlG5G5O8uqBkVcMm7d0mWWENt-EydUC-0zm4aZTLHXLt5tLY0L8Yto\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "vcp_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHe",
+    "vct_35UYJwYZDigYATKhxJUAhPqRhit2Xe3dtiG60LsUTHeklEXDQ94Jafpu"
+  ]
+}

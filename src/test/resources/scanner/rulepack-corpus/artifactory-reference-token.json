@@ -1,0 +1,12 @@
+{
+  "ruleId": "artifactory-reference-token",
+  "truePositives": [
+    "artifactoryRefToken := \"cmVmd7pfgsrpp3ywebwlxo97arrojp7hzxowmez11ed7kwg026xqmxvvwt8qrp1y\""
+  ],
+  "falsePositives": [
+    "lowEntropy := cmVmdXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "partOfAlongUnrelatedBlob gYnkgcmVmdlas88pnwefw8rpem05dt0sju0ngo6wcyqz7dq8hr02pmpkiaaszrsfjh7rmVyZSB2",
+    "wrongLength := \"cmVmdjcp08lwzuqwfn6v3o2oqpu0l5tdom5l2cv5k82wmj2akjhn3w\"",
+    "wrongStart := \"cmVMd28yg5r7rj9pp764kv7stkx87iuirserrkfxcrht0zr8ky8psx0l2rzx6hu9\""
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ruleId": "private-key",
+  "truePositives": [
+    "-----BEGIN PGP PRIVATE KEY BLOCK-----\nlQWGBGSVV4YBDAClvRnxezIRy2Yv7SFlzC0iFiRF/O/jePSw+XYhvcrTaqSYTGic\n=8xQN\n-----END PGP PRIVATE KEY BLOCK-----",
+    "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAC4AWkdwKYSd8\nKs14IReLcYgADhoXk56ZzXI=\n-----END PRIVATE KEY-----",
+    "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAn6/O8li+SX4m98LLYt/PKSzEmQ++ZBD7Loh9P13f4yQ92EF3\nyxR5MsXFu9PRsrYQA7/4UTPHiC4y2sAVCBg4C2yyBpUEtMQjyCESi6Y=\n-----END RSA PRIVATE KEY-----\n"
+  ],
+  "falsePositives": [
+    "-----BEGIN OPENSSH PRIVATE KEY----------END OPENSSH PRIVATE KEY-----",
+    "-----BEGIN PRIVATE KEY-----\nanything\n-----END PRIVATE KEY-----"
+  ]
+}

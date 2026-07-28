@@ -1,0 +1,32 @@
+{
+  "ruleId": "bittrex-access-key",
+  "truePositives": [
+    "  \"bittrexToken\" =\u003e \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "$bittrexToken .= \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "\u003cbittrexToken\u003e\n    9ak9jpk9vj2fect01mil17ebzmbf90sy\n\u003c/bittrexToken\u003e",
+    "String bittrexToken = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\";",
+    "System.setProperty(\"BITTREX_TOKEN\", \"9ak9jpk9vj2fect01mil17ebzmbf90sy\")",
+    "bittrexToken := \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrexToken := `9ak9jpk9vj2fect01mil17ebzmbf90sy`",
+    "bittrexToken = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrexToken = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrexToken = '9ak9jpk9vj2fect01mil17ebzmbf90sy'",
+    "bittrexToken = 9ak9jpk9vj2fect01mil17ebzmbf90sy",
+    "bittrexToken=\"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrexToken=9ak9jpk9vj2fect01mil17ebzmbf90sy",
+    "bittrex_TOKEN :::= \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_TOKEN ::= \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_TOKEN := \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_TOKEN = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_TOKEN ?= \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_token: \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "bittrex_token: '9ak9jpk9vj2fect01mil17ebzmbf90sy'",
+    "bittrex_token: 9ak9jpk9vj2fect01mil17ebzmbf90sy",
+    "string bittrexToken = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\";",
+    "var bittrexToken = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "var bittrexToken string = \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"",
+    "{\n    \"bittrex_token\": \"9ak9jpk9vj2fect01mil17ebzmbf90sy\"\n}",
+    "{\"config.ini\": \"BITTREX_TOKEN=9ak9jpk9vj2fect01mil17ebzmbf90sy\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

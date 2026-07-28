@@ -1,0 +1,38 @@
+{
+  "ruleId": "infracost-api-token",
+  "truePositives": [
+    "  \"icoToken\" =\u003e \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "  variable {\n    name = \"INFRACOST_API_KEY\"\n    secret_value = \"ico-mlCr1Mn3SRcRiZMObUZOTHLcgtH2Lpgt\"\n    is_secret = true\n  }",
+    "$icoToken .= \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "\u003cicoToken\u003e\n    ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\n\u003c/icoToken\u003e",
+    "String icoToken = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\";",
+    "System.setProperty(\"ICO_TOKEN\", \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\")",
+    "icoToken := \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "icoToken := `ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc`",
+    "icoToken = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "icoToken = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "icoToken = 'ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc'",
+    "icoToken = ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc",
+    "icoToken=\"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "icoToken=ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc",
+    "ico_TOKEN :::= \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_TOKEN ::= \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_TOKEN := \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_TOKEN = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_TOKEN ?= \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_token: \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "ico_token: 'ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc'",
+    "ico_token: ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc",
+    "string icoToken = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\";",
+    "var icoToken = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "var icoToken string = \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"",
+    "{\n    \"ico_token\": \"ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\"\n}",
+    "{\"config.ini\": \"ICO_TOKEN=ico-8vDjPlCKFsoPgK6H7aAN8lnKqNZKtwGc\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "http://assets.r7.com/assets/media_box_tv_tres_colunas/video_box.ico-7a388b69018576d24b59331fd60aab0c.png",
+    "http://ece252-2.uwaterloo.ca:2540/image?q=gAAAAABdHkoqb9ZaJ3q4dlzEvTgG9WYwKcD9Aw7OUXeFicO-5M5IdNDjHBpKw7KBK3nCVqtuga4yzUaFEpJn8BqA1LzZprIJBw==",
+    "https://explosivelab.notion.site/Pianificazione-Nerdz-Ng-pubblico-1bc826ecc0994dd8915be97fc3489cde?pvs=74",
+    "ico-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  ]
+}

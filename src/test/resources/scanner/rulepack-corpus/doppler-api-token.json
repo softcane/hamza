@@ -1,0 +1,32 @@
+{
+  "ruleId": "doppler-api-token",
+  "truePositives": [
+    "  \"dopplerToken\" =\u003e \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "$dopplerToken .= \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "\u003cdopplerToken\u003e\n    dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\n\u003c/dopplerToken\u003e",
+    "String dopplerToken = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\";",
+    "System.setProperty(\"DOPPLER_TOKEN\", \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\")",
+    "dopplerToken := \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "dopplerToken := `dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27`",
+    "dopplerToken = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "dopplerToken = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "dopplerToken = 'dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27'",
+    "dopplerToken = dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27",
+    "dopplerToken=\"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "dopplerToken=dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27",
+    "doppler_TOKEN :::= \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_TOKEN ::= \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_TOKEN := \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_TOKEN = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_TOKEN ?= \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_token: \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "doppler_token: 'dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27'",
+    "doppler_token: dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27",
+    "string dopplerToken = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\";",
+    "var dopplerToken = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "var dopplerToken string = \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"",
+    "{\n    \"doppler_token\": \"dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\"\n}",
+    "{\"config.ini\": \"DOPPLER_TOKEN=dp.pt.57d0cclwz0niwflrl289kzb2jv9iziv7fseadldbo27\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

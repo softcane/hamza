@@ -1,0 +1,35 @@
+{
+  "ruleId": "stability-ai-api-key",
+  "truePositives": [
+    "  \"stabilityToken\" =\u003e \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "$stabilityToken .= \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "\u003cstabilityToken\u003e\n    sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\n\u003c/stabilityToken\u003e",
+    "String stabilityToken = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\";",
+    "System.setProperty(\"STABILITY_TOKEN\", \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\")",
+    "stabilityToken := \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stabilityToken := `sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk`",
+    "stabilityToken = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stabilityToken = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stabilityToken = 'sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk'",
+    "stabilityToken = sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk",
+    "stabilityToken=\"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stabilityToken=sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk",
+    "stability_TOKEN :::= \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_TOKEN ::= \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_TOKEN := \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_TOKEN = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_TOKEN ?= \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_token: \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "stability_token: 'sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk'",
+    "stability_token: sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk",
+    "string stabilityToken = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\";",
+    "var stabilityToken = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "var stabilityToken string = \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"",
+    "{\n    \"stability_token\": \"sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\"\n}",
+    "{\"config.ini\": \"STABILITY_TOKEN=sk-fvXuFUcQle5z1N7SqNKoAM2pKv9lALOWr5s1YudbzIAH2Irk\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "stability_key = sk-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "stability_key = sk-AnmgropvAII5XEoxVPjbnSMG3XhacEwhJlLh8"
+  ]
+}

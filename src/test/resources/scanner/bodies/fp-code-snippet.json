@@ -1,0 +1,1 @@
+{"model":"gpt-5-codex","input":"Review this diff: const requestId = '550e8400-e29b-41d4-a716-446655440000'; // pinned to commit 9f8c7b6a5e4d3c2b1a0987654321fedcba098765, run 'git checkout' then 'npm install left-pad@1.3.0'. The cache key is sha256 of the lockfile."}

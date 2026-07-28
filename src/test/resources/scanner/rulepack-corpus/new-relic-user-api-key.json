@@ -1,0 +1,32 @@
+{
+  "ruleId": "new-relic-user-api-key",
+  "truePositives": [
+    "  \"new-relicToken\" =\u003e \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "$new-relicToken .= \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "\u003cnew-relicToken\u003e\n    NRAK-skjg94l3wyz6nl5pbbq5a66t4du\n\u003c/new-relicToken\u003e",
+    "String new-relicToken = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\";",
+    "System.setProperty(\"NEW-RELIC_TOKEN\", \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\")",
+    "new-relicToken := \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relicToken := `NRAK-skjg94l3wyz6nl5pbbq5a66t4du`",
+    "new-relicToken = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relicToken = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relicToken = 'NRAK-skjg94l3wyz6nl5pbbq5a66t4du'",
+    "new-relicToken = NRAK-skjg94l3wyz6nl5pbbq5a66t4du",
+    "new-relicToken=\"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relicToken=NRAK-skjg94l3wyz6nl5pbbq5a66t4du",
+    "new-relic_TOKEN :::= \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_TOKEN ::= \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_TOKEN := \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_TOKEN = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_TOKEN ?= \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_token: \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "new-relic_token: 'NRAK-skjg94l3wyz6nl5pbbq5a66t4du'",
+    "new-relic_token: NRAK-skjg94l3wyz6nl5pbbq5a66t4du",
+    "string new-relicToken = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\";",
+    "var new-relicToken = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "var new-relicToken string = \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"",
+    "{\n    \"new-relic_token\": \"NRAK-skjg94l3wyz6nl5pbbq5a66t4du\"\n}",
+    "{\"config.ini\": \"NEW-RELIC_TOKEN=NRAK-skjg94l3wyz6nl5pbbq5a66t4du\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

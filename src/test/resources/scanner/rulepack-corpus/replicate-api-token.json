@@ -1,0 +1,35 @@
+{
+  "ruleId": "replicate-api-token",
+  "truePositives": [
+    "  \"replicateToken\" =\u003e \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "$replicateToken .= \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "\u003creplicateToken\u003e\n    r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\n\u003c/replicateToken\u003e",
+    "String replicateToken = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\";",
+    "System.setProperty(\"REPLICATE_TOKEN\", \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\")",
+    "replicateToken := \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicateToken := `r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y`",
+    "replicateToken = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicateToken = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicateToken = 'r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y'",
+    "replicateToken = r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y",
+    "replicateToken=\"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicateToken=r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y",
+    "replicate_TOKEN :::= \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_TOKEN ::= \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_TOKEN := \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_TOKEN = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_TOKEN ?= \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_token: \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "replicate_token: 'r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y'",
+    "replicate_token: r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y",
+    "string replicateToken = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\";",
+    "var replicateToken = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "var replicateToken string = \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"",
+    "{\n    \"replicate_token\": \"r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\"\n}",
+    "{\"config.ini\": \"REPLICATE_TOKEN=r8_c8BMqSMnz7ZYhLbd2042uw9gT46XyArw3Xy2Y\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "r8_WesXNvqsCpq7r1gpQABpB3NJvdR",
+    "r9_WesXNvqsCpq7r1gpQABpB3NJvdR21nb2s7HVy"
+  ]
+}

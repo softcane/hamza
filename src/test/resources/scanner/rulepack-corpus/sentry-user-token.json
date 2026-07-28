@@ -1,0 +1,36 @@
+{
+  "ruleId": "sentry-user-token",
+  "truePositives": [
+    "  \"sentryToken\" =\u003e \"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\"",
+    "$sentryToken .= \"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\"",
+    "\u003csentryToken\u003e\n    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\n\u003c/sentryToken\u003e",
+    "String sentryToken = \"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\";",
+    "System.setProperty(\"SENTRY_TOKEN\", \"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\")",
+    "sentryToken := \"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\"",
+    "sentryToken := `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`",
+    "sentryToken = \"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\"",
+    "sentryToken = \"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\"",
+    "sentryToken = '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'",
+    "sentryToken = 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",
+    "sentryToken=\"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\"",
+    "sentryToken=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",
+    "sentry_TOKEN :::= \"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\"",
+    "sentry_TOKEN ::= \"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\"",
+    "sentry_TOKEN := \"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\"",
+    "sentry_TOKEN = \"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\"",
+    "sentry_TOKEN ?= \"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\"",
+    "sentry_token: \"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\"",
+    "sentry_token: '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'",
+    "sentry_token: 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",
+    "string sentryToken = \"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\";",
+    "var sentryToken = \"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\"",
+    "var sentryToken string = \"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\"",
+    "{\n    \"sentry_token\": \"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\"\n}",
+    "{\"config.ini\": \"SENTRY_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "sntryu_519ec280fa8422e95dc37ddb3191c7f71df56a08ecdbd6eb506ef4cb95830ff",
+    "sntryu_5d1f7ea3210bacbcaac50835df57d3ebb587f97c619760ef0565ab32a0bec5dff",
+    "sntryu_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  ]
+}

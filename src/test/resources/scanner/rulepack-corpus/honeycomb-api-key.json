@@ -1,0 +1,8 @@
+{
+  "ruleId": "honeycomb-api-key",
+  "truePositives": [
+    "honeycomb_secret_key=8f14e45fceea167a5a36dedd4bea2543",
+    "honeycomb_token=z0d1f2bcaloumn3456789P"
+  ],
+  "falsePositives": []
+}

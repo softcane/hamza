@@ -1,0 +1,9 @@
+{
+  "ruleId": "planetscale-id",
+  "truePositives": [
+    "PSCALE_USER_NAME = gkhhuc4qpaxh",
+    "planetscale_id: 0dm7fw8prpel",
+    "pscale_user = 0dm7fw8prpel"
+  ],
+  "falsePositives": []
+}

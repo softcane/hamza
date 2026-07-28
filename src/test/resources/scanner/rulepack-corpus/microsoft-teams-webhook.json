@@ -1,0 +1,7 @@
+{
+  "ruleId": "microsoft-teams-webhook",
+  "truePositives": [
+    "https://mycompany.webhook.office.com/webhookb2/ap90p6lg-n3ky-42z2-x2jd-k749wwg3o4yc@ohb2tw8e-cvjo-r9mi-yekz-axn7o5z5p9nm/IncomingWebhook/axd2cklowj05qg07ev9tt4n1dyal77dm/5h1t4uty-ih6n-bx65-ol0a-6zwzr0b6vus3"
+  ],
+  "falsePositives": []
+}

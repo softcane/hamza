@@ -1,0 +1,32 @@
+{
+  "ruleId": "twilio-api-key",
+  "truePositives": [
+    "  \"twilioToken\" =\u003e \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "$twilioToken .= \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "\u003ctwilioToken\u003e\n    SKdcfd669be5bfa010af4d43add1e459bc\n\u003c/twilioToken\u003e",
+    "String twilioToken = \"SKdcfd669be5bfa010af4d43add1e459bc\";",
+    "System.setProperty(\"TWILIO_TOKEN\", \"SKdcfd669be5bfa010af4d43add1e459bc\")",
+    "string twilioToken = \"SKdcfd669be5bfa010af4d43add1e459bc\";",
+    "twilioToken := \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilioToken := `SKdcfd669be5bfa010af4d43add1e459bc`",
+    "twilioToken = \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilioToken = \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilioToken = 'SKdcfd669be5bfa010af4d43add1e459bc'",
+    "twilioToken = SKdcfd669be5bfa010af4d43add1e459bc",
+    "twilioToken=\"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilioToken=SKdcfd669be5bfa010af4d43add1e459bc",
+    "twilio_TOKEN :::= \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_TOKEN ::= \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_TOKEN := \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_TOKEN = \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_TOKEN ?= \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_token: \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "twilio_token: 'SKdcfd669be5bfa010af4d43add1e459bc'",
+    "twilio_token: SKdcfd669be5bfa010af4d43add1e459bc",
+    "var twilioToken = \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "var twilioToken string = \"SKdcfd669be5bfa010af4d43add1e459bc\"",
+    "{\n    \"twilio_token\": \"SKdcfd669be5bfa010af4d43add1e459bc\"\n}",
+    "{\"config.ini\": \"TWILIO_TOKEN=SKdcfd669be5bfa010af4d43add1e459bc\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

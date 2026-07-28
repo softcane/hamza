@@ -1,0 +1,32 @@
+{
+  "ruleId": "lob-pub-api-key",
+  "truePositives": [
+    "  \"lobToken\" =\u003e \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "$lobToken .= \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "\u003clobToken\u003e\n    test_pub_7604284ed09b73485909ff19592dc74\n\u003c/lobToken\u003e",
+    "String lobToken = \"test_pub_7604284ed09b73485909ff19592dc74\";",
+    "System.setProperty(\"LOB_TOKEN\", \"test_pub_7604284ed09b73485909ff19592dc74\")",
+    "lobToken := \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lobToken := `test_pub_7604284ed09b73485909ff19592dc74`",
+    "lobToken = \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lobToken = \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lobToken = 'test_pub_7604284ed09b73485909ff19592dc74'",
+    "lobToken = test_pub_7604284ed09b73485909ff19592dc74",
+    "lobToken=\"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lobToken=test_pub_7604284ed09b73485909ff19592dc74",
+    "lob_TOKEN :::= \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_TOKEN ::= \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_TOKEN := \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_TOKEN = \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_TOKEN ?= \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_token: \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "lob_token: 'test_pub_7604284ed09b73485909ff19592dc74'",
+    "lob_token: test_pub_7604284ed09b73485909ff19592dc74",
+    "string lobToken = \"test_pub_7604284ed09b73485909ff19592dc74\";",
+    "var lobToken = \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "var lobToken string = \"test_pub_7604284ed09b73485909ff19592dc74\"",
+    "{\n    \"lob_token\": \"test_pub_7604284ed09b73485909ff19592dc74\"\n}",
+    "{\"config.ini\": \"LOB_TOKEN=test_pub_7604284ed09b73485909ff19592dc74\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

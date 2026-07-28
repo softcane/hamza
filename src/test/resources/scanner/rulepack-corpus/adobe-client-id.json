@@ -1,0 +1,32 @@
+{
+  "ruleId": "adobe-client-id",
+  "truePositives": [
+    "  \"adobeToken\" =\u003e \"09934985bd6b206221893050cb2a9b30\"",
+    "$adobeToken .= \"09934985bd6b206221893050cb2a9b30\"",
+    "\u003cadobeToken\u003e\n    09934985bd6b206221893050cb2a9b30\n\u003c/adobeToken\u003e",
+    "String adobeToken = \"09934985bd6b206221893050cb2a9b30\";",
+    "System.setProperty(\"ADOBE_TOKEN\", \"09934985bd6b206221893050cb2a9b30\")",
+    "adobeToken := \"09934985bd6b206221893050cb2a9b30\"",
+    "adobeToken := `09934985bd6b206221893050cb2a9b30`",
+    "adobeToken = \"09934985bd6b206221893050cb2a9b30\"",
+    "adobeToken = \"09934985bd6b206221893050cb2a9b30\"",
+    "adobeToken = '09934985bd6b206221893050cb2a9b30'",
+    "adobeToken = 09934985bd6b206221893050cb2a9b30",
+    "adobeToken=\"09934985bd6b206221893050cb2a9b30\"",
+    "adobeToken=09934985bd6b206221893050cb2a9b30",
+    "adobe_TOKEN :::= \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_TOKEN ::= \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_TOKEN := \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_TOKEN = \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_TOKEN ?= \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_token: \"09934985bd6b206221893050cb2a9b30\"",
+    "adobe_token: '09934985bd6b206221893050cb2a9b30'",
+    "adobe_token: 09934985bd6b206221893050cb2a9b30",
+    "string adobeToken = \"09934985bd6b206221893050cb2a9b30\";",
+    "var adobeToken = \"09934985bd6b206221893050cb2a9b30\"",
+    "var adobeToken string = \"09934985bd6b206221893050cb2a9b30\"",
+    "{\n    \"adobe_token\": \"09934985bd6b206221893050cb2a9b30\"\n}",
+    "{\"config.ini\": \"ADOBE_TOKEN=09934985bd6b206221893050cb2a9b30\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

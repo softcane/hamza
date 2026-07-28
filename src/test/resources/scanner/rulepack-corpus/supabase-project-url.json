@@ -1,0 +1,11 @@
+{
+  "ruleId": "supabase-project-url",
+  "truePositives": [
+    "NEXT_PUBLIC_SUPABASE_URL=\"https://ejcvydfyxzmbtfbfstnq.supabase.co\"",
+    "supabaseUrl: \"https://abcdefghijklmnop.supabase.co\""
+  ],
+  "falsePositives": [
+    "NEXT_PUBLIC_SUPABASE_URL=\"http://ejcvydfyxzmbtfbfstnq.supabase.co\"",
+    "supabaseUrl: \"https://short.supabase.co\""
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "ruleId": "alibaba-access-key-id",
+  "truePositives": [
+    "alibabaKey := \"LTAI1050eb5d760e289b174e\""
+  ],
+  "falsePositives": []
+}

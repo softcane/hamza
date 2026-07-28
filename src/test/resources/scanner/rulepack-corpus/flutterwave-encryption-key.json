@@ -1,0 +1,32 @@
+{
+  "ruleId": "flutterwave-encryption-key",
+  "truePositives": [
+    "  \"flutterwavePubKeyToken\" =\u003e \"FLWSECK_TEST-d6e5782ac97b\"",
+    "$flutterwavePubKeyToken .= \"FLWSECK_TEST-d6e5782ac97b\"",
+    "\u003cflutterwavePubKeyToken\u003e\n    FLWSECK_TEST-d6e5782ac97b\n\u003c/flutterwavePubKeyToken\u003e",
+    "String flutterwavePubKeyToken = \"FLWSECK_TEST-d6e5782ac97b\";",
+    "System.setProperty(\"FLUTTERWAVEPUBKEY_TOKEN\", \"FLWSECK_TEST-d6e5782ac97b\")",
+    "flutterwavePubKeyToken := \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKeyToken := `FLWSECK_TEST-d6e5782ac97b`",
+    "flutterwavePubKeyToken = \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKeyToken = \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKeyToken = 'FLWSECK_TEST-d6e5782ac97b'",
+    "flutterwavePubKeyToken = FLWSECK_TEST-d6e5782ac97b",
+    "flutterwavePubKeyToken=\"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKeyToken=FLWSECK_TEST-d6e5782ac97b",
+    "flutterwavePubKey_TOKEN :::= \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_TOKEN ::= \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_TOKEN := \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_TOKEN = \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_TOKEN ?= \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_token: \"FLWSECK_TEST-d6e5782ac97b\"",
+    "flutterwavePubKey_token: 'FLWSECK_TEST-d6e5782ac97b'",
+    "flutterwavePubKey_token: FLWSECK_TEST-d6e5782ac97b",
+    "string flutterwavePubKeyToken = \"FLWSECK_TEST-d6e5782ac97b\";",
+    "var flutterwavePubKeyToken = \"FLWSECK_TEST-d6e5782ac97b\"",
+    "var flutterwavePubKeyToken string = \"FLWSECK_TEST-d6e5782ac97b\"",
+    "{\n    \"flutterwavePubKey_token\": \"FLWSECK_TEST-d6e5782ac97b\"\n}",
+    "{\"config.ini\": \"FLUTTERWAVEPUBKEY_TOKEN=FLWSECK_TEST-d6e5782ac97b\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

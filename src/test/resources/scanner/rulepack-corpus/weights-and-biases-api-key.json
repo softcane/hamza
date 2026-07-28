@@ -1,0 +1,35 @@
+{
+  "ruleId": "weights-and-biases-api-key",
+  "truePositives": [
+    "  \"wandb_api_keyToken\" =\u003e \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "$wandb_api_keyToken .= \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "\u003cwandb_api_keyToken\u003e\n    6b9aed44dabd1a8a87851b696ba333b550001dd9\n\u003c/wandb_api_keyToken\u003e",
+    "String wandb_api_keyToken = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\";",
+    "System.setProperty(\"WANDB_API_KEY_TOKEN\", \"6b9aed44dabd1a8a87851b696ba333b550001dd9\")",
+    "string wandb_api_keyToken = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\";",
+    "var wandb_api_keyToken = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "var wandb_api_keyToken string = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_keyToken := \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_keyToken := `6b9aed44dabd1a8a87851b696ba333b550001dd9`",
+    "wandb_api_keyToken = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_keyToken = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_keyToken = '6b9aed44dabd1a8a87851b696ba333b550001dd9'",
+    "wandb_api_keyToken = 6b9aed44dabd1a8a87851b696ba333b550001dd9",
+    "wandb_api_keyToken=\"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_keyToken=6b9aed44dabd1a8a87851b696ba333b550001dd9",
+    "wandb_api_key_TOKEN :::= \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_TOKEN ::= \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_TOKEN := \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_TOKEN = \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_TOKEN ?= \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_token: \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"",
+    "wandb_api_key_token: '6b9aed44dabd1a8a87851b696ba333b550001dd9'",
+    "wandb_api_key_token: 6b9aed44dabd1a8a87851b696ba333b550001dd9",
+    "{\n    \"wandb_api_key_token\": \"6b9aed44dabd1a8a87851b696ba333b550001dd9\"\n}",
+    "{\"config.ini\": \"WANDB_API_KEY_TOKEN=6b9aed44dabd1a8a87851b696ba333b550001dd9\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "wandb_api_key = 0000000000000000000000000000000000000000",
+    "wandb_api_key = 872ab943740b34157041da2529fb160d"
+  ]
+}

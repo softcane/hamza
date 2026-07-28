@@ -1,0 +1,35 @@
+{
+  "ruleId": "assemblyai-api-key",
+  "truePositives": [
+    "  \"assemblyaiToken\" =\u003e \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "$assemblyaiToken .= \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "\u003cassemblyaiToken\u003e\n    s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\n\u003c/assemblyaiToken\u003e",
+    "String assemblyaiToken = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\";",
+    "System.setProperty(\"ASSEMBLYAI_TOKEN\", \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\")",
+    "assemblyaiToken := \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyaiToken := `s0dpcjpxxn9t84fuk0stg4o3d5vb9jon`",
+    "assemblyaiToken = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyaiToken = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyaiToken = 's0dpcjpxxn9t84fuk0stg4o3d5vb9jon'",
+    "assemblyaiToken = s0dpcjpxxn9t84fuk0stg4o3d5vb9jon",
+    "assemblyaiToken=\"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyaiToken=s0dpcjpxxn9t84fuk0stg4o3d5vb9jon",
+    "assemblyai_TOKEN :::= \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_TOKEN ::= \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_TOKEN := \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_TOKEN = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_TOKEN ?= \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_token: \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "assemblyai_token: 's0dpcjpxxn9t84fuk0stg4o3d5vb9jon'",
+    "assemblyai_token: s0dpcjpxxn9t84fuk0stg4o3d5vb9jon",
+    "string assemblyaiToken = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\";",
+    "var assemblyaiToken = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "var assemblyaiToken string = \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"",
+    "{\n    \"assemblyai_token\": \"s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\"\n}",
+    "{\"config.ini\": \"ASSEMBLYAI_TOKEN=s0dpcjpxxn9t84fuk0stg4o3d5vb9jon\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "assemblyai = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "assemblyai = fa0ed91518b345468f9df757"
+  ]
+}

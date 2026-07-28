@@ -1,0 +1,19 @@
+{
+  "ruleId": "vault-service-token",
+  "truePositives": [
+    "-vaultToken hvs.CAESIP2jTxc9S2K7Z6CtcFWQv7-044m_oSsxnPE1H3nF89l3GiYKHGh2cy5sQmlIZVNyTWJNcDRsYWJpQjlhYjVlb1cQh6PL8wEYAg\"",
+    "token: s.ZC9Ecf4M5g9o34Q6RkzGsj0z",
+    "vault_api_token = \"hvs.4f98WDmtXqRRsTgUa7QylL80dvLGpV4w4Q0P2YQnkRb8_SH4TBvPwM5LOij1WFrvthe3IcT2NNbvRG2DqZOidycOX0\"",
+    "vault_api_token = \"s.6zhxhM6HWSju0gtBoWWedB50\""
+  ],
+  "falsePositives": [
+    "  credentials: new AWS.SharedIniFileCredentials({ profile: '\u003cYOUR_PROFILE\u003e' })",
+    "INFO 4 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean",
+    "hvs.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "s.AcceptanceTimeoutSeconds ",
+    "s.THISSTRINGISALLUPPERCASE",
+    "s.makeKubeConfigController = args",
+    "s.thisstringisalllowercase",
+    "s.xxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

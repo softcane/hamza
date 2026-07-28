@@ -1,0 +1,18 @@
+{
+  "ruleId": "sidekiq-sensitive-url",
+  "truePositives": [
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com",
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com#heading1",
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com/",
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com:80",
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com:80/path?param1=true\u0026param2=false#heading1",
+    "http://cafeb4b3:d3adb33f@enterprise.contribsys.com?param1=true\u0026param2=false",
+    "http://cafebabe:deadbeef@gems.contribsys.com",
+    "http://cafebabe:deadbeef@gems.contribsys.com/",
+    "https://cafeb4b3:d3adb33f@enterprise.contribsys.com",
+    "https://cafeb4b3:d3adb33f@enterprise.contribsys.com/",
+    "https://cafebabe:deadbeef@gems.contribsys.com",
+    "https://cafebabe:deadbeef@gems.contribsys.com/"
+  ],
+  "falsePositives": []
+}

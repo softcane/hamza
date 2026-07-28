@@ -1,0 +1,35 @@
+{
+  "ruleId": "settlemint-service-access-token",
+  "truePositives": [
+    "  \"settlemintTokenToken\" =\u003e \"sm_sat_az0433f6ix2wsosr\"",
+    "$settlemintTokenToken .= \"sm_sat_az0433f6ix2wsosr\"",
+    "\u003csettlemintTokenToken\u003e\n    sm_sat_az0433f6ix2wsosr\n\u003c/settlemintTokenToken\u003e",
+    "String settlemintTokenToken = \"sm_sat_az0433f6ix2wsosr\";",
+    "System.setProperty(\"SETTLEMINTTOKEN_TOKEN\", \"sm_sat_az0433f6ix2wsosr\")",
+    "settlemintTokenToken := \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintTokenToken := `sm_sat_az0433f6ix2wsosr`",
+    "settlemintTokenToken = \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintTokenToken = \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintTokenToken = 'sm_sat_az0433f6ix2wsosr'",
+    "settlemintTokenToken = sm_sat_az0433f6ix2wsosr",
+    "settlemintTokenToken=\"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintTokenToken=sm_sat_az0433f6ix2wsosr",
+    "settlemintToken_TOKEN :::= \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_TOKEN ::= \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_TOKEN := \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_TOKEN = \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_TOKEN ?= \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_token: \"sm_sat_az0433f6ix2wsosr\"",
+    "settlemintToken_token: 'sm_sat_az0433f6ix2wsosr'",
+    "settlemintToken_token: sm_sat_az0433f6ix2wsosr",
+    "string settlemintTokenToken = \"sm_sat_az0433f6ix2wsosr\";",
+    "var settlemintTokenToken = \"sm_sat_az0433f6ix2wsosr\"",
+    "var settlemintTokenToken string = \"sm_sat_az0433f6ix2wsosr\"",
+    "{\n    \"settlemintToken_token\": \"sm_sat_az0433f6ix2wsosr\"\n}",
+    "{\"config.ini\": \"SETTLEMINTTOKEN_TOKEN=sm_sat_az0433f6ix2wsosr\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "nonMatchingToken := \"sm_sat_8ua47rb82u\"",
+    "nonMatchingToken := \"xep131qi3vjxugps\""
+  ]
+}

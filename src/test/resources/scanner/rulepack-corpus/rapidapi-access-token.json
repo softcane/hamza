@@ -1,0 +1,32 @@
+{
+  "ruleId": "rapidapi-access-token",
+  "truePositives": [
+    "  \"rapidapiToken\" =\u003e \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "$rapidapiToken .= \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "\u003crapidapiToken\u003e\n    q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\n\u003c/rapidapiToken\u003e",
+    "String rapidapiToken = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\";",
+    "System.setProperty(\"RAPIDAPI_TOKEN\", \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\")",
+    "rapidapiToken := \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapiToken := `q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx`",
+    "rapidapiToken = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapiToken = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapiToken = 'q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx'",
+    "rapidapiToken = q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx",
+    "rapidapiToken=\"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapiToken=q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx",
+    "rapidapi_TOKEN :::= \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_TOKEN ::= \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_TOKEN := \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_TOKEN = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_TOKEN ?= \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_token: \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "rapidapi_token: 'q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx'",
+    "rapidapi_token: q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx",
+    "string rapidapiToken = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\";",
+    "var rapidapiToken = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "var rapidapiToken string = \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"",
+    "{\n    \"rapidapi_token\": \"q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\"\n}",
+    "{\"config.ini\": \"RAPIDAPI_TOKEN=q06g8n2mjrw5ynk_dywt99j2lq2gtrxh-qstz15gsggc7virhx\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

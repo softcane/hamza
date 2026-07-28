@@ -1,0 +1,17 @@
+{
+  "ruleId": "slack-webhook-url",
+  "truePositives": [
+    "hooks.slack.com/services/1xzh7cw276o857yqmqtskqy62smj80b9us9dupgbumbx",
+    "hooks.slack.com/workflows/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",
+    "http://hooks.slack.com/services/T024TTTTT/BBB72BBL/AZAAA9u0pA4ad666eMgbi555",
+    "http://hooks.slack.com/services/zrnqnvsrljtvr6jlaralzk5q7vn9d9dwjo72qypok53sr",
+    "http://hooks.slack.com/workflows/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",
+    "http://hooks.slack.com/workflows/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",
+    "https://hooks.slack.com/services/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",
+    "https://hooks.slack.com/services/hjh1ll4ajffxqki77u5jz4xmxy5iofwtlzxz3s5ytoifpv",
+    "https://hooks.slack.com/triggers/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",
+    "https://hooks.slack.com/workflows/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",
+    "https://hooks.slack.com/workflows/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"
+  ],
+  "falsePositives": []
+}

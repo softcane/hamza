@@ -1,0 +1,32 @@
+{
+  "ruleId": "twitter-api-key",
+  "truePositives": [
+    "  \"twitterToken\" =\u003e \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "$twitterToken .= \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "\u003ctwitterToken\u003e\n    a2t40thjenkl6bx2jgukmi6ok\n\u003c/twitterToken\u003e",
+    "String twitterToken = \"a2t40thjenkl6bx2jgukmi6ok\";",
+    "System.setProperty(\"TWITTER_TOKEN\", \"a2t40thjenkl6bx2jgukmi6ok\")",
+    "string twitterToken = \"a2t40thjenkl6bx2jgukmi6ok\";",
+    "twitterToken := \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitterToken := `a2t40thjenkl6bx2jgukmi6ok`",
+    "twitterToken = \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitterToken = \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitterToken = 'a2t40thjenkl6bx2jgukmi6ok'",
+    "twitterToken = a2t40thjenkl6bx2jgukmi6ok",
+    "twitterToken=\"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitterToken=a2t40thjenkl6bx2jgukmi6ok",
+    "twitter_TOKEN :::= \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_TOKEN ::= \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_TOKEN := \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_TOKEN = \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_TOKEN ?= \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_token: \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "twitter_token: 'a2t40thjenkl6bx2jgukmi6ok'",
+    "twitter_token: a2t40thjenkl6bx2jgukmi6ok",
+    "var twitterToken = \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "var twitterToken string = \"a2t40thjenkl6bx2jgukmi6ok\"",
+    "{\n    \"twitter_token\": \"a2t40thjenkl6bx2jgukmi6ok\"\n}",
+    "{\"config.ini\": \"TWITTER_TOKEN=a2t40thjenkl6bx2jgukmi6ok\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

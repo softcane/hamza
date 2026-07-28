@@ -1,0 +1,32 @@
+{
+  "ruleId": "looker-client-id",
+  "truePositives": [
+    "  \"lookerToken\" =\u003e \"xrwtzjptjiztkx7pwqgt\"",
+    "$lookerToken .= \"xrwtzjptjiztkx7pwqgt\"",
+    "\u003clookerToken\u003e\n    xrwtzjptjiztkx7pwqgt\n\u003c/lookerToken\u003e",
+    "String lookerToken = \"xrwtzjptjiztkx7pwqgt\";",
+    "System.setProperty(\"LOOKER_TOKEN\", \"xrwtzjptjiztkx7pwqgt\")",
+    "lookerToken := \"xrwtzjptjiztkx7pwqgt\"",
+    "lookerToken := `xrwtzjptjiztkx7pwqgt`",
+    "lookerToken = \"xrwtzjptjiztkx7pwqgt\"",
+    "lookerToken = \"xrwtzjptjiztkx7pwqgt\"",
+    "lookerToken = 'xrwtzjptjiztkx7pwqgt'",
+    "lookerToken = xrwtzjptjiztkx7pwqgt",
+    "lookerToken=\"xrwtzjptjiztkx7pwqgt\"",
+    "lookerToken=xrwtzjptjiztkx7pwqgt",
+    "looker_TOKEN :::= \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_TOKEN ::= \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_TOKEN := \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_TOKEN = \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_TOKEN ?= \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_token: \"xrwtzjptjiztkx7pwqgt\"",
+    "looker_token: 'xrwtzjptjiztkx7pwqgt'",
+    "looker_token: xrwtzjptjiztkx7pwqgt",
+    "string lookerToken = \"xrwtzjptjiztkx7pwqgt\";",
+    "var lookerToken = \"xrwtzjptjiztkx7pwqgt\"",
+    "var lookerToken string = \"xrwtzjptjiztkx7pwqgt\"",
+    "{\n    \"looker_token\": \"xrwtzjptjiztkx7pwqgt\"\n}",
+    "{\"config.ini\": \"LOOKER_TOKEN=xrwtzjptjiztkx7pwqgt\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

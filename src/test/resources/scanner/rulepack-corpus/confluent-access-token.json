@@ -1,0 +1,32 @@
+{
+  "ruleId": "confluent-access-token",
+  "truePositives": [
+    "  \"confluentToken\" =\u003e \"fd9fmwdh5uqqpryb\"",
+    "$confluentToken .= \"fd9fmwdh5uqqpryb\"",
+    "\u003cconfluentToken\u003e\n    fd9fmwdh5uqqpryb\n\u003c/confluentToken\u003e",
+    "String confluentToken = \"fd9fmwdh5uqqpryb\";",
+    "System.setProperty(\"CONFLUENT_TOKEN\", \"fd9fmwdh5uqqpryb\")",
+    "confluentToken := \"fd9fmwdh5uqqpryb\"",
+    "confluentToken := `fd9fmwdh5uqqpryb`",
+    "confluentToken = \"fd9fmwdh5uqqpryb\"",
+    "confluentToken = \"fd9fmwdh5uqqpryb\"",
+    "confluentToken = 'fd9fmwdh5uqqpryb'",
+    "confluentToken = fd9fmwdh5uqqpryb",
+    "confluentToken=\"fd9fmwdh5uqqpryb\"",
+    "confluentToken=fd9fmwdh5uqqpryb",
+    "confluent_TOKEN :::= \"fd9fmwdh5uqqpryb\"",
+    "confluent_TOKEN ::= \"fd9fmwdh5uqqpryb\"",
+    "confluent_TOKEN := \"fd9fmwdh5uqqpryb\"",
+    "confluent_TOKEN = \"fd9fmwdh5uqqpryb\"",
+    "confluent_TOKEN ?= \"fd9fmwdh5uqqpryb\"",
+    "confluent_token: \"fd9fmwdh5uqqpryb\"",
+    "confluent_token: 'fd9fmwdh5uqqpryb'",
+    "confluent_token: fd9fmwdh5uqqpryb",
+    "string confluentToken = \"fd9fmwdh5uqqpryb\";",
+    "var confluentToken = \"fd9fmwdh5uqqpryb\"",
+    "var confluentToken string = \"fd9fmwdh5uqqpryb\"",
+    "{\n    \"confluent_token\": \"fd9fmwdh5uqqpryb\"\n}",
+    "{\"config.ini\": \"CONFLUENT_TOKEN=fd9fmwdh5uqqpryb\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

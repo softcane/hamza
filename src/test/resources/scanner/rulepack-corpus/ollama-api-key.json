@@ -1,0 +1,35 @@
+{
+  "ruleId": "ollama-api-key",
+  "truePositives": [
+    "  \"ollamaToken\" =\u003e \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "$ollamaToken .= \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "\u003collamaToken\u003e\n    672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\n\u003c/ollamaToken\u003e",
+    "String ollamaToken = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\";",
+    "System.setProperty(\"OLLAMA_TOKEN\", \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\")",
+    "ollamaToken := \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollamaToken := `672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD`",
+    "ollamaToken = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollamaToken = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollamaToken = '672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD'",
+    "ollamaToken = 672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD",
+    "ollamaToken=\"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollamaToken=672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD",
+    "ollama_TOKEN :::= \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_TOKEN ::= \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_TOKEN := \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_TOKEN = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_TOKEN ?= \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_token: \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "ollama_token: '672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD'",
+    "ollama_token: 672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD",
+    "string ollamaToken = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\";",
+    "var ollamaToken = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "var ollamaToken string = \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"",
+    "{\n    \"ollama_token\": \"672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\"\n}",
+    "{\"config.ini\": \"OLLAMA_TOKEN=672d76098497020aeba8ca5ea76c8972.BT4LOOPAUKIJzhpVyDknLyvD\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "ollama key = 8bcdd9b4e28e4e1b8bf14a2eb8701220",
+    "ollama key = 8bcdd9b4e28e4e1b8bf14a2eb8701220QH5p5TU2BDwzHu5_RCtvJXsj"
+  ]
+}

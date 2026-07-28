@@ -1,0 +1,60 @@
+{
+  "schema": "hamza-presidio-approved-profile/v1",
+  "profile_id": "broad-pii-en",
+  "version": 1,
+  "language": "en",
+  "selected_threshold": 0.75,
+  "enabled_entities": [
+    "CREDIT_CARD",
+    "CRYPTO",
+    "EMAIL_ADDRESS",
+    "IBAN_CODE",
+    "IP_ADDRESS",
+    "MAC_ADDRESS",
+    "PHONE_NUMBER",
+    "MEDICAL_LICENSE",
+    "URL"
+  ],
+  "entity_thresholds": {
+    "MAC_ADDRESS": 0.6,
+    "URL": 0.6
+  },
+  "disabled_entities": [
+    {
+      "entity": "DATE_TIME",
+      "reasons": [
+        "precision_below_floor",
+        "recall_below_floor",
+        "f2_below_floor",
+        "exact_span_reliability_below_floor",
+        "benign_false_findings_above_floor"
+      ]
+    },
+    {
+      "entity": "NRP",
+      "reasons": [
+        "precision_below_floor",
+        "f2_below_floor",
+        "benign_false_findings_above_floor"
+      ]
+    },
+    {
+      "entity": "LOCATION",
+      "reasons": [
+        "precision_below_floor",
+        "f2_below_floor",
+        "benign_false_findings_above_floor"
+      ]
+    },
+    {
+      "entity": "PERSON",
+      "reasons": [
+        "precision_below_floor",
+        "f2_below_floor",
+        "exact_span_reliability_below_floor",
+        "benign_false_findings_above_floor"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,7 @@
+{
+  "ruleId": "dockerhub-organization-access-token",
+  "truePositives": [
+    "docker login -u docker-test -p dckr_oat_7bA9zRt5-JqX3vP0l_MnY8sK2wE-dF6h"
+  ],
+  "falsePositives": []
+}

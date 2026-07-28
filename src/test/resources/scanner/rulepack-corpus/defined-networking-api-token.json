@@ -1,0 +1,32 @@
+{
+  "ruleId": "defined-networking-api-token",
+  "truePositives": [
+    "  \"dnkeyToken\" =\u003e \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "$dnkeyToken .= \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "\u003cdnkeyToken\u003e\n    dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\n\u003c/dnkeyToken\u003e",
+    "String dnkeyToken = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\";",
+    "System.setProperty(\"DNKEY_TOKEN\", \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\")",
+    "dnkeyToken := \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkeyToken := `dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-`",
+    "dnkeyToken = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkeyToken = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkeyToken = 'dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-'",
+    "dnkeyToken = dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-",
+    "dnkeyToken=\"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkeyToken=dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-",
+    "dnkey_TOKEN :::= \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_TOKEN ::= \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_TOKEN := \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_TOKEN = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_TOKEN ?= \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_token: \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "dnkey_token: 'dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-'",
+    "dnkey_token: dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-",
+    "string dnkeyToken = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\";",
+    "var dnkeyToken = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "var dnkeyToken string = \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"",
+    "{\n    \"dnkey_token\": \"dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\"\n}",
+    "{\"config.ini\": \"DNKEY_TOKEN=dnkey-gmwz9ozms5ipfu4swtye6wht64-4scne7evjsbz8id5wi9x4eqserak05wcpjlcrm-o0-eg17ljg44-\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

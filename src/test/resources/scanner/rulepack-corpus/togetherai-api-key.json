@@ -1,0 +1,35 @@
+{
+  "ruleId": "togetherai-api-key",
+  "truePositives": [
+    "  \"togetheraiToken\" =\u003e \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "$togetheraiToken .= \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "\u003ctogetheraiToken\u003e\n    tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\n\u003c/togetheraiToken\u003e",
+    "String togetheraiToken = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\";",
+    "System.setProperty(\"TOGETHERAI_TOKEN\", \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\")",
+    "string togetheraiToken = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\";",
+    "togetheraiToken := \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetheraiToken := `tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq`",
+    "togetheraiToken = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetheraiToken = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetheraiToken = 'tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq'",
+    "togetheraiToken = tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq",
+    "togetheraiToken=\"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetheraiToken=tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq",
+    "togetherai_TOKEN :::= \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_TOKEN ::= \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_TOKEN := \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_TOKEN = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_TOKEN ?= \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_token: \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "togetherai_token: 'tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq'",
+    "togetherai_token: tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq",
+    "var togetheraiToken = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "var togetheraiToken string = \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"",
+    "{\n    \"togetherai_token\": \"tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\"\n}",
+    "{\"config.ini\": \"TOGETHERAI_TOKEN=tgp_v1_q5Ncqp-GVUUkLSL2Sa3i68b0aNFQj8H8_ZrVbq4umBq\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "tgp_v1_Tctm6OfOeNkwLIKkyxJxUHIqNKx2AvFr",
+    "tgp_v2_Tctm6OfOeNkwLIKkyxJxUHIqNKx2AvFr65tQRIOMgzY"
+  ]
+}

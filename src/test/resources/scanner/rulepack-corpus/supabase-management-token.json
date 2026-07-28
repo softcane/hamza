@@ -1,0 +1,11 @@
+{
+  "ruleId": "supabase-management-token",
+  "truePositives": [
+    "SUPABASE_ACCESS_TOKEN=sbp_1234567890abcdefghij1234567890klmnopqrst",
+    "supabase_management_token = \"sbp_abcd1234efgh5678ijkl9012mnop3456qrst7890\""
+  ],
+  "falsePositives": [
+    "SUPABASE_ACCESS_TOKEN=sbp_1234567890abcdefghij1234567890klmnopqrs",
+    "supabase_management_token = \"sbp_abcdefghijklmnopqrstuvwxyzabcdefghijklmn\""
+  ]
+}

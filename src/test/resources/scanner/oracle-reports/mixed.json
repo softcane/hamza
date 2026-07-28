@@ -1,0 +1,22 @@
+[
+ {
+  "RuleID": "stripe-access-token",
+  "Description": "Found a Stripe Access Token, posing a risk to payment processing services and sensitive financial data.",
+  "StartLine": 1,
+  "EndLine": 1,
+  "StartColumn": 71,
+  "EndColumn": 103,
+  "Match": "sk_live_4eC39HqLyjWDarjtT1zdp7dc ",
+  "Secret": "sk_live_4eC39HqLyjWDarjtT1zdp7dc",
+  "File": "",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 4.75,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [],
+  "Fingerprint": ":stripe-access-token:1"
+ }
+]

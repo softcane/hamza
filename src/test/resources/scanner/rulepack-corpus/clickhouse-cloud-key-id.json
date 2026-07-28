@@ -1,0 +1,10 @@
+{
+  "ruleId": "clickhouse-cloud-key-id",
+  "truePositives": [
+    "clickhouse_id = 4ywspD2Tb0gJh4QbLnDI"
+  ],
+  "falsePositives": [
+    "clickhouse_id = short",
+    "id = 4ywspD2Tb0gJh4QbLnDI"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "mailgun-signing-key",
+  "truePositives": [
+    "  \"mailgunToken\" =\u003e \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "$mailgunToken .= \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "\u003cmailgunToken\u003e\n    317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\n\u003c/mailgunToken\u003e",
+    "String mailgunToken = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\";",
+    "System.setProperty(\"MAILGUN_TOKEN\", \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\")",
+    "mailgunToken := \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgunToken := `317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333`",
+    "mailgunToken = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgunToken = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgunToken = '317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333'",
+    "mailgunToken = 317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333",
+    "mailgunToken=\"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgunToken=317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333",
+    "mailgun_TOKEN :::= \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_TOKEN ::= \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_TOKEN := \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_TOKEN = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_TOKEN ?= \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_token: \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "mailgun_token: '317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333'",
+    "mailgun_token: 317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333",
+    "string mailgunToken = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\";",
+    "var mailgunToken = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "var mailgunToken string = \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"",
+    "{\n    \"mailgun_token\": \"317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\"\n}",
+    "{\"config.ini\": \"MAILGUN_TOKEN=317826a05edff2ce2b5ffc4fae87c0d2-00001111-22223333\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

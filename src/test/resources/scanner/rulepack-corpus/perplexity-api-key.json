@@ -1,0 +1,34 @@
+{
+  "ruleId": "perplexity-api-key",
+  "truePositives": [
+    "  \"perplexityToken\" =\u003e \"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'\"",
+    "$perplexityToken .= \"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'\"",
+    "\u003cperplexityToken\u003e\n    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'\n\u003c/perplexityToken\u003e",
+    "String perplexityToken = \"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'\";",
+    "System.setProperty(\"PERPLEXITY_TOKEN\", \"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'\")",
+    "perplexityToken := \"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'\"",
+    "perplexityToken := `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'`",
+    "perplexityToken = \"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'\"",
+    "perplexityToken = \"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'\"",
+    "perplexityToken = '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''",
+    "perplexityToken = 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'",
+    "perplexityToken=\"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'\"",
+    "perplexityToken=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'",
+    "perplexity_TOKEN :::= \"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'\"",
+    "perplexity_TOKEN ::= \"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'\"",
+    "perplexity_TOKEN := \"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'\"",
+    "perplexity_TOKEN = \"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'\"",
+    "perplexity_TOKEN ?= \"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'\"",
+    "perplexity_token: \"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'\"",
+    "perplexity_token: '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''",
+    "perplexity_token: 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'",
+    "string perplexityToken = \"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'\";",
+    "var perplexityToken = \"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'\"",
+    "var perplexityToken string = \"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'\"",
+    "{\n    \"perplexity_token\": \"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'\"\n}",
+    "{\"config.ini\": \"PERPLEXITY_TOKEN=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'\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "PERPLEXITY_API_KEY=pplx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "polymarket-api-key",
+  "truePositives": [
+    "  \"poly_keyToken\" =\u003e \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "$poly_keyToken .= \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "\u003cpoly_keyToken\u003e\n    708f28a3-805a-e649-ab41-31450622cb67\n\u003c/poly_keyToken\u003e",
+    "String poly_keyToken = \"708f28a3-805a-e649-ab41-31450622cb67\";",
+    "System.setProperty(\"POLY_KEY_TOKEN\", \"708f28a3-805a-e649-ab41-31450622cb67\")",
+    "poly_keyToken := \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_keyToken := `708f28a3-805a-e649-ab41-31450622cb67`",
+    "poly_keyToken = \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_keyToken = \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_keyToken = '708f28a3-805a-e649-ab41-31450622cb67'",
+    "poly_keyToken = 708f28a3-805a-e649-ab41-31450622cb67",
+    "poly_keyToken=\"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_keyToken=708f28a3-805a-e649-ab41-31450622cb67",
+    "poly_key_TOKEN :::= \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_TOKEN ::= \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_TOKEN := \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_TOKEN = \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_TOKEN ?= \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_token: \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "poly_key_token: '708f28a3-805a-e649-ab41-31450622cb67'",
+    "poly_key_token: 708f28a3-805a-e649-ab41-31450622cb67",
+    "string poly_keyToken = \"708f28a3-805a-e649-ab41-31450622cb67\";",
+    "var poly_keyToken = \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "var poly_keyToken string = \"708f28a3-805a-e649-ab41-31450622cb67\"",
+    "{\n    \"poly_key_token\": \"708f28a3-805a-e649-ab41-31450622cb67\"\n}",
+    "{\"config.ini\": \"POLY_KEY_TOKEN=708f28a3-805a-e649-ab41-31450622cb67\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

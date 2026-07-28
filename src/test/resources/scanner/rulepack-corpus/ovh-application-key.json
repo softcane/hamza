@@ -1,0 +1,12 @@
+{
+  "ruleId": "ovh-application-key",
+  "truePositives": [
+    "OVH_APPLICATION_KEY=\"ktW-MGDvCVopJpbn\"",
+    "ovh_applicationKey: \"KwmgY3TRS8fKslBK\"",
+    "ovh_application_key = \"BqZ1KP9UiN6TUGnn\""
+  ],
+  "falsePositives": [
+    "OVH_APPLICATION_KEY=\"\u003cyour-ovh-application-key\u003e\"",
+    "application_key = \"short-key\""
+  ]
+}

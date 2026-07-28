@@ -1,0 +1,35 @@
+{
+  "ruleId": "posthog-project-api-key",
+  "truePositives": [
+    "  \"posthogToken\" =\u003e \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "$posthogToken .= \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "\u003cposthogToken\u003e\n    phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\n\u003c/posthogToken\u003e",
+    "String posthogToken = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\";",
+    "System.setProperty(\"POSTHOG_TOKEN\", \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\")",
+    "posthogToken := \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthogToken := `phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6`",
+    "posthogToken = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthogToken = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthogToken = 'phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6'",
+    "posthogToken = phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6",
+    "posthogToken=\"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthogToken=phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6",
+    "posthog_TOKEN :::= \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_TOKEN ::= \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_TOKEN := \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_TOKEN = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_TOKEN ?= \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_token: \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "posthog_token: 'phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6'",
+    "posthog_token: phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6",
+    "string posthogToken = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\";",
+    "var posthogToken = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "var posthogToken string = \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"",
+    "{\n    \"posthog_token\": \"phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\"\n}",
+    "{\"config.ini\": \"POSTHOG_TOKEN=phc_ssqhm1um5Eu0oGxqkjtC3nFFech1fCoJJdGRLtr7ge6\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "phc_E12345678901234567890123456789012",
+    "phd_E123456789012345678901234567890123456789012"
+  ]
+}

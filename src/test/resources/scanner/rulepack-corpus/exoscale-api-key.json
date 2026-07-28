@@ -1,0 +1,10 @@
+{
+  "ruleId": "exoscale-api-key",
+  "truePositives": [
+    "exoscale_api_key = \"EXOe2efdcee55e14c2390ea2798\""
+  ],
+  "falsePositives": [
+    "exoscale_api_key = \"EXAabc123def456ghi789jkl012mno345\"",
+    "exoscale_api_key = \"EXOabc123\""
+  ]
+}

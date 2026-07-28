@@ -1,0 +1,10 @@
+{
+  "ruleId": "upcloud-api-token",
+  "truePositives": [
+    "upcloud_api_token = \"ucat_10J1XVVJT5TSBXIIZUO6CMVFZ8\""
+  ],
+  "falsePositives": [
+    "upcloud_token = uca_01DQE3AJDEBFEKECFM558TGH2F",
+    "upcloud_token = ucat_01DQE3"
+  ]
+}

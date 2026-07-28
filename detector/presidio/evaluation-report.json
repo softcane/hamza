@@ -1,0 +1,224 @@
+{
+  "all_calls_complete" : true,
+  "approved_entities" : [ "CREDIT_CARD", "CRYPTO", "EMAIL_ADDRESS", "IBAN_CODE", "IP_ADDRESS", "MAC_ADDRESS", "PHONE_NUMBER", "MEDICAL_LICENSE", "URL" ],
+  "content_free" : true,
+  "corpus_counts" : {
+    "holdout_benign_turns" : 10000,
+    "holdout_positive_occurrences_per_entity" : 100,
+    "partitions_disjoint" : true,
+    "tuning_benign_turns" : 3000,
+    "tuning_positive_occurrences_per_entity" : 100
+  },
+  "entity_thresholds" : {
+    "CREDIT_CARD" : 0.75,
+    "CRYPTO" : 0.75,
+    "DATE_TIME" : 0.75,
+    "EMAIL_ADDRESS" : 0.75,
+    "IBAN_CODE" : 0.75,
+    "IP_ADDRESS" : 0.75,
+    "LOCATION" : 0.75,
+    "MAC_ADDRESS" : 0.6,
+    "MEDICAL_LICENSE" : 0.75,
+    "NRP" : 0.75,
+    "PERSON" : 0.75,
+    "PHONE_NUMBER" : 0.75,
+    "URL" : 0.6
+  },
+  "evaluated_entities" : [ "CREDIT_CARD", "CRYPTO", "DATE_TIME", "EMAIL_ADDRESS", "IBAN_CODE", "IP_ADDRESS", "MAC_ADDRESS", "NRP", "LOCATION", "PERSON", "PHONE_NUMBER", "MEDICAL_LICENSE", "URL" ],
+  "holdout_metrics" : {
+    "CREDIT_CARD" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 2.603,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "CRYPTO" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 2.309,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "DATE_TIME" : {
+      "benign_false_findings" : 1413,
+      "benign_false_findings_per_10000_turns" : 1413.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.5565,
+      "f2" : 0.166,
+      "findings" : 1528,
+      "p95_ms" : 1.751,
+      "positive_turns" : 100,
+      "precision" : 0.0419,
+      "recall" : 0.64
+    },
+    "EMAIL_ADDRESS" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 1.941,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "IBAN_CODE" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 1.746,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "IP_ADDRESS" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.0,
+      "f2" : 0.0,
+      "findings" : 0,
+      "p95_ms" : 2.071,
+      "positive_turns" : 100,
+      "precision" : 0.0,
+      "recall" : 0.0
+    },
+    "LOCATION" : {
+      "benign_false_findings" : 285,
+      "benign_false_findings_per_10000_turns" : 285.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.99,
+      "f2" : 0.6306,
+      "findings" : 385,
+      "p95_ms" : 1.652,
+      "positive_turns" : 100,
+      "precision" : 0.2571,
+      "recall" : 0.99
+    },
+    "MAC_ADDRESS" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 1.732,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "MEDICAL_LICENSE" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 1.661,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    },
+    "NRP" : {
+      "benign_false_findings" : 108,
+      "benign_false_findings_per_10000_turns" : 108.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.9901,
+      "f2" : 0.821,
+      "findings" : 209,
+      "p95_ms" : 1.662,
+      "positive_turns" : 100,
+      "precision" : 0.4785,
+      "recall" : 1.0
+    },
+    "PERSON" : {
+      "benign_false_findings" : 2581,
+      "benign_false_findings_per_10000_turns" : 2581.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.8544,
+      "f2" : 0.1427,
+      "findings" : 2684,
+      "p95_ms" : 1.656,
+      "positive_turns" : 100,
+      "precision" : 0.0328,
+      "recall" : 0.88
+    },
+    "PHONE_NUMBER" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 0.0,
+      "f2" : 0.0,
+      "findings" : 0,
+      "p95_ms" : 2.622,
+      "positive_turns" : 100,
+      "precision" : 0.0,
+      "recall" : 0.0
+    },
+    "URL" : {
+      "benign_false_findings" : 0,
+      "benign_false_findings_per_10000_turns" : 0.0,
+      "benign_turns" : 10000,
+      "complete" : true,
+      "exact_span_reliability" : 1.0,
+      "f2" : 1.0,
+      "findings" : 100,
+      "p95_ms" : 2.675,
+      "positive_turns" : 100,
+      "precision" : 1.0,
+      "recall" : 1.0
+    }
+  },
+  "image" : "ghcr.io/data-privacy-stack/presidio-analyzer@sha256:286e3fa7f3a7426e775e8564fe1870f1ba8f999d3ab8bbb8cc46a44355d9d6e9",
+  "profile_id" : "broad-pii-en",
+  "profile_version" : 1,
+  "quality_gaps" : [ {
+    "entity" : "IP_ADDRESS",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "recall_below_floor", "f2_below_floor", "exact_span_reliability_below_floor" ]
+  }, {
+    "entity" : "PHONE_NUMBER",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "recall_below_floor", "f2_below_floor", "exact_span_reliability_below_floor" ]
+  } ],
+  "rejected_entities" : [ {
+    "entity" : "DATE_TIME",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "recall_below_floor", "f2_below_floor", "exact_span_reliability_below_floor", "benign_false_findings_above_floor" ]
+  }, {
+    "entity" : "NRP",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "benign_false_findings_above_floor" ]
+  }, {
+    "entity" : "LOCATION",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "f2_below_floor", "benign_false_findings_above_floor" ]
+  }, {
+    "entity" : "PERSON",
+    "reasons" : [ "tuning_quality_floor_not_met", "precision_below_floor", "f2_below_floor", "exact_span_reliability_below_floor", "benign_false_findings_above_floor" ]
+  } ],
+  "schema" : "hamza-presidio-feasibility-report/v1",
+  "selected_threshold" : 0.75
+}

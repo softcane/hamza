@@ -1,0 +1,33 @@
+{
+  "ruleId": "scalingo-api-token",
+  "truePositives": [
+    "  \"scalingoToken\" =\u003e \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "$scalingoToken .= \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "\u003cscalingoToken\u003e\n    tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\n\u003c/scalingoToken\u003e",
+    "String scalingoToken = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\";",
+    "System.setProperty(\"SCALINGO_TOKEN\", \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\")",
+    "scalingoToken := \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingoToken := `tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h`",
+    "scalingoToken = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingoToken = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingoToken = 'tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h'",
+    "scalingoToken = tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h",
+    "scalingoToken=\"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingoToken=tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h",
+    "scalingo_TOKEN :::= \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_TOKEN ::= \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_TOKEN := \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_TOKEN = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_TOKEN ?= \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_api_token = \"tk-us-loys7ib9yrxcys_ta2sq85mjar6lgcsspkd9x61s7h5epf_-\"",
+    "scalingo_token: \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "scalingo_token: 'tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h'",
+    "scalingo_token: tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h",
+    "string scalingoToken = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\";",
+    "var scalingoToken = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "var scalingoToken string = \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"",
+    "{\n    \"scalingo_token\": \"tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\"\n}",
+    "{\"config.ini\": \"SCALINGO_TOKEN=tk-us-w2vvxeznifbubpt2i7m0sqmo3x6c9fakrs-qznwioucvbl7h\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

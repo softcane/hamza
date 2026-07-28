@@ -1,0 +1,8 @@
+{
+  "ruleId": "devin-service-user-token",
+  "truePositives": [
+    "DEVIN_API_KEY=cog_uv23fh6fc5kpaxdqif7hyvmzslnbmwriqita7cqkbb4rpaixnleq",
+    "cog_l5osrifmypvazi4j3yko52gj6jfj7qprsmy4lrcf27jas4szffha"
+  ],
+  "falsePositives": []
+}

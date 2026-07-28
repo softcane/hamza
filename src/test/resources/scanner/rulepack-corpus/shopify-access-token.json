@@ -1,0 +1,32 @@
+{
+  "ruleId": "shopify-access-token",
+  "truePositives": [
+    "  \"shopifyToken\" =\u003e \"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\"",
+    "$shopifyToken .= \"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\"",
+    "\u003cshopifyToken\u003e\n    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\n\u003c/shopifyToken\u003e",
+    "String shopifyToken = \"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\";",
+    "System.setProperty(\"SHOPIFY_TOKEN\", \"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\")",
+    "shopifyToken := \"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\"",
+    "shopifyToken := `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`",
+    "shopifyToken = \"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\"",
+    "shopifyToken = \"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\"",
+    "shopifyToken = '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'",
+    "shopifyToken = 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",
+    "shopifyToken=\"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\"",
+    "shopifyToken=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",
+    "shopify_TOKEN :::= \"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\"",
+    "shopify_TOKEN ::= \"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\"",
+    "shopify_TOKEN := \"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\"",
+    "shopify_TOKEN = \"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\"",
+    "shopify_TOKEN ?= \"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\"",
+    "shopify_token: \"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\"",
+    "shopify_token: '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'",
+    "shopify_token: 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",
+    "string shopifyToken = \"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\";",
+    "var shopifyToken = \"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\"",
+    "var shopifyToken string = \"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\"",
+    "{\n    \"shopify_token\": \"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\"\n}",
+    "{\"config.ini\": \"SHOPIFY_TOKEN=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\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

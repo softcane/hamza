@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamza Attestation Report</title>
+<style>
+body{font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;margin:2rem;color:#1a1a1a;max-width:60rem}
+h1{font-size:1.5rem}h2{font-size:1.1rem;margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.3rem}
+table{border-collapse:collapse;margin:.5rem 0}td,th{border:1px solid #ccc;padding:.3rem .6rem;text-align:left}
+th{background:#f4f4f4}.badge{display:inline-block;padding:.15rem .6rem;border-radius:.3rem;font-weight:600}
+.ok{background:#e4f5e4;color:#1a6b1a}.broken{background:#fce4e4;color:#a01414}.warn{background:#fdf3d8;color:#8a5a00}
+.muted{color:#666}code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;word-break:break-all}
+</style></head><body>
+<h1>Hamza Attestation Report</h1>
+<p class="muted">Content-free receipt: counts, rules, Actions, hashes and timestamps only &mdash; never prompt text, secret values, or body content.</p>
+<table>
+<tr><th>Schema</th><td>hamza-attestation/v2</td></tr><tr><th>Generated at</th><td>2026-07-27T12:00:00Z</td></tr><tr><th>Window</th><td>2026-07-27T00:00:00Z &rarr; 2026-07-28T00:00:00Z</td></tr><tr><th>Turns seen</th><td>5</td></tr><tr><th>Blocks</th><td>1</td></tr><tr><th>Covered population</th><td>fixed test covered population</td></tr></table>
+<h2>Chain verification</h2>
+<p><span class="badge ok">OK</span> over 5 entries. ok; pre-migration rows are unchained by design</p>
+<p class="muted">Chain head: <code>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</code></p>
+<p class="muted">1 row(s) predate the chain migration and are unchained (not covered by this verification).</p>
+<h2>Posture &amp; config fingerprint</h2>
+<table>
+<tr><th>Posture</th><th>Turns</th></tr>
+<tr><td><code>MASK</code></td><td>3</td></tr>
+<tr><td><code>FLAG</code></td><td>2</td></tr>
+</table>
+<table>
+<tr><th>Config fingerprint</th><th>Turns</th></tr>
+<tr><td><code>cfg-fp-abc</code></td><td>5</td></tr>
+</table>
+<h2>Findings by rule</h2>
+<table>
+<tr><th>Rule</th><th>Count</th></tr>
+<tr><td><code>aws-access-key-id</code></td><td>2</td></tr>
+<tr><td><code>edm-customers</code></td><td>1</td></tr>
+</table>
+<h2>Findings by action</h2>
+<table>
+<tr><th>Action</th><th>Count</th></tr>
+<tr><td><code>MASK</code></td><td>2</td></tr>
+<tr><td><code>BLOCK</code></td><td>1</td></tr>
+</table>
+<h2>Safe Continuation evidence</h2>
+<table>
+<tr><th>Recovery scopes</th><td>4</td></tr><tr><th>Eligible</th><td>4</td></tr><tr><th>Attempted</th><td>3</td></tr><tr><th>Delivered</th><td>2</td></tr><tr><th>Rejected</th><td>1</td></tr><tr><th>Failed closed</th><td>1</td></tr><tr><th>Completed outcomes</th><td>2</td></tr><tr><th>Failed outcomes</th><td>0</td></tr><tr><th>Human fallback outcomes</th><td>0</td></tr><tr><th>Source Block Turns</th><td>1</td></tr><tr><th>Source Mask Turns</th><td>2</td></tr><tr><th>Derived Flag Turns</th><td>2</td></tr><tr><th>Linked source/derived pairs</th><td>2</td></tr><tr><th>Original bytes withheld</th><td>500</td></tr><tr><th>Transformed bytes inspected</th><td>400</td></tr><tr><th>Transformed bytes Egressed</th><td>380</td></tr><tr><th>Recovery Outcome integrity</th><td>OK</td></tr></table>
+<table>
+<tr><th>Agent</th><th>Continuation Turns</th></tr>
+<tr><td><code>claude-code</code></td><td>1</td></tr>
+<tr><td><code>codex</code></td><td>3</td></tr>
+</table>
+<table>
+<tr><th>Provider</th><th>Continuation Turns</th></tr>
+<tr><td><code>anthropic</code></td><td>1</td></tr>
+<tr><td><code>openai</code></td><td>3</td></tr>
+</table>
+<table>
+<tr><th>Outcome Agent version</th><th>Count</th></tr>
+<tr><td><code>codex-0.144</code></td><td>2</td></tr>
+</table>
+<table>
+<tr><th>Outcome status</th><th>Count</th></tr>
+<tr><td><code>COMPLETED</code></td><td>2</td></tr>
+</table>
+<table>
+<tr><th>Recipe version</th><th>Source Turns</th></tr>
+<tr><td><code>1</code></td><td>3</td></tr>
+</table>
+<table>
+<tr><th>Workflow profile version</th><th>Source Turns</th></tr>
+<tr><td><code>1</code></td><td>3</td></tr>
+</table>
+<h3>Evidence coverage gaps</h3>
+<table>
+<tr><th>Fixed gap class</th><th>Count</th></tr>
+<tr><td><code>fixed-fake-gap-kind</code></td><td>1</td></tr>
+</table>
+<h2>EDM events</h2>
+<table>
+<tr><th>Registry</th><th>Events</th><th>Distinct matches</th><th>Block events</th><th>Flag events</th><th>Note</th></tr>
+<tr><td><code>customers</code></td><td>3</td><td>5</td><td>1</td><td>2</td><td>fixed fake edm note.</td></tr>
+</table>
+<h2>Registry staleness</h2>
+<p><span class="badge warn">UNVERIFIED</span></p>
+<p>fixed fake registry-staleness note.</p>
+<table>
+<tr><th>Registry</th><th>Distinct fingerprints</th><th>Source timestamp</th><th>Age seconds</th><th>Source</th></tr>
+<tr><td><code>customers</code></td><td>5</td><td>2026-07-01T00:00:00Z</td><td>N/A</td><td>customers.json</td></tr>
+</table>
+<h2>Coverage reconciliation</h2>
+<p><span class="badge ok">coverage: VERIFIED</span></p>
+<p>fixed fake coverage note for the golden fixture.</p>
+<table>
+<tr><th>Flow provider events</th><td>10</td></tr><tr><th>Flow provider bytes</th><td>1000</td></tr><tr><th>Envoy provider-bound requests</th><td>8</td></tr><tr><th>Gate provider-egress Records</th><td>8</td></tr><tr><th>Matched</th><td>7</td></tr><tr><th>Coverage gaps (provider requests without a Record)</th><td>1</td></tr><tr><th>Records without Envoy evidence</th><td>0</td></tr><tr><th>Flow events without Envoy evidence</th><td>0</td></tr><tr><th>Envoy requests without flow evidence</th><td>1</td></tr><tr><th>Fail-open uninspected minutes</th><td>2</td></tr><tr><th>Unexplained Provider requests/events</th><td>1</td></tr><tr><th>Zero unexplained Provider requests</th><td>false</td></tr><tr><th>Coverage</th><td>87.50%</td></tr></table>
+<table>
+<tr><th>Provider path</th><th>Requests</th></tr>
+<tr><td><code>/v1/responses</code></td><td>8</td></tr>
+</table>
+<table>
+<tr><th>Fail-open minute</th><th>Requests</th></tr>
+<tr><td><code>2026-07-27T10:00</code></td><td>1</td></tr>
+</table>
+<table>
+<tr><th>Provider flow destination</th><th>Flows</th></tr>
+<tr><td><code>api.openai.com</code></td><td>8</td></tr>
+</table>
+<h2>Inspected bytes</h2>
+<p><span class="badge ok">VERIFIED</span></p>
+<table>
+<tr><th>Inspected provider-egress bytes</th><td>900</td></tr><tr><th>Provider egress bytes</th><td>1000</td></tr><tr><th>Flow provider bytes</th><td>1000</td></tr><tr><th>Uninspected egress bytes</th><td>100</td></tr><tr><th>Inspected-byte %</th><td>90.00%</td></tr><tr><th>Records missing byte counts</th><td>0</td></tr></table>
+<p>fixed fake byte-inspection note for the golden fixture.</p>
+</body></html>

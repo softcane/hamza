@@ -1,0 +1,37 @@
+{
+  "ruleId": "easypost-test-api-token",
+  "truePositives": [
+    "  \"EZTKToken\" =\u003e \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "$EZTKToken .= \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "\u003cEZTKToken\u003e\n    EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\n\u003c/EZTKToken\u003e",
+    "EZTKGzHUfvnmkrw6Yv0DV2G6C9ImaY2oMrCXjxsdlhC042mwGLtrEsJJP6",
+    "EZTKJSc9W6ntOvUUTxzShPveNqImaxvQly3RRmBQQNRfqhlemhLEUMM4y3",
+    "EZTKToken := \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTKToken := `EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2`",
+    "EZTKToken = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTKToken = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTKToken = 'EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2'",
+    "EZTKToken = EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2",
+    "EZTKToken=\"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTKToken=EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2",
+    "EZTK_TOKEN :::= \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_TOKEN ::= \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_TOKEN := \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_TOKEN = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_TOKEN ?= \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_token: \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "EZTK_token: 'EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2'",
+    "EZTK_token: EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2",
+    "String EZTKToken = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\";",
+    "System.setProperty(\"EZTK_TOKEN\", \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\")",
+    "example.com?t=EZTKU4zPVGaAR9iD1JPc5bzWOOM8asnfBw7DGCS2GPPEhDF3XrFq2qGXgN\u0026q=1",
+    "string EZTKToken = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\";",
+    "var EZTKToken = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "var EZTKToken string = \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"",
+    "{\n    \"EZTK_token\": \"EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\"\n}",
+    "{\"config.ini\": \"EZTK_TOKEN=EZTKils6l4hjfxrLucUjPTsmGXArTxzNh3d5sBSjJmkTTK9l1mTm2Y9wm2\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "...6wqX6fNUXA/rYqRvfQ+EZTKGqQRiRyqAFRQshGPWOIAwNWGORfKHSBnVNFtVmWYoW6PH23lkqbbDWep95C/3VmWq/edti6..."
+  ]
+}

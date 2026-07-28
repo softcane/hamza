@@ -1,0 +1,32 @@
+{
+  "ruleId": "twitch-api-token",
+  "truePositives": [
+    "  \"twitchToken\" =\u003e \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "$twitchToken .= \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "\u003ctwitchToken\u003e\n    dljkclotqsvyynxujjlhflvi26stye\n\u003c/twitchToken\u003e",
+    "String twitchToken = \"dljkclotqsvyynxujjlhflvi26stye\";",
+    "System.setProperty(\"TWITCH_TOKEN\", \"dljkclotqsvyynxujjlhflvi26stye\")",
+    "string twitchToken = \"dljkclotqsvyynxujjlhflvi26stye\";",
+    "twitchToken := \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitchToken := `dljkclotqsvyynxujjlhflvi26stye`",
+    "twitchToken = \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitchToken = \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitchToken = 'dljkclotqsvyynxujjlhflvi26stye'",
+    "twitchToken = dljkclotqsvyynxujjlhflvi26stye",
+    "twitchToken=\"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitchToken=dljkclotqsvyynxujjlhflvi26stye",
+    "twitch_TOKEN :::= \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_TOKEN ::= \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_TOKEN := \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_TOKEN = \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_TOKEN ?= \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_token: \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "twitch_token: 'dljkclotqsvyynxujjlhflvi26stye'",
+    "twitch_token: dljkclotqsvyynxujjlhflvi26stye",
+    "var twitchToken = \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "var twitchToken string = \"dljkclotqsvyynxujjlhflvi26stye\"",
+    "{\n    \"twitch_token\": \"dljkclotqsvyynxujjlhflvi26stye\"\n}",
+    "{\"config.ini\": \"TWITCH_TOKEN=dljkclotqsvyynxujjlhflvi26stye\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

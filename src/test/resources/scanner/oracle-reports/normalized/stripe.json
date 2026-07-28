@@ -1,0 +1,9 @@
+[
+  {
+    "RuleID": "stripe-access-token",
+    "StartLine": 1,
+    "EndLine": 1,
+    "StartColumn": 59,
+    "EndColumn": 91
+  }
+]

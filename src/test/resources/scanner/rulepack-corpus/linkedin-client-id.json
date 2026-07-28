@@ -1,0 +1,32 @@
+{
+  "ruleId": "linkedin-client-id",
+  "truePositives": [
+    "  \"linkedinToken\" =\u003e \"ybhtcqfx2w78bd\"",
+    "$linkedinToken .= \"ybhtcqfx2w78bd\"",
+    "\u003clinkedinToken\u003e\n    ybhtcqfx2w78bd\n\u003c/linkedinToken\u003e",
+    "String linkedinToken = \"ybhtcqfx2w78bd\";",
+    "System.setProperty(\"LINKEDIN_TOKEN\", \"ybhtcqfx2w78bd\")",
+    "linkedinToken := \"ybhtcqfx2w78bd\"",
+    "linkedinToken := `ybhtcqfx2w78bd`",
+    "linkedinToken = \"ybhtcqfx2w78bd\"",
+    "linkedinToken = \"ybhtcqfx2w78bd\"",
+    "linkedinToken = 'ybhtcqfx2w78bd'",
+    "linkedinToken = ybhtcqfx2w78bd",
+    "linkedinToken=\"ybhtcqfx2w78bd\"",
+    "linkedinToken=ybhtcqfx2w78bd",
+    "linkedin_TOKEN :::= \"ybhtcqfx2w78bd\"",
+    "linkedin_TOKEN ::= \"ybhtcqfx2w78bd\"",
+    "linkedin_TOKEN := \"ybhtcqfx2w78bd\"",
+    "linkedin_TOKEN = \"ybhtcqfx2w78bd\"",
+    "linkedin_TOKEN ?= \"ybhtcqfx2w78bd\"",
+    "linkedin_token: \"ybhtcqfx2w78bd\"",
+    "linkedin_token: 'ybhtcqfx2w78bd'",
+    "linkedin_token: ybhtcqfx2w78bd",
+    "string linkedinToken = \"ybhtcqfx2w78bd\";",
+    "var linkedinToken = \"ybhtcqfx2w78bd\"",
+    "var linkedinToken string = \"ybhtcqfx2w78bd\"",
+    "{\n    \"linkedin_token\": \"ybhtcqfx2w78bd\"\n}",
+    "{\"config.ini\": \"LINKEDIN_TOKEN=ybhtcqfx2w78bd\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

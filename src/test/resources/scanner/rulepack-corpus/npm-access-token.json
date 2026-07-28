@@ -1,0 +1,32 @@
+{
+  "ruleId": "npm-access-token",
+  "truePositives": [
+    "  \"npmAccessTokenToken\" =\u003e \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "$npmAccessTokenToken .= \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "\u003cnpmAccessTokenToken\u003e\n    npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\n\u003c/npmAccessTokenToken\u003e",
+    "String npmAccessTokenToken = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\";",
+    "System.setProperty(\"NPMACCESSTOKEN_TOKEN\", \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\")",
+    "npmAccessTokenToken := \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessTokenToken := `npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c`",
+    "npmAccessTokenToken = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessTokenToken = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessTokenToken = 'npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c'",
+    "npmAccessTokenToken = npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c",
+    "npmAccessTokenToken=\"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessTokenToken=npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c",
+    "npmAccessToken_TOKEN :::= \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_TOKEN ::= \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_TOKEN := \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_TOKEN = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_TOKEN ?= \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_token: \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "npmAccessToken_token: 'npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c'",
+    "npmAccessToken_token: npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c",
+    "string npmAccessTokenToken = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\";",
+    "var npmAccessTokenToken = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "var npmAccessTokenToken string = \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"",
+    "{\n    \"npmAccessToken_token\": \"npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\"\n}",
+    "{\"config.ini\": \"NPMACCESSTOKEN_TOKEN=npm_ws3c38adbd8967mtw1n9ei5pcqa6ab9qvh8c\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

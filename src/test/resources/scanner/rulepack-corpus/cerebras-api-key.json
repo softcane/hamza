@@ -1,0 +1,35 @@
+{
+  "ruleId": "cerebras-api-key",
+  "truePositives": [
+    "  \"cerebrasToken\" =\u003e \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "$cerebrasToken .= \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "\u003ccerebrasToken\u003e\n    csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\n\u003c/cerebrasToken\u003e",
+    "String cerebrasToken = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\";",
+    "System.setProperty(\"CEREBRAS_TOKEN\", \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\")",
+    "cerebrasToken := \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebrasToken := `csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj`",
+    "cerebrasToken = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebrasToken = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebrasToken = 'csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj'",
+    "cerebrasToken = csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj",
+    "cerebrasToken=\"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebrasToken=csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj",
+    "cerebras_TOKEN :::= \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_TOKEN ::= \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_TOKEN := \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_TOKEN = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_TOKEN ?= \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_token: \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "cerebras_token: 'csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj'",
+    "cerebras_token: csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj",
+    "string cerebrasToken = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\";",
+    "var cerebrasToken = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "var cerebrasToken string = \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"",
+    "{\n    \"cerebras_token\": \"csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\"\n}",
+    "{\"config.ini\": \"CEREBRAS_TOKEN=csk-cu6rnnzq5cbq59j7dlrap3wp553e4m0qnlx60u7k8pf1c1lj\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": [
+    "bsk-6nptf4w5cx36fw58t3hkx48jvm52wm693pex5tjm29kn55yt",
+    "csk-6nptf4w5cx36fw58t3hkx"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "ruleId": "datadog-application-key",
+  "truePositives": [
+    "DATADOG_APPLICATION_KEY=abcDEF0123456789abcDEF0123456789abcDEF01"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "kucoin-access-token",
+  "truePositives": [
+    "  \"kucoinToken\" =\u003e \"f949e1a25460627830c0cc71\"",
+    "$kucoinToken .= \"f949e1a25460627830c0cc71\"",
+    "\u003ckucoinToken\u003e\n    f949e1a25460627830c0cc71\n\u003c/kucoinToken\u003e",
+    "String kucoinToken = \"f949e1a25460627830c0cc71\";",
+    "System.setProperty(\"KUCOIN_TOKEN\", \"f949e1a25460627830c0cc71\")",
+    "kucoinToken := \"f949e1a25460627830c0cc71\"",
+    "kucoinToken := `f949e1a25460627830c0cc71`",
+    "kucoinToken = \"f949e1a25460627830c0cc71\"",
+    "kucoinToken = \"f949e1a25460627830c0cc71\"",
+    "kucoinToken = 'f949e1a25460627830c0cc71'",
+    "kucoinToken = f949e1a25460627830c0cc71",
+    "kucoinToken=\"f949e1a25460627830c0cc71\"",
+    "kucoinToken=f949e1a25460627830c0cc71",
+    "kucoin_TOKEN :::= \"f949e1a25460627830c0cc71\"",
+    "kucoin_TOKEN ::= \"f949e1a25460627830c0cc71\"",
+    "kucoin_TOKEN := \"f949e1a25460627830c0cc71\"",
+    "kucoin_TOKEN = \"f949e1a25460627830c0cc71\"",
+    "kucoin_TOKEN ?= \"f949e1a25460627830c0cc71\"",
+    "kucoin_token: \"f949e1a25460627830c0cc71\"",
+    "kucoin_token: 'f949e1a25460627830c0cc71'",
+    "kucoin_token: f949e1a25460627830c0cc71",
+    "string kucoinToken = \"f949e1a25460627830c0cc71\";",
+    "var kucoinToken = \"f949e1a25460627830c0cc71\"",
+    "var kucoinToken string = \"f949e1a25460627830c0cc71\"",
+    "{\n    \"kucoin_token\": \"f949e1a25460627830c0cc71\"\n}",
+    "{\"config.ini\": \"KUCOIN_TOKEN=f949e1a25460627830c0cc71\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

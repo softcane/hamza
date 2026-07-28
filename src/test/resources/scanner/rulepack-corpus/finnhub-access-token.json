@@ -1,0 +1,32 @@
+{
+  "ruleId": "finnhub-access-token",
+  "truePositives": [
+    "  \"finnhubToken\" =\u003e \"g4u3s4p4e9zgqvosjkju\"",
+    "$finnhubToken .= \"g4u3s4p4e9zgqvosjkju\"",
+    "\u003cfinnhubToken\u003e\n    g4u3s4p4e9zgqvosjkju\n\u003c/finnhubToken\u003e",
+    "String finnhubToken = \"g4u3s4p4e9zgqvosjkju\";",
+    "System.setProperty(\"FINNHUB_TOKEN\", \"g4u3s4p4e9zgqvosjkju\")",
+    "finnhubToken := \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhubToken := `g4u3s4p4e9zgqvosjkju`",
+    "finnhubToken = \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhubToken = \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhubToken = 'g4u3s4p4e9zgqvosjkju'",
+    "finnhubToken = g4u3s4p4e9zgqvosjkju",
+    "finnhubToken=\"g4u3s4p4e9zgqvosjkju\"",
+    "finnhubToken=g4u3s4p4e9zgqvosjkju",
+    "finnhub_TOKEN :::= \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_TOKEN ::= \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_TOKEN := \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_TOKEN = \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_TOKEN ?= \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_token: \"g4u3s4p4e9zgqvosjkju\"",
+    "finnhub_token: 'g4u3s4p4e9zgqvosjkju'",
+    "finnhub_token: g4u3s4p4e9zgqvosjkju",
+    "string finnhubToken = \"g4u3s4p4e9zgqvosjkju\";",
+    "var finnhubToken = \"g4u3s4p4e9zgqvosjkju\"",
+    "var finnhubToken string = \"g4u3s4p4e9zgqvosjkju\"",
+    "{\n    \"finnhub_token\": \"g4u3s4p4e9zgqvosjkju\"\n}",
+    "{\"config.ini\": \"FINNHUB_TOKEN=g4u3s4p4e9zgqvosjkju\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

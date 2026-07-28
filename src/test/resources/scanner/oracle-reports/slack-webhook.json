@@ -1,0 +1,22 @@
+[
+ {
+  "RuleID": "slack-webhook-url",
+  "Description": "Discovered a Slack Webhook, which could lead to unauthorized message posting and data leakage in Slack channels.",
+  "StartLine": 1,
+  "EndLine": 1,
+  "StartColumn": 48,
+  "EndColumn": 124,
+  "Match": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+  "Secret": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+  "File": "",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 3.4009645,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [],
+  "Fingerprint": ":slack-webhook-url:1"
+ }
+]

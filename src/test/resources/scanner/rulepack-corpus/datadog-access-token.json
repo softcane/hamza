@@ -1,0 +1,32 @@
+{
+  "ruleId": "datadog-access-token",
+  "truePositives": [
+    "  \"datadogToken\" =\u003e \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "$datadogToken .= \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "\u003cdatadogToken\u003e\n    ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\n\u003c/datadogToken\u003e",
+    "String datadogToken = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\";",
+    "System.setProperty(\"DATADOG_TOKEN\", \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\")",
+    "datadogToken := \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadogToken := `ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk`",
+    "datadogToken = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadogToken = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadogToken = 'ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk'",
+    "datadogToken = ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk",
+    "datadogToken=\"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadogToken=ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk",
+    "datadog_TOKEN :::= \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_TOKEN ::= \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_TOKEN := \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_TOKEN = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_TOKEN ?= \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_token: \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "datadog_token: 'ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk'",
+    "datadog_token: ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk",
+    "string datadogToken = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\";",
+    "var datadogToken = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "var datadogToken string = \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"",
+    "{\n    \"datadog_token\": \"ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\"\n}",
+    "{\"config.ini\": \"DATADOG_TOKEN=ibymlymo2u3gmuuip2vlycg2mpo6m80zljb0vxrk\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

@@ -1,0 +1,32 @@
+{
+  "ruleId": "asana-client-id",
+  "truePositives": [
+    "  \"asanaToken\" =\u003e \"5763128420754651\"",
+    "$asanaToken .= \"5763128420754651\"",
+    "\u003casanaToken\u003e\n    5763128420754651\n\u003c/asanaToken\u003e",
+    "String asanaToken = \"5763128420754651\";",
+    "System.setProperty(\"ASANA_TOKEN\", \"5763128420754651\")",
+    "asanaToken := \"5763128420754651\"",
+    "asanaToken := `5763128420754651`",
+    "asanaToken = \"5763128420754651\"",
+    "asanaToken = \"5763128420754651\"",
+    "asanaToken = '5763128420754651'",
+    "asanaToken = 5763128420754651",
+    "asanaToken=\"5763128420754651\"",
+    "asanaToken=5763128420754651",
+    "asana_TOKEN :::= \"5763128420754651\"",
+    "asana_TOKEN ::= \"5763128420754651\"",
+    "asana_TOKEN := \"5763128420754651\"",
+    "asana_TOKEN = \"5763128420754651\"",
+    "asana_TOKEN ?= \"5763128420754651\"",
+    "asana_token: \"5763128420754651\"",
+    "asana_token: '5763128420754651'",
+    "asana_token: 5763128420754651",
+    "string asanaToken = \"5763128420754651\";",
+    "var asanaToken = \"5763128420754651\"",
+    "var asanaToken string = \"5763128420754651\"",
+    "{\n    \"asana_token\": \"5763128420754651\"\n}",
+    "{\"config.ini\": \"ASANA_TOKEN=5763128420754651\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

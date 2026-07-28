@@ -1,0 +1,22 @@
+[
+ {
+  "RuleID": "gitlab-pat",
+  "Description": "Identified a GitLab Personal Access Token, risking unauthorized access to GitLab repositories and codebase exposure.",
+  "StartLine": 1,
+  "EndLine": 1,
+  "StartColumn": 58,
+  "EndColumn": 83,
+  "Match": "glpat-ABCDEFGHIJKLMNOP1234",
+  "Secret": "glpat-ABCDEFGHIJKLMNOP1234",
+  "File": "",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 4.70044,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [],
+  "Fingerprint": ":gitlab-pat:1"
+ }
+]

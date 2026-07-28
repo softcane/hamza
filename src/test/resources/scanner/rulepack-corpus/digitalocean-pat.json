@@ -1,0 +1,32 @@
+{
+  "ruleId": "digitalocean-pat",
+  "truePositives": [
+    "  \"doToken\" =\u003e \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "$doToken .= \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "\u003cdoToken\u003e\n    dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\n\u003c/doToken\u003e",
+    "String doToken = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\";",
+    "System.setProperty(\"DO_TOKEN\", \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\")",
+    "doToken := \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "doToken := `dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133`",
+    "doToken = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "doToken = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "doToken = 'dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133'",
+    "doToken = dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133",
+    "doToken=\"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "doToken=dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133",
+    "do_TOKEN :::= \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_TOKEN ::= \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_TOKEN := \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_TOKEN = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_TOKEN ?= \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_token: \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "do_token: 'dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133'",
+    "do_token: dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133",
+    "string doToken = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\";",
+    "var doToken = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "var doToken string = \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"",
+    "{\n    \"do_token\": \"dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\"\n}",
+    "{\"config.ini\": \"DO_TOKEN=dop_v1_c613e27c6c6527fbd4f21421c710cf528111a773a2db2fb7fd2c759b5f013133\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

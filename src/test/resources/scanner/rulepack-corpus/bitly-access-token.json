@@ -1,0 +1,10 @@
+{
+  "ruleId": "bitly-access-token",
+  "truePositives": [
+    "bitly_token = 20e9817b9c5ddde1b0cec7622bfc557dbc823791"
+  ],
+  "falsePositives": [
+    "bitly_token = 20e9817b9c5ddde1b0cec7622bfc557dbc82379",
+    "token = 20e9817b9c5ddde1b0cec7622bfc557dbc823791"
+  ]
+}

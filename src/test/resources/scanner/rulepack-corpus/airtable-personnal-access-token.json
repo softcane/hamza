@@ -1,0 +1,32 @@
+{
+  "ruleId": "airtable-personnal-access-token",
+  "truePositives": [
+    "  \"airtableToken\" =\u003e \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "$airtableToken .= \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "\u003cairtableToken\u003e\n    pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\n\u003c/airtableToken\u003e",
+    "String airtableToken = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\";",
+    "System.setProperty(\"AIRTABLE_TOKEN\", \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\")",
+    "airtableToken := \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtableToken := `pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35`",
+    "airtableToken = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtableToken = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtableToken = 'pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35'",
+    "airtableToken = pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35",
+    "airtableToken=\"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtableToken=pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35",
+    "airtable_TOKEN :::= \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_TOKEN ::= \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_TOKEN := \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_TOKEN = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_TOKEN ?= \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_token: \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "airtable_token: 'pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35'",
+    "airtable_token: pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35",
+    "string airtableToken = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\";",
+    "var airtableToken = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "var airtableToken string = \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"",
+    "{\n    \"airtable_token\": \"pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\"\n}",
+    "{\"config.ini\": \"AIRTABLE_TOKEN=pat506xd9d3lcanat.6ceafd6afc26c609baf2bdb4f6d23cb06bafaf90ecb4ec20d62d0a4480065e35\\nBACKUP_ENABLED=true\"}"
+  ],
+  "falsePositives": []
+}

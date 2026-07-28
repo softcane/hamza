@@ -10,10 +10,12 @@ import java.util.List;
  * masked body. The Masker owns span arithmetic only: it decides nothing about which value
  * gets which Placeholder, so the same value can carry one identity across a whole body.
  *
- * <p>Overlapping spans are merged — the earlier span wins and the later one is dropped
- * rather than nested, because a Placeholder written inside another Placeholder would not
- * survive the rescan. The matched value never appears in the output (content-free
- * invariant).
+ * <p>Overlapping spans are merged, never nested: the earlier span owns the shared text and
+ * the later one is clamped to what is left of it, because a Placeholder written inside
+ * another Placeholder would not survive the rescan. A span the merge leaves with no text
+ * of its own still renders its Placeholder, next to the one that covered it — dropping it
+ * would leave a detected value with a Finding and nothing on the wire to show for it. The
+ * matched value never appears in the output (content-free invariant).
  */
 @Component
 public class Masker {
@@ -36,7 +38,7 @@ public class Masker {
         }
     }
 
-    /** Mask the given spans from {@code text}. Overlapping spans are merged. */
+    /** Mask the given spans from {@code text}. Overlapping spans are merged, never dropped. */
     public String mask(String text, List<Replacement> replacements) {
         if (replacements == null || replacements.isEmpty()) {
             return text;
@@ -48,15 +50,25 @@ public class Masker {
 
         StringBuilder out = new StringBuilder(text.length());
         int cursor = 0;
+        String previous = null;
         for (Replacement r : sorted) {
             if (r.end() <= cursor) {
-                continue; // fully covered by an earlier overlapping mask
+                // Fully inside a span already masked: its text is gone, but the mask it
+                // stands for must still be visible, so the Placeholder is emitted beside
+                // the covering one instead of being swallowed. An identical span already
+                // rendered by that mask adds nothing and is not repeated.
+                if (!r.placeholder().equals(previous)) {
+                    out.append(r.placeholder());
+                    previous = r.placeholder();
+                }
+                continue;
             }
             int start = Math.max(r.start(), cursor);
             if (start > cursor) {
                 out.append(text, cursor, start);
             }
             out.append(r.placeholder());
+            previous = r.placeholder();
             cursor = r.end();
         }
         if (cursor < text.length()) {

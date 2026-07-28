@@ -84,11 +84,15 @@ static_resources:
                       allow_mode_override: true
                       processing_mode:
                         request_header_mode: SEND
-                        # BUFFERED would return a local 413 when the route buffer cap is
-                        # exceeded. BUFFERED_PARTIAL sends only the prefix to hamza-core;
-                        # hamza-core scans that prefix and marks the uninspected tail
-                        # with an `oversize` Finding.
-                        request_body_mode: BUFFERED_PARTIAL
+                        # BUFFERED sends the complete body to hamza-core, which is what
+                        # makes MASK reachable: a partial body cannot be safely rewritten,
+                        # so under BUFFERED_PARTIAL every real Agent Turn (150-200 KiB,
+                        # well past a 64 KiB prefix) degraded to a FLAG-only `oversize`
+                        # Finding and egressed unmasked. The cost is that a body above the
+                        # route cap below now returns a local 413 instead of being
+                        # forwarded partly inspected — the Gate fails loud rather than
+                        # leaking. Matches managed_listener, which has always run BUFFERED.
+                        request_body_mode: BUFFERED
                         response_header_mode: SEND
                         response_body_mode: STREAMED
                   - name: envoy.filters.http.header_mutation
@@ -111,12 +115,12 @@ static_resources:
                           direct_response:
                             status: 200
                             body: { inline_string: "ready\n" }
-                        # Everything else is forwarded to the Provider upstream.
-                        # For a real Provider: set host_rewrite_literal to the real host
-                        # (e.g. api.openai.com) and give the cluster a TLS transport_socket.
+                        # Everything else is forwarded to a Provider upstream, selected by
+                        # path so Claude Code and Codex can share this listener. The 16 MiB
+                        # buffer admits a whole Agent Turn so ext_proc can mask it.
                         # Claude Code -> Anthropic Messages API.
                         - match: { prefix: "/v1/messages" }
-                          per_request_buffer_limit_bytes: 65536
+                          per_request_buffer_limit_bytes: 16777216
                           request_headers_to_add:
                             - header:
                                 key: accept-encoding
@@ -128,7 +132,7 @@ static_resources:
                             timeout: 300s
                         # Codex over ChatGPT auth -> chatgpt.com backend.
                         - match: { prefix: "/backend-api" }
-                          per_request_buffer_limit_bytes: 65536
+                          per_request_buffer_limit_bytes: 16777216
                           request_headers_to_add:
                             - header:
                                 key: accept-encoding
@@ -140,7 +144,7 @@ static_resources:
                             timeout: 300s
                         # Codex over an OpenAI API key -> Responses API.
                         - match: { prefix: "/v1/responses" }
-                          per_request_buffer_limit_bytes: 65536
+                          per_request_buffer_limit_bytes: 16777216
                           request_headers_to_add:
                             - header:
                                 key: accept-encoding
@@ -152,7 +156,7 @@ static_resources:
                             timeout: 300s
                         # Catch-all: CLI connectivity probes (HEAD /api/hello) and token counting.
                         - match: { prefix: "/" }
-                          per_request_buffer_limit_bytes: 65536
+                          per_request_buffer_limit_bytes: 16777216
                           request_headers_to_add:
                             - header:
                                 key: accept-encoding

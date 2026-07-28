@@ -67,14 +67,24 @@ hamza:
     # Default Posture: observe before enforce. Detection runs on the body only; the
     # provider Authorization header is never scanned, flagged, or masked (§6.8).
     posture: ${HAMZA_POSTURE:FLAG}
-    # Envoy uses the same default cap with BUFFERED_PARTIAL. Larger request bodies
-    # have their buffered prefix inspected, keep an oversize Finding for the
-    # uninspected tail, and are never 413'd by the Gate.
-    max-body-bytes: ${HAMZA_POLICY_MAX_BODY_BYTES:65536}
+    # A Turn above this cap degrades to a FLAG-only oversize Finding and egresses
+    # unmasked. Real Agent Turns are 150-200 KiB, so a 64 KiB cap meant MASK never
+    # applied to one: the whole point of the Gate was unreachable in normal use.
+    # 1 MiB admits a real Turn with headroom. Larger bodies are still scanned
+    # end-to-end when stream-oversize is on, just not masked, and are never 413'd.
+    max-body-bytes: ${HAMZA_POLICY_MAX_BODY_BYTES:1048576}
     control-plane-paths:
       - /backend-api/codex/responses/compact
     # Per-rule Action overrides, e.g. aws-access-token: BLOCK. Empty = use posture.
-    rule-actions: {}
+    #
+    # url is deliberately FLAG, not MASK. A URL is not a credential, and Agent Turns
+    # carry protocol URLs in places where rewriting one changes the request's meaning
+    # even though the JSON stays well-formed: masking the `$schema` URL inside Claude
+    # Code's tool definitions makes Anthropic reject the Turn with
+    # `tools.0.custom.input_schema: JSON schema is invalid`. Verified live 2026-07-28.
+    # Detection is unaffected — URL hits are still recorded as Findings.
+    rule-actions:
+      url: FLAG
     # Stream over-cap bodies chunk by chunk and scan them end-to-end (overlap-aware)
     # instead of prefix-only. Default ON since M7 (ADR 0014, live-verified); set false
     # to fall back to the ADR 0010 prefix-only behavior.

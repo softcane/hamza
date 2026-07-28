@@ -33,8 +33,9 @@ services:
       # Stream over-cap bodies to the Gate and scan them end-to-end (default ON,
       # ADR 0014). Set false to fall back to prefix-only inspection.
       HAMZA_STREAM_OVERSIZE: ${HAMZA_STREAM_OVERSIZE:-true}
-      # Request-body inspection cap; larger bodies get prefix-only or streamed scan.
-      HAMZA_POLICY_MAX_BODY_BYTES: ${HAMZA_POLICY_MAX_BODY_BYTES:-65536}
+      # Request-body inspection cap. Must admit a whole Agent Turn (150-200 KiB) or
+      # MASK never applies to one; larger bodies get prefix-only or streamed scan.
+      HAMZA_POLICY_MAX_BODY_BYTES: ${HAMZA_POLICY_MAX_BODY_BYTES:-1048576}
       # Generic escape hatch for ad-hoc config (e.g. per-rule Action overrides in
       # live tests). Valid JSON; {} is a no-op.
       SPRING_APPLICATION_JSON: ${SPRING_APPLICATION_JSON:-{}}

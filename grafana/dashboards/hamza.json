@@ -1,120 +1,324 @@
 {
   "uid": "hamza-overview",
-  "title": "Hamza — the Gate",
-  "tags": ["hamza"],
+  "title": "Hamza \u2014 the Gate",
+  "tags": [
+    "hamza"
+  ],
   "timezone": "browser",
   "schemaVersion": 39,
-  "version": 1,
+  "version": 2,
   "refresh": "5s",
-  "time": { "from": "now-15m", "to": "now" },
-  "templating": { "list": [] },
-  "annotations": { "list": [] },
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "annotations": {
+    "list": []
+  },
   "panels": [
     {
       "id": 1,
       "type": "stat",
-      "title": "Requests (total, since start)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 0 },
+      "title": "Policy violations (total)",
+      "description": "Every Finding the Gate recorded, all rules and actions.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
       "targets": [
-        { "refId": "A", "expr": "sum(hamza_requests_total) or vector(0)", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum(hamza_policy_violations_total) or vector(0)",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 2,
       "type": "stat",
-      "title": "Cache hit ratio (cached / input, since start)",
-      "description": "Cumulative cached input tokens divided by cumulative input tokens.",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "fieldConfig": { "defaults": { "unit": "percentunit", "min": 0, "max": 1 }, "overrides": [] },
-      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 0 },
+      "title": "Egress blocked (total)",
+      "description": "Turns the Gate refused to forward to a Provider.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
       "targets": [
-        { "refId": "A", "expr": "(sum(hamza_tokens_total{kind=\"cached\"}) or vector(0)) / clamp_min((sum(hamza_tokens_total{kind=\"input\"}) or vector(0)), 1)", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum(hamza_egress_blocked_total) or vector(0)",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 3,
       "type": "stat",
-      "title": "p95 Turn latency (since start)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "fieldConfig": { "defaults": { "unit": "s" }, "overrides": [] },
-      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 0 },
+      "title": "Values masked (total)",
+      "description": "Findings actually rewritten before Egress.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
       "targets": [
-        { "refId": "A", "expr": "histogram_quantile(0.95, sum by (le) (hamza_request_duration_seconds_bucket))", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum(hamza_policy_violations_total{action=\"MASK\"}) or vector(0)",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 4,
       "type": "stat",
-      "title": "Egress blocked (total, since start)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "steps": [ { "color": "green", "value": null }, { "color": "red", "value": 1 } ] } }, "overrides": [] },
-      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 0 },
+      "title": "Flagged only, not masked (total)",
+      "description": "Detected but egressed unchanged \u2014 under FLAG posture, or oversize Turns the Gate cannot safely rewrite.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
       "targets": [
-        { "refId": "A", "expr": "sum(hamza_egress_blocked_total) or vector(0)", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum(hamza_policy_violations_total{action=\"FLAG\"}) or vector(0)",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 5,
       "type": "timeseries",
-      "title": "Request rate by status",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 5 },
+      "title": "Policy violations by rule (cumulative)",
+      "description": "The headline security panel: which detectors are firing.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (status) (rate(hamza_requests_total[$__rate_interval]))", "legendFormat": "{{status}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum by (rule) (hamza_policy_violations_total)",
+          "legendFormat": "{{rule}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 6,
       "type": "timeseries",
-      "title": "Tokens by kind",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 5 },
+      "title": "Policy violations by action (cumulative)",
+      "description": "What the Gate did about them. A large FLAG share against a MASK posture means Turns are bypassing enforcement, usually as oversize.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (kind) (rate(hamza_tokens_total[$__rate_interval]))", "legendFormat": "{{kind}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum by (action) (hamza_policy_violations_total)",
+          "legendFormat": "{{action}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 7,
       "type": "timeseries",
-      "title": "Token volume by model & kind (cumulative)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 13 },
+      "title": "Violation rate by rule",
+      "description": "Detection rate over time, for spotting a burst.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 13
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (model, kind) (hamza_tokens_total)", "legendFormat": "{{model}} / {{kind}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum by (rule) (rate(hamza_policy_violations_total[$__rate_interval]))",
+          "legendFormat": "{{rule}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 8,
       "type": "timeseries",
-      "title": "Policy violations by rule (cumulative)",
-      "description": "The headline security panel.",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 8, "w": 6, "x": 12, "y": 13 },
+      "title": "Egress blocked by rule",
+      "description": "Which rule stopped a Turn from reaching a Provider.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (rule) (hamza_policy_violations_total)", "legendFormat": "{{rule}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum by (rule) (hamza_egress_blocked_total)",
+          "legendFormat": "{{rule}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 9,
       "type": "timeseries",
-      "title": "Model fallback & stream errors (cumulative)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "gridPos": { "h": 8, "w": 6, "x": 18, "y": 13 },
+      "title": "Requests by status",
+      "description": "Gate throughput and Turn outcomes.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 0,
+        "y": 21
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (requested, served) (hamza_model_fallback_total)", "legendFormat": "fallback {{requested}}->{{served}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } },
-        { "refId": "B", "expr": "sum by (phase) (hamza_ext_proc_stream_errors_total)", "legendFormat": "stream-error {{phase}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "sum by (status) (rate(hamza_requests_total[$__rate_interval]))",
+          "legendFormat": "{{status}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     },
     {
       "id": 10,
       "type": "timeseries",
-      "title": "Context fill by model (avg %, since start)",
-      "datasource": { "type": "prometheus", "uid": "hamza-prometheus" },
-      "fieldConfig": { "defaults": { "unit": "percent", "min": 0, "max": 100 }, "overrides": [] },
-      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 21 },
+      "title": "Gate latency p95",
+      "description": "Inspection overhead the Gate adds to a Turn.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 8,
+        "y": 21
+      },
       "targets": [
-        { "refId": "A", "expr": "sum by (model) (hamza_context_fill_percent_sum) / clamp_min(sum by (model) (hamza_context_fill_percent_count), 1)", "legendFormat": "{{model}}", "datasource": { "type": "prometheus", "uid": "hamza-prometheus" } }
+        {
+          "refId": "A",
+          "expr": "histogram_quantile(0.95, sum by (le) (hamza_request_duration_seconds_bucket))",
+          "legendFormat": "p95",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "timeseries",
+      "title": "Gate faults: stream errors & model fallback",
+      "description": "ext_proc failures mean Turns may have passed uninspected under fail-open.",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hamza-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 16,
+        "y": 21
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum by (phase) (hamza_ext_proc_stream_errors_total)",
+          "legendFormat": "stream error {{phase}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        },
+        {
+          "refId": "B",
+          "expr": "sum by (requested, served) (hamza_model_fallback_total)",
+          "legendFormat": "fallback {{requested}} -> {{served}}",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "hamza-prometheus"
+          }
+        }
       ]
     }
   ]

@@ -34,6 +34,12 @@ import java.util.UUID;
  * occurrences of one value share a Placeholder and two different values never collide —
  * the property a model needs to keep reasoning about the request.
  *
+ * <p>The body is masked as it sits on the wire, so a JSON body is masked through
+ * {@link JsonValueSpans}: every span is clamped to the one string value that holds it, and
+ * the rewritten body is re-parsed before it may egress. A body this route cannot prove is
+ * valid JSON is never sent — it degrades to a {@link #MASK_UNVERIFIED_RULE} Finding on the
+ * unmasked body, because a corrupt body reaching a Provider fails the whole Turn.
+ *
  * <p>A Presidio gap on this route degrades rather than blocks: the Turn proceeds on the
  * detectors that did complete and the incomplete run is recorded. This route makes no
  * Mask-and-Continue claim, so a slow analyzer must not abort a live Agent session.
@@ -43,6 +49,9 @@ import java.util.UUID;
  */
 @Component
 public class PolicyEngine {
+
+    /** Recorded when a planned Mask could not be proven to leave the body valid. */
+    public static final String MASK_UNVERIFIED_RULE = "mask-unverified";
 
     private final SecretDetector detector;
     private final Masker masker;
@@ -115,8 +124,9 @@ public class PolicyEngine {
         }
 
         List<Finding> findings = new ArrayList<>(matches.size());
-        // Every span that will be replaced, paired with the Placeholder replacing it.
-        List<Masker.Replacement> replacements = new ArrayList<>();
+        // Every span that may be replaced, in detection order. Placeholders are minted only
+        // if the Turn really masks: a BLOCK never rewrites the body, so it never mints one.
+        List<MaskCandidate> candidates = new ArrayList<>();
         Set<String> blockingRules = new LinkedHashSet<>();
         Action effective = Action.FLAG;
         // One Mask Scope per body. Identity is per value, so a repeated value renders the
@@ -136,8 +146,8 @@ public class PolicyEngine {
             if (action == Action.BLOCK) {
                 blockingRules.add(m.rule());
             } else if (action == Action.MASK) {
-                replacements.add(replacement(scopeId, PlaceholderFamily.SECRET,
-                        SecretDetector.DETECTOR_ID, m.rule(), text, m.start(), m.end()));
+                candidates.add(new MaskCandidate(findings.size() - 1, PlaceholderFamily.SECRET,
+                        SecretDetector.DETECTOR_ID, m.rule(), m.start(), m.end()));
             }
         }
         findings.addAll(edm.findings());
@@ -150,9 +160,8 @@ public class PolicyEngine {
             if (span.action() == Action.BLOCK) {
                 blockingRules.add(span.rule());
             } else if (span.action() == Action.MASK) {
-                replacements.add(replacement(scopeId, span.family(),
-                        PresidioDetector.DETECTOR_ID, span.rule(), text,
-                        span.start(), span.end()));
+                candidates.add(new MaskCandidate(findings.size() - 1, span.family(),
+                        PresidioDetector.DETECTOR_ID, span.rule(), span.start(), span.end()));
             }
         }
 
@@ -163,14 +172,85 @@ public class PolicyEngine {
                     runs);
         }
         if (effective == Action.MASK) {
-            String masked = masker.mask(text, replacements);
-            return new PolicyResult(findings, Action.MASK,
-                    Optional.of(masked.getBytes(StandardCharsets.UTF_8)), List.of(), edm.counts(),
-                    edm.complete(), edm.reason(), runs);
+            return maskResult(text, scopeId, candidates, findings, edm, runs);
         }
         // FLAG only: record findings, let Egress proceed unchanged.
         return new PolicyResult(findings, Action.FLAG, Optional.empty(), List.of(), edm.counts(),
                 edm.complete(), edm.reason(), runs);
+    }
+
+    /**
+     * Rewrite the body, then prove the rewrite before it may egress.
+     *
+     * <p>A JSON body is masked through its string values: each span is clamped to the value
+     * that holds it, so a Placeholder can never overwrite a quote, an escape, or structural
+     * punctuation. A non-JSON body has no such structure to protect and is spliced as-is.
+     * Either way the masked body is re-parsed when the source was JSON — a body that no
+     * longer parses is never sent.
+     */
+    private PolicyResult maskResult(String text, String scopeId, List<MaskCandidate> candidates,
+                                    List<Finding> findings, EdmContribution edm,
+                                    List<DetectionRun> runs) {
+        JsonValueSpans json = JsonValueSpans.of(text).orElse(null);
+        List<Masker.Replacement> replacements = new ArrayList<>(candidates.size());
+        for (MaskCandidate candidate : candidates) {
+            int start = candidate.start();
+            int end = candidate.end();
+            if (json != null) {
+                JsonValueSpans.Span clamped = json.clamp(start, end).orElse(null);
+                if (clamped == null) {
+                    // The span reaches no string value — a field name, a number, or pure
+                    // punctuation. There is nothing to replace without rewriting the wire
+                    // shape, so this one Finding degrades to FLAG the way a match inside a
+                    // decoded blob does, and says so in the Record.
+                    findings.set(candidate.findingIndex(), new Finding(candidate.detectorId(),
+                            candidate.rule(), Action.FLAG));
+                    continue;
+                }
+                start = clamped.start();
+                end = clamped.end();
+            }
+            replacements.add(replacement(scopeId, candidate.family(), candidate.detectorId(),
+                    candidate.rule(), text, start, end));
+        }
+        if (replacements.isEmpty()) {
+            return new PolicyResult(findings, Action.FLAG, Optional.empty(), List.of(),
+                    edm.counts(), edm.complete(), edm.reason(), runs);
+        }
+        String masked = masker.mask(text, replacements);
+        if (json != null && !JsonValueSpans.parses(masked)) {
+            return maskUnverified(findings, edm, runs);
+        }
+        return new PolicyResult(findings, Action.MASK,
+                Optional.of(masked.getBytes(StandardCharsets.UTF_8)), List.of(), edm.counts(),
+                edm.complete(), edm.reason(), runs);
+    }
+
+    /**
+     * The last line of defence: a masked body that no longer parses is never egressed. The
+     * Turn proceeds on the unmasked body under a loud {@link #MASK_UNVERIFIED_RULE} Finding,
+     * or stops when that rule (or the Posture behind it) enforces. No Finding is left
+     * claiming a Mask that was not applied.
+     */
+    private PolicyResult maskUnverified(List<Finding> findings, EdmContribution edm,
+                                        List<DetectionRun> runs) {
+        Action action = actionFor(MASK_UNVERIFIED_RULE) == Action.BLOCK
+                ? Action.BLOCK : Action.FLAG;
+        List<Finding> recorded = new ArrayList<>(findings);
+        recorded.replaceAll(finding -> finding.action() == Action.MASK
+                ? new Finding(finding.detector(), finding.rule(), action) : finding);
+        recorded.add(new Finding(MASK_UNVERIFIED_RULE, action));
+        return action == Action.BLOCK
+                ? new PolicyResult(recorded, Action.BLOCK, Optional.empty(),
+                        List.of(MASK_UNVERIFIED_RULE), edm.counts(), edm.complete(),
+                        edm.reason(), runs)
+                : new PolicyResult(recorded, Action.FLAG, Optional.empty(), List.of(),
+                        edm.counts(), edm.complete(), edm.reason(), runs);
+    }
+
+    /** One span that may be masked, and the Finding it already recorded. */
+    private record MaskCandidate(int findingIndex, PlaceholderFamily family, String detectorId,
+                                 String rule, int start, int end) {
     }
 
     /** Mint the Placeholder for one span. The source value never leaves this call. */

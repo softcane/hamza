@@ -86,7 +86,7 @@ static_resources:
                         # exceeded. BUFFERED_PARTIAL sends only the prefix to hamza-core;
                         # hamza-core scans that prefix and marks the uninspected tail
                         # with an `oversize` Finding.
-                        request_body_mode: BUFFERED_PARTIAL
+                        request_body_mode: BUFFERED
                         response_header_mode: SEND
                         response_body_mode: STREAMED
                   - name: envoy.filters.http.header_mutation
@@ -113,7 +113,7 @@ static_resources:
                         # For a real Provider: set host_rewrite_literal to the real host
                         # (e.g. api.openai.com) and give the cluster a TLS transport_socket.
                         - match: { prefix: "/" }
-                          per_request_buffer_limit_bytes: 65536
+                          per_request_buffer_limit_bytes: 16777216
                           # Hamza needs parseable Provider response bodies for usage
                           # accounting. Keep auth headers untouched, but ask upstreams
                           # not to compress the response body that ext_proc observes.

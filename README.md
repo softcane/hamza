@@ -4,7 +4,7 @@
 the request body before it reaches the model provider, and the agent keeps
 working.**
 
-[Watch the Claude Code side-by-side demo](https://github.com/softcane/hamza/releases/download/v0.1.0/hamza-claude-code-demo.mov).
+https://github.com/user-attachments/assets/be336248-ba3f-4597-a05c-fb1af8b3124e
 
 A developer types `claude "why did the patient import fail?"`. The agent opens
 the failing CSV, reads `.env`, greps the application log, and ships all of it to
